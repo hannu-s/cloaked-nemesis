@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from xml_rw import *
 from xml_parser import XMLParser
 from associations import Associations
+from processing import *
 	
 class BLParent():
 	"""docstring for BLParent"""
@@ -36,6 +37,8 @@ def main():
 	a.popByWord(a.keywordsList,'cdeöö')
 
 	print (a.getIndexByWord(a.keywordsList, 'cde'))
+
+	p = OwnProcess()
 
 if __name__ == '__main__':
 	main()
