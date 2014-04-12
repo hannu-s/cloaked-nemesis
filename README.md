@@ -17,7 +17,7 @@ Mark often occured words in good information containing sites as 'keywords'. Als
 ###Manual Inspection
 User has to manually inspect sites and mark them as useful / useless. When site is marked, Reddit link, page title, headings, (stylized text?) are stored in the Database. User can dismiss page, thus no changes occure.
 
-###Automatic Inspection
+###Automatic Search
 Search for 'keywords' and 'avoids' especially in the reddit link, site headings and stylized text. Check that same link has not already been searched, or the exact page visited.
 Sort most promising links at first. Present findings in XML Form.
 
