@@ -69,16 +69,12 @@ Structure & Process
   - Parent communicates through pipe when running.
   - Wait for link urls reported from children
   - If multiple identical urls, only first is allowed, tells child to remove the link
-3. Waits for first child to finish
-4. Create new Inspection.XML
-5. Notify readiness for manual inspection
-6. When second child finishes, create new MasterInspection.XML
-7. Add every childrens findings in the MasterInspection.XML
-8. Call sorter class
-9. When all children are finished, Redo steps 7 & 8. 
-10. Store MasterInspection.XML
-10. Delete Inspection.XML
-11. Notify readiness for manual inspection of MasterInspection.XML
+3. Wait for every child to finish 
+4. Create new MasterInspection.XML
+5. Add every childrens findings in the MasterInspection.XML
+6. Call sorter class
+7. Store MasterInspection.XML
+8. Notify readiness for manual inspection of MasterInspection.XML
 
 ###Child (amount: n)
 
