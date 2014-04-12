@@ -41,7 +41,11 @@ def main():
 	c = ConnectionManager()
 	c.initializeConnection(["a"],["b"],["c.com"],["r.argh","lol"],1)
 	c.startThread()
-	print("derpaderp")
+	c.join()
+	c.parseResults()
+	results = c.getResults()
+	results = "results/ch1"
+	print('derp')
 
 '''
 	p = OwnConnection()

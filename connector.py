@@ -6,6 +6,8 @@ from list_tool import *
 class ConnectionManager():
 	connections = []
 	thr = None
+	results = []
+
 	def initializeConnection(self, keywords, avoids, sites, targetUrls, pagesToSearch):
 		targets = len(targetUrls)
 		for i in range(targets):
@@ -22,6 +24,16 @@ class ConnectionManager():
 
 	def join(self):
 		self.thr.join()
+
+	def parseResults(self):
+		for oc in self.connections:
+			pass
+			# TODO
+			# if not error
+				# self.results.append(oc.endResult)
+				
+	def getResults(self):
+		return self.results
 
 class OwnThread(Thread):
 	connections = []
@@ -41,8 +53,6 @@ class OwnThread(Thread):
 
 		for c in self.connections:
 			c.waitForChild()
-
-		print("Thread finished")
 
 	def messengerLinks(self):
 		numConns = len(self.connections)

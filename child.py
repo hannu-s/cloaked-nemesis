@@ -8,7 +8,7 @@ class Child():
 		foundLinks = [targetUrl]
 		self.conn.send(foundLinks)
 		linksToRemove = self.conn.recv()
-
+		
 		#very end
 		self.conn.send("Work succesful")
 		self.conn.close()
