@@ -30,11 +30,20 @@ class OwnThread(Thread):
 		self.listTool = ListTool()
 
 	def run(self):
-		numConns = len(self.connections)
-		messages = 0
 		for c in self.connections:
 			c.startConnection()
 
+		self.messengerLinks()
+		self.messengerConfirm()
+
+		for c in self.connections:
+			c.waitForChild()
+
+		print("Thread finished")
+
+	def messengerLinks(self):
+		numConns = len(self.connections)
+		messages = 0
 		while (messages < numConns):
 			for c in self.connections:
 				if not c.hadMessage:
@@ -47,13 +56,24 @@ class OwnThread(Thread):
 					self.responseUrls = self.listTool.addOnlyUniqueFromList(msg, self.responseUrls)
 					c.sendMessage(self.listTool.getNonUniques(msg, self.responseUrls))
 
+	def messengerConfirm(self):
+		numConns = len(self.connections)
+		messages = 0
 		for c in self.connections:
-			c.waitForChild()
+			c.hadMessage = False
 
-		print(self.responseUrls)
+		while (messages < numConns):
+			for c in self.connections:
+				if not c.hadMessage:
+					c.hasMessage = c.pollMessage(1)
+
+			for ind, c in enumerate(self.connections):
+				if c.hasMessage:
+					msg = c.getMessage()
+					messages += 1
+					c.endResult = msg
 
 	
-
 
 class OwnConnection():
 	parent_conn = None
@@ -67,6 +87,7 @@ class OwnConnection():
 	isRunning = None
 	hasMessage = None
 	hadMessage = None
+	endResult = None
 
 	def __init__(self):
 		self.parent_conn, self.child_conn = Pipe()
