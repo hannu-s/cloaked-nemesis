@@ -39,6 +39,11 @@ def main():
 	print (a.getIndexByWord(a.keywordsList, 'cde'))
 
 	p = OwnProcess()
+	p.setParams("a","a","a","a","a")
+	p.initializeProcess()
+	p.freeMemory()
+	p.startProcess()
+	print(p.getMessage())
 
 if __name__ == '__main__':
 	main()

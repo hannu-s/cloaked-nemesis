@@ -12,6 +12,9 @@ class XMLParser():
 			li.append(si.text)
 		return li	
 
+	def getPagesToSearch(self, confT):
+		return int(confT.find('pages'))
+
 	def getFKeys(self, tree):
 		li = []
 		for k in tree.findall('word'):
@@ -21,7 +24,7 @@ class XMLParser():
 	def getKeys(self, tree):
 		li = []
 		for k in tree.findall('word'):
-			num = k.get('occured')
+			num = int(k.get('occured'))
 			val = k.text
 			li.append([val,num])
 		return li	
