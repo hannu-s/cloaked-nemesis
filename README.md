@@ -70,13 +70,13 @@ Structure & Process
   - Wait for link urls reported from children
   - If multiple identical urls, only first is allowed, tells child to remove the link
 3. Wait for every child to finish 
-4. Create new MasterInspection.XML
+4. Create new MasterInspection element
 5. Add every childrens findings in the MasterInspection.XML
 6. Call sorter class
 7. Store MasterInspection.XML
 8. Notify readiness for manual inspection of MasterInspection.XML
 
-###Child (amount: n)
+###Child (amount: n)  (the very basics)
 
 1. Search subreddit
 2. Inspect set amount newest links, skip visited
@@ -88,12 +88,12 @@ Structure & Process
 7. Stores findings in XML
 8. Notify parent for findings ready for inspection
 
-###Inspector
+###Inspector  (todo)
 
 Independet class. Presents Inspection.XML and MasterInspection.XML in http server. Start browser and directs it to server address. User gets to vote for useful/useless or dismiss the site. 
 Every vote calls for Updater class with initial values: link, vote. Afterwards calls Sorter to resort the file and updates the server.
 
-###Updater
+###Updater  (todo)
 
 1. Class starts with Link and useful/useless vote
 2. Load page data corresponding the link
@@ -101,7 +101,7 @@ Every vote calls for Updater class with initial values: link, vote. Afterwards c
 4. Recalculate 'keywords' and 'avoids'
 5. Update 'good sites' and 'useless sites'
 
-###Sorter
+###Sorter  (todo)
 
 Class starts with list of links and scores. Sorts them in descending order. Returns sorted list
 Also capable to store sorted xml.
