@@ -1,13 +1,13 @@
 <data>
     <sites>
-        <site></site>
-        <site></site>
-        <site></site>
-        <site></site>
-        <site></site>
+        <site>a</site>
+        <site>b</site>
+        <site>c</site>
+        <site>d</site>
+        <site>e</site>
     </sites>
     <params>
-    <search_param></search_param>
-    <search_param></search_param>
+        <search_param>hae 1</search_param>
+        <search_param>hae 2</search_param>
     </params>
 </data>
