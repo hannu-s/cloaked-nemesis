@@ -1,3 +1,8 @@
 <keys>
-	<word occured="1">a</word>
+	<keywords>
+		<word occured="1">a</word>
+	</keywords>
+	<avoids>
+		<word occured="1">b</word>
+	</avoids>
 </keys>
