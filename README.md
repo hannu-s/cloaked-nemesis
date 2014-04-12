@@ -3,7 +3,7 @@ README
 
 Purpose
 -------
-Search information related to search parameter from HTTP page reddit. 
+Search information related to search parameter from HTML page reddit. 
 
 Design
 ------
@@ -26,8 +26,9 @@ When word times_useful / times_useless ratio is not close 1, word is associated 
 
 ###Score system
 
-'Keywords' add & 'avoids' substract from link specific score.
+'Keywords' add and 'avoids' substract from link specific score.
 Very often occuring words with 'keywords' or 'avoids' association, change score very little or not at all. 
+If score does not reach specific score, the site will not be presented.
 
 ####Keywords
 Each 'keyword' add link specific score for
