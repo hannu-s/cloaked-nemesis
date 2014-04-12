@@ -1,20 +1,8 @@
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from xml_rw import *
-
-class XMLParser():
-	"""docstring for XMLParser"""
-	def getSearchParams(self, confT):
-		li = []
-		for sp in confT.findall('params/search_param'):
-			li.append(sp.text)
-		return li
+from xml_parser import XMLParser
 	
-	def getSearchSites(self, confT):
-		li = []
-		for si in confT.findall('sites/site'):
-			li.append(si.text)
-		return li		
 		
 
 def main():
@@ -25,6 +13,10 @@ def main():
 	print (l)
 	l = x.getSearchSites(confTree)
 	print (l)
+
+	t = xReader.getTree('xml/keywords.xml')
+	m = x.getKeys(t)
+	print(m)
 
 if __name__ == '__main__':
 	main()
