@@ -20,6 +20,9 @@ class ConnectionManager():
 		self.thr.deamon = True
 		self.thr.start()
 
+	def join(self):
+		self.thr.join()
+
 class OwnThread(Thread):
 	connections = []
 	listTool = None
