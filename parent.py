@@ -7,14 +7,14 @@ from associations import Associations
 class BLParent():
 	"""docstring for BLParent"""
 	__conf = None
-	__keywords = None
-	__avoids = None
+	__associations = None
 	__sites = None
 	def __init__(self, arg):
 		self.arg = arg
 
 
 def main():
+	'''
 	xReader = XMLReader()
 	confTree = xReader.getTree('xml/conf.xml')
 	x = XMLParser()
@@ -26,6 +26,16 @@ def main():
 	t = xReader.getTree('xml/keywords.xml')
 	m = x.getKeys(t)
 	print(m)
+	'''
+
+	a = Associations()
+	a.addKeyword('abc', 1, False)
+	a.addKeyword('bcd', 1, False)
+	a.addKeyword('cde', 1, False)
+
+	a.popByWord(a.keywordsList,'cdeöö')
+
+	print (a.getIndexByWord(a.keywordsList, 'cde'))
 
 if __name__ == '__main__':
 	main()
