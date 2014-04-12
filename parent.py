@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from xml_rw import *
 from xml_parser import XMLParser
 from associations import Associations
-from processing import *
+from connector import *
 	
 class BLParent():
 	"""docstring for BLParent"""
@@ -38,11 +38,11 @@ def main():
 
 	print (a.getIndexByWord(a.keywordsList, 'cde'))
 
-	p = OwnProcess()
+	p = OwnConnection()
 	p.setParams("a","a","a","a","a")
-	p.initializeProcess()
+	p.initializeConnection()
 	p.freeMemory()
-	p.startProcess()
+	p.startConnection()
 	print(p.getMessage())
 
 if __name__ == '__main__':
