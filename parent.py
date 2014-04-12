@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from xml_rw import *
 from xml_parser import XMLParser
 from associations import Associations
-from connector import *
+from connector import ConnectionManager
 	
 class BLParent():
 	"""docstring for BLParent"""

@@ -7,5 +7,7 @@ class Child():
 		self.conn = conn
 		if targetUrl == "kebaab":
 			time.sleep(4)
-		self.conn.send(targetUrl)
+		data = [targetUrl, 'kebaab']
+		self.conn.send(data)
+		self.conn.recv()
 		self.conn.close()

@@ -1,6 +1,7 @@
 from multiprocessing import Process, Pipe
 from threading import Thread
 from child import *
+from list_tool import *
 
 class ConnectionManager():
 	connections = []
@@ -21,9 +22,12 @@ class ConnectionManager():
 
 class OwnThread(Thread):
 	connections = []
+	listTool = None
+	responseUrls = []
 	def __init__(self, connections):
 		Thread.__init__(self)
 		self.connections = connections
+		self.listTool = ListTool()
 
 	def run(self):
 		numConns = len(self.connections)
@@ -37,11 +41,16 @@ class OwnThread(Thread):
 
 			for ind, c in enumerate(self.connections):
 				if c.hasMessage:
-					print(ind, c.getMessage())
+					msg = c.getMessage()
+					print(ind, msg)
 					messages += 1
+					self.responseUrls = self.listTool.addOnlyUniqueFromList(msg, self.responseUrls)
+					c.sendMessage(self.listTool.getNonUniques(msg, self.responseUrls))
 
 		for c in self.connections:
 			c.waitForChild()
+
+		print(self.responseUrls)
 
 	
 
@@ -84,6 +93,9 @@ class OwnConnection():
 
 	def pollMessage(self, timeout):
 		return self.parent_conn.poll(timeout)
+
+	def sendMessage(self, msg):
+		self.parent_conn.send(msg)
 
 	def freeMemory(self):
 		self.keywords = None
