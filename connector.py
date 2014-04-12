@@ -1,18 +1,19 @@
 from multiprocessing import Process, Pipe
 from threading import Thread
 from child import *
-from list_tool import *
+from list_tool import ListTool
 
 class ConnectionManager():
 	connections = []
 	thr = None
 	results = []
 
-	def initializeConnection(self, keywords, avoids, sites, targetUrls, pagesToSearch):
+	def initializeConnection(self, keywords, avoids, sites, targetUrls, pagesToSearch, searchParams):
 		targets = len(targetUrls)
+
 		for i in range(targets):
 			oc = OwnConnection()
-			oc.setParams(keywords,avoids,sites,targetUrls[i],pagesToSearch)
+			oc.setParams(keywords,avoids,sites,targetUrls[i],pagesToSearch, searchParams)
 			oc.initializeConnection()
 			oc.freeMemory()
 			self.connections.append(oc)
@@ -27,7 +28,7 @@ class ConnectionManager():
 
 	def parseResults(self):
 		for oc in self.connections:
-			pass
+			self.results.append(oc.endResult)
 			# TODO
 			# if not error
 				# self.results.append(oc.endResult)
@@ -39,6 +40,7 @@ class OwnThread(Thread):
 	connections = []
 	listTool = None
 	responseUrls = []
+
 	def __init__(self, connections):
 		Thread.__init__(self)
 		self.connections = connections
@@ -101,6 +103,7 @@ class OwnConnection():
 	hasMessage = None
 	hadMessage = None
 	endResult = None
+	searchParams = None
 
 	def __init__(self):
 		self.parent_conn, self.child_conn = Pipe()
@@ -108,16 +111,17 @@ class OwnConnection():
 		self.hasMessage = False
 		self.hadMessage = False
 
-	def setParams(self, keywords, avoids, sites, targetUrl, pagesToSearch,):
+	def setParams(self, keywords, avoids, sites, targetUrl, pagesToSearch, searchParams):
 		self.keywords = keywords
 		self.avoids = avoids
 		self.sites = sites
 		self.targetUrl = targetUrl
 		self.pagesToSearch = pagesToSearch
+		self.searchParams = searchParams
 
 	def initializeConnection(self):
 		c = Child()
-		self.proc = Process(target=c.BLChild, args=(self.child_conn, self.keywords, self.avoids, self.sites, self.targetUrl,self.pagesToSearch,))
+		self.proc = Process(target=c.BLChild, args=(self.child_conn, self.keywords, self.avoids, self.sites, self.targetUrl,self.pagesToSearch, self.searchParams,))
 
 	def startConnection(self):
 		self.isRunning = True
@@ -140,6 +144,7 @@ class OwnConnection():
 		self.sites = None
 		self.targetUrl = None
 		self.pagesToSearch = None
+		self.searchParams = None
 
 	def waitForChild(self):
 		self.proc.join()

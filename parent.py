@@ -6,22 +6,26 @@ from associations import Associations
 from connector import ConnectionManager
 from configure import Configure
 from sites import Sites
+from list_tool import ListTool
 
 class BLParent():
 	"""docstring for BLParent"""
 	__conf = None
 	__associations = None
 	__sites = None
+	resultList = None
+
 	def __init__(self):
 		self.__conf = Configure()
 		self.__associations = Associations()
 		self.__sites = Sites()
+		resultList = []
 
 		xReader = XMLReader()
 		xParser = XMLParser()
 		confTree = xReader.getTree('xml/conf.xml')
 		if confTree == None:
-			return
+			exit()
 		searchParams = xParser.getSearchParams(confTree)
 		searchSites = xParser.getSearchSites(confTree)
 		pagesToSearch = xParser.getPagesToSearch(confTree)
@@ -31,7 +35,7 @@ class BLParent():
 		keywordTree = xReader.getTree('xml/keywords.xml')
 		fKeywordTree = xReader.getTree('xml/f_keywords.xml')
 		if keywordTree == None or fKeywordTree == None:
-			return
+			exit()
 		keywords = xParser.getKeywords(keywordTree)
 		fKeywords = xParser.getKeywords(fKeywordTree)
 		avoids = xParser.getAvoids(keywordTree)
@@ -41,18 +45,33 @@ class BLParent():
 
 		goodSitesTree = xReader.getTree('xml/good_sites.xml')
 		badSitesTree = xReader.getTree('xml/bad_sites.xml')
-		goodSites = xParser.getSites(goodSitesTree)
 		if goodSitesTree == None or badSitesTree == None:
-			return
+			exit()
+		goodSites = xParser.getSites(goodSitesTree)
 		badSites = xParser.getSites(badSitesTree)
 
 		self.__sites.setParams(goodSites, badSites)
 
-		print(keywords,searchParams,badSites)
+	def startSubProcesses(self):
+		CM = ConnectionManager()
+		lt = ListTool()
+		sitesList = []
+		sitesList = lt.addOnlyUniqueFromList(self.__sites.goodSites, self.__sites.badSites)
+
+
+		CM.initializeConnection(self.__associations.keywordsList, self.__associations.avoidsList, sitesList, self.__conf.siteToSearchList, self.__conf.pagesToSearch, self.__conf.searchParamsList)
+		CM.startThread()
+		CM.join()
+		CM.parseResults()
+		
+		self.resultList = CM.getResults()
+		#self.results = "results/ch1"
+		print(self.resultList)		
 
 
 def main():
 	bl = BLParent()
+	bl.startSubProcesses()
 
 	'''
 	xReader = XMLReader()

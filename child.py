@@ -3,7 +3,7 @@ import time
 
 class Child():
 	conn = None
-	def BLChild(self, conn, keywords, avoids, site, targetUrl, pagesToSearch):
+	def BLChild(self, conn, keywords, avoids, site, targetUrl, pagesToSearch, searchParams):
 		self.conn = conn
 		foundLinks = [targetUrl]
 		self.conn.send(foundLinks)

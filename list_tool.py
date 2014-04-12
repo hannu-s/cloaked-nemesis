@@ -35,4 +35,8 @@ class ListTool():
 
 	def descending(self, li):
 		pass
-		
+
+	def validateList(self, val):
+		if val == None:
+			val = []
+		return val		
