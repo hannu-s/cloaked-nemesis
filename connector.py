@@ -37,12 +37,12 @@ class OwnThread(Thread):
 
 		while (messages < numConns):
 			for c in self.connections:
-				c.hasMessage = c.pollMessage(1)
+				if not c.hadMessage:
+					c.hasMessage = c.pollMessage(1)
 
 			for ind, c in enumerate(self.connections):
 				if c.hasMessage:
 					msg = c.getMessage()
-					print(ind, msg)
 					messages += 1
 					self.responseUrls = self.listTool.addOnlyUniqueFromList(msg, self.responseUrls)
 					c.sendMessage(self.listTool.getNonUniques(msg, self.responseUrls))
@@ -66,11 +66,13 @@ class OwnConnection():
 	pagesToSearch = None
 	isRunning = None
 	hasMessage = None
+	hadMessage = None
 
 	def __init__(self):
 		self.parent_conn, self.child_conn = Pipe()
 		self.isRunning = False
 		self.hasMessage = False
+		self.hadMessage = False
 
 	def setParams(self, keywords, avoids, sites, targetUrl, pagesToSearch,):
 		self.keywords = keywords
@@ -89,6 +91,7 @@ class OwnConnection():
 
 	def getMessage(self):
 		self.hasMessage = False
+		self.hadMessage = True
 		return self.parent_conn.recv()
 
 	def pollMessage(self, timeout):

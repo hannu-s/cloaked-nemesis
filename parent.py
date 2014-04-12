@@ -28,7 +28,7 @@ def main():
 	m = x.getKeys(t)
 	print(m)
 	'''
-
+	'''
 	a = Associations()
 	a.addKeyword('abc', 1, False)
 	a.addKeyword('bcd', 1, False)
@@ -37,9 +37,9 @@ def main():
 	a.popByWord(a.keywordsList,'cdeöö')
 
 	print (a.getIndexByWord(a.keywordsList, 'cde'))
-
+	'''
 	c = ConnectionManager()
-	c.initializeConnection(["a"],["b"],["c.com"],["r.argh","kebaab"],1)
+	c.initializeConnection(["a"],["b"],["c.com"],["r.argh","lol"],1)
 	c.startThread()
 	print("derpaderp")
 
