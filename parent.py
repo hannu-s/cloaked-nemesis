@@ -2,8 +2,17 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from xml_rw import *
 from xml_parser import XMLParser
+from associations import Associations
 	
-		
+class BLParent():
+	"""docstring for BLParent"""
+	__conf = None
+	__keywords = None
+	__avoids = None
+	__sites = None
+	def __init__(self, arg):
+		self.arg = arg
+
 
 def main():
 	xReader = XMLReader()

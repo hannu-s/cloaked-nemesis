@@ -12,6 +12,12 @@ class XMLParser():
 			li.append(si.text)
 		return li	
 
+	def getFKeys(self, tree):
+		li = []
+		for k in tree.findall('word'):
+			li.append(k.text)
+		return li	
+
 	def getKeys(self, tree):
 		li = []
 		for k in tree.findall('word'):
