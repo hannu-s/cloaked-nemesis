@@ -5,6 +5,7 @@ class Child():
 	conn = None
 	def BLChild(self, conn, keywords, avoids, site, targetUrl, pagesToSearch):
 		self.conn = conn
-		time.sleep(5)
-		self.conn.send('Child sending data')
+		if targetUrl == "kebaab":
+			time.sleep(4)
+		self.conn.send(targetUrl)
 		self.conn.close()

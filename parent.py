@@ -38,12 +38,20 @@ def main():
 
 	print (a.getIndexByWord(a.keywordsList, 'cde'))
 
+	c = ConnectionManager()
+	c.initializeConnection(["a"],["b"],["c.com"],["r.argh","kebaab"],1)
+	c.startThread()
+	print("derpaderp")
+
+'''
 	p = OwnConnection()
 	p.setParams("a","a","a","a","a")
 	p.initializeConnection()
 	p.freeMemory()
 	p.startConnection()
 	print(p.getMessage())
+'''
+	
 
 if __name__ == '__main__':
 	main()
