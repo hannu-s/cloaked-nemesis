@@ -20,6 +20,8 @@ class BLParent():
 		xReader = XMLReader()
 		xParser = XMLParser()
 		confTree = xReader.getTree('xml/conf.xml')
+		if confTree == None:
+			return
 		searchParams = xParser.getSearchParams(confTree)
 		searchSites = xParser.getSearchSites(confTree)
 		pagesToSearch = xParser.getPagesToSearch(confTree)
@@ -28,6 +30,8 @@ class BLParent():
 
 		keywordTree = xReader.getTree('xml/keywords.xml')
 		fKeywordTree = xReader.getTree('xml/f_keywords.xml')
+		if keywordTree == None or fKeywordTree == None:
+			return
 		keywords = xParser.getKeywords(keywordTree)
 		fKeywords = xParser.getKeywords(fKeywordTree)
 		avoids = xParser.getAvoids(keywordTree)
@@ -38,6 +42,8 @@ class BLParent():
 		goodSitesTree = xReader.getTree('xml/good_sites.xml')
 		badSitesTree = xReader.getTree('xml/bad_sites.xml')
 		goodSites = xParser.getSites(goodSitesTree)
+		if goodSitesTree == None or badSitesTree == None:
+			return
 		badSites = xParser.getSites(badSitesTree)
 
 		self.__sites.setParams(goodSites, badSites)
