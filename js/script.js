@@ -100,15 +100,30 @@ function createJQButton(arg, type) {
 				});
 
 	if (type === "up") {
-		qBtn.click(function(){ alert('up');})
+		qBtn.click(function(){ ajax(arg['id'], "up")})
 	}
 	else if (type === "down") {
-		qBtn.click(function(){ alert('down');})
+		qBtn.click(function(){ ajax(arg['id'], "down")})
 	}
 	else if (type === "dis") {
-		qBtn.click(function(){ alert('dissattu');})
+		qBtn.click(function(){ ajax(arg['id'], "dis")})
 	}
 
 	return qBtn
 	
+}
+
+function ajax (id, vote) {
+	$.ajax({
+	    type: "POST",
+	    url: "server.php",
+	    data: {id: id, vote: vote},
+	    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+	    success: function(data) {
+	        alert(data);
+	    },
+	    error: function(data){
+	        alert('Error');
+	    }
+	});
 }
