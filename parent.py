@@ -8,13 +8,16 @@ from configure import Configure
 from sites import Sites
 from list_tool import ListTool
 from os_tool import OSTool
+from inspection import Inspection
 
 class BLParent():
 	"""docstring for BLParent"""
 	__conf = None
 	__associations = None
 	__sites = None
+	
 	resultList = None
+	masterInspectionPath = 'results/master_inspection.xml'
 
 	def __init__(self):
 		self.__conf = Configure()
@@ -59,7 +62,9 @@ class BLParent():
 		sitesList = []
 		sitesList = lt.addOnlyUniqueFromList(self.__sites.goodSites, self.__sites.badSites)
 
-		CM.initializeConnection(self.__associations.keywordsList, self.__associations.avoidsList, sitesList, self.__conf.siteToSearchList, self.__conf.pagesToSearch, self.__conf.searchParamsList)
+		CM.initializeConnection(	self.__associations.keywordsList, 	self.__associations.avoidsList, 
+									sitesList, 	self.__conf.siteToSearchList,	 self.__conf.pagesToSearch, 
+									self.__conf.searchParamsList)
 		CM.startThread()
 		CM.join()
 		CM.parseResults()
@@ -70,19 +75,39 @@ class BLParent():
 	def createMasterInspectionXML(self):
 		xReader = XMLReader()
 		xParser = XMLParser()
+		lt = ListTool()
+		os = OSTool()
+		
+		xmls = os.getFilesInDir('results/')
+		xmls = lt.popByWord(xmls, self.masterInspectionPath)
 
-		#get child xmls
+		childInspections = []
+		for ind, xml in enumerate(xmls):
+			tree = xReader.getTree(xml)
+			if tree == None:
+				print(ind, xml, 'Failed to read.')
+				continue
+			link, score, url, fil = xParser.getInspectionData(tree)	
+			childInspections.append( Inspection(link, score, url, fil) )
 
-		miTree = xReader.getTree('results/master_inspection.xml')
-		miLink, miScore, miUrl, miFile = xParser.getInspectionData(miTree)
+		if len(childInspections) == 0:
+			print('No files read.')
+			exit()
 
-		print(miLink, miScore)
+		#TODO
+		#sort childInspections
+
+		xWriter = XMLWriter()
+		xWriter.writeMIXML(childInspections, self.masterInspectionPath)
+
+		#miTree = xReader.getTree('results/master_inspection.xml')
+		#miLink, miScore, miUrl, miFile = xParser.getInspectionData(miTree)
+		#print(miLink, miScore)
 
 
 def main():
 	bl = BLParent()
 	bl.startSubProcesses()
-
 	bl.createMasterInspectionXML()
 	
 	'''

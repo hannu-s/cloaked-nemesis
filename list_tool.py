@@ -10,7 +10,7 @@ class ListTool():
 
 
 	def addOnlyUniqueFromList(self, fromList, toList):
-		if toList == None or toList == []:
+		if toList == None or len(toList) == 0:
 			toList = []
 			return self.appendListToList(fromList,toList)
 		for i in fromList:
@@ -20,7 +20,7 @@ class ListTool():
 		return toList
 
 	def addOnlyUniqueFrom2DList(self, fromList, toList, index):
-		if toList == None or toList == []:
+		if toList == None or len(toList) == 0:
 			toList = []
 			return self.appendListToList(fromList,toList)
 		for i in fromList:
@@ -35,7 +35,7 @@ class ListTool():
 		return False
 
 	def getNonUniques(self, list1, list2):
-		if list2 == None or list2 == []:
+		if list2 == None or len(list2) == 0:
 			return None
 		li = []
 		for i in list1:
@@ -58,17 +58,18 @@ class ListTool():
 
 	def getIndexByWord(self, li, word):
 		for index, obj in enumerate(li):
-			if obj.word == word:
+			if obj == word:
 				return index
 		return -1
 
 	def pop(self, li, index):
 		if index < 0 or index >= len(li):
-			return
+			return li
 		li.pop(index)
+		return li
 
 	def popByWord(self, li, word):
 		index = self.getIndexByWord(li, word)
-		if index == -1:
-			return
-		li.pop(index)	
+		if not index == -1:
+			li.pop(index)
+		return li
