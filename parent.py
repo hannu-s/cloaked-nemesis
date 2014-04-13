@@ -10,6 +10,7 @@ from list_tool import ListTool
 from os_tool import OSTool
 from inspection import Inspection
 from sorter import Sorter
+from inspector import Inspector
 
 class BLParent():
 	"""docstring for BLParent"""
@@ -20,11 +21,12 @@ class BLParent():
 	resultList = None
 	masterInspectionPath = 'results/master_inspection.xml'
 
-	def __init__(self):
+	def __init__(self, miPath):
 		self.__conf = Configure()
 		self.__associations = Associations()
 		self.__sites = Sites()
 		resultList = []
+		self.masterInspectionPath = miPath
 
 		xReader = XMLReader()
 		xParser = XMLParser()
@@ -70,29 +72,18 @@ class BLParent():
 		CM.join()
 		CM.parseResults()
 		
-		self.resultList = CM.getResults()
-		print(self.resultList)		
+		self.resultList = CM.getResults()		
 
-	def createMasterInspectionXML(self):
-		xReader = XMLReader()
-		xParser = XMLParser()
+	def createMasterInspectionXML(self, delChildXMLs = False):
 		lt = ListTool()
 		os = OSTool()
 		sort = Sorter()
+		insp = Inspector()
 
 		xmls = os.getFilesInDir('results/')
 		xmls = lt.popByWord(xmls, self.masterInspectionPath)
 
-		XMLInspections = []
-		for ind, xml in enumerate(xmls):
-			tree = xReader.getTree(xml)
-			if tree == None:
-				print(ind, xml, 'Failed to read.')
-				continue
-			link, score, url, fil = xParser.getInspectionData(tree)
-			for i in range(len(link)):
-				XMLInspections.append( Inspection(link[i], score[i], url[i], fil[i]) )		
-			
+		XMLInspections = insp.getInspections(xmls)				
 
 		if len(XMLInspections) == 0:
 			print('No files read.')
@@ -103,56 +94,16 @@ class BLParent():
 		xWriter = XMLWriter()
 		xWriter.writeMIXML(XMLInspections, self.masterInspectionPath)
 
+		if delChildXMLs:
+			for xml in xmls:
+				os.deleteFile(xml)
 
 def main():
-	bl = BLParent()
+	xml = 'master_inspection.xml'
+	bl = BLParent(xml)
 	bl.startSubProcesses()
-	bl.createMasterInspectionXML()
-	
-	'''
-	xReader = XMLReader()
-	confTree = xReader.getTree('xml/conf.xml')
-	x = XMLParser()
-	l = x.getSearchParams(confTree)
-	print (l)
-	l = x.getSearchSites(confTree)
-	print (l)
-
-	t = xReader.getTree('xml/keywords.xml')
-	m = x.getKeys(t)
-	print(m)
-	'''
-	'''
-	a = Associations()
-	a.addKeyword('abc', 1, False)
-	a.addKeyword('bcd', 1, False)
-	a.addKeyword('cde', 1, False)
-
-	a.popByWord(a.keywordsList,'cdeöö')
-
-	print (a.getIndexByWord(a.keywordsList, 'cde'))
-	'''
-
-	'''
-	c = ConnectionManager()
-	c.initializeConnection(["a"],["b"],["c.com"],["r.argh","lol"],1)
-	c.startThread()
-	c.join()
-	c.parseResults()
-	results = c.getResults()
-	results = "results/ch1"
-	print('derp')
-
-'''
-
-'''
-	p = OwnConnection()
-	p.setParams("a","a","a","a","a")
-	p.initializeConnection()
-	p.freeMemory()
-	p.startConnection()
-	print(p.getMessage())
-'''
+	bl.createMasterInspectionXML(False)
+	print('Process completed.', xml, 'created.')
 	
 
 if __name__ == '__main__':

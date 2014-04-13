@@ -32,3 +32,9 @@ class OSTool():
 				li.append(os.path.join(dirname, filename))
 		return li
 
+	def deleteFile(self, filePath):
+		try:
+			os.remove(filePath)
+		except Exception as e:
+			print(e)
+		
