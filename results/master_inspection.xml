@@ -1,9 +1,9 @@
 <findings>
 	<finding>
-		<link>Paskaa joukkue!</link>
-		<score>0</score>
-		<url>Paskaa.Herra.Persenaama</url>
-		<file>ch1_paskaajoukkue.bin</file>
+		<link>asd</link>
+		<score>2</score>
+		<url>asd.asd.org</url>
+		<file>ch2_asd.bin</file>
 	</finding>
 	<finding>
 		<link>Hurrdurr</link>
@@ -12,9 +12,9 @@
 		<file>ch2_hurrdurr.bin</file>
 	</finding>
 	<finding>
-		<link>asd</link>
-		<score>2</score>
-		<url>asd.asd.org</url>
-		<file>ch2_asd.bin</file>
+		<link>Paskaa joukkue!</link>
+		<score>0</score>
+		<url>Paskaa.Herra.Persenaama</url>
+		<file>ch1_paskaajoukkue.bin</file>
 	</finding>
 </findings>

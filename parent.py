@@ -9,6 +9,7 @@ from sites import Sites
 from list_tool import ListTool
 from os_tool import OSTool
 from inspection import Inspection
+from sorter import Sorter
 
 class BLParent():
 	"""docstring for BLParent"""
@@ -77,32 +78,30 @@ class BLParent():
 		xParser = XMLParser()
 		lt = ListTool()
 		os = OSTool()
-		
+		sort = Sorter()
+
 		xmls = os.getFilesInDir('results/')
 		xmls = lt.popByWord(xmls, self.masterInspectionPath)
 
-		childInspections = []
+		XMLInspections = []
 		for ind, xml in enumerate(xmls):
 			tree = xReader.getTree(xml)
 			if tree == None:
 				print(ind, xml, 'Failed to read.')
 				continue
-			link, score, url, fil = xParser.getInspectionData(tree)	
-			childInspections.append( Inspection(link, score, url, fil) )
+			link, score, url, fil = xParser.getInspectionData(tree)
+			for i in range(len(link)):
+				XMLInspections.append( Inspection(link[i], score[i], url[i], fil[i]) )		
+			
 
-		if len(childInspections) == 0:
+		if len(XMLInspections) == 0:
 			print('No files read.')
 			exit()
 
-		#TODO
-		#sort childInspections
+		XMLInspections = sort.sortInspectionList(XMLInspections)
 
 		xWriter = XMLWriter()
-		xWriter.writeMIXML(childInspections, self.masterInspectionPath)
-
-		#miTree = xReader.getTree('results/master_inspection.xml')
-		#miLink, miScore, miUrl, miFile = xParser.getInspectionData(miTree)
-		#print(miLink, miScore)
+		xWriter.writeMIXML(XMLInspections, self.masterInspectionPath)
 
 
 def main():

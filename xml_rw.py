@@ -22,20 +22,19 @@ class XMLWriter():
 	def writeMIXML(self, dataList, filePath):
 		root = ET.Element("findings")
 		for data in dataList:
-			for i in range(len(data.link)):
-				ele = ET.SubElement(root, "finding")
+			ele = ET.SubElement(root, "finding")
 
-				field1 = ET.SubElement(ele, "link")
-				field1.text = data.link[i]
+			field1 = ET.SubElement(ele, "link")
+			field1.text = data.link
 
-				field2 = ET.SubElement(ele, "score")
-				field2.text = str(data.score[i])
+			field2 = ET.SubElement(ele, "score")
+			field2.text = str(data.score)
 
-				field3 = ET.SubElement(ele, "url")
-				field3.text = data.url[i]
+			field3 = ET.SubElement(ele, "url")
+			field3.text = data.url
 
-				field4 = ET.SubElement(ele, "file")
-				field4.text = data.fil[i]
+			field4 = ET.SubElement(ele, "file")
+			field4.text = data.fil
 
 		tree = ET.ElementTree(root)
 		tree.write(filePath)
