@@ -15,6 +15,7 @@ Use Restful API to collect data from site. Follow promising links to the site, s
 Mark often occured words in good information containing sites as 'keywords'. Also mark often occured words in poor / no information containing sites as 'avoids'.
 
 ###Manual Inspection
+Inspection is done via browser. browser loads index.html which presents master_inspection.xml.
 User has to manually inspect sites and mark them as useful / useless. When site is marked, Reddit link, page title, headings, (stylized text?) are stored in the Database. User can dismiss page, thus no changes occure.
 
 ###Automatic Search
@@ -61,7 +62,7 @@ Each 'avoids' substract link specific score for
 Structure & Process
 -------------------
 
-###Parent (amount: 1)
+###Parent (amount: 1) (95% done)
 
 1. XML Query for 'keywords', 'avoids', 'urls', linksToSearch
 2. Starts child processes each child searches different subreddit. 
@@ -88,18 +89,35 @@ Structure & Process
 7. Stores findings in XML
 8. Notify parent for findings ready for inspection
 
+###Server & Index.html  (80% done)
+
+Currently server uses apache2. Index.html uses javascript to load master_insptector.xml. UI uses ajax to send user inputs to PHP server. Server validates inputs and afterwards shell executes Updater with userinput as its parameter.
+
+###Updater
+
+1. Starts with id and user vote of the master_inspector node as its parameters.
+2. Loads master_inspector.xml
+3. If voted useful or useless
+  * Calls DB_Updater with id, vote parameters
+5. removes node from master_inspector xml
+6. Notifies that task is finished
+
 ###Inspector  (todo)
 
-Independet class. Presents MasterInspection.XML in http server. Start browser and directs it to server address. User gets to vote for useful/useless or dismiss the site. 
+Independet class. Presents master_inspector.xml in http server. Start browser and directs it to server address. User gets to vote for useful/useless or dismiss the site. 
 Every vote calls for Updater class with initial values: link, vote. Afterwards calls Sorter to resort the file and updates the server.
 
-###Updater  (todo)
+###Main_Updater  (todo)
 
 1. Class starts with Link and useful/useless vote
 2. Load page data corresponding the link
-3. Store words and usefulness from link, title, headers, (stylized text?) in to db
-4. Recalculate 'keywords' and 'avoids'
-5. Update 'good sites' and 'useless sites'
+3. Validate page datas words
+4. Store words and usefulness from link, title, headers, (stylized text?) in to db
+5. Recalculate 'keywords' and 'avoids'
+6. Update 'good sites' and 'useless sites'
+7. Recalculate all scores from existing page data files
+8. Order recalculated data with descending score
+9. Recreate master_inspector.data
 
 ###Sorter  (todo)
 
