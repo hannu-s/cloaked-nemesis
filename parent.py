@@ -58,14 +58,12 @@ class BLParent():
 		sitesList = []
 		sitesList = lt.addOnlyUniqueFromList(self.__sites.goodSites, self.__sites.badSites)
 
-
 		CM.initializeConnection(self.__associations.keywordsList, self.__associations.avoidsList, sitesList, self.__conf.siteToSearchList, self.__conf.pagesToSearch, self.__conf.searchParamsList)
 		CM.startThread()
 		CM.join()
 		CM.parseResults()
 		
 		self.resultList = CM.getResults()
-		#self.results = "results/ch1"
 		print(self.resultList)		
 
 

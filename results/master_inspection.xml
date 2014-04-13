@@ -1,0 +1,14 @@
+<findings>
+	<finding>
+		<link>Paskaa joukkue!</link>
+		<score>0</score>
+		<url>Paskaa.Herra.Persenaama</url>
+		<file>paskaajoukkue.bin</file>
+	</finding>
+	<finding>
+		<link>Hurrdurr</link>
+		<score>1</score>
+		<url>hurr.durr.org</url>
+		<file>ch2_hurrdurr.bin</file>
+	</finding>
+</findings>

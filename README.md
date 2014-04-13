@@ -90,7 +90,7 @@ Structure & Process
 
 ###Inspector  (todo)
 
-Independet class. Presents Inspection.XML and MasterInspection.XML in http server. Start browser and directs it to server address. User gets to vote for useful/useless or dismiss the site. 
+Independet class. Presents MasterInspection.XML in http server. Start browser and directs it to server address. User gets to vote for useful/useless or dismiss the site. 
 Every vote calls for Updater class with initial values: link, vote. Afterwards calls Sorter to resort the file and updates the server.
 
 ###Updater  (todo)
