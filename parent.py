@@ -19,14 +19,13 @@ class BLParent():
 	__sites = None
 	
 	resultList = None
-	masterInspectionPath = 'results/master_inspection.xml'
+	masterInspectionPath = None
 
-	def __init__(self, miPath):
+	def __init__(self):
 		self.__conf = Configure()
 		self.__associations = Associations()
 		self.__sites = Sites()
 		resultList = []
-		self.masterInspectionPath = miPath
 
 		xReader = XMLReader()
 		xParser = XMLParser()
@@ -36,6 +35,7 @@ class BLParent():
 		searchParams = xParser.getSearchParams(confTree)
 		searchSites = xParser.getSearchSites(confTree)
 		pagesToSearch = xParser.getPagesToSearch(confTree)
+		self.masterInspectionPath = xParser.getMIXML(confTree)
 
 		self.__conf.setParams(searchSites, searchParams, pagesToSearch)
 
@@ -99,11 +99,10 @@ class BLParent():
 				os.deleteFile(xml)
 
 def main():
-	xml = 'master_inspection.xml'
-	bl = BLParent(xml)
+	bl = BLParent()
 	bl.startSubProcesses()
 	bl.createMasterInspectionXML(False)
-	print('Process completed.', xml, 'created.')
+	print('Process completed.')
 	
 
 if __name__ == '__main__':

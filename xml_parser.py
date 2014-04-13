@@ -15,6 +15,9 @@ class XMLParser():
 	def getPagesToSearch(self, confT):
 		return int(confT.find('pages').text)
 
+	def getMIXML(self, confT):
+		return confT.find('mixml').text
+
 	def getFKeys(self, tree):
 		li = []
 		for k in tree.findall('word'):
