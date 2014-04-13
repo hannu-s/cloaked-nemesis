@@ -42,3 +42,17 @@ class XMLParser():
 		for s in tree.findall('site'):
 			li.append(s.text)
 		return li
+
+	def getInspectionData(self, tree):
+		link = []
+		score = []
+		url = []
+		fil= []
+
+		for data in tree.findall('finding'):
+			link.append(data.find('link').text)
+			score.append(data.find('score').text)
+			url.append(data.find('url').text)
+			fil.append(data.find('file').text)
+
+		return link, score, url, fil

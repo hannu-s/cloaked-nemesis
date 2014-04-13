@@ -7,6 +7,7 @@ from connector import ConnectionManager
 from configure import Configure
 from sites import Sites
 from list_tool import ListTool
+from os_tool import OSTool
 
 class BLParent():
 	"""docstring for BLParent"""
@@ -52,8 +53,6 @@ class BLParent():
 
 		self.__sites.setParams(goodSites, badSites)
 
-		print(self.__associations.keywordsList)
-
 	def startSubProcesses(self):
 		CM = ConnectionManager()
 		lt = ListTool()
@@ -68,11 +67,23 @@ class BLParent():
 		self.resultList = CM.getResults()
 		print(self.resultList)		
 
+	def createMasterInspectionXML(self):
+		xReader = XMLReader()
+		xParser = XMLParser()
+
+		#get child xmls
+
+		miTree = xReader.getTree('results/master_inspection.xml')
+		miLink, miScore, miUrl, miFile = xParser.getInspectionData(miTree)
+
+		print(miLink, miScore)
 
 
 def main():
 	bl = BLParent()
 	bl.startSubProcesses()
+
+	bl.createMasterInspectionXML()
 	
 	'''
 	xReader = XMLReader()
