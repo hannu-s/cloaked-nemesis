@@ -52,6 +52,8 @@ class BLParent():
 
 		self.__sites.setParams(goodSites, badSites)
 
+		print(self.__associations.keywordsList)
+
 	def startSubProcesses(self):
 		CM = ConnectionManager()
 		lt = ListTool()
@@ -67,10 +69,11 @@ class BLParent():
 		print(self.resultList)		
 
 
+
 def main():
 	bl = BLParent()
 	bl.startSubProcesses()
-
+	
 	'''
 	xReader = XMLReader()
 	confTree = xReader.getTree('xml/conf.xml')

@@ -19,6 +19,21 @@ class ListTool():
 			toList.append(i)
 		return toList
 
+	def addOnlyUniqueFrom2DList(self, fromList, toList, index):
+		if toList == None or toList == []:
+			toList = []
+			return self.appendListToList(fromList,toList)
+		for i in fromList:
+			if not self.in2DList(toList, index, i[index]):
+				toList.append(i)
+		return toList
+
+	def in2DList(self, li, index, val):
+		for i in li:
+			if i[index] == val:
+				return True
+		return False
+
 	def getNonUniques(self, list1, list2):
 		if list2 == None or list2 == []:
 			return None
@@ -39,4 +54,21 @@ class ListTool():
 	def validateList(self, val):
 		if val == None:
 			val = []
-		return val		
+		return val	
+
+	def getIndexByWord(self, li, word):
+		for index, obj in enumerate(li):
+			if obj.word == word:
+				return index
+		return -1
+
+	def pop(self, li, index):
+		if index < 0 or index >= len(li):
+			return
+		li.pop(index)
+
+	def popByWord(self, li, word):
+		index = self.getIndexByWord(li, word)
+		if index == -1:
+			return
+		li.pop(index)	

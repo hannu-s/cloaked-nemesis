@@ -1,6 +1,7 @@
 <keys>
 	<keywords>
 		<word occured="1">a</word>
+		<word occured="1">abcd</word>
 	</keywords>
 	<avoids>
 		<word occured="1">b</word>
