@@ -2,7 +2,7 @@ from inspection import Inspection
 from xml_rw import XMLReader
 from xml_parser import XMLParser
 
-class Inspector(object):
+class Inspector():
 	"""docstring for Inspector"""
 
 	def getInspections(self, xmls):

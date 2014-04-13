@@ -1,4 +1,5 @@
 import os, sys
+import subprocess
 
 class OSTool():
 	"""docstring for OSTool"""
@@ -38,3 +39,16 @@ class OSTool():
 		except Exception as e:
 			print(e)
 		
+	def startProgram(self, program, param = None):
+		if param == None:
+			subprocess.Popen([program], stdin=None, stdout=None, stderr=None)
+		else:
+			subprocess.Popen([program, param], stdin=None, stdout=None, stderr=None)
+
+	def callProgram(self, program, param = None):
+		if param == None:
+			subprocess.call([program])
+		else:
+			subprocess.call([program, param])
+
+
