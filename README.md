@@ -99,7 +99,7 @@ Currently expects to find server in localhost:8000/tracker/.
 - Server waits for Updater to finish
 - Triggers page refresh with new master_inspection.xml
 
-###Updater
+###Updater  (todo)
 
 1. Starts with id and user vote of the master_inspector node as its parameters.
 2. Loads master_inspector.xml
@@ -107,11 +107,6 @@ Currently expects to find server in localhost:8000/tracker/.
   * Calls DB_Updater with id, vote parameters
 5. removes node from master_inspector xml
 6. Notifies that task is finished
-
-###Inspector  (todo)
-
-Independet class. Presents master_inspector.xml in http server. Start browser and directs it to server address. User gets to vote for useful/useless or dismiss the site. 
-Every vote calls for Updater class with initial values: link, vote. Afterwards calls Sorter to resort the file and updates the server.
 
 ###Main_Updater  (todo)
 
