@@ -110,8 +110,7 @@ def main():
 	bl = BLParent()
 	bl.startSubProcesses()
 	bl.createMasterInspectionXML(False)
-	print('Process completed.')
-	bl.startServerProg()
+	#bl.startServerProg()
 	
 
 if __name__ == '__main__':
