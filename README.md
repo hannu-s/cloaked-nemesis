@@ -91,7 +91,13 @@ Structure & Process
 
 ###Server & Index.html  (80% done)
 
-Currently server uses apache2. Index.html uses javascript to load master_insptector.xml. UI uses ajax to send user inputs to PHP server. Server validates inputs and afterwards shell executes Updater with userinput as its parameter.
+Currently expects to find server in localhost:8000/tracker/. 
+
+- Index.html uses javascript to load master_insptector.xml.
+- -UI uses ajax to send user inputs to PHP server. 
+- Server validates inputs and afterwards shell executes Updater with userinput as its parameter.
+- Server waits for Updater to finish
+- Triggers page refresh with new master_inspection.xml
 
 ###Updater
 
