@@ -17,7 +17,7 @@ var xmlDoc;
 var findings;
 var data = new Array();
 function main () {
-	xmlDoc = loadXMLDoc('results/master_inspection.xml');
+	xmlDoc = loadXMLDoc('./results/master_inspection.xml');
 	findings = xmlDoc.getElementsByTagName("finding");
 	addToData();
 	addToPage();

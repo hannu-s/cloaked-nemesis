@@ -11,7 +11,6 @@ from os_tool import OSTool
 from inspection import Inspection
 from sorter import Sorter
 from inspector import Inspector
-from webserver import Server
 
 
 class BLParent():
@@ -102,9 +101,7 @@ class BLParent():
 
 	def startServerProg(self):
 		os = OSTool()
-		os.startProgram('google-chrome', 'localhost:8000')
-		s = Server()
-		s.serveForever()
+		os.startProgram('google-chrome', 'localhost:80/tracker/')
 
 def main():
 	bl = BLParent()

@@ -1,8 +1,11 @@
 import http.server
 import socketserver
 
+
 class Server():
+
 	def serveForever(self):
+
 		PORT = 8000
 
 		Handler = http.server.SimpleHTTPRequestHandler
