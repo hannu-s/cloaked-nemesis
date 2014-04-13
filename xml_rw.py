@@ -21,8 +21,9 @@ class XMLReader():
 class XMLWriter():
 	def writeMIXML(self, dataList, filePath):
 		root = ET.Element("findings")
-		for data in dataList:
+		for ind, data in enumerate(dataList):
 			ele = ET.SubElement(root, "finding")
+			ele.set('id', str(ind))
 
 			field1 = ET.SubElement(ele, "link")
 			field1.text = data.link
