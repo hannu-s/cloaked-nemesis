@@ -26,6 +26,14 @@ class MainUpdater():
 		
 	def storeWords(self):
 		wl = WordList()
+
+		usf = 0
+		usl = 0
+		if self.vote == "up":
+			usf = 1
+		else:
+			usl = 1
+
 		for ind, obj in enumerate(self.XMLInspections):
 			if obj.ID != self.voteId:
 				continue
@@ -36,7 +44,7 @@ class MainUpdater():
 				exit()
 			pl.read()
 
-			patt = "^[a-zA-Z0-9_-,.]*$"
+			patt = "^[a-zA-Z0-9]*$"
 			pl.linkWords = self.removeListElesNotPatterned(patt, pl.linkWords)
 			pl.titleWords = self.removeListElesNotPatterned(patt, pl.titleWords)
 			pl.headerWords = self.removeListElesNotPatterned(patt, pl.headerWords)
@@ -44,15 +52,15 @@ class MainUpdater():
 			pl.normalWords = self.removeListElesNotPatterned(patt, pl.normalWords)
 
 			for word in pl.linkWords:
-				wl.append(word)
+				wl.append(word, usf, usl)
 			for word in pl.titleWords:
-				wl.append(word)
+				wl.append(word, usf, usl)
 			for word in pl.headerWords:
-				wl.append(word)
+				wl.append(word, usf, usl)
 			for word in pl.specialWords:
-				wl.append(word)
+				wl.append(word, usf, usl)
 			for word in pl.normalWords:
-				wl.append(word)
+				wl.append(word, usf, usl)
 
 		#get general from xml
 		#get words from xml
@@ -62,8 +70,8 @@ class MainUpdater():
 	def removeListElesNotPatterned(self, patt, li, maxLen = 255):
 		indList = []
 		for i in range(len(li)):
-				if re.match(patt, li[i]) == None or len[i] > maxLen:
-					indList.append(i)
+			if re.match(patt, li[i]) == None or len(li[i]) > maxLen:
+				indList.append(i)
 		for i in reversed(range(len(indList))):
 			li.pop(indList[i])
 		return li
