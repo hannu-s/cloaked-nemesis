@@ -89,43 +89,47 @@ Structure & Process
   - 3rd row page headers
   - 4th row stylized texts
   - 5th row rest
-4. Calculate Link score system
-5. Pipes Link URLS to parent (unnecessary?)
-6. If certain URL are already reported by different child, parent tells to remove it 
-  - Removes also data file corresponding the removed link / url 
-7. Stores findings in XML
-8. Notify parent for findings ready for inspection
+4. Pipes Link URLS to parent
+5. If certain URL are already reported by different child, parent tells to remove it 
+  - Removes also data file corresponding the removed link / url
+6. Calls PageToXML class
+7. Notify parent for findings ready for inspection
 
 ###Server & Index.html  (99% - Only polish remains)
 
-Currently expects to find server in localhost:8000/tracker/. 
+Currently expects to find server in localhost:80/tracker/. 
 
 - Index.html uses javascript to load master_insptector.xml.
   * UI uses ajax to send user inputs to PHP server. 
-1. Server validates inputs and afterwards shell executes Updater with userinput as its parameter.
+1. Server validates inputs and afterwards executes Updater with userinput as its parameter.
 2. Server waits for Updater to finish
 3. Triggers page refresh with new master_inspection.xml
 
 ###Updater  (99% - main_updater interface needed)
 
 1. Starts with id and user vote of the master_inspector node as its parameters.
-2. Loads master_inspector.xml
-3. If voted useful or useless
+2. If voted useful or useless
   * Calls Main_Updater with id, vote parameters
-5. Removes node from master_inspector xml
-6. Notifies that task is finished
+3. Loads master_inspector.xml
+4. Removes node from master_inspector xml
+5. Notifies that task is finished
 
 ###Main_Updater  (todo)
 
-1. Class starts with Link and useful/useless vote
-2. Load page data corresponding the link
-3. Regex page datas words
+1. Class starts with id and useful/useless vote
+2. Load page data corresponding the id
+3. Regex validation for page datas words
 4. Store words and usefulness from link, title, headers, (stylized text?) in to db
 5. Recalculate 'keywords' and 'avoids'
 6. Update 'good sites' and 'useless sites'
-7. Recalculate all scores from existing page data files
-8. Order recalculated data with descending score
-9. Recreate master_inspector.data
+7. Call XMLCreator for master_inspection.xml
+
+###PageToXML (todo)
+
+1. Starts with name of the wanted xml
+2. Calculate all scores from existing page data files
+3. Order calculated data with descending score
+4. Write data to XML
 
 ###Sorter  (todo)
 
