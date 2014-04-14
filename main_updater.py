@@ -72,6 +72,7 @@ class MainUpdater():
 				wl.append(word, usf, usl)
 			for word in pl.normalWords:
 				wl.append(word, usf, usl)
+				
 		xWriter = XMLWriter()
 		xWriter.writeWordXML(wl,wordAvg,avgRatio,self.wordXMLPath)
 

@@ -114,7 +114,7 @@ Currently expects to find server in localhost:80/tracker/.
 4. Removes node from master_inspector xml
 5. Notifies that task is finished
 
-###Main_Updater  (todo)
+###Main_Updater  (4/7 done)
 
 1. Class starts with id and useful/useless vote
 2. Load page data corresponding the id
