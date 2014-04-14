@@ -21,6 +21,9 @@ class WordList():
 			return
 		self.words.append(Word(word, 1, useful, useless))
 
+	def set(self, word, occ, useful, useless):
+		self.words.append(Word(word, occ, useful, useless))
+
 class Word(object):
 	def __init__(self, word, occ, usef, usel):
 		self.word = word

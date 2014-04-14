@@ -4,6 +4,7 @@ from page_loader import PageLoader
 import re
 from word_list import WordList
 from xml_rw import *
+from xml_parser import XMLParser
 
 class MainUpdater():
 	"""docstring for MainUpdater"""
@@ -16,6 +17,7 @@ class MainUpdater():
 		self.vote = vote
 		self.voteId = voteId
 		self.miPath = miPath
+		self.wordXMLPath = "xml/words.xml"
 
 	def loadMasterInspection(self):
 		insp = Inspector()
@@ -26,6 +28,15 @@ class MainUpdater():
 		
 	def storeWords(self):
 		wl = WordList()
+		xReader = XMLReader()
+		xParser = XMLParser()
+		wordAvg = 0
+		avgRatio = 0
+
+		if xReader.checkIfExists('xml/words.xml'):
+			tree = xReader.getTree('xml/words.xml')
+			wordAvg, avgRatio = xParser.getGeneralFromWords(tree)
+			wl = xParser.getWords(tree)
 
 		usf = 0
 		usl = 0
@@ -61,11 +72,8 @@ class MainUpdater():
 				wl.append(word, usf, usl)
 			for word in pl.normalWords:
 				wl.append(word, usf, usl)
-
-		#get general from xml
-		#get words from xml
-		#append to wlist
-		#write xml
+		xWriter = XMLWriter()
+		xWriter.writeWordXML(wl,wordAvg,avgRatio,self.wordXMLPath)
 
 	def removeListElesNotPatterned(self, patt, li, maxLen = 255):
 		indList = []

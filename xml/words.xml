@@ -1,9 +1,1 @@
-<words>
-	<word>
-		<text occured="3" useful="2" useless="1">lol</text>
-	</word>
-	<general>
-		<word_avg>1</word_avg>
-		<avg_ratio>2</avg_ratio>)
-	</general>
-</words>
+<root><words><word occured="1" useful="1" useless="0">herp</word><word occured="1" useful="1" useless="0">derp</word><word occured="1" useful="1" useless="0">i</word><word occured="1" useful="1" useless="0">found</word><word occured="1" useful="1" useless="0">link</word><word occured="1" useful="1" useless="0">on</word><word occured="1" useful="1" useless="0">the</word><word occured="1" useful="1" useless="0">internetz</word><word occured="1" useful="1" useless="0" /><word occured="1" useful="1" useless="0">look</word><word occured="1" useful="1" useless="0">at</word><word occured="1" useful="1" useless="0">all</word><word occured="1" useful="1" useless="0">thease</word><word occured="1" useful="1" useless="0">cat</word><word occured="1" useful="1" useless="0">picturez</word><word occured="1" useful="1" useless="0">derpcat</word><word occured="1" useful="1" useless="0">random</word><word occured="1" useful="1" useless="0">rambling</word></words><general><word_avg>0</word_avg><avg_ratio>0</avg_ratio></general></root>

@@ -1,3 +1,5 @@
+from word_list import WordList
+
 class XMLParser():
 	"""docstring for XMLParser"""
 	def getSearchParams(self, confT):
@@ -76,4 +78,18 @@ class XMLParser():
 
 		return link, score, url, fil, ID
 
+	def getGeneralFromWords(self, tree):
+		wordAvg = int(tree.find('general/word_avg').text)
+		avgRatio = int(tree.find('general/avg_ratio').text)
+		return wordAvg, avgRatio
+
+	def getWords(self, tree):
+		wl = WordList()
+		for data in tree.findall('words/word'):
+			word = data.text
+			occ = int(data.get('occured'))
+			usf = int(data.get('useful'))
+			usl = int(data.get('useless'))
+			wl.set(word,occ,usf,usl)
+		return wl
 

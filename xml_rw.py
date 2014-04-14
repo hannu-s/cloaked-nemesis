@@ -43,14 +43,21 @@ class XMLWriter():
 		tree = ET.ElementTree(root)
 		tree.write(filePath)
 
-	def writeWordXML(self, wl, filePath):
-		root = ET.Element("words")
-		for ind, data in enumerate(wl):
-			ele = ET.SubElement(root, "word")
-
-			field1 = ET.SubElement(ele, "link")
-			field1.text = data.link
-			field1.set()
-
+	def writeWordXML(self, wl, wordAvg, avgRatio, filePath):
+		root = ET.Element("root")
+		ele = ET.SubElement(root, "words")
+		for ind, data in enumerate(wl.words):
+			field = ET.SubElement(ele, "word")
+			field.text = data.word
+			field.set('occured', str(data.occ))
+			field.set('useful', str(data.usef))
+			field.set('useless', str(data.usel))
+		
+		ele = ET.SubElement(root, "general")
+		field1 = ET.SubElement(ele, 'word_avg')
+		field1.text = str(wordAvg)
+		field2 = ET.SubElement(ele, 'avg_ratio')
+		field2.text = str(avgRatio)
+		
 		tree = ET.ElementTree(root)
 		tree.write(filePath)
