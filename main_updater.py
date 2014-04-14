@@ -33,7 +33,7 @@ class MainUpdater():
 				exit()
 			pl.read()
 
-			patt = "^[a-zA-Z0-9]*$"
+			patt = "^[a-zA-Z0-9_-,.]*$"
 			pl.linkWords = self.removeListElesNotPatterned(patt, pl.linkWords)
 			pl.titleWords = self.removeListElesNotPatterned(patt, pl.titleWords)
 			pl.headerWords = self.removeListElesNotPatterned(patt, pl.headerWords)
@@ -42,10 +42,11 @@ class MainUpdater():
 
 			#store words to db
 
-	def removeListElesNotPatterned(self, patt, li):
+
+	def removeListElesNotPatterned(self, patt, li, maxLen = 255):
 		indList = []
 		for i in range(len(li)):
-				if re.match(patt, li[i]) == None:
+				if re.match(patt, li[i]) == None or len[i] > maxLen:
 					indList.append(i)
 		for i in reversed(range(len(indList))):
 			li.pop(indList[i])
