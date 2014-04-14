@@ -143,17 +143,6 @@ Ideas For Future Development
 - Search parameters create sha-0 hash, which is then used to seperate different search term results.
   - allows long search terms saved as easily as short ones
 
-MYSQL - DB
-----------
-
-+ Words 
-  - occurance 
-  - times_useful 
-  - times_useless
-+ General
-  - word_average
-  - average_ratio
-
 XML
 ---
 
@@ -167,3 +156,10 @@ XML
 * good sites	
 * useless sites
 * findings
+* Words 
+  - occurance 
+  - times_useful 
+  - times_useless
+* General
+  - word_average
+  - average_ratio
