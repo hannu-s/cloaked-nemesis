@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 from inspection import Inspection
+from word_list import WordList
 
 class XMLReader():
 	"""docstring for XMLReader"""
@@ -38,6 +39,18 @@ class XMLWriter():
 
 			field4 = ET.SubElement(ele, "file")
 			field4.text = data.fil
+
+		tree = ET.ElementTree(root)
+		tree.write(filePath)
+
+	def writeWordXML(self, wl, filePath):
+		root = ET.Element("words")
+		for ind, data in enumerate(wl):
+			ele = ET.SubElement(root, "word")
+
+			field1 = ET.SubElement(ele, "link")
+			field1.text = data.link
+			field1.set()
 
 		tree = ET.ElementTree(root)
 		tree.write(filePath)

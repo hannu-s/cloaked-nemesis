@@ -119,7 +119,7 @@ Currently expects to find server in localhost:80/tracker/.
 1. Class starts with id and useful/useless vote
 2. Load page data corresponding the id
 3. Regex validation for page datas words
-4. Store words and usefulness from link, title, headers, (stylized text?) in to db
+4. Store words and usefulness from link, title, headers, (stylized text?) in to xml
 5. Recalculate 'keywords' and 'avoids'
 6. Update 'good sites' and 'useless sites'
 7. Call PageToXML for master_inspection.xml

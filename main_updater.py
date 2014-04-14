@@ -2,6 +2,8 @@ from inspection import Inspection
 from inspector import Inspector
 from page_loader import PageLoader
 import re
+from word_list import WordList
+from xml_rw import *
 
 class MainUpdater():
 	"""docstring for MainUpdater"""
@@ -23,6 +25,7 @@ class MainUpdater():
 			exit()
 		
 	def storeWords(self):
+		wl = WordList()
 		for ind, obj in enumerate(self.XMLInspections):
 			if obj.ID != self.voteId:
 				continue
@@ -40,8 +43,21 @@ class MainUpdater():
 			pl.specialWords = self.removeListElesNotPatterned(patt, pl.specialWords)
 			pl.normalWords = self.removeListElesNotPatterned(patt, pl.normalWords)
 
-			#store words to db
+			for word in pl.linkWords:
+				wl.append(word)
+			for word in pl.titleWords:
+				wl.append(word)
+			for word in pl.headerWords:
+				wl.append(word)
+			for word in pl.specialWords:
+				wl.append(word)
+			for word in pl.normalWords:
+				wl.append(word)
 
+		#get general from xml
+		#get words from xml
+		#append to wlist
+		#write xml
 
 	def removeListElesNotPatterned(self, patt, li, maxLen = 255):
 		indList = []
