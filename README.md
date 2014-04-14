@@ -90,7 +90,7 @@ Structure & Process
   - 4th row stylized texts
   - 5th row rest
 4. Calculate Link score system
-5. Pipes Link URLS to parent
+5. Pipes Link URLS to parent (unnecessary?)
 6. If certain URL are already reported by different child, parent tells to remove it 
   - Removes also data file corresponding the removed link / url 
 7. Stores findings in XML

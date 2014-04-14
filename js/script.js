@@ -67,7 +67,6 @@ function addToPage() {
 		qbtnDown.appendTo(qDiv);
 		qbtnDis.appendTo(qDiv);
 
-		console.log(qDiv)
 		qDiv.appendTo(qmainDiv);
 
 	};
