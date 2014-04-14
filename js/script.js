@@ -123,6 +123,7 @@ function ajax (id, vote) {
 	    	$('#main').empty();
 	    },
 	    success: function(data) {
+	        alert(data)
 	        main();
 	    },
 	    error: function(data){
