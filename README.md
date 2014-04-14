@@ -94,17 +94,17 @@ Structure & Process
 Currently expects to find server in localhost:8000/tracker/. 
 
 - Index.html uses javascript to load master_insptector.xml.
-- -UI uses ajax to send user inputs to PHP server. 
-- Server validates inputs and afterwards shell executes Updater with userinput as its parameter.
-- Server waits for Updater to finish
-- Triggers page refresh with new master_inspection.xml
+  * UI uses ajax to send user inputs to PHP server. 
+1. Server validates inputs and afterwards shell executes Updater with userinput as its parameter.
+2. Server waits for Updater to finish
+3. Triggers page refresh with new master_inspection.xml
 
 ###Updater  (todo)
 
 1. Starts with id and user vote of the master_inspector node as its parameters.
 2. Loads master_inspector.xml
 3. If voted useful or useless
-  * Calls DB_Updater with id, vote parameters
+  * Calls Main_Updater with id, vote parameters
 5. removes node from master_inspector xml
 6. Notifies that task is finished
 

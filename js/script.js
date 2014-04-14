@@ -119,8 +119,11 @@ function ajax (id, vote) {
 	    url: "server.php",
 	    data: {id: id, vote: vote},
 	    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+	    beforeSend: function() {
+	    	$('#main').empty();
+	    },
 	    success: function(data) {
-	        alert(data);
+	        main();
 	    },
 	    error: function(data){
 	        alert('Error');
