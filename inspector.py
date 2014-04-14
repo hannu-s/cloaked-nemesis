@@ -18,3 +18,16 @@ class Inspector():
 			for i in range(len(link)):
 				XMLInspections.append( Inspection(link[i], score[i], url[i], fil[i]) )
 		return XMLInspections
+
+	def getInspectionsStr(self, xml):
+		xReader = XMLReader()
+		xParser = XMLParser()
+		tree = xReader.getTree(xml)
+		XMLInspections = []
+		if tree == None:
+			print(ind, xml, 'Failed to read.')
+			return
+		link, score, url, fil, ID = xParser.getInspectionDataWithId(tree)
+		for i in range(len(link)):
+			XMLInspections.append( Inspection(link[i], score[i], url[i], fil[i], ID[i]) )
+		return XMLInspections

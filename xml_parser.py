@@ -59,3 +59,21 @@ class XMLParser():
 			fil.append(data.find('file').text)
 
 		return link, score, url, fil
+
+	def getInspectionDataWithId(self, tree):
+		link = []
+		url = []
+		score = []
+		fil = []
+		ID = []
+
+		for data in tree.findall('finding'):
+			link.append(data.find('link').text)
+			score.append(data.find('score').text)
+			url.append(data.find('url').text)
+			fil.append(data.find('file').text)
+			ID.append(data.get('id'))
+
+		return link, score, url, fil, ID
+
+

@@ -106,7 +106,7 @@ Currently expects to find server in localhost:8000/tracker/.
 2. Server waits for Updater to finish
 3. Triggers page refresh with new master_inspection.xml
 
-###Updater  (todo)
+###Updater  (99% - main_updater interface needed)
 
 1. Starts with id and user vote of the master_inspector node as its parameters.
 2. Loads master_inspector.xml
