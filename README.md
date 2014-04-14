@@ -132,6 +132,13 @@ Currently expects to find server in localhost:8000/tracker/.
 Class starts with list of links and scores. Sorts them in descending order. Returns sorted list
 Also capable to store sorted xml.
 
+
+Ideas For Future Development
+----------------------------
+
+- Search parameters create sha-0 hash, which is then used to seperate different search term results.
+  - allows long search terms saved as easily as short ones
+
 MYSQL - DB
 ----------
 
