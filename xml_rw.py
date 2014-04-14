@@ -3,7 +3,7 @@ from inspection import Inspection
 
 class XMLReader():
 	"""docstring for XMLReader"""
-	def __checkIfExists(self, fp):
+	def checkIfExists(self, fp):
 		try:
 			f = open(fp, "r")
 			f.close()
@@ -13,7 +13,7 @@ class XMLReader():
 		return True
 
 	def getTree(self, filePath):
-		if not self.__checkIfExists(filePath):
+		if not self.checkIfExists(filePath):
 			return None
 		return ET.parse(filePath)
 		
@@ -22,6 +22,8 @@ class XMLWriter():
 	def writeMIXML(self, dataList, filePath):
 		root = ET.Element("findings")
 		for ind, data in enumerate(dataList):
+			if data.ID != None:
+				ind = data.ID
 			ele = ET.SubElement(root, "finding")
 			ele.set('id', str(ind))
 

@@ -3,14 +3,17 @@ from xml_rw import XMLReader, XMLWriter
 from xml_parser import XMLParser
 from inspection import Inspection
 from inspector import Inspector
+from main_updater import MainUpdater
 
-class Updater(object):
+class Updater():
 	vote = None
 	voteId = None
 	masterInspectionPath = None
 	XMLInspections = []
 
-	def __init__(self, vote, voteId):
+	def __init__(self, vote, voteId, skip = False):
+		if skip:
+			return
 		self.vote = vote
 		self.voteId = voteId
 
@@ -31,8 +34,9 @@ class Updater(object):
 
 	def voteHandling(self):
 		if (self.vote != "dis"):
-			#start master_updater
-			pass
+			m = MainUpdater(self.vote, self.voteId, self.masterInspectionPath)
+			m.loadMasterInspection()
+			m.storeWords()
 		
 	def removeIdElementFromMasterInspection(self):
 		for ind, obj in enumerate(self.XMLInspections):
@@ -48,10 +52,10 @@ class Updater(object):
 
 def main(v,i):
 	up = Updater(v,i)
-	up.loadMasterInspection()
 	up.voteHandling()
+	up.loadMasterInspection()
 	up.removeIdElementFromMasterInspection()
-	up.writeNewMasterInspectionXML()
+	#up.writeNewMasterInspectionXML()
 	print('Done')
 
 if __name__ == '__main__':
