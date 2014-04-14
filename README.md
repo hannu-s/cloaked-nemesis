@@ -122,11 +122,11 @@ Currently expects to find server in localhost:80/tracker/.
 4. Store words and usefulness from link, title, headers, (stylized text?) in to db
 5. Recalculate 'keywords' and 'avoids'
 6. Update 'good sites' and 'useless sites'
-7. Call XMLCreator for master_inspection.xml
+7. Call PageToXML for master_inspection.xml
 
 ###PageToXML (todo)
 
-1. Starts with name of the wanted xml
+1. Starts with name of the wanted xml and a list containing inspection elements
 2. Calculate all scores from existing page data files
 3. Order calculated data with descending score
 4. Write data to XML
