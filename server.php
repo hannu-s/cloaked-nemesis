@@ -8,7 +8,6 @@ if (preg_match($idMatch, $id) && ($vote == "up" || $vote == "down" || $vote == "
 	$output = array();
 	$command = "python3 updater.py " . $id . " " . $vote;
 	exec($command, $output);
-
 	echo ($output[0]);
 } else {
 	echo ("Regex error.");

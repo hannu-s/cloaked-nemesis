@@ -82,6 +82,13 @@ Structure & Process
 1. Search subreddit
 2. Inspect set amount newest links, skip visited
 3. Store link and relevant page data as a file
+  - Data is stored in pages directory
+  - Words seperated by whitespace " " 
+  - 1st row reddit link
+  - 2nd row page title
+  - 3rd row page headers
+  - 4th row stylized texts
+  - 5th row rest
 4. Calculate Link score system
 5. Pipes Link URLS to parent
 6. If certain URL are already reported by different child, parent tells to remove it 
@@ -89,7 +96,7 @@ Structure & Process
 7. Stores findings in XML
 8. Notify parent for findings ready for inspection
 
-###Server & Index.html  (80% done)
+###Server & Index.html  (99% - Only polish remains)
 
 Currently expects to find server in localhost:8000/tracker/. 
 
@@ -105,14 +112,14 @@ Currently expects to find server in localhost:8000/tracker/.
 2. Loads master_inspector.xml
 3. If voted useful or useless
   * Calls Main_Updater with id, vote parameters
-5. removes node from master_inspector xml
+5. Removes node from master_inspector xml
 6. Notifies that task is finished
 
 ###Main_Updater  (todo)
 
 1. Class starts with Link and useful/useless vote
 2. Load page data corresponding the link
-3. Validate page datas words
+3. Regex page datas words
 4. Store words and usefulness from link, title, headers, (stylized text?) in to db
 5. Recalculate 'keywords' and 'avoids'
 6. Update 'good sites' and 'useless sites'
