@@ -193,7 +193,7 @@ Variables link, score, url, fil, ID
 Inspector
 ---------
 - getInspections(xmls)  return list of Inspection elements in xml list
-- getInspectionsStr(xml)  returns single Inspection element
+- getInspectionsStr(xml)  returns elements from single xml
 
 ListTool
 --------
