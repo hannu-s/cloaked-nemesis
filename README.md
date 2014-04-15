@@ -62,7 +62,7 @@ Each 'avoids' substract link specific score for
 Structure & Process
 -------------------
 
-###Parent (amount: 1) (95% done)
+###Parent (amount: 1) (99%)
 
 1. XML Query for 'keywords', 'avoids', 'urls', linksToSearch
 2. Starts child processes each child searches different subreddit. 
@@ -95,7 +95,7 @@ Structure & Process
 6. Calls PageToXML class
 7. Notify parent for findings ready for inspection
 
-###Server & Index.html  (99% - Only polish remains)
+###Server & Index.html  (100% - Only polish remains)
 
 Currently expects to find server in localhost:80/tracker/. 
 
@@ -105,16 +105,17 @@ Currently expects to find server in localhost:80/tracker/.
 2. Server waits for Updater to finish
 3. Triggers page refresh with new master_inspection.xml
 
-###Updater  (99% - main_updater interface needed)
+###Updater  (100%)
 
 1. Starts with id and user vote of the master_inspector node as its parameters.
 2. If voted useful or useless
   * Calls Main_Updater with id, vote parameters
-3. Loads master_inspector.xml
+3. Gets main_inspection.xml content from xmlInspections
 4. Removes node from master_inspector xml
-5. Notifies that task is finished
+5. Writes master_inspection.xml
+6. Notifies that task is finished
 
-###Main_Updater  (7/8 done)
+###Main_Updater  (100%)
 
 1. Class starts with id and useful/useless vote
 2. Load page data corresponding the id
@@ -123,16 +124,17 @@ Currently expects to find server in localhost:80/tracker/.
 5. Remove read page file
 6. Recalculate 'keywords' and 'avoids'
 7. Update 'good sites' and 'useless sites'
-8. Call PageToXML for master_inspection.xml
+8. Calculate all scores from existing page data files
+9. Return xmlInspections list to Updater
 
-###PageToXML (todo)
+###PageToXML (100%?) (drop?)
 
 1. Starts with name of the wanted xml and a list containing inspection elements
 2. Calculate all scores from existing page data files
 3. Order calculated data with descending score
 4. Write data to XML
 
-###Sorter  (done)
+###Sorter  (100%)
 
 Class starts with list of links and scores. Sorts them in descending order. Returns sorted list.
 
