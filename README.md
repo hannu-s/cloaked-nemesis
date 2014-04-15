@@ -114,7 +114,7 @@ Currently expects to find server in localhost:80/tracker/.
 4. Removes node from master_inspector xml
 5. Notifies that task is finished
 
-###Main_Updater  (4/7 done)
+###Main_Updater  (7/8 done)
 
 1. Class starts with id and useful/useless vote
 2. Load page data corresponding the id
@@ -164,3 +164,90 @@ XML
 * General
   - word_average
   - average_ratio
+
+Classes
+=======
+
+Associations
+------------
+Contains Keywords class elements in list
+- setParam(keywords, avoids, forcedKeywords, forcedAvoids)
+Child
+-----
+reddit links and pages to xml
+
+Configure
+---------
+Conf.xml
+- setParam(sites, params, pagesToSearch)
+Connector
+---------
+Parent to child. ConnectorManager class for connections
+
+Inspection
+----------
+Class for master_inspection.xml & ch_inspection.xml's.
+Variables link, score, url, fil, ID
+
+Inspector
+---------
+- getInspections(xmls)  return list of Inspection elements in xml list
+- getInspectionsStr(xml)  returns single Inspection element
+
+ListTool
+--------
+Several list modification tools
+
+MainUpdater
+-----------
+Called from Updater class. Used to handle voting changes such as keywords and words list
+
+OSTool
+------
+Several os library tools
+
+PageLoader
+----------
+Reads page.txt file created from child class.
+- init(path)
+- isReadable()    return boolean
+- read()          fills variables
+
+Parent
+------
+Main business logic. Handles all the processes, afterwards directs browser to server.
+
+Server.php
+----------
+Handles post id and vote, validates inputs and starts updater class.
+
+Sites
+-----
+Contains good_sites and bad_sites lists
+- setParam(gdSites, bdSites)
+
+Sorter
+------
+- sortInspectionList(li)    return inspection list sorted by score, in descending order
+
+Updater
+-------
+Started by server, starts MainUpdater. Removes voted element from master_inspection.xml
+
+WordList
+--------
+Class containing list of Word classes. Word class has word, occ, usef, usel variables.
+- append(word, usef, usel)      Word occ is increased by 1, if does not exists, creates new
+- set(word, occ, usef, usel)    Word occ is manually set. If does not exiests, creates new
+
+XMLParser
+---------
+Reads tree elemets and returns readable values
+
+XMLReader
+---------
+Reads xml, returns tree
+
+XMLWriter
+---------
+Writes xml
