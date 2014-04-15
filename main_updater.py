@@ -6,6 +6,7 @@ from word_list import WordList
 from xml_rw import *
 from xml_parser import XMLParser
 from os_tool import OSTool
+from page_to_xml import PageToXML
 
 class MainUpdater():
 	"""docstring for MainUpdater"""
@@ -150,3 +151,8 @@ class MainUpdater():
 		else:
 			bdSites.append(obj.url)
 		xWriter.writeSitesXML(gdSites,bdSites,'xml/sites.xml')
+
+	def getXMLInspScored():
+		p = PageToXML(self.XMLInspections, self.keywords, self.avoids)
+		self.XMLInspections = p.getScore()
+

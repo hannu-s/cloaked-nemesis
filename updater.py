@@ -4,6 +4,7 @@ from xml_parser import XMLParser
 from inspection import Inspection
 from inspector import Inspector
 from main_updater import MainUpdater
+from sorter import Sorter
 
 class Updater():
 	vote = None
@@ -42,6 +43,7 @@ class Updater():
 			m.updateKeywordsXML()
 			m.writeWordsXML()
 			m.updateSitesXMl()
+			self.XMLInspections = m.getXMLInspScored()
 
 		
 	def removeIdElementFromMasterInspection(self):
@@ -53,13 +55,15 @@ class Updater():
 		exit()
 
 	def writeNewMasterInspectionXML(self):
+		sort = Sorter()
+		self.XMLInspections = sort.sortInspectionList(self.XMLInspections)
 		xWriter = XMLWriter()
 		xWriter.writeMIXML(self.XMLInspections, self.masterInspectionPath)
 
 def main(v,i):
 	up = Updater(v,i)
 	up.voteHandling()
-	up.loadMasterInspection()
+	#up.loadMasterInspection()
 	up.removeIdElementFromMasterInspection()
 	up.writeNewMasterInspectionXML()
 
