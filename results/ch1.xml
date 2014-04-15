@@ -5,4 +5,10 @@
 		<url>Paskaa.Herra.Persenaama</url>
 		<file>pages/ch1.txt</file>
 	</finding>
+	<finding>
+		<link>lololol</link>
+		<score>2</score>
+		<url>http://google.fi</url>
+		<file>pages/ch2.txt</file>
+	</finding>
 </findings>

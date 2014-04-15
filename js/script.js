@@ -122,7 +122,7 @@ function ajax (id, vote) {
 	    	$('#main').empty();
 	    },
 	    success: function(data) {
-	        location.reload(forceGet)
+	        location.reload(true)
 	    },
 	    error: function(data){
 	        alert('Error');
