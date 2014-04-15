@@ -132,7 +132,7 @@ Currently expects to find server in localhost:80/tracker/.
 3. Order calculated data with descending score
 4. Write data to XML
 
-###Sorter  (todo)
+###Sorter  (done)
 
 Class starts with list of links and scores. Sorts them in descending order. Returns sorted list
 Also capable to store sorted xml.
