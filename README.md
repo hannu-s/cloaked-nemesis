@@ -171,6 +171,7 @@ Associations
 ------------
 Contains Keywords class elements in list
 - setParam(keywords, avoids, forcedKeywords, forcedAvoids)
+
 Child
 -----
 reddit links and pages to xml
@@ -179,6 +180,7 @@ Configure
 ---------
 Conf.xml
 - setParam(sites, params, pagesToSearch)
+
 Connector
 ---------
 Parent to child. ConnectorManager class for connections
