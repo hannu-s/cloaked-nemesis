@@ -21,13 +21,13 @@ class PageToXML():
 			pl = PageLoader(data.fil)
 			if not pl.isReadable():
 				print('Abort. XMLInspections data corrupted. File not readable:', data.fil)
-				return
+				return False
 			pl.read()
-			lWords = lt.addOnlyUniqueFromList(self.keyWords, pl.linkWords)
-			tWords = lt.addOnlyUniqueFromList(self.keyWords, pl.titleWords)
-			hWords = lt.addOnlyUniqueFromList(self.keyWords, pl.headerWords)
-			sWords = lt.addOnlyUniqueFromList(self.keyWords, pl.specialWords)
-			nWords = lt.addOnlyUniqueFromList(self.keyWords, pl.normalWords)
+			lWords = lt.getNonUniques(self.keyWords, pl.linkWords)
+			tWords = lt.getNonUniques(self.keyWords, pl.titleWords)
+			hWords = lt.getNonUniques(self.keyWords, pl.headerWords)
+			sWords = lt.getNonUniques(self.keyWords, pl.specialWords)
+			nWords = lt.getNonUniques(self.keyWords, pl.normalWords)
 			score = len(lWords) * self.lMulti
 			score += len(tWords) * self.tMulti
 			score += len(hWords) * self.hMulti
