@@ -43,10 +43,13 @@ class XMLParser():
 		return li	
 
 	def getSites(self, tree):
-		li = []
-		for s in tree.findall('site'):
-			li.append(s.text)
-		return li
+		gd = []
+		bd = []
+		for s in tree.findall('good_sites/site'):
+			gd.append(s.text)
+		for s in tree.findall('bad_sites/site'):
+			bd.append(s.text)
+		return gd,bd
 
 	def getInspectionData(self, tree):
 		link = []
@@ -79,8 +82,8 @@ class XMLParser():
 		return link, score, url, fil, ID
 
 	def getGeneralFromWords(self, tree):
-		wordAvg = int(tree.find('general/word_avg').text)
-		avgRatio = int(tree.find('general/avg_ratio').text)
+		wordAvg = float(tree.find('general/word_avg').text)
+		avgRatio = float(tree.find('general/avg_ratio').text)
 		return wordAvg, avgRatio
 
 	def getWords(self, tree):

@@ -51,12 +51,10 @@ class BLParent():
 
 		self.__associations.setParams(keywords, avoids, fKeywords, fAvoids)
 
-		goodSitesTree = xReader.getTree('xml/good_sites.xml')
-		badSitesTree = xReader.getTree('xml/bad_sites.xml')
-		if goodSitesTree == None or badSitesTree == None:
+		sitesTree = xReader.getTree('xml/sites.xml')
+		if sitesTree == None:
 			exit()
-		goodSites = xParser.getSites(goodSitesTree)
-		badSites = xParser.getSites(badSitesTree)
+		goodSites, badSites = xParser.getSites(sitesTree)
 
 		self.__sites.setParams(goodSites, badSites)
 

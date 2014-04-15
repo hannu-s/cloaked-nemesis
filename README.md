@@ -120,9 +120,10 @@ Currently expects to find server in localhost:80/tracker/.
 2. Load page data corresponding the id
 3. Regex validation for page datas words
 4. Store words and usefulness from link, title, headers, (stylized text?) in to xml
-5. Recalculate 'keywords' and 'avoids'
-6. Update 'good sites' and 'useless sites'
-7. Call PageToXML for master_inspection.xml
+5. Remove read page file
+6. Recalculate 'keywords' and 'avoids'
+7. Update 'good sites' and 'useless sites'
+8. Call PageToXML for master_inspection.xml
 
 ###PageToXML (todo)
 

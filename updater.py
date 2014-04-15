@@ -37,6 +37,10 @@ class Updater():
 			m = MainUpdater(self.vote, self.voteId, self.masterInspectionPath)
 			m.loadMasterInspection()
 			m.storeWords()
+			#m.deleteFile()
+			m.calculateKeywords()
+			m.writeWordsXML()
+
 		
 	def removeIdElementFromMasterInspection(self):
 		for ind, obj in enumerate(self.XMLInspections):
