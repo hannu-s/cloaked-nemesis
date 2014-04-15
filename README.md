@@ -134,8 +134,7 @@ Currently expects to find server in localhost:80/tracker/.
 
 ###Sorter  (done)
 
-Class starts with list of links and scores. Sorts them in descending order. Returns sorted list
-Also capable to store sorted xml.
+Class starts with list of links and scores. Sorts them in descending order. Returns sorted list.
 
 
 Ideas For Future Development
