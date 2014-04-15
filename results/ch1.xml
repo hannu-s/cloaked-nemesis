@@ -1,8 +1,8 @@
 <findings>
 	<finding>
 		<link>Paskaa joukkue!</link>
-		<score>0</score>
+		<score>30</score>
 		<url>Paskaa.Herra.Persenaama</url>
-		<file>ch1_paskaajoukkue.bin</file>
+		<file>pages/ch1.txt</file>
 	</finding>
 </findings>

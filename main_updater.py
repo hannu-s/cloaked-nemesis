@@ -38,7 +38,7 @@ class MainUpdater():
 		xReader = XMLReader()
 		xParser = XMLParser()
 
-		if xReader.checkIfExists('xml/words.xml'):
+		if xReader.checkIfExistsQuiet('xml/words.xml'):
 			tree = xReader.getTree('xml/words.xml')
 			wordAvg, avgRatio = xParser.getGeneralFromWords(tree)
 			self.wl = xParser.getWords(tree)
@@ -112,7 +112,10 @@ class MainUpdater():
 			usef += data.usef
 			usel += data.usel
 
-		self.wordAvg = self.wordAvg / len(self.wl.words)
+		l = len(self.wl.words)
+		if l == 0:
+			l = 1
+		self.wordAvg = self.wordAvg / l
 		if usel == 0:
 			usel = 1
 		self.avgRatio = usef / usel
@@ -121,10 +124,29 @@ class MainUpdater():
 			if data.usel == 0:
 				data.usel = 1
 			ratio = data.usef / data.usel
+
 			if ratio > self.avgRatio * self.ratioDiff:
 				self.keywords.set(data.word, data.occ, data.usef, data.usel)
 			elif ratio < self.avgRatio / self.ratioDiff:
 				self.avoids.set(data.word, data.occ, data.usef, data.usel)
 
+	def updateKeywordsXML(self):
+		xWriter = XMLWriter()
+		xWriter.writeKeywordsXML(self.keywords, self.avoids, 'xml/keywords.xml')
+	
 	def updateSitesXMl(self):
-		pass 
+		xReader = XMLReader()
+		xParser = XMLParser()
+		xWriter = XMLWriter()
+		tree = xReader.getTree('xml/sites.xml')
+		gdSites, bdSites = xParser.getSites(tree)
+		data = None
+		for obj in self.XMLInspections:
+			if obj.ID == self.voteId:
+				data = obj
+				break
+		if self.vote == "up":
+			gdSites.append(obj.url)
+		else:
+			bdSites.append(obj.url)
+		xWriter.writeSitesXML(gdSites,bdSites,'xml/sites.xml')

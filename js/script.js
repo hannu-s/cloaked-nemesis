@@ -122,8 +122,7 @@ function ajax (id, vote) {
 	    	$('#main').empty();
 	    },
 	    success: function(data) {
-	        alert(data)
-	        main();
+	        location.reload(forceGet)
 	    },
 	    error: function(data){
 	        alert('Error');

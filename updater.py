@@ -37,9 +37,11 @@ class Updater():
 			m = MainUpdater(self.vote, self.voteId, self.masterInspectionPath)
 			m.loadMasterInspection()
 			m.storeWords()
-			#m.deleteFile()
+			m.deleteFile()
 			m.calculateKeywords()
+			m.updateKeywordsXML()
 			m.writeWordsXML()
+			m.updateSitesXMl()
 
 		
 	def removeIdElementFromMasterInspection(self):
@@ -59,8 +61,7 @@ def main(v,i):
 	up.voteHandling()
 	up.loadMasterInspection()
 	up.removeIdElementFromMasterInspection()
-	#up.writeNewMasterInspectionXML()
-	print('Done')
+	up.writeNewMasterInspectionXML()
 
 if __name__ == '__main__':
 	main(sys.argv[1], sys.argv[2])

@@ -1,9 +1,1 @@
-<keys>
-	<keywords>
-		<word occured="1">a</word>
-		<word occured="1">abcd</word>
-	</keywords>
-	<avoids>
-		<word occured="1">b</word>
-	</avoids>
-</keys>
+<keys><keywords /><avoids><word occured="1">herp</word><word occured="1">derp</word><word occured="1">i</word><word occured="1">found</word><word occured="1">link</word><word occured="1">on</word><word occured="1">the</word><word occured="1">internetz</word><word occured="1">look</word><word occured="1">at</word><word occured="1">all</word><word occured="1">thease</word><word occured="1">cat</word><word occured="1">picturez</word><word occured="1">derpcat</word><word occured="1">random</word><word occured="1">rambling</word></avoids></keys>

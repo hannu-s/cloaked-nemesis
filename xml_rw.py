@@ -13,6 +13,14 @@ class XMLReader():
 			return False
 		return True
 
+	def checkIfExistsQuiet(self, fp):
+		try:
+			f = open(fp, "r")
+			f.close()
+		except:
+			return False
+		return True
+
 	def getTree(self, filePath):
 		if not self.checkIfExists(filePath):
 			return None
@@ -59,5 +67,35 @@ class XMLWriter():
 		field2 = ET.SubElement(ele, 'avg_ratio')
 		field2.text = str(avgRatio)
 		
+		tree = ET.ElementTree(root)
+		tree.write(filePath)
+
+	def writeKeywordsXML(self, wlK, wlA, filePath):
+		root = ET.Element("keys")
+		ele1 = ET.SubElement(root, "keywords")
+		for data in wlK.words:
+			field = ET.SubElement(ele1, "word")
+			field.text = data.word
+			field.set('occured', str(data.occ))
+		ele2 = ET.SubElement(root, "avoids")
+		for data in wlA.words:
+			field = ET.SubElement(ele2, "word")
+			field.text = data.word
+			field.set('occured', str(data.occ))
+
+		tree = ET.ElementTree(root)
+		tree.write(filePath)
+
+	def writeSitesXML(self, gdSites, bdSites, filePath):
+		root = ET.Element('sites')
+		ele1 = ET.SubElement(root, 'good_sites')
+		for data in gdSites:
+			field = ET.SubElement(ele1, 'site')
+			field.text = data
+		ele2 = ET.SubElement(root, 'bad_sites')
+		for data in bdSites:
+			field = ET.SubElement(ele2, 'site')
+			field.text = data
+
 		tree = ET.ElementTree(root)
 		tree.write(filePath)
