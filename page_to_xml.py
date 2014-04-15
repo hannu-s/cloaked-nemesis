@@ -3,15 +3,19 @@ from list_tool import ListTool
 class PageToXML():
 	def __init__(self, xmlInsp, keyWords = None, avoids = None):
 		self.xmlInsp = xmlInsp
-		self.keyWords = keyWords
-		self.avoids = avoids
+		self.keyWords = []
+		self.avoids = []
+		for obj in keyWords.words:
+			self.keyWords.append(obj.word)
+		for obj in avoids.words:
+			self.avoids.append(obj.word)
 		self.lMulti = 100
 		self.tMulti = 50
 		self.hMulti = 10
 		self.sMulti = 5
 		self.nMulti = 1
 
-	def getScore():
+	def getScore(self):
 		lt = ListTool()
 		for data in self.xmlInsp:
 			pl = PageLoader(data.fil)

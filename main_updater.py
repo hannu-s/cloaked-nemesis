@@ -152,7 +152,8 @@ class MainUpdater():
 			bdSites.append(obj.url)
 		xWriter.writeSitesXML(gdSites,bdSites,'xml/sites.xml')
 
-	def getXMLInspScored():
+	def getXMLInspScored(self):
 		p = PageToXML(self.XMLInspections, self.keywords, self.avoids)
 		self.XMLInspections = p.getScore()
+		return self.XMLInspections
 

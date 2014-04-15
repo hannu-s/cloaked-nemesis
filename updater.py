@@ -38,12 +38,14 @@ class Updater():
 			m = MainUpdater(self.vote, self.voteId, self.masterInspectionPath)
 			m.loadMasterInspection()
 			m.storeWords()
-			m.deleteFile()
 			m.calculateKeywords()
 			m.updateKeywordsXML()
 			m.writeWordsXML()
 			m.updateSitesXMl()
 			self.XMLInspections = m.getXMLInspScored()
+			m.deleteFile()
+		else:
+			self.loadMasterInspection()
 
 		
 	def removeIdElementFromMasterInspection(self):
