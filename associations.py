@@ -11,8 +11,8 @@ class Associations():
 		self.listTool = ListTool()
 
 	def setParams(self, keywords, avoids, fKeywords, fAvoids):
-		self.keywordsList = self.listTool.addOnlyUniqueFrom2DList(keywords, fKeywords, 0)
-		self.avoidsList = self.listTool.addOnlyUniqueFrom2DList(avoids, fAvoids, 0)
+		self.keywordsList = self.listTool.addOnlyUniqueFromList(keywords, fKeywords)
+		self.avoidsList = self.listTool.addOnlyUniqueFromList(avoids, fAvoids)
 
 	def addKeyword(self, word, occurance, isForced):
 		self.keywordsList.append(Keywords(word, occurance, isForced))

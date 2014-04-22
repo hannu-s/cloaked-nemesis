@@ -1,5 +1,5 @@
-http://www.cakesolutions.net/teamblogs/2014/04/22/this-week-in-scala-22042014/
-Thisweekin(22/04/2014)CakeSolutionsTeamBlog
-Categories
-
-08456171200.AcompanyregisteredinEnglandWales.RegistrationNumber:4184567
+http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-17T15_30_11.htm
+# Knowing and Doing: April 2014 Archives 
+# Creative Recombination of Existing Ideas 
+# protected 
+# In any case, Udell is right: there a lot of latent value in the "creative recombination" existing ideas. Ours  remix culture, too. That's why it's so important to study widely and out computing, build base tools needed have great idea execute on it. 

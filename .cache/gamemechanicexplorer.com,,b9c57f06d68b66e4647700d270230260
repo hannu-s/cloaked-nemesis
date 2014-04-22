@@ -1,13 +1,13 @@
 status: 200
-content-length: 9164
+content-length: 9218
 content-location: http://gamemechanicexplorer.com
 -content-encoding: gzip
 vary: Accept-Encoding
 server: nginx/1.1.19
-last-modified: Tue, 22 Apr 2014 16:52:29 GMT
+last-modified: Tue, 22 Apr 2014 18:03:40 GMT
 connection: keep-alive
-etag: "fa00fa-23cc-4f7a470fa6d40"
-date: Tue, 22 Apr 2014 17:49:54 GMT
+etag: "fa0082-2402-4f7a56f8cb700"
+date: Tue, 22 Apr 2014 18:39:44 GMT
 content-type: text/html
 -varied-accept-encoding: gzip, deflate
 
@@ -54,7 +54,7 @@ content-type: text/html
     <div class="container">
         <div class="page-header">
             <h1>
-                <a href="/"><img src="assets/logo.png" alt="Gamepad" class="pull-left"></a>
+                <a href="/"><img src="/assets/logo.png" alt="Gamepad" class="pull-left"></a>
                 Game Mechanic Explorer
             </h1>
         </div>
@@ -139,11 +139,11 @@ content-type: text/html
                             <a href="http://twitter.com/yafd" target="_blank">Twitter</a>
                             or
                             <a href="mailto:john@watson-net.com" target="_blank">email</a>.
-                            Follow me on Google+ or Twitter for updates.
                         </p>
                         <p>Copyright © 2014 John Watson</p>
                         <p>The example source code is licensed under the terms of the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>. Art assets in the examples are licensed under the <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">Creative Commons Attribution license (CC BY 3.0)</a>.</p>
                         <p><a href="/assets.zip"><i class="glyphicon glyphicon-download"></i> Download all assets</a></p>
+                        <p><a href="/ideas">Many more demos are planned</a>. Follow me on Google+ or Twitter for updates.</p>
                         <p>
                             <img src="assets/gfx/html5.png" class="pull-right" style="padding: 5px 0 30px 0">
                             This site requires a modern web browser that supports HTML5.

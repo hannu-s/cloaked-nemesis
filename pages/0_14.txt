@@ -1,4 +1,5 @@
-http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging
-ThisIsYourBrainOnCode,AccordingToFunctionalMRIImagingCo.Labscode+community
-WhyGoogleIsInvestingInDeepLearning
-
+http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html
+# Honza Blog: Linktime optimization in GCC, part 1 - brief history 
+# Unit-at-a-time 3.4) 
+#  
+#  

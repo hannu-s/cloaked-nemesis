@@ -1,5 +1,5 @@
 http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/
-GettingLazywithC++  BartoszMilewski'sProgrammingCafe
-LeaveaReplyCancelreply
-
-BlogatWordPress.com.CustomizedConnectionsTheme.
+# Getting Lazy with C++   Bartosz Milewski's Programming Cafe 
+# Leave a Reply Cancel reply 
+# 
+# Create a free website or blog at WordPress.com. Customized Connections Theme. 

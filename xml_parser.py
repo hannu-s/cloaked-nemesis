@@ -29,17 +29,15 @@ class XMLParser():
 	def getKeywords(self, tree):
 		li = []
 		for k in tree.findall('keywords/word'):
-			num = int(k.get('occured'))
 			val = k.text
-			li.append([val,num])
+			li.append(val)
 		return li	
 
 	def getAvoids(self, tree):
 		li = []
 		for k in tree.findall('avoids/word'):
-			num = int(k.get('occured'))
 			val = k.text
-			li.append([val,num])
+			li.append(val)
 		return li	
 
 	def getSites(self, tree):

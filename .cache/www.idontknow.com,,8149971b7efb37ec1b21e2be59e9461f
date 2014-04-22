@@ -1,0 +1,131 @@
+status: 200
+page-completion-status: Normal
+server: Microsoft-IIS/5.0
+connection: close
+date: Tue, 22 Apr 2014 18:39:48 GMT
+content-type: text/html
+content-location: http://www.idontknow.com/
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ 
+<HTML>
+ 
+<HEAD>
+<TITLE> I Don't Know Inc.  ColdFusion - Database Programming - PHP - Application Development - Domain Hosting - Real Time Credit Card Processing - E-Commerce - E-Business - Internet Access</TITLE>
+<META name="Description" content="Allaire Cold Fusion Website Design Database Design Database Web Integration Real Time Credit Card Processing E Commerce E-Commerce Visa Mastercard E-Business">
+
+<META NAME="keywords" CONTENT="Allaire Cold Fusion Website Design Database Design Database Web Integration Real Time Credit Card Processing E Commerce E-Commerce Visa Mastercard E-Business">
+
+</HEAD>
+
+<BODY BACKGROUND="background.jpg" BGCOLOR="White" LINK="Navy" VLINK="Navy"
+ ALINK="Navy">
+<!-- Masthead table begin-->
+<TABLE WIDTH="100%" BORDER="0">
+<TR ALIGN="LEFT" VALIGN="TOP">
+<TD><PRE> </PRE>
+
+</TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><IMG SRC="logo.gif" WIDTH="368" HEIGHT="64"
+BORDER="0" ALT="logo"><BR>
+<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">&nbsp; &nbsp; <b>Yes, We can do
+that.</b></FONT></TD>
+<TD ALIGN="left" VALIGN="TOP"><FONT SIZE="1"
+FACE="Arial, Helvetica, sans-serif">&nbsp;<BR>
+<BR>
+<BR>
+</TD>
+</TR>
+</TABLE>
+<!-- Masthead table end -->
+<BR>
+<BR>
+<!-- Intro statement begin-->
+<TABLE ALIGN="center" WIDTH="80%" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD> <FONT SIZE="2" FACE="Arial, Helvetica, sans-serif"> I Don't Know Inc. has
+been developing web sites, and hosting domains since 1995. When you
+deal with us you can rest assured that you are dealing with a world class
+organization, possessing the skills to get the job done right... the first
+time. We can provide you with everything needed to give your company a presence on the Internet,
+from  Basic web design to complete
+web based applications.<BR>
+We are the number one choice for all of your Internet needs. </FONT> </TD>
+</TR>
+</TABLE>
+
+<!-- Intro statement end-->
+
+<!--Navigation and main "meat" table begin-->
+<TABLE Border="0" width="100%">
+
+<tr>
+<!--Navigation Column-->
+<td>
+
+
+<Table Border="0">
+<tr><td>&nbsp;&nbsp;&nbsp;</td><td nowrap="true"><a href="http://www.registeritfirst.com"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Domain Registration</font></a></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;</td><td nowrap="true"><a href="http://www.westerncanada.com/domains.htm"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Domain Hosting</font></a></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;</td><td nowrap="true"><a href="http://www.shopalberta.com/"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Shopping Mall</font></a></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;</td><td nowrap="true"><a href="/ihelp"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Get Help</font></a></td></tr>
+
+</table>
+
+
+</td>
+<!--"Meat" Column-->
+<td>
+
+<!-- Column Table begin 2 columns for info -->
+<TABLE CELLSPACING="5" WIDTH="70%">
+<TR>
+<!-- Primary column (1) begin -->
+<TD WIDTH="50%" VALIGN="top" BGCOLOR="#ECFBFF">
+<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif"> <B>Web Database design</B> 
+<BR>
+<BR>
+I Don't Know Inc. has been constructing Database to Web applications for our
+clients since 1995. Let our expert team of Web and Database
+specialists launch your application online with the speed your clients demand,
+and the reliability that you can count on. Using 3 of the industries best
+development platforms; Cold fusion, PHP and Microsoft ASP technology, you can be
+assured that we can make your wildest dreams come true. </FONT> </TD>
+<!-- Primary column (1) End -->
+<!-- Secondary column (2) -->
+<TD WIDTH="50%" VALIGN="top" BGCOLOR="#EDFFEC">
+<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif"> <B>Domain Hosting</B> <BR>
+<BR>
+I Don't Know Inc. provides Industry standard Servers running on UNIX with
+the Apache web server, and Windows NT Server with the Microsoft Internet
+Information Server, to provide 99.5% uptime and 100% compatibility <BR>
+We are connected to the Internet via a truly Multi homed link, to ensure
+your web site is available 24 Hours per day.<BR></font>
+<BR>
+
+<!-- Secondary column (2) End -->
+
+</TR>
+</TABLE>
+<!-- Column Table end -->
+
+</td>
+</tr>
+
+</table>
+
+
+
+<BR>
+<BR>
+<BLOCKQUOTE>
+<P>
+<FONT SIZE="1" FACE="Arial, Helvetica, sans-serif">Copyright &copy; 1995 - 2002 I Don't Know Inc. </font></P>
+<BR>
+<img src="/cgi-bin/count.exe?ft=1&frgb=000000&dd=E|df=idkmain.dat|comma=T"" border="0" alt="">
+<BR>
+<font face="Arial, Helvetica, sans-serif" size="1" color="#C0C0C0">Visiting From: 88.115.155.2</font>
+</BLOCKQUOTE>
+</BODY>
+</HTML>
+

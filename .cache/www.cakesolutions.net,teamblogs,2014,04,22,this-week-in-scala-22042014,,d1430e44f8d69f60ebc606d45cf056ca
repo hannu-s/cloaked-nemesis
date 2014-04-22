@@ -6,7 +6,7 @@ vary: User-Agent,Accept-Encoding
 server: Apache
 -content-encoding: gzip
 link: <http://wp.me/pbgxE-1iA>; rel=shortlink
-date: Tue, 22 Apr 2014 17:50:00 GMT
+date: Tue, 22 Apr 2014 18:30:44 GMT
 content-type: text/html; charset=UTF-8
 x-pingback: http://www.cakesolutions.net/teamblogs/xmlrpc.php
 -varied-user-agent: Python-httplib2/0.7.2 (gzip)

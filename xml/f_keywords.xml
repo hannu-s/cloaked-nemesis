@@ -1,8 +1,9 @@
 <keys>
 	<keywords>
-		<word occured="1">abc</word>
+		<word occured="1">c++</word>
+		<word occured="2">C++</word>
 	</keywords>
 	<avoids>
-		<word occured="1">cba</word>
+		<word occured="1">flower</word>
 	</avoids>
 </keys>

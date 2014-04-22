@@ -1,5 +1,5 @@
-http://www.reddit.com/r/IAmA/comments/23ou9y/hi_reddit_i_am_tim_oreilly_founder_ceo_of_oreilly/
-HiReddit-IamTimO'Reilly,founderCEOofO'ReillyMedia,AMA:IAmA
-login
-
-byPID26163onapp-126at2014-04-2217:48:54.925649+00:00runninga703a50.
+http://nimrod-lang.org/news.html#Z2014-04-21-version-0-9-4-released
+# Nimrod Programming Language 
+# Mar 14, 2010 
+# 
+# Nimrod version 0.6.0 has been released! This is the first of compiler that able to compile itself!  

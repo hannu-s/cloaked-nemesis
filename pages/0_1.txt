@@ -1,5 +1,5 @@
 http://www.libressl.org/
-LibreSSL
-LibreSSL
-ForotherOS's
-LibreSSLissupportedfinanciallybyTheOpenBSDFoundationaswellasbytheTheProject.Pleaseconsiderdonatingtosupportourefforts.Thispagescientificallydesignedannoywebhipsters.DonatenowstopComicSansandBlinkTags
+# LibreSSL 
+# LibreSSL 
+# For other OS's 
+# LibreSSL is supported financially byThe OpenBSD Foundation aswell as by the The Project. Please consider donating to support our efforts.This page scientifically designed annoy web hipsters. Donate now stop Comic Sans and Blink Tags 

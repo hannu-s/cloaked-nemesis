@@ -1,0 +1,607 @@
+status: 200
+content-length: 32726
+content-location: http://hnhistory.net
+x-powered-by: Express
+connection: keep-alive
+etag: "-254430963"
+date: Tue, 22 Apr 2014 18:39:50 GMT
+content-type: text/html; charset=utf-8
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+        <link rel="shortcut icon" href="/images/favicon.ico">
+        <title>Hacker News History</title>
+    </head>
+    <body>
+        
+
+
+        <form method="GET" action="/">
+            <div style="padding-top: 10px">
+                <center>
+                    <span>
+                        Date: <input type="date" name="date" value="2014-04-22">
+                    </span>
+                    Time: 
+                    <select name="hour">
+                        
+                            <option value="0" >0</option>
+                        
+                            <option value="1" >1</option>
+                        
+                            <option value="2" >2</option>
+                        
+                            <option value="3" >3</option>
+                        
+                            <option value="4" >4</option>
+                        
+                            <option value="5" >5</option>
+                        
+                            <option value="6" >6</option>
+                        
+                            <option value="7" >7</option>
+                        
+                            <option value="8" >8</option>
+                        
+                            <option value="9" >9</option>
+                        
+                            <option value="10" >10</option>
+                        
+                            <option value="11" >11</option>
+                        
+                            <option value="12" >12</option>
+                        
+                            <option value="13" >13</option>
+                        
+                            <option value="14" >14</option>
+                        
+                            <option value="15" >15</option>
+                        
+                            <option value="16" >16</option>
+                        
+                            <option value="17" >17</option>
+                        
+                            <option value="18" selected>18</option>
+                        
+                            <option value="19" >19</option>
+                        
+                            <option value="20" >20</option>
+                        
+                            <option value="21" >21</option>
+                        
+                            <option value="22" >22</option>
+                        
+                            <option value="23" >23</option>
+                        
+                    </select>
+                    <input type="submit" value="View"/>
+                </center>
+            </div>
+        </form>
+        <br>
+        <center>Actual Date <a style="border-bottom: 1px dotted black" href="/about">(?)</a>: Tue Apr 22 2014 18:00:01 GMT+0000 (UTC)</center>
+        <br>
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+                <tr>
+                    <td bgcolor="#ff6600">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
+                            <tr>
+                                <td style="width:18px;padding-right:4px">
+                                    <a href="/">
+                                        <img src="/images/inf.gif" width="18" height="18" style="border:1px #ffffff solid;"/>
+                                    </a>
+                                </td>
+                                <td style="line-height:12pt; height:10px;">
+                                    <span class="pagetop">
+                                        <b>
+                                            <a href="/">Hacker News History</a>
+                                        </b>
+                                        <span style="margin-left:5px;">
+                                            <a href="/about">about</a> |
+                                            <a href="/list">last 50 hours</a>
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr style="height:10px"></tr>
+
+                <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">1. </td>
+                                <td class="title">
+                                    <a href="https://www.spacemonkey.com/blog/posts/go-space-monkey"> Space Monkey dumps Python for Go</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628472">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">2. </td>
+                                <td class="title">
+                                    <a href="http://blogs.wsj.com/digits/2014/04/22/weebly-valued-at-455-million-amid-website-building-boom/"> Weebly Valued at $455M Amid Website-Building Boom</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628448">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">3. </td>
+                                <td class="title">
+                                    <a href="http://depthy.stamina.pl/"> Parallax effect from Google Lens Blur photos</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627410">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">4. </td>
+                                <td class="title">
+                                    <a href="http://stancarney.co/2014/04/google-io-registration-2014/"> Google I/O Registration 2014</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628616">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">5. </td>
+                                <td class="title">
+                                    <a href="http://gcc.gnu.org/ml/gcc/2014-04/msg00195.html"> GCC 4.9.0 released</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627577">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">6. </td>
+                                <td class="title">
+                                    <a href="https://www.gitlab.com/"> GitLab – Open Source Git Management Software</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627165">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">7. </td>
+                                <td class="title">
+                                    <a href="https://www.lytro.com/#"> Lytro Announces New Light Field Camera</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627905">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">8. </td>
+                                <td class="title">
+                                    <a href="http://re-factor.blogspot.com/2014/04/scraping-re-factor.html"> Web scraping with Factor</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628055">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">9. </td>
+                                <td class="title">
+                                    <a href="http://copytext.readthedocs.org/en/latest/"> NPR open-sources Copytext, a library for handling spreadsheets as Python objects</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628198">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">10. </td>
+                                <td class="title">
+                                    <a href="http://www.themoscowtimes.com/news/article/vkontakte-founder-flees-russia-claims-persecution/498715.html"> Vkontakte (&quot;Russian Facebook&quot;) Founder Flees Russia</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7629043">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">11. </td>
+                                <td class="title">
+                                    <a href="http://www.bbc.co.uk/news/science-environment-27113732"> Graphene made with kitchen blender</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628130">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">12. </td>
+                                <td class="title">
+                                    <a href="http://www.stroustrup.com/JSF-AV-rules.pdf"> F-35 C++ coding standard [pdf]</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628746">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">13. </td>
+                                <td class="title">
+                                    <a href="http://firstround.com/article/Mine-Your-Network-for-Early-Stage-Hiring-Gold"> The Best Hires Are Right Under Your Nose</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628532">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">14. </td>
+                                <td class="title">
+                                    <a href="http://tech.pro/tutorial/2010/functional-javascript-part-3-apply-call-and-the-arguments-object"> Functional JavaScript, Part 3: apply, call, and the arguments object</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628604">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">15. </td>
+                                <td class="title">
+                                    <a href="https://github.com/eudoxia0/cmacro"> Lisp macros for C</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627135">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">16. </td>
+                                <td class="title">
+                                    <a href="https://play.google.com/store/apps/details?id=com.zerobudgetdev.AlienShootout"> Show HN: My first serious Android game</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628850">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">17. </td>
+                                <td class="title">
+                                    <a href="http://blog.iron.io/2014/04/how-docker-helped-us-achieve-near.html"> Docker Helped Us Achieve the (Near) Impossible</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7629068">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">18. </td>
+                                <td class="title">
+                                    <a href="https://groups.google.com/forum/m/#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J"> Redis 2.8.9 is out</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7626700">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">19. </td>
+                                <td class="title">
+                                    <a href="https://thedistance.com/"> The Distance: From Basecamp</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628633">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">20. </td>
+                                <td class="title">
+                                    <a href="https://github.com/puniverse/capsule"> Show HN: Capsule – Simple Packaging and Deployment for JVM Apps</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628520">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">21. </td>
+                                <td class="title">
+                                    <a href="https://news.ycombinator.com/item?id=7628454"> Passionate front-end dev? Grouper is hiring in NYC</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7628454">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">22. </td>
+                                <td class="title">
+                                    <a href="http://myjson.com/"> Myjson – A simple JSON store for your web or mobile app</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627423">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">23. </td>
+                                <td class="title">
+                                    <a href="http://www.planetary.org/blogs/guest-blogs/2014/0419-forensic-ballistics.html"> Forensic Ballistics: How Apollo 12 Helped Solve the Skydiver Meteorite Mystery</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7626912">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">24. </td>
+                                <td class="title">
+                                    <a href="http://globaldev.co.uk/2014/04/ruby-tips-part-5/"> Ruby Tips, Part 5</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7626849">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">25. </td>
+                                <td class="title">
+                                    <a href="http://andrewkelley.me/post/quest-build-ultimate-music-player.html"> My Quest to Build the Ultimate Music Player</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7629177">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">26. </td>
+                                <td class="title">
+                                    <a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/"> Debugging Asynchronous JavaScript with Chrome DevTools</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7625482">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">27. </td>
+                                <td class="title">
+                                    <a href="http://www.spaceflightinsider.com/space-flight-missions/commercial-space-space-flight-missions/spacex/crs-3/spacex-president-shotwell-talks-recovery-efforts-recent-ribbon-cutting-ceremony/"> Falcon 9 first stage found, but probably not recoverable</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627269">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">28. </td>
+                                <td class="title">
+                                    <a href="http://passingcuriosity.com/2013/dnsmasq-dev-osx/"> Using Dnsmasq for local development on OS X</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627042">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">29. </td>
+                                <td class="title">
+                                    <a href="http://gamemechanicexplorer.com"> Game Mechanic Explorer – examples for game mechanics, algorithms, and effects</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7623291">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr>
+                                <td align="right" valign="top" class="title">30. </td>
+                                <td class="title">
+                                    <a href="http://online.wsj.com/news/article_email/SB10001424052702303825604579516010459640366-lMyQjAxMTA0MDIwMTEyNDEyWj"> Discovery Communications Sells HowStuffWorks.com</a>
+                                    <!-- <span class="comhead"> () </span> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td class="subtext">
+                                    <a href="https://news.ycombinator.com/item?id=7627054">View comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:15px"></tr>
+                            
+                            <tr style="height:5px"></tr>
+                        
+                        </table>
+                        <tr>
+                            <td>
+                                <img src="/images/inf.gif" height="10" width="0">
+                                <table width="100%" cellspacing="0" cellpadding="1">
+                                    <tr>
+                                        <td bgcolor="#ff6600"></td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <center>
+                                    <span class="links">
+                                        <a href="/about">about</a> |
+                                        <a href="/list">last 50 hours</a>
+                                    </span>
+                                </center>
+                                <br><br><br>
+                            </td>
+                        </tr>
+                    </td>
+            </table>
+        </center>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-50135174-1', 'hnhistory.net');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
+
+
+
+

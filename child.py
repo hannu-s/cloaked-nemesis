@@ -50,7 +50,7 @@ class Child():
 		for ind, url in enumerate(urls):
 			if url[4] == 's':
 				continue
-			print('Searching:', links[ind])
+			#print('Searching:', links[ind])
 			p = Page(url, links[ind])
 			p.followLink()
 			p.parseResults()
@@ -142,23 +142,27 @@ class Page():
 
 		for ind, item in enumerate(self.norm):
 			if re.match(patt, item) == None or len(item) > self.maxLen:
-				print(item)
 				self.norm.pop(ind)
 		self.norm = lt.removeDuplicates(self.norm)
 
 	def writePageData(self, fileName):
 		self.fileName = fileName
-		t = ""
-		t = t.join(self.title).replace('\n','').replace('  ',' ') + '\n'
-		h = ""
-		h = h.join(self.header).replace('\n','').replace('  ',' ') + '\n'
-		s = ""
-		s = s.join(self.spec).replace('\n','').replace('  ',' ') + '\n'
-		n = ""
-		n = n.join(self.norm).replace('\n','').replace('  ',' ')
+		
+		data = self.url + '\n' + "# "
+		for i in self.title:
+			data += i.replace(' ', '').replace('\t', '') + " "
+		data += "\n" + "# "
+		for i in self.header:
+			data += i.replace(' ', '').replace('\t', '') + " "
+		data += "\n" + "# "
+		for i in self.spec:
+			data += i.replace(' ', '').replace('\t', '') + " "
+		data += "\n" + "# "
+		for i in self.norm:
+			data += i.replace(' ', '').replace('\t', '') + " "
 		try:
 			f = open(fileName, 'w+')
-			f.write(self.url + '\n' + t + h + s + n)
+			f.write(data)
 		except Exception as e:
 			print(e)
 			return False
@@ -193,7 +197,7 @@ class Page():
 		score -= len(hWords) * self.hMulti
 		score -= len(sWords) * self.sMulti
 		score -= len(nWords) * self.nMulti
-
+		print(score)
 		self.score = score
 
 	def releaseMemory(self):
@@ -201,33 +205,3 @@ class Page():
 		self.header = None
 		self.spec = None
 		self.norm = None
-'''
-p = Page('http://www.reddit.com/r/programming/', 'lolol asd kebab')
-p.followLink()
-p.parseResults()
-p.writePageData('pages/herpderp')
-p.getScore(['asd', 'kebab'],['derp'])
-p.releaseMemory()
-print(p.score)
-'''
-'''
-h = httplib2.Http(".cache")
-(resp, content) = h.request("http://www.reddit.com/r/programming/", "GET",
-                            headers={'cache-control':'no-cache'})
-soup = BeautifulSoup(content)
-siteTable = soup.find("div", {"id": "siteTable"})
-#remove clearleft divs
-[s.extract() for s in siteTable('div',{'class':'clearleft'})]
-
-
-urls = []
-links = []
-titles = []
-headers = []
-specials = []
-normals = []
-
-print(soup.title.string)
-'''
-#for div in siteTable.find_all('div', {'class':'entry unvoted'}):
-#	print (div.a.get('href'), div.a.get_text(), '\n')

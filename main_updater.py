@@ -118,13 +118,16 @@ class MainUpdater():
 			l = 1
 		self.wordAvg = self.wordAvg / l
 		if usel == 0:
-			usel = 1
-		self.avgRatio = usef / usel
+			self.avgRatio = usef
+		else:
+			self.avgRatio = usef / usel
+		
 
 		for data in self.wl.words:
 			if data.usel == 0:
-				data.usel = 1
-			ratio = data.usef / data.usel
+				ratio = data.usef
+			else:
+				ratio = data.usef / data.usel
 
 			if ratio > self.avgRatio * self.ratioDiff:
 				self.keywords.set(data.word, data.occ, data.usef, data.usel)

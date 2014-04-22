@@ -1,5 +1,5 @@
-http://www.scala-lang.org/news/2014/04/21/release-notes-2.11.0.html
-Scala2.11.0isnow|TheProgrammingLanguage
-Licenseclarification
-
-Copyright2002-PolytechniquedeLausanneLausanne,Switzerland
+http://psy-lob-saw.blogspot.com/2014/04/notes-on-concurrent-ring-buffer-queue.html
+# Psychosomatic, Lobotomy, Saw: Notes On Concurrent Ring Buffer Queue Mechanics 
+# Summary 
+# both 
+#  

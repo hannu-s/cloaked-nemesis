@@ -1,0 +1,1413 @@
+status: 200
+alternate-protocol: 80:quic
+content-length: 87963
+x-xss-protection: 1; mode=block
+content-location: http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html
+x-content-type-options: nosniff
+expires: Tue, 22 Apr 2014 18:39:48 GMT
+server: GSE
+last-modified: Tue, 22 Apr 2014 17:24:05 GMT
+etag: "8a556164-226c-4982-b320-5899d5b4cb9e"
+cache-control: private, max-age=0
+date: Tue, 22 Apr 2014 18:39:48 GMT
+content-type: text/html; charset=UTF-8
+-content-encoding: gzip
+
+<!DOCTYPE html>
+<html class='v2' dir='ltr'>
+<head>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,f="chrome",g="jstiming",k="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){var e=void 0!=c?c:(new Date).getTime();this.t[a]=[e,d];if(void 0==c)try{b.console.timeStamp("CSI/"+a)}catch(h){}};this[k]("start",null,a)}var a;b.performance&&(a=b.performance.timing);var n=a?new d(a.responseStart):new d;b.jstiming={Timer:d,load:n};if(a){var c=a.navigationStart,h=a.responseStart;0<c&&h>=c&&(b[g].srt=h-c)}if(a){var e=b[g].load;0<c&&h>=c&&(e[k]("_wtsrt",void 0,c),e[k]("wtsrt_","_wtsrt",h),e[k]("tbsd_","wtsrt_"))}try{a=null,
+b[f]&&b[f].csi&&(a=Math.floor(b[f].csi().pageT),e&&0<c&&(e[k]("_tbnd",void 0,b[f].csi().startE),e[k]("tbnd_","_tbnd",c))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,e&&0<c&&(e[k]("_tbnd",void 0,b.external.startE),e[k]("tbnd_","_tbnd",c))),a&&(b[g].pt=a)}catch(p){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[g].load[k]("aft")};var l=!1;function m(){l||(l=!0,b[g].load[k]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",m,!1):b.attachEvent("onscroll",m);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://hubicka.blogspot.co.uk/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://hubicka.blogspot.com/2014/04/linktime-optimization-in-gcc-1-brief.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Honza Hubička&#39;s Blog - Atom" href="http://hubicka.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Honza Hubička&#39;s Blog - RSS" href="http://hubicka.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Honza Hubička&#39;s Blog - Atom" href="http://www.blogger.com/feeds/6965936738085416224/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Honza Hubička&#39;s Blog - Atom" href="http://hubicka.blogspot.com/feeds/771473909183207881/comments/default" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/2934423744-ieretrofit.js"></script>
+<![endif]-->
+<link href='http://2.bp.blogspot.com/-axH2_D8roUI/U1QsxVNwAfI/AAAAAAAAAGg/s1KbnLOaPqk/s1600/whopr.png' rel='image_src'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Honza Hubička's Blog: Linktime optimization in GCC, part 1 - brief history</title>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/1535467126-widget_css_2_bundle.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=6965936738085416224&zx=8a556164-226c-4982-b320-5899d5b4cb9e' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#666666"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#666666"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="transparent"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#ffffff" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(//www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(//www.blogblog.com/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="10px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="30px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="1px"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" />
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" />
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(//www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px"/>
+<Variable name="paging.background"
+color="#ffffff"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+color: #666666;
+background: #ffffff none repeat scroll top left;
+padding: 0 0 0 0;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+a:link {
+text-decoration:none;
+color: #2288bb;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+background: #ffffff none repeat scroll top left;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 #333333;
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 40px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 40px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+color: #000000;
+text-shadow: 0 0 0 rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #000000;
+}
+.Header .description {
+font-size: 18px;
+color: #000000;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 0;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 0;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 0 solid #dddddd;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #dddddd;
+border-left: 1px solid #dddddd;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget ul {
+background: transparent none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #dddddd;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 12px 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+color: #000000;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #eeeeee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid transparent;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid transparent;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid transparent;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin: 0 0 1em 0;
+font: normal bold 11px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+color: #000000;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+.date-header span {
+background-color: #bbbbbb;
+color: #ffffff;
+padding: 0.4em;
+letter-spacing: 3px;
+margin: inherit;
+}
+.main-inner {
+padding-top: 35px;
+padding-bottom: 65px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-center-inner .section {
+margin: 0 1em;
+}
+.post {
+margin: 0 0 45px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #666666;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #eeeeee;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid transparent;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #eeeeee;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid transparent;
+}
+.blog-pager {
+background: transparent url(//www.blogblog.com/1kt/simple/paging_dot.png) repeat-x scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 1px dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+body.mobile .AdSense {
+margin: 0 -0;
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #666666;
+}
+.mobile-link-button {
+background-color: #2288bb;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #eeeeee;
+color: #000000;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #dddddd;
+}
+div.post-body h2,div.post-body h3, h4 {padding-bottom: 0.5em; padding-top: 1em}
+div.post-body h2{font-size: large;}
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">var a="indexOf",b="&m=1",e="(^|&)m=",f="?",g="?m=1";function h(){var c=window.location.href,d=c.split(f);switch(d.length){case 1:return c+g;case 2:return 0<=d[1].search(e)?null:c+b;default:return null}}var k=navigator.userAgent;if(-1!=k[a]("Mobile")&&-1!=k[a]("WebKit")&&-1==k[a]("iPad")||-1!=k[a]("Opera Mini")||-1!=k[a]("IEMobile")){var l=h();l&&window.location.replace(l)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading variant-simplysimple'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+          if (gapi.iframes && gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: 'https://www.blogger.com/navbar.g?targetBlogID\0756965936738085416224\46blogName\75Honza+Hubi%C4%8Dka\47s+Blog\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://hubicka.blogspot.com/search\46blogLocale\75en\46v\0752\46homepageUrl\75http://hubicka.blogspot.com/\46targetPostID\075771473909183207881\46blogPostOrPageUrl\75http://hubicka.blogspot.com/2014/04/linktime-optimization-in-gcc-1-brief.html\46blogFollowUrl\75https://plus.google.com/109451389335040121442\46vt\75-8108834144259716805',
+                where: document.getElementById("navbar-iframe-container"),
+                id: "navbar-iframe"
+            });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://hubicka.blogspot.co.uk/'>Honza Hubička's Blog</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>Compilers, math, history of photography, ...</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'></div>
+<div class='tabs section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Monday, April 21, 2014</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='http://2.bp.blogspot.com/-axH2_D8roUI/U1QsxVNwAfI/AAAAAAAAAGg/s1KbnLOaPqk/s1600/whopr.png' itemprop='image_url'/>
+<meta content='6965936738085416224' itemprop='blogId'/>
+<meta content='771473909183207881' itemprop='postId'/>
+<a name='771473909183207881'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+Linktime optimization in GCC, part 1 - brief history
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-771473909183207881' itemprop='description articleBody'>
+Link-time optimization (LTO) is one of the most actively developed features of GCC. <br />
+Since 2010, I am working on getting LTO to work well with real world applications and with GCC-4.9 release candidate out, perhaps it is a good time to share my experiences.<br />
+<br />
+I plan to write about getting Firefox, Libreoffice, Chromium and other large applications to work with LTO. This will hopefully give an broader idea what kind of setup &amp; portability issues one can hit. I will also show some benchmarks. Today I will however start with a short review of history and current status of implementation of link-time optimizations in GCC.<br />
+<h2>
+Classical organization of the toolchain</h2>
+Classical UNIX toolchain optimize at translation unit 
+basis (that is, more or less, a source file). The compiler parses the source, 
+produces a representation in the intermediate language (IL), optimizes it and eventually generates 
+assembly. Assembly file is turned into an object file by the assembler. Resulting binary is produced by the linker. At runtime the dynamic linker links multiple DSOs together and executes a
+ program. Finally dynamic linker may be used again via <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">dlopen</span> to load 
+more libraries/plugins. Practically all non-trivial optimizations happens in the compiler, while some limited tricks are performed by both assembler and linker.<br />
+<br />
+Early simple compilers internally worked on statement basis; often it was the case that the whole program would not fit into the memory (I will call this compilation scheme<i> statement-at-a-time</i>). Statement-at-a-time compilation greatly limits optimizations one can perform. Generally one can do only those transformations that are obvious from considering single statement in the isolation (such as expression simplification) though some basic inter-statement optimization is possible, too, such as basic <a href="http://en.wikipedia.org/wiki/Common_subexpression_elimination">common subexpression elimination</a> or <a href="http://en.wikipedia.org/wiki/Peephole_optimization">peephole optimization</a>. Such optimizations can be implemented, at least in the limited form, as a single pass through the instruction stream without ever looking back.<br />
+<br />
+Extending the scope of the compilation from statement to function (<i>function-at-a-time</i> 
+compilation) permits most of classical optimizations including constant propagation, 
+common subexpression elimination, loop optimization, register allocation, advanced 
+instruction selection and instruction scheduling.<br />
+<br />
+GCC started with a mixture of statement-at-a-time approach and function-at-a-time. Frontends generated intermediate code per-statement basis and immediately lowered it to very low-level (close to assembly) intermediate language called RTL (<a href="http://gcc.gnu.org/onlinedocs/gccint/RTL.html">Register Transfer Language</a>). According to <a href="http://www.gnu.org/gnu/thegnuproject.html">Richard Stallman</a> this was mostly done to deal with limitations of the stack size and memory of M68k machine he developed GCC on. The rest of the compiler worked at function-at-a-time. Even early GCCs was thus able to do basic function wide optimizations and until late 2.9 GCC series the optimizers has developed into strong low level optimization engine that was more portable to new architectures than any other compilers available at that time. The optimization queue consited primarily of strenghtened form of constant subexpression elimination (global value numbering), loop optimization (loop unrolling, strength reduction), jump optimization (including conditional jump generation), instruction combining, register allocation, and peephole optimization.<br />
+<br />
+<a href="http://gcc.gnu.org/wiki/History">Cygnus</a> was a pioneering free software company that made its living from porting GCC to new architectures. The main focus in late 90s was put into making the originally CISC centric optimizers work well with RISC and later VLIW instruction sets and to generally improve set of intra-procedural optimizations. Important development change happened in 1997 with introduction of <a href="http://gcc.gnu.org/news/announcement.html">EGCS fork</a> which enabled some of deeper changes in the compiler.<br />
+<h2>
+Compiling C++ </h2>
+In 90s and early 2000s, the popularity of C++ was on the rise while the language itself was still a quickly moving target (C++ was standarized in 1998 with an update in 2003 and C++ ABI took few extra years to settle down). This brought challenges not only for the developers of C++ front-end, library and runtime (that is a separate topic I do not know enough about to write it), but soon enough for the backend developers, too.<br />
+<br />
+In late 90's GCC was converted to function-at-a-time parsing. This 
+was motivated mostly by a need of reasonable implementation of C++ templates. Here one want
+ to keep close to source representation (generally called <i>Abstract Syntax Tree</i>, or AST) of templates until instantiation happens. Just like preprocessor macro, the template alone has no semantics that may be 
+easily represented by classical compiler IL. This is hard to implement within a front-end that has no internal representation of the whole function body.<br />
+<h2>
+Dealing with abstraction penalty</h2>
+C++ programmers more and more relied on 
+compiler's ability to remove the abstraction penalty. It became essential to
+ reliably inline functions, optimize out unreachable function bodies and
+ do higher level transformation on function bodies (such as to replace 
+data stored in instances of objects by scalar variables after all methods was inlined). C++ programers started to make strong assumptions about compiler's ability to cleanup their constructions while that are often not very well thought out from compiler developer's perspective.<br />
+<br />
+As one of main offenders, function inlining was not a strongest point of GCC, which still worked in function-at-a-time mode: GCC backend was organized as a library that was used by 
+frontend whenever it needed to produce something into the assembly file.
+ For that purpose the order of things compiled was completely out of 
+backend's control and the scope of inter-procedural optimizations in general was extremely limited.<br />
+<h3>
+Bottom-up inlining</h3>
+This is how the impossible (interprocedural optimization within a backend that generally works at one function at a time) was implemented.<br />
+<br />
+After function arrived from the frontend, backend performed following steps:<br />
+<ol>
+<li>Inliner inlined function calls of all functions it did previously memoized body of.</li>
+<li>Some early optimization passes performed some basic optimizations (dead code removal, jump optimization)</li>
+<li>Inliner checked if the optimized function is small enough, i.e. the number of instructions was less than 8*(8+num_parameters) and if so, it remembered the function for further inlining. Functions declared inline was remembered if their body did not exceed 600 instructions.</li>
+</ol>
+Such inliner implementation is called <i>bottom-up</i> - if you imagine callgraph as a tree growing down, the inliner starts from the bottom (leaves) and propagates inline decision upwards. Obviously such inliner was limited to inline only in forwarding direction (the function must have been defined before used) and also was believed to consume a lot of memory because it remembered the expanded function bodies with all inline decisions already applied.<br />
+<h3>
+Top-down inlining (GCC 3.0)</h3>
+The old inliner was rewritten in <a href="http://gcc.gnu.org/news/inlining.html">1999 by CodeSoucery</a>
+ (originally for C++ only and later ported to other languages) to work 
+on the high level form. In the new implementation inlining was moved 
+into the front-end (in fact, both inliners has coexisted for few years before the new inliner was ported to all front-ends).<br />
+<br />
+At that time, C++ front-end already saved bodies of 
+functions in the AST-like representation to handle templates. It also did not output most of functions just after it finished its parsing. Majority of functions was remembered in high-level form till very end of compilation when basic reachability analysis was performed to eliminate dead functions and to avoid unnecesary work of lowering them into the RTL representation. This was done because C++ include files tends to contain a lot of unused inline functions.<br />
+<br />
+Adding inlining was conceptually simple. At the end of the compilation, the compiler started with functions that was clearly necessary (i.e. their address was taken, they was exported from current compilation unit and so on). For every function the following steps was applied:<br />
+<ol>
+<li>It was decided if function is inlinable and of so, its body was saved for later use.</li>
+<li>Calls to all small enough inlinable functions was inlined and recursively also all such calls within the inlined function bodies.</li>
+<li>The function was optimized and output to assembly. The expanded function body was released from memory.</li>
+<li>Every function that got mentioned in the assembly output was added into list of functions that are necessary. </li>
+</ol>
+This approach is called top-down because it works from root of the tree to the leaves.<br />
+<br />
+One problem was how to define small functions - the high level representation did use C++ style statements and not assembler like instructions. Initial implementation simply counted every statement to have 10 instructions at average and the functions declared inline was inlined if their size was less than 500 in this estimate. Functions was autoinlined if their size was less than 100.<br />
+<h3>
+PR8361, tramp-3d and other compile time/memory use disasters</h3>
+The new inliner has turned out to have serious issues. One of more famous examples, at that time was bug <a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=8361">PR8361</a>
+ (filled in 2002 by Gerald Peiffer) that exposed exponential explosion in memory usage of 
+the compiler while building template heavy C++ program. This bug 
+defeated a solution using simple hacks to GCC and nicely exposed problems of the new design.<br />
+<br />
+First
+ problem is use of inline in C++ code. Functions declared in header are 
+often implicitly inline only because of developer's lazyness and the 
+inline keyword in general is not as useful as one would expect. This means that compiler can not honor all inline functions in the program - inlining those alone will make compiler to explode on was majority of modern C++ sources. We had some relatively heated <a href="http://gcc.gnu.org/ml/gcc/2005-02/msg01133.html">discussions</a> about it in 2005 and of course making compiler to be selective about inline functions has made low level developers angry. For this reason always_inline attribute was born.<br />
+<br />
+New, and much more evil, testcase was prepared by Richard Guenther (Biener), who later became one of most profilic GCC developers. His PhD research project was implemented using pooma and till today it serves as very useful benchmark for new inliner patches. SUSE's <a href="http://gcc.opensuse.org/c++bench/tramp3d/">benchmarking server</a> nicely shows how the performance was steadily improving in 2006-2009 until the most important problems was finally resolved.<br />
+<h3>
+Unit-at-a-time (GCC 3.4)</h3>
+Originally as an experiment to do something during the first SuSE-labs conference, I started to work on reorganizing GCC to work at unit-at-a-time basis. At that time it was already obvious 
+that function-at-a-time optimization brings limitations we did not like.
+ Most importantly the function inlining worked only in forwarding order -
+ if you called function before defining it, it would not be inlined.<br />
+<br />
+In GCC 3.4 I merged in bare bones of the new callgraph module (described in <a href="http://staff.science.uva.nl/%7Etbernard/papers/GCC2007-Proceedings.pdf#page=57">this paper</a>)
+ that made compiler to first build intermediate language representation 
+of the whole unit and then start optimizing.<br />
+<br />
+The new inliner was something I put together as a simple proof-of-concept experiment of inter-procedural optimization pass. It used 
+simple greedy algorithm that inlined all small enough functions in the order given by badness metrics (num_calls*size) until global unit growth of function growth limits was hit. The algorithm was optimizing for number of functions fully inlined into their callees. The limits was basically a security precautions to avoid exploding on inline bombs and exposing nonlinearity of the compiler on very large function bodies..<br />
+<br />
+Bit more details about the early design appear in <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.307.1260&amp;rep=rep1&amp;type=pdf#page=81">2006 GCC summit paper</a> and in&nbsp; <a href="http://staff.science.uva.nl/~tbernard/papers/GCC2007-Proceedings.pdf#page=57">2007 GCC summit paper</a>.<br />
+<br />
+The inliner heuristics was the incrementally improved into the today form and also the callgarph module has grown up into a full inter-procedural optimization framework with additional optimizations implemented, such as constant-propagation, function specialization, partial inlining, inter-procedural points-to analysis (still not enabled by default) and others. The inliner still remains the most important component of it, probably as in every optimizing compiler. <br />
+<h2>
+Combining translation units via <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">--combine</span> (GCC 3.4)</h2>
+GCC 3.4 was released in 2004. Since late 90's better commercial compilers and recently open-sourced <a href="http://en.wikipedia.org/wiki/Open64">Open64</a> was already capable of inter-module optimization via various implementations of link-time optimization. Here GCC was held back by both technical and political problems.<br />
+<br />
+Clasical link-time optimization is implemented by storing the intermediate language into the "fake" object files. To make this possible, one need to have well defined representation of the whole compilation unit and the whole program. Because the backend has grown-up from the per-function compilation, it did not really had this.<br />
+<br />
+At a same time, the Free Software Foundation was concerned about the consequences of adding a well-defined on-disk representation of GCC IL that could be used to hook GCC into proprietary front-ends and back-ends without violating GPL 2.<br />
+<br />
+<a href="http://www.geoffk.org/gcc/future/gccfuture.html">First attempt to get intermodule</a> was implemented by Apple developer Geoff Keating. His implementation extended the C front-end to allow parsing of multiple source files at once and presenting them to backend as one translation unit. While this feature allowed some early experiments with <a href="http://gcc.gnu.org/ml/gcc-patches/2005-05/msg02443.html">whole program optimization</a>, it also had serious limitations. It worked for C only and plans to extend it for C++ was never realized. It however worked well for many simpler programs and it was also able to detect programming errors that would be unnoticed with traditional scheme.<br />
+<h2>
+The new middle end (tree-SSA, GCC 4.0) </h2>
+These optimizaitions became increasingly difficult to implement on GCC's low level intermediate program representation. For this reason a new middle-end was implemented. <a href="http://gcc.gnu.org/projects/tree-ssa/">The tree-SSA</a> project was probably the most important change that happened to GCC recently, but a topic for a different article ;)<br />
+<h2>
+LLVM (2003), Open64 (2002)</h2>
+At the time Tree-SSA merge was being prepared, <a href="http://llvm.org/pubs/2003-05-01-GCCSummit2003.html">Chris Lattner presented at 2003 GCC Summit</a> an proposal of itegration of LLVM into GCC as a new middle-end that would take place of the (not yet finished) Tree-SSA project. This never happened and as a result we now have two major open source compilers.<br />
+<br />
+One of major trading point at that time was implementation of LTO. People made guesses if it will be harder to modify GCC architecture for LTO or if it would be harder to complete LLVM to features and richness of backends GCC had. It is definitely interesting to observe that from today point of view.<br />
+<br />
+As a less known fact, <a href="http://www.open64.net/">Open64</a>, was open sourced 2000 working as an alternative GCC backend with full LTO support.<br />
+<h2>
+Early days of LTO implementation in GCC (2005)</h2>
+The political limitations to LTO and compiler plugins was lifted by GPL 3.0. In 2005 an official proposal "<a href="http://gcc.gnu.org/projects/lto/lto.pdf">Link-Time Optimization in GCC: Requirements and High-Level design</a>" was posted to GCC mailing list. Work on LTO started jointly at Google, IBM and Codesoucery.<br />
+<br />
+The proposal took lessons from LTO designs in other compilers and proposed several important requirements starting from maximal transparency to user (basically LTO should require only <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">-flto</span> command line option), having well defined GNU Virtual Machine (GVN) and number of necessary changes across the GNU toolchain (assembler, linker and such).<br />
+<h2>
+WHOPR: Whole program optimization (2007)</h2>
+Implementing LTO original proposal was extreme amount of work. While progress was made, some parts, like type representation in DWARF format, has shown to be progressing too slowly. Moreover Google started to consider an interesting problem on how to make LTO scale to really large applications, like one used internally by the compay.<br />
+<br />
+For this reason number of changes to the project was made. New proposal <a href="http://gcc.gnu.org/projects/lto/whopr.pdf">WHOPR - Fast and Scalable Whole Program Optimizations in GCC</a> was born and it dropped some of initial plans, most importantly the well defined GNU Virtual Machine while it added new. The streaming of GCC's IL (gimple) was implemented. This has performance advantages because it permits to save a lot of compiler specific imformation that does not need to be rebuilt at link time.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-axH2_D8roUI/U1QsxVNwAfI/AAAAAAAAAGg/s1KbnLOaPqk/s1600/whopr.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-axH2_D8roUI/U1QsxVNwAfI/AAAAAAAAAGg/s1KbnLOaPqk/s1600/whopr.png" height="168" width="320" /></a></div>
+<br />
+WHOPR introduced an approach to distributed link-time compilation, where the serial linking stage is minimalized. This fit well with the basic direction of the Intermodule optimization framework I was working on.<br />
+<h2 id="LIPO_-_Profile_Feedback_Based_Lightweight_IPO">
+<b><span style="font-weight: normal;"></span></b>LIPO </h2>
+LIPO is an interesting project by that apparently large difference for Google. It enables intermodule optimization based on profile feedback. Instead of doing classical and expensive whole program analysis at link-time, the basic decisions are actually done at runtime of the program being trained. The dynamic callgraph is built and the inlining decisions are made. The dynamic callgraph considers only portions of program that matters and thus it is a lot smaller. Also profile driven inlining decisions can be a lot more precise and reliable. Later, when recompiling with profile feedback, the compiler is told the inliner decisions and can parse the extra source files necessary.<br />
+<br />
+While this idea seems a bit backwards to the traditional design, it makes a lot of sense in Google's environment. Compilation needs to be highly parallelized and it needs to fit in relatively small memory limits. On the other hand the runtime construction of callgrpah is less constrained. In this situation LIPO seems to easily outperform traditional LTO.<br />
+<h2>
+LTO merge (GCC 4.5)</h2>
+LIPO's success in Google got development on WHOPR/LTO into trouble (at least that is my off-sider's understanding :). Most of WHOPR core developers were moved to other projects and they were finishing it in their free time. The project however succeeded in being merged to GCC in 2009, even if it was not in perfect shape. GCC 4.5 was released with LTO working well enough for SPEC benchmarks and bootstrap, while the actual WHOPR implmentation was not really functional. Richard Biener did huge amount of work on getting the LTO into working shape.<br />
+<h2>
+Binutils support</h2>
+LTO optimization is major change and it requires changes thorough the whole toolchain. Linker and other utilities to work with object files needs to be told to operate with LTO object files that are not containing any actual assembly. In GNU toolchain this was realized by&nbsp; <a href="http://gcc.gnu.org/wiki/whopr/driver">plugin support</a> (implemented by Cary Coutant). Plugins adds a simple, but flexible API, to glue compiler into the gold linker that is useful for all LTO enabled compilers. Unlike approaches working around the linker changes this provide very precise information to the compiler about what symbols may or may not be used by non-LTO code. This is very important for optimization.<br />
+<br />
+The linker plugin support was later added to the traditional GNU-ld (by Dave Korn), enabling LTO support on non-ELF targets including Windows.<br />
+<br />
+One interesting aspect of the linker plugin design is the fact that it allows one pass linking. Most other designs dispatch compiler from the linker and once compiler delivers object files back, the linking is re-done. Gold and GNU-LD implements one pass linking. This has however caused an issue and thus alternative, <a href="http://gcc.gnu.org/ml/gcc/2010-12/msg00146.html">two-pass linking</a>, implementation was done by H. J. Lu.<br />
+<br />
+Final ar,nm and ranlib utilities was extended for plugin support, by Rafael Espindola, and gcc convenience wrappers added by Andi Kleen. I am still not completely happy about the need for wrappers, but I will write more about that next time.<br />
+<h2>
+Getting WHOPR to work (GCC 4.6)</h2>
+Having basic infrastructure in shape, many GCC developers continued on necessary cleanups and improvements. The linker plugin became the default and we worked on many correctness issues.<br />
+<br />
+To get an specific goal I decided to work towards making GCC to compile Firefox. This was motivated by a post from Firefox developer Taras Glek about <a href="http://gcc.gnu.org/ml/gcc/2010-06/msg00715.html">massive performance regression in GCC 4.5</a> (which has turned out to be problem with compiling C++ applications with -Os). I started to look into performance issues of Firefox and found them puzzling and interesting.<br />
+<br />
+In 2010 <a href="http://arxiv.org/abs/1010.2196">GCC summit paper</a> we reported a success on linking Firefox in reasonable time (4 minutes on 24core machine) and 4GB of memory use. (Without the WHOPR mode linking took 19 minutes 8GB of RAM). The resulting binary did work and showed small, 1% improvement on dromaeo CSS benchamrks as well as 6% code size reduction. Not many compilers are capable of this.<br />
+<br />
+Firefox is a quickly growing target - a year later I needed 8GB of memory to build it with the same compiler,so GCC 4.7 had to be optimized carefully to squeeze it into 3GB. Today firefox, compiled with GCC 4.7 needs over 20GB of RAM. Some observations on this can be found <a href="http://www.ucw.cz/~hubicka/slides/labs2013.pdf">in these 2013 slides</a>.<br />
+<br />
+In gcc 4.6 <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">-fwhopr</span> was removed and became default with <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">-flto</span>. The non-whopr path can still be executed via <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">-flto-partition=none</span>. <br />
+<h2>
+Kernel compilation (GCC 4.7+)</h2>
+Other long running project was Andi Kleen's effort to get Linux kernel to build with LTO. For a kernel developer, he made remarkable job on adding some missing features to the toolchain, mostly importantly the support for incremental linking. His effort is described in <a href="http://halobates.de/kernel-lto.pdf">2013 slides</a>. The changes was considered for 3.15rc1 but <a href="http://lkml.iu.edu/hypermail/linux/kernel/1404.1/00275.html">missed the window</a> apparently due to lack of evidence of benefits to the end-user.<br />
+<br />
+GCC 4.7 also had a rewrite of interprocedural constant propagation and a new
+ inliner analysis that is aware of the context function is being 
+inlined to (and, for example, can anticipate what parts of function body
+ will be optimized out).<br />
+<br />
+Progress on correctly compiling non-trivial C++ program was made by reimplementing thunks support. <br />
+<h2>
+Symbol table, scalability and stability improvements (GCC 4.8)</h2>
+One of long lasting GCC oddities was the lack of a symbol table datastructure. This made it harder to develop representation of some features that are tightly related to it, including aliases and thunks. For this reason we reorganized the callgraph module into a new symbol table datastructure that enables a better LTO optimization in programs involving those features.<br />
+<br />
+GCC 4.8 also had the usual work on memory reductions, LTO speedups. Since the LTO codegen started to be in shape, it was also the first release where the inliner went through re-tunning with link time optimization being considered.<br />
+<h2>
+Today (GCC 4.9)</h2>
+GCC 4.9 is being released this week (with release candidate 1 being out since last week). It is pretty big release with many internal changes and API cleanups.<br />
+<br />
+The most important changes in LTO (besides the usual bugfixes) involve new type merging implementation by Richard Biener and many of compile time and memory use improvements. Firefox once again can be linked bellow 4GB limit despite its ongoing growth. In fact the memory use is now less than two-fold of memory needed by the linker alone that is not too bad result given how much more information GCC handle.<br />
+<br />
+An important user visible change is the new default to slim LTO files instead of fat.&nbsp; GCC 4.8 and earlier produced both the intermediate language as well as assembly into every object file copmiled with <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">-flto</span>. This made it possible to handle LTO objects with non-LTO aware tools (ar, nm, ranlib and the linker) but it also doubles compile time, since everything is compiled twice. Since the binutils, libtool and other support matured, it is finally possible to avoid this expense.<br />
+<br />
+Martin Liška contributed <a href="http://arxiv.org/abs/1403.6997">pass for profile driven function reordering</a>. This pass should enable faster startup of large applications by reducing the portion of binary that needs to be read into memory and making the accesses more sequential.<br />
+<br />
+Another new feature is the devirtualization module that allows early removal of unreachable virtual methods (that makes a huge difference on Firefox compilation) and also improves code as described <a href="http://hubicka.blogspot.ca/2014/04/devirtualization-in-c-part-5-feedback.html">in other post</a>.<br />
+<br />
+GCC is now known to compile working Firefox, Chromium, Libreoffice, kernel and good a part of Gentoo distribution with LTO enabled.<br />
+<h2>
+What next?</h2>
+LTO is far from being complete. One of main lacking features, by my opinion, is consistent handling of optimization options and debug info matching the non-LTO compilation. To get resonable performance benefits, the compiler needs to be re-tuned for the new whole program optimization mode and also some applications needs to be adjusted.<br />
+<br />
+There is also plan to merge LTO streaming based LIPO from Google branch, Martin Liška's <a href="http://arxiv.org/abs/1403.6997">code unification pass.</a> I also hope the plans for well define virtual machine will be revived. In longer term I am planning to extend WHOPR to support fast recompilation in compile-edit cycle.<br />
+<br />
+Next time, i will write about series
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/109451389335040121442' itemprop='url'/>
+<a class='g-profile' href='https://plus.google.com/109451389335040121442' rel='author' title='author profile'>
+<span itemprop='name'>Jan Hubička</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='http://hubicka.blogspot.com/2014/04/linktime-optimization-in-gcc-1-brief.html' itemprop='url'/>
+<a class='timestamp-link' href='http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2014-04-21T01:27:00-07:00'>1:27 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-645516606'>
+<a href='http://www.blogger.com/post-edit.g?blogID=6965936738085416224&postID=771473909183207881&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=6965936738085416224&postID=771473909183207881&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=6965936738085416224&postID=771473909183207881&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=6965936738085416224&postID=771473909183207881&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=6965936738085416224&postID=771473909183207881&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=6965936738085416224&postID=771473909183207881&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://hubicka.blogspot.com/2014/04/linktime-optimization-in-gcc-1-brief.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://hubicka.blogspot.co.uk/search/label/C%2B%2B' rel='tag'>C++</a>,
+<a href='http://hubicka.blogspot.co.uk/search/label/code%20optimization' rel='tag'>code optimization</a>,
+<a href='http://hubicka.blogspot.co.uk/search/label/compilers' rel='tag'>compilers</a>,
+<a href='http://hubicka.blogspot.co.uk/search/label/history' rel='tag'>history</a>,
+<a href='http://hubicka.blogspot.co.uk/search/label/link-time%20optimization' rel='tag'>link-time optimization</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>No comments:</h4>
+<div id='Blog1_comments-block-wrapper'>
+<dl class='avatar-comment-indent' id='comments-block'>
+</dl>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Post a Comment</h4>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=6965936738085416224&postID=771473909183207881' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/2353383101-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html', '10145289940726862265');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-2-firefox.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://hubicka.blogspot.co.uk/2014/04/devirtualization-in-c-part-5-feedback.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://hubicka.blogspot.co.uk/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://hubicka.blogspot.com/feeds/771473909183207881/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://hubicka.blogspot.co.uk/search?updated-min=2014-01-01T00:00:00-08:00&amp;updated-max=2015-01-01T00:00:00-08:00&amp;max-results=8'>2014</a>
+<span class='post-count' dir='ltr'>(8)</span>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://hubicka.blogspot.co.uk/2014_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-2-firefox.html'>Linktime optimization in GCC, part 2 - Firefox</a></li>
+<li><a href='http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html'>Linktime optimization in GCC, part 1 - brief histo...</a></li>
+<li><a href='http://hubicka.blogspot.co.uk/2014/04/devirtualization-in-c-part-5-feedback.html'>Devirtualization in C++, part 5 (feedback driven d...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://hubicka.blogspot.co.uk/2014_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://hubicka.blogspot.co.uk/2014_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6965936738085416224&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Subscribe' id='Subscribe1'>
+<div style='white-space:nowrap'>
+<h2 class='title'>Subscribe To</h2>
+<div class='widget-content'>
+<div class='subscribe-wrapper subscribe-type-POST'>
+<div class='subscribe expanded subscribe-type-POST' id='SW_READER_LIST_Subscribe1POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fhubicka.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='http://add.my.yahoo.com/content?url=http%3A%2F%2Fhubicka.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://hubicka.blogspot.com/feeds/posts/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+                Atom
+              </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe1POST' onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div class='subscribe-wrapper subscribe-type-PER_POST'>
+<div class='subscribe expanded subscribe-type-PER_POST' id='SW_READER_LIST_Subscribe1PER_POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fhubicka.blogspot.com%2Ffeeds%2F771473909183207881%2Fcomments%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='http://add.my.yahoo.com/content?url=http%3A%2F%2Fhubicka.blogspot.com%2Ffeeds%2F771473909183207881%2Fcomments%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://hubicka.blogspot.com/feeds/771473909183207881/comments/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+                Atom
+              </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe1PER_POST' onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div style='clear:both'></div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6965936738085416224&widgetType=Subscribe&widgetId=Subscribe1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target='configSubscribe1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget PlusFollowers' id='PlusFollowers1'>
+<h2 class='title'>Google+ Followers</h2>
+<div class='widget-content'>
+<div class='g-plus' data-action='followers' data-height='300' data-href='https://plus.google.com/109451389335040121442' data-source='blogger:blog:followers' data-theme='DARK' data-width='250'></div>
+<script type='text/javascript'>
+        window.___gcfg = {'lang': 'en'};
+      </script>
+</div>
+</div><div class='widget PlusOne' id='PlusOne1'>
+<div class='widget-content'>
+<g:plusone annotation='bubble' href='http://hubicka.blogspot.com/' size='small' source='blogger:blog:plusone' width='250'></g:plusone>
+<script type='text/javascript'>
+      window.___gcfg = {"lang": "en"};
+    </script>
+</div>
+</div><div class='widget Label' id='Label1'>
+<h2>Labels</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://hubicka.blogspot.co.uk/search/label/devirtualization'>devirtualization</a>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6965936738085416224&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Profile' id='Profile1'>
+<h2>About Me</h2>
+<div class='widget-content'>
+<a href='https://plus.google.com/109451389335040121442'><img alt='My Photo' class='profile-img' height='80' src='//lh4.googleusercontent.com/-mcsjjGnxmAI/AAAAAAAAAAI/AAAAAAAAABU/xi7xxd4LDbM/s512-c/photo.jpg' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' href='https://plus.google.com/109451389335040121442' rel='author' style='background-image: url(//www.google.com/images/icons/ui/gprofile_button-16.png);'>
+Jan Hubička
+</a>
+<br/>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='https://plus.google.com/109451389335040121442'></div>
+</dt>
+<dd class='profile-textblock'>I am developing GCC, researching graph homomorphisms and homogeneous structures, digitizing photographic archive and like sauna ;)<br></dd>
+</dl>
+<a class='profile-link' href='https://plus.google.com/109451389335040121442' rel='author'>View my complete profile</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6965936738085416224&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='sidebar section' id='sidebar-right-3'><div class='widget FollowByEmail' id='FollowByEmail1'>
+<h2 class='title'>Follow by Email</h2>
+<div class='widget-content'>
+<div class='follow-by-email-inner'>
+<form action='http://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("http://feedburner.google.com/fb/a/mailverify?uri=HonzaHubikasBlog", "popupwindow", "scrollbars=yes,width=550,height=520"); return true' target='popupwindow'>
+<table width='100%'>
+<tr>
+<td>
+<input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+</td>
+<td width='64px'>
+<input class='follow-by-email-submit' type='submit' value='Submit'/>
+</td>
+</tr>
+</table>
+<input name='uri' type='hidden' value='HonzaHubikasBlog'/>
+<input name='loc' type='hidden' value='en_US'/>
+</form>
+</div>
+</div>
+<span class='item-control blog-admin'>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6965936738085416224&widgetType=FollowByEmail&widgetId=FollowByEmail1&action=editWidget&sectionId=sidebar-right-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("FollowByEmail1"));' target='configFollowByEmail1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</span>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Simple template. Powered by <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6965936738085416224&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1603738572-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '6965936738085416224';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d6965936738085416224','//hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html','6965936738085416224');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '6965936738085416224', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Honza Hubička\47s Blog', 'pageType': 'item', 'url': 'http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html', 'canonicalUrl': 'http://hubicka.blogspot.com/2014/04/linktime-optimization-in-gcc-1-brief.html', 'canonicalHomepageUrl': 'http://hubicka.blogspot.com/', 'homepageUrl': 'http://hubicka.blogspot.co.uk/', 'blogspotFaviconUrl': 'http://hubicka.blogspot.co.uk/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Linktime optimization in GCC, part 1 - brief history', 'pageTitle': 'Honza Hubička\47s Blog: Linktime optimization in GCC, part 1 - brief history', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Honza Hubička\46#39;s Blog - Atom\42 href\75\42http://hubicka.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Honza Hubička\46#39;s Blog - RSS\42 href\75\42http://hubicka.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Honza Hubička\46#39;s Blog - Atom\42 href\75\42http://www.blogger.com/feeds/6965936738085416224/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Honza Hubička\46#39;s Blog - Atom\42 href\75\42http://hubicka.blogspot.com/feeds/771473909183207881/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://2.bp.blogspot.com/-axH2_D8roUI/U1QsxVNwAfI/AAAAAAAAAGg/s1KbnLOaPqk/s72-c/whopr.png', 'postImageUrl': 'http://2.bp.blogspot.com/-axH2_D8roUI/U1QsxVNwAfI/AAAAAAAAAGg/s1KbnLOaPqk/s1600/whopr.png', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,f\75\42chrome\42,g\75\42jstiming\42,k\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){var e\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[e,d];if(void 0\75\75c)try{b.console.timeStamp(\42CSI/\42+a)}catch(h){}};this[k](\42start\42,null,a)}var a;b.performance\46\46(a\75b.performance.timing);var n\75a?new d(a.responseStart):new d;b.jstiming\75{Timer:d,load:n};if(a){var c\75a.navigationStart,h\75a.responseStart;0\74c\46\46h\76\75c\46\46(b[g].srt\75h-c)}if(a){var e\75b[g].load;0\74c\46\46h\76\75c\46\46(e[k](\42_wtsrt\42,void 0,c),e[k](\42wtsrt_\42,\42_wtsrt\42,h),e[k](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,\nb[f]\46\46b[f].csi\46\46(a\75Math.floor(b[f].csi().pageT),e\46\0460\74c\46\46(e[k](\42_tbnd\42,void 0,b[f].csi().startE),e[k](\42tbnd_\42,\42_tbnd\42,c))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,e\46\0460\74c\46\46(e[k](\42_tbnd\42,void 0,b.external.startE),e[k](\42tbnd_\42,\42_tbnd\42,c))),a\46\46(b[g].pt\75a)}catch(p){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[g].load[k](\42aft\42)};var l\75!1;function m(){l||(l\75!0,b[g].load[k](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,m,!1):b.attachEvent(\42onscroll\42,m);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42https://www.blogger.com/static/v1/jsbin/2934423744-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/76f25a6f2e06af76', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'content_padding': '10px', 'paging_background': 'transparent url(//www.blogblog.com/1kt/simple/paging_dot.png) repeat-x scroll top center', 'image_border_small_size': '2px', 'body_background_gradient_cap': 'none', 'tabs_selected_background_color': '#eeeeee', 'body_rule_color': 'transparent', 'header_shadow_spread': '0', 'header_shadow_offset_left': '0', 'header_padding': '0', 'link_visited_color': '#888888', 'mobile_background_size': 'auto', 'post_title_font': 'normal normal 22px \47Trebuchet MS\47,Trebuchet,Verdana,sans-serif', 'tabs_text_color': '#000000', 'date_header_margin': 'inherit', 'header_background_gradient': 'none', 'content_shadow_spread_webkit': '0', 'header_bottom_border_size': '0', 'header_shadow_offset_top': '0', 'mobile_button_color': '#ffffff', 'widget_title_font': 'normal bold 11px \47Trebuchet MS\47,Trebuchet,Verdana,sans-serif', 'main_section_margin': '1em', 'keycolor': '#ffffff', 'content_shadow_spread': '0', 'image_background_color': '#ffffff', 'header_font': 'normal normal 40px \47Trebuchet MS\47,Trebuchet,Verdana,sans-serif', 'header_background_color': 'transparent', 'main_border_width': '0', 'main_padding': '0', 'tabs_border_color': '#dddddd', 'image_text_color': '#666666', 'description_text_size': '18px', 'post_footer_background_color': '#eeeeee', 'body_background_gradient_tile': 'none', 'page_width': 'auto', 'tabs_background_gradient': 'none', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'main_padding_bottom': '65px', 'tabs_background_color': 'transparent', 'image_border_large_size': '5px', 'post_margin_bottom': '45px', 'body_background_override': '', 'tabs_margin_side': '30px', 'link_hover_color': '#33aaff', 'description_text_color': '#000000', 'body_text_color': '#666666', 'content_padding_horizontal': '40px', 'endSide': 'right', 'page_width_selector': '.region-inner', 'date_header_padding': '0.4em', 'post_footer_text_color': '#666666', 'startSide': 'left', 'date_header_color': '#ffffff', 'tabs_font': 'normal normal 12px \47Trebuchet MS\47, Trebuchet, Verdana, sans-serif', 'post_footer_border_color': '#eeeeee', 'body_font': 'normal normal 12px \47Trebuchet MS\47, Trebuchet, Verdana, sans-serif', 'footer_bevel': '1px', 'tabs_bevel_border_width': '1px', 'date_header_background_color': '#bbbbbb', 'content_shadow_spread_ie': '0', 'widget_title_text_color': '#000000', 'header_border_horizontalsize': '1px', 'image_border_color': '#eeeeee', 'tabs_border_width': '1px', 'content_background_color': '#ffffff', 'link_color': '#2288bb', 'header_text_color': '#000000', 'date_header_letterspacing': '3px', 'tabs_margin_top': '0', 'main_padding_top': '35px', 'header_border_size': '1px', 'tabs_selected_text_color': '#000000', 'content_background_color_selector': '.content-inner', 'body_background_color': '#ffffff', 'widget_alternate_text_color': '#999999'}, 'override': 'div.post-body h2,div.post-body h3, h4 {padding-bottom: 0.5em; padding-top: 1em}\ndiv.post-body h2{font-size: large;}'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_FollowByEmailView', new _WidgetInfo('FollowByEmail1', 'sidebar-right-3', null, document.getElementById('FollowByEmail1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Simple template. Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/77243591-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/3904812905-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'sidebar-right-1', null, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusFollowersView', new _WidgetInfo('PlusFollowers1', 'sidebar-right-1', null, document.getElementById('PlusFollowers1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusOneView', new _WidgetInfo('PlusOne1', 'sidebar-right-1', null, document.getElementById('PlusOne1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right-1', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
