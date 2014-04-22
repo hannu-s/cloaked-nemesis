@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 class ListTool():
 	"""docstring for ListTOol"""
 	def addOnlyUnique(self, item, li):
@@ -72,4 +74,8 @@ class ListTool():
 		index = self.getIndexByWord(li, word)
 		if not index == -1:
 			li.pop(index)
+		return li
+
+	def removeDuplicates(self, li):
+		li = list(OrderedDict.fromkeys(li))
 		return li
