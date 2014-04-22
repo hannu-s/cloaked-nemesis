@@ -1,0 +1,1117 @@
+status: 200
+content-length: 74385
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src https://github.global.ssl.fastly.net https://ssl.google-analytics.com https://collector-cdn.github.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' https://github.global.ssl.fastly.net; object-src https://github.global.ssl.fastly.net
+set-cookie: _gh_sess=BAh7CToPc2Vzc2lvbl9pZEkiJTQ5MzdhYTNlM2Y0Y2FjZGVlZmIxNWI4NDcyMWYzMDg0BjoGRUY6DXNweV9yZXBvSSIWcHVuaXZlcnNlL2NhcHN1bGUGOwZUOhBzcHlfcmVwb19hdEl1OglUaW1lDdGOHIC0mnhgCjoNbmFub19udW1pAfE6DW5hbm9fZGVuaQY6DXN1Ym1pY3JvIgckEDoLb2Zmc2V0af6QnToJem9uZUkiCFBEVAY7BlQ6EF9jc3JmX3Rva2VuSSIxdnJGdE5VNTZUam9RVlRZOS9pK3kveXQzNk4ySHlqZThKR09ZcUlXRE53QT0GOwZG--aaec52839e7fe0556a2d2e8bb35467614e31fc9e; path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+server: GitHub.com
+x-served-by: f0ee042be143fcba78041fc2f69c0aa7
+etag: "aefc74f21728ea64654537e2d9610972"
+x-github-request-id: 58739B02:439C:5D9AFA:5356A5B7
+cache-control: private, max-age=0, must-revalidate
+date: Tue, 22 Apr 2014 17:24:07 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+-content-encoding: gzip
+content-location: https://github.com/puniverse/capsule
+-varied-accept-encoding: gzip, deflate
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>puniverse/capsule · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="puniverse/capsule" name="twitter:title" /><meta content="capsule - Dead-Simple Packaging and Deployment for JVM Apps" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/1882739?s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/1882739?s=400" property="og:image" /><meta content="puniverse/capsule" property="og:title" /><meta content="https://github.com/puniverse/capsule" property="og:url" /><meta content="capsule - Dead-Simple Packaging and Deployment for JVM Apps" property="og:description" />
+
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="/_sockets" />
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="58739B02:439C:5D9AFA:5356A5B7" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://github.global.ssl.fastly.net/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="XTA0YBscF9mjIsb6GEv4Zfwh42SZWguQg4MIlVQsB7fdE57vXpJomv4VmguNurUcKHm+yWEOw9ylPZoFAAM9nA==" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-5da842ffec8a31b5975487ab1278c7ac16876671.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-84fff2ce527238f195901d5920534eeeb2a47b8c.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+        <script crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/frameworks-f8f8d8ee1afb4365ba5e002fdbc3c8e61738713b.js" type="text/javascript"></script>
+        <script async="async" crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/github-9b5ee003ab01a44bbc43a93276724dcc2d33a087.js" type="text/javascript"></script>
+        
+        
+      <meta http-equiv="x-pjax-version" content="2e813adb5e95514017718ef18ba6d986">
+
+      
+  <meta name="description" content="capsule - Dead-Simple Packaging and Deployment for JVM Apps" />
+
+  <meta content="1882739" name="octolytics-dimension-user_id" /><meta content="puniverse" name="octolytics-dimension-user_login" /><meta content="18912218" name="octolytics-dimension-repository_id" /><meta content="puniverse/capsule" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="18912218" name="octolytics-dimension-repository_network_root_id" /><meta content="puniverse/capsule" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/puniverse/capsule/commits/master.atom" rel="alternate" title="Recent Commits to capsule:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fpuniverse%2Fcapsule">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="puniverse/capsule"
+      data-branch="master"
+      data-sha="99f6bd9462103b2db4492e46fa107b71d27540a2"
+  >
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="puniverse/capsule" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+    <a href="/login?return_to=%2Fpuniverse%2Fcapsule"
+    class="minibutton with-count js-toggler-target star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+    <a class="social-count js-social-count" href="/puniverse/capsule/stargazers">
+      5
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fpuniverse%2Fcapsule"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-git-branch"></span>Fork
+      </a>
+      <a href="/puniverse/capsule/network" class="social-count">
+        0
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/puniverse" class="url fn" itemprop="url" rel="author"><span itemprop="title">puniverse</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/puniverse/capsule" class="js-current-repository js-repo-home-link">capsule</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline with-full-navigation ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/puniverse/capsule" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /puniverse/capsule">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/puniverse/capsule/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /puniverse/capsule/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/puniverse/capsule/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /puniverse/capsule/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/puniverse/capsule/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /puniverse/capsule/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/puniverse/capsule/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /puniverse/capsule/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="/puniverse/capsule/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /puniverse/capsule/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/puniverse/capsule.git" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/puniverse/capsule.git" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/puniverse/capsule" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/puniverse/capsule" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+
+                <a href="/puniverse/capsule/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download puniverse/capsule as a zip file"
+                   title="Download puniverse/capsule as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<span id="js-show-full-navigation"></span>
+
+<div class="repository-meta js-details-container ">
+    <div class="repository-description js-details-show">
+      <p>Dead-Simple Packaging and Deployment for JVM Apps</p>
+    </div>
+
+
+
+</div>
+
+<div class="capped-box overall-summary ">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/puniverse/capsule/commits/master">
+            <span class="num">
+              <span class="octicon octicon-history"></span>
+              50
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/puniverse/capsule/branches">
+          <span class="num">
+            <span class="octicon octicon-git-branch"></span>
+            1
+          </span>
+          branch
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/puniverse/capsule/releases">
+          <span class="num">
+            <span class="octicon octicon-tag"></span>
+            1
+          </span>
+          release
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/puniverse/capsule/graphs/contributors">
+    <span class="num">
+      <span class="octicon octicon-organization"></span>
+      1
+    </span>
+    contributor
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/puniverse/capsule/search?l=java">
+                <span class="color-block language-color" style="background-color:#b07219;"></span>
+                <span class="lang">Java</span>
+                <span class="percent">91.4%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/puniverse/capsule/search?l=groovy">
+                <span class="color-block language-color" style="background-color:#e69f56;"></span>
+                <span class="lang">Groovy</span>
+                <span class="percent">8.6%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="tooltipped tooltipped-s" aria-label="Show language statistics">
+    <a href="#"
+     class="repository-lang-stats-graph js-toggle-lang-stats"
+     style="background-color:#e69f56">
+  <span class="language-color" style="width:91.4%; background-color:#b07219;" itemprop="keywords">Java</span><span class="language-color" style="width:8.6%; background-color:#e69f56;" itemprop="keywords">Groovy</span>
+    </a>
+  </div>
+
+
+
+<div class="file-navigation in-mid-page">
+    <a href="/puniverse/capsule/compare" aria-label="Compare, review, create a pull request" class="minibutton compact primary tooltipped tooltipped-s" aria-label="Compare &amp; review" data-pjax>
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/puniverse/capsule/tree/master"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/puniverse/capsule/tree/v0.1.0"
+                 data-name="v0.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="v0.1.0">v0.1.0</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/puniverse/capsule" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">capsule</span></a></span></span><span class="separator"> / </span><form action="/login?return_to=%2Fpuniverse%2Fcapsule" aria-label="Sign in to make or propose changes" class="js-new-blob-form tooltipped tooltipped-e new-file-link" method="post"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-file-add" data-test-id="create-new-git-file" role="button"></span></form></div>
+</div>
+
+
+
+<a href="/puniverse/capsule/find/master"
+  data-hotkey="t" class="js-show-file-finder" style="display:none" data-pjax>Show File Finder</a>
+<div class="bubble files-bubble">
+
+  
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/puniverse/capsule/commit/ac46a8b42ed00133b370ba50a98c2ae80373e3ec" class="message" data-pjax="true" title="README">README</a>
+        
+    </p>
+    <div class="commit-meta">
+      <span aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="ac46a8b42ed00133b370ba50a98c2ae80373e3ec" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+      <a href="/puniverse/capsule/commit/ac46a8b42ed00133b370ba50a98c2ae80373e3ec" class="sha-block" data-pjax>latest commit <span class="sha">ac46a8b42e</span></a>
+
+      <div class="authorship">
+        <img alt="pron" class="gravatar js-avatar" data-user="1273445" height="20" src="https://avatars1.githubusercontent.com/u/1273445?s=140" width="20" />
+        <span class="author-name"><a href="/pron" data-skip-pjax="true" rel="contributor">pron</a></span>
+        authored <local-time class="updated" datetime="2014-04-22T19:35:52+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 19:35:52 +0300">April 22, 2014</local-time>
+
+      </div>
+    </div>
+  </div>
+
+  <table class="files" data-pjax>
+
+    
+<tbody class=""
+  data-url="/puniverse/capsule/file-list/master">
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/tree/master/gradle" class="js-directory-link" id="8ed1a771bc236c287ad93c699bfdd2d7-70446467f864d0fb38a41eafafc1860349ca410f" title="gradle">gradle</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/dee3ba20bb872af9a8173ce9db1b4306713f95d0" class="message" data-pjax="true" title="-">-</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-19T11:46:18+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-19 11:46:18 +0300">April 19, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/tree/master/src" class="js-directory-link" id="25d902c24283ab8cfbac54dfa101ad31-50b775970a98de3f135b59c1d8aba4481d5840ef" title="src">src</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/3141717bedd8842939b184c4a72555f3ebf1f592" class="message" data-pjax="true" title="-">-</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-22T18:05:20+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 18:05:20 +0300">April 22, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-84f273ce25cfb98da152c79f5407653af829e16e" title=".gitignore">.gitignore</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/02974bc287c85880732a77cf89ac0d2a35c0a345" class="message" data-pjax="true" title="first commit">first commit</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-18T15:17:30+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-18 15:17:30 +0300">April 18, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/LICENSE" class="js-directory-link" id="9879d6db96fd29134fc802214163b95a-f61d34dfe3488b71af18f60cff8bcc716dcfa9d7" title="LICENSE">LICENSE</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/f1cdd2da4812a5307b759fd1c7b4a4512c61b8ec" class="message" data-pjax="true" title="license, notice, build">license, notice, build</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-20T16:18:49+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-20 16:18:49 +0300">April 20, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/NOTICE" class="js-directory-link" id="aa14599dc3fdfa9cc81a7c3c247b77b9-d52c45d4f69822d247ea4ed4e4cbe0dfea022c0e" title="NOTICE">NOTICE</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/9826876d38395b910713130605aa1a90c9e3fc84" class="message" data-pjax="true" title="notice">notice</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-20T21:57:12+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-20 21:57:12 +0300">April 20, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/README.md" class="js-directory-link" id="04c6e90faac2675aa89e2176d2eec7d8-ad742cf5003ec16e97c4a75aa2300fbc2a539073" title="README.md">README.md</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/ac46a8b42ed00133b370ba50a98c2ae80373e3ec" class="message" data-pjax="true" title="README">README</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-22T19:35:52+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 19:35:52 +0300">April 22, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/build.gradle" class="js-directory-link" id="c197962302397baf3a4cc36463dce5ea-54d93731dccb31d0b4c9330c958110bcacae543e" title="build.gradle">build.gradle</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/3a78da0635d18e4927632b49c7602ca5ec4a3cd8" class="message" data-pjax="true" title="prepare release version">prepare release version</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-22T17:18:49+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 17:18:49 +0300">April 22, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/gradlew" class="js-directory-link" id="36ffbd2ea7085cf19547193a7faf30c8-91a7e269e19dfc62e27137a0b57ef3e430cee4fd" title="gradlew">gradlew</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/02974bc287c85880732a77cf89ac0d2a35c0a345" class="message" data-pjax="true" title="first commit">first commit</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-18T15:17:30+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-18 15:17:30 +0300">April 18, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/gradlew.bat" class="js-directory-link" id="c9b677a57d25a366595a35b2230d0502-aec99730b4e8fcd90b57a0e8e01544fea7c31a89" title="gradlew.bat">gradlew.bat</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/02974bc287c85880732a77cf89ac0d2a35c0a345" class="message" data-pjax="true" title="first commit">first commit</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-18T15:17:30+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-18 15:17:30 +0300">April 18, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/blob/master/settings.gradle" class="js-directory-link" id="88b7c47e47b8ee65263b6784b86fa0a7-72d1b1326df40255c15c5aff8bc8438ac078c63c" title="settings.gradle">settings.gradle</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/puniverse/capsule/commit/02974bc287c85880732a77cf89ac0d2a35c0a345" class="message" data-pjax="true" title="first commit">first commit</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-18T15:17:30+03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-18 15:17:30 +0300">April 18, 2014</local-time></span></td>
+    </tr>
+</tbody>
+
+  </table>
+</div>
+
+  <div id="readme" class="clearfix announce instapaper_body md">
+    <span class="name">
+      <span class="octicon octicon-book"></span>
+      README.md
+    </span>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a name="user-content-capsule" class="anchor" href="#capsule"><span class="octicon octicon-link"></span></a>Capsule</h1>
+
+<h2>
+<a name="user-content-dead-simple-packaging-and-deployment-for-jvm-apps" class="anchor" href="#dead-simple-packaging-and-deployment-for-jvm-apps"><span class="octicon octicon-link"></span></a>Dead-Simple Packaging and Deployment for JVM Apps</h2>
+
+<p>Capsule is a dead-easy deployment package for standalone JVM applications. Capsule lets you package your entire application into a single jar file and run it like this <code>java -jar app.jar</code>. That's it. You don't need platform-specific startup scripts, and no JVM flags: the application capsule contains all the JVM configuration options. It supports native libraries, custom boot class-path, and Java agents. It even automatically download maven dependencies when the program is first launched, if you choose not to embed them in the capsule. </p>
+
+<h3>
+<a name="user-content-how-capsule-works" class="anchor" href="#how-capsule-works"><span class="octicon octicon-link"></span></a>How Capsule Works</h3>
+
+<p>When you include Capsule into your JAR file and set Capsule as the JAR's main class, Capsule reads various configuration values (like JVM arguments, environment variables, Maven dependencies and more) from the JAR's manifest. It then downloads all required Maven dependencies, if any, and optionally extracts the JAR's contents into a cache directory. Finally, it spawns another process to run your application as configured.</p>
+
+<h3>
+<a name="user-content-what-capsule-doesnt-do" class="anchor" href="#what-capsule-doesnt-do"><span class="octicon octicon-link"></span></a>What Capsule Doesn't Do</h3>
+
+<p>Capsule doesn't contain a JVM distribution, the application user would need to have a JRE installed. Java 9 is expected to have a mechanism for packaging stripped-down versions of the JVM.</p>
+
+<h3>
+<a name="user-content-alternatives-to-capsule" class="anchor" href="#alternatives-to-capsule"><span class="octicon octicon-link"></span></a>Alternatives to Capsule</h3>
+
+<p>There are a few alternatives to packaging your application in a single JAR. <a href="http://maven.apache.org/plugins/maven-shade-plugin/">Maven's Shade plugin</a>/<a href="https://github.com/johnrengelman/shadow">Gradle's Shadow plugin</a> rename dependency classes and might interfere with the application in subtle ways; they also don't support native libraries. <a href="http://one-jar.sourceforge.net/">One-Jar</a> does support native libraries, but uses class-loader hacks that may interfere with the application in even subtler ways. And none of these support JVM arguments.</p>
+
+<p>The only distribution mechanism supporting JVM arguments and Java version selection is platform-dependent startup scripts. Even if your build tool can generate those for you, they would always require some form of installation by the user.</p>
+
+<p>With Capsule, you just distribute a single jar and run it. </p>
+
+<h3>
+<a name="user-content-getting-capsule" class="anchor" href="#getting-capsule"><span class="octicon octicon-link"></span></a>Getting Capsule</h3>
+
+<p><a href="https://github.com/puniverse/capsule/releases">Download</a></p>
+
+<p>or:</p>
+
+<pre><code>co.paralleluniverse:capsule:0.1.0
+</code></pre>
+
+<p>On Maven Central.</p>
+
+<h3>
+<a name="user-content-support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h3>
+
+<p>Discuss Capsule on the capsule-user <a href="https://groups.google.com/forum/#!forum/capsule-user">Google Group/Mailing List</a></p>
+
+<h3>
+<a name="user-content-whats-missingtodo-contributions-happily-accepted" class="anchor" href="#whats-missingtodo-contributions-happily-accepted"><span class="octicon octicon-link"></span></a>What's Missing/TODO (contributions happily accepted!)</h3>
+
+<ul>
+<li>Gradle, Maven and Leiningen plugins for easy creation of capsules.</li>
+</ul><h2>
+<a name="user-content-usage-examples" class="anchor" href="#usage-examples"><span class="octicon octicon-link"></span></a>Usage Examples</h2>
+
+<p>Before we delve into the specifics of defining a Capsule distribution, let us look at a few different ways of packaging a capsule. The examples are snippets of <a href="http://www.gradle.org/">Gradle</a> build files, but the same could be achieved with <a href="http://ant.apache.org/">Ant</a> or <a href="http://maven.apache.org/">Maven</a>. The full Gradle file is <a href="https://github.com/puniverse/capsule-demo/blob/master/build.gradle">here</a>.</p>
+
+<p>We'll assume that the application's <code>gradle.build</code> file applies the <a href="http://www.gradle.org/docs/current/userguide/java_plugin.html"><code>java</code></a> and <a href="http://www.gradle.org/docs/current/userguide/application_plugin.html"><code>application</code></a> plugins, and that the build file declare the <code>capsule</code> configuration and contains the dependency <code>capsule 'co.paralleluniverse:capsule:0.1.0'</code>.</p>
+
+<p>The first example creates what may be calle a "full" capsule:</p>
+
+<div class="highlight highlight-groovy"><pre><span class="n">task</span> <span class="nf">fullCapsule</span><span class="o">(</span><span class="nl">type:</span> <span class="n">Jar</span><span class="o">,</span> <span class="nl">dependsOn:</span> <span class="n">jar</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">archiveName</span> <span class="o">=</span> <span class="s2">"foo.jar"</span>
+
+    <span class="n">from</span> <span class="n">jar</span> <span class="c1">// embed our application jar</span>
+    <span class="n">from</span> <span class="o">{</span> <span class="n">configurations</span><span class="o">.</span><span class="na">runtime</span> <span class="o">}</span> <span class="c1">// embed dependencies</span>
+
+    <span class="n">from</span><span class="o">(</span><span class="n">configurations</span><span class="o">.</span><span class="na">capsule</span><span class="o">.</span><span class="na">collect</span> <span class="o">{</span> <span class="n">zipTree</span><span class="o">(</span><span class="n">it</span><span class="o">)</span> <span class="o">})</span> <span class="o">{</span> <span class="n">include</span> <span class="s1">'Capsule.class'</span> <span class="o">}</span> <span class="c1">// we just need the single Capsule class</span>
+
+    <span class="n">manifest</span> <span class="o">{</span> 
+        <span class="n">attributes</span><span class="o">(</span>
+            <span class="s1">'Main-Class'</span>        <span class="o">:</span> <span class="s1">'Capsule'</span><span class="o">,</span>
+            <span class="s1">'Application-Class'</span> <span class="o">:</span> <span class="n">mainClassName</span><span class="o">,</span>
+            <span class="s1">'Java-Version'</span>      <span class="o">:</span> <span class="s1">'1.8.0'</span><span class="o">,</span>
+            <span class="s1">'JVM-Args'</span>          <span class="o">:</span> <span class="n">run</span><span class="o">.</span><span class="na">jvmArgs</span><span class="o">.</span><span class="na">join</span><span class="o">(</span><span class="s1">' '</span><span class="o">),</span>
+            <span class="s1">'System-Properties'</span> <span class="o">:</span> <span class="n">run</span><span class="o">.</span><span class="na">systemProperties</span><span class="o">.</span><span class="na">collect</span> <span class="o">{</span> <span class="n">k</span><span class="o">,</span><span class="n">v</span> <span class="o">-&gt;</span> <span class="s2">"$k=$v"</span> <span class="o">}.</span><span class="na">join</span><span class="o">(</span><span class="s1">' '</span><span class="o">),</span>
+            <span class="s1">'Java-Agents'</span>       <span class="o">:</span> <span class="n">configurations</span><span class="o">.</span><span class="na">quasar</span><span class="o">.</span><span class="na">iterator</span><span class="o">().</span><span class="na">next</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span>
+        <span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>We embed the application jar and all the dependency jars into the capsule jar (without extracting them). We also include the <code>Capsule</code> class in the jar.
+Then, in the jar's manifest, we declare <code>Capsule</code> as the main class. This is the class that will be executed when we run <code>java -jar foo.jar</code>. The <code>Application-Class</code> attribute tells Capsule which class to run in the new JVM process, and we set it to the same value, <code>mainClass</code> used by the build's <code>run</code> task. The <code>Java-Version</code> attribute specifies the JVM version will be used to run the application. If this version is different from the Java version used to launch the capsule, Capsule will look for an appropriate JRE installation to use. We then copy the JVM arguments and system properties from build file's <code>run</code> task into the manifest, and finally we declare a Java agent used by <a href="https://github.com/puniverse/quasar">Quasar</a>.</p>
+
+<p>The resulting jar has the following structure:</p>
+
+<pre><code>foo.jar
+|__ Capsule.class
+|__ app.jar
+|__ dep1.jar
+|__ dep2.jar
+\__ MANIFEST
+    \__ MANIFEST.MF
+</code></pre>
+
+<p>When we run the capsule with <code>java -jar foo.jar</code>, its contents will be extracted into a cache directory (whose location can be customized).</p>
+
+<p>This kind of capsule has the advantage of being completely self-contained, and it does not require online access to run. The downside is that it can be rather large, as all dependencies are stuffed into the jar.</p>
+
+<p>The second kind of capsule does not embed the app's dependencies in the jar, but downloads them when first run:</p>
+
+<div class="highlight highlight-groovy"><pre><span class="n">task</span> <span class="nf">capsule</span><span class="o">(</span><span class="nl">type:</span> <span class="n">Jar</span><span class="o">,</span> <span class="nl">dependsOn:</span> <span class="n">classes</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">archiveName</span> <span class="o">=</span> <span class="s2">"foo.jar"</span>
+    <span class="n">from</span> <span class="n">sourceSets</span><span class="o">.</span><span class="na">main</span><span class="o">.</span><span class="na">output</span> <span class="c1">// this way we don't need to extract</span>
+
+    <span class="n">from</span> <span class="o">{</span> <span class="n">configurations</span><span class="o">.</span><span class="na">capsule</span><span class="o">.</span><span class="na">collect</span> <span class="o">{</span> <span class="n">zipTree</span><span class="o">(</span><span class="n">it</span><span class="o">)</span> <span class="o">}</span> <span class="o">}</span> <span class="c1">// we need all of Capsule's classes</span>
+
+    <span class="n">manifest</span> <span class="o">{</span> 
+        <span class="n">attributes</span><span class="o">(</span>
+            <span class="s1">'Main-Class'</span>        <span class="o">:</span> <span class="s1">'Capsule'</span><span class="o">,</span>
+            <span class="s1">'Application-Class'</span> <span class="o">:</span> <span class="n">mainClassName</span><span class="o">,</span>
+            <span class="s1">'Extract-Capsule'</span>   <span class="o">:</span> <span class="s1">'false'</span><span class="o">,</span> <span class="c1">// don't extract capsule to the filesystem</span>
+            <span class="s1">'Min-Java-Version'</span>  <span class="o">:</span> <span class="s1">'1.8.0'</span><span class="o">,</span>
+            <span class="s1">'JVM-Args'</span>          <span class="o">:</span> <span class="n">run</span><span class="o">.</span><span class="na">jvmArgs</span><span class="o">.</span><span class="na">join</span><span class="o">(</span><span class="s1">' '</span><span class="o">),</span>
+            <span class="s1">'System-Properties'</span> <span class="o">:</span> <span class="n">run</span><span class="o">.</span><span class="na">systemProperties</span><span class="o">.</span><span class="na">collect</span> <span class="o">{</span> <span class="n">k</span><span class="o">,</span><span class="n">v</span> <span class="o">-&gt;</span> <span class="s2">"$k=$v"</span> <span class="o">}.</span><span class="na">join</span><span class="o">(</span><span class="s1">' '</span><span class="o">),</span>
+            <span class="s1">'Java-Agents'</span>       <span class="o">:</span> <span class="n">getDependencies</span><span class="o">(</span><span class="n">configurations</span><span class="o">.</span><span class="na">quasar</span><span class="o">).</span><span class="na">iterator</span><span class="o">().</span><span class="na">next</span><span class="o">(),</span>
+            <span class="s1">'Dependencies'</span>      <span class="o">:</span> <span class="n">getDependencies</span><span class="o">(</span><span class="n">configurations</span><span class="o">.</span><span class="na">runtime</span><span class="o">).</span><span class="na">join</span><span class="o">(</span><span class="s1">' '</span><span class="o">)</span>
+        <span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>The resulting jar has the following structure:</p>
+
+<pre><code>foo.jar
+|__ Capsule.class
+|__ capsule/
+|    \__ [capsule classes]
+|__ com/
+|   \__ acme/
+|       \__ [app classes]
+\__ MANIFEST/
+    \__ MANIFEST.MF
+</code></pre>
+
+<p>This capsule doesn't embed the dependencies in the jar, so our application's classes can be simply placed in it unwrapped. Instead, the <code>Dependencies</code> attribute declares the application's dependencies (the <code>getDependencies</code> function translates Gradle dependencies to Capsule dependencies. Its definition can be found <a href="https://github.com/puniverse/capsule-demo/blob/master/build.gradle#L77">here</a> and it may be copied verbatim to any build file). The first time we run <code>java -jar foo.jar</code>, the dependencies will be downloaded (by default from Maven Central, but other Maven repositories may be declared in the manifest). The dependencies are placed in a cache directory shared by all capsules, so common ones like SLF4J or Guava will only be downloaded once. Also, because the app's classes are placed directly in the jar, and the dependencies are loaded to a shared cache, the capsule does not need to be extracted to the filesystem at all, hene the manifest says <code>Extract-Capsule : false</code>.</p>
+
+<p>Instead of specifying the dependencies and (optionally) the repositories directly in the manifest, if the capsule contains a <code>pom.xml</code> file in the jar root, it will be used to find the dependencies.</p>
+
+<p>In order to support Maven dependencies, we needed to include all of Capsule's classes in the capsule jar rather than just the <code>Capsule</code> class. This will add about 2MB to the (compressed) jar, but will save a lot more by not embedding all the dependencies.</p>
+
+<h2>
+<a name="user-content-user-guide" class="anchor" href="#user-guide"><span class="octicon octicon-link"></span></a>User Guide</h2>
+
+<p>Most applications will need to specify two attributes in the capsule's manifest:</p>
+
+<pre><code>Main-Class : Capsule
+Application-Class : [the applications's main class]
+</code></pre>
+
+<p>These attributes are sufficient to build a capsule, but there are many other configuration options, which will be explained below.</p>
+
+<h3>
+<a name="user-content-launching-the-capsule" class="anchor" href="#launching-the-capsule"><span class="octicon octicon-link"></span></a>Launching the Capsule</h3>
+
+<p>As mentioned before, <code>java -jar app.jar [app arguments]</code> will launch the application.</p>
+
+<p>The <code>java -Dcapsule.version -jar app.jar</code> command will print the version of Capsule used, and then exit without launching the app.</p>
+
+<p>Adding <code>-Dcapsule.log=verbose</code> before <code>-jar</code> will print information about Capsule's action.</p>
+
+<h3>
+<a name="user-content-application-id" class="anchor" href="#application-id"><span class="octicon octicon-link"></span></a>Application ID</h3>
+
+<p>The application ID is used to find the capsule's application cache, where the capsule's contents will be extracted if necessary. If the manifest has an <code>Application-Name</code>, it will be the application's ID, combined with the <code>Application-Version</code> attribute, if found. If there is no <code>Application-Name</code> attribute, and a <code>pom.xml</code> file is found in the jar's root, the ID will be formed by joining the POM's groupId, ArtifactId, and version properties. If there is no pom file, the <code>Application-Class</code> attribute will serve as the application name.</p>
+
+<p>The application's ID can be overriden by the <code>capsule.app.id</code> system property, if defined when launching the capsule, as in <code>java -Dcapsule.app.id=my_old_app -jar app.jar</code></p>
+
+<h3>
+<a name="user-content-java-version" class="anchor" href="#java-version"><span class="octicon octicon-link"></span></a>Java Version</h3>
+
+<p>By default, the application will run using the same JVM used to run the capsule itself, i.e., the JVM used to run <code>java -jar app.jar</code>. If the <code>Min-Java-Version</code> attribute is specified in the manifest (e.g. 1.7.0_50 or 1.8.0), it will be used to test the JVM's version. If the JVM is not of the required version, an exception will be throw, and the app will not run.</p>
+
+<p>The <code>Java-Version</code> attribute can specify a JVM version that may be different from the one used to launch the capsule. If that attribute is found, Capsule will make an effort to find a JVM installation that matches the requested version. Capsule will use the highest update version that matches the requested one, i.e. if <code>Java-Version</code> is <code>1.7.0</code>, and there are two Java 7 installations, one <code>1.7.0_40</code> and one <code>1.7.0_50</code>, then <code>1.7.0_50</code> will be used. <code>Java-Version</code> may specify either a higher or a lower version than the one used to launch the capsule. For example, if Java 7 is used to launch the capsule and <code>Java-Version</code> is <code>1.6.0</code>, then Capsule will attempt to find a Java 6 installation and use it to run the app (or fail to launch the app if it can't). Similarly if <code>1.8.0</code> is requested.</p>
+
+<p>Whatever the <code>Min-Java-Version</code> or <code>Java-Version</code> attributes specify, launching the capsule with the <code>capsule.java.home</code> system property, will use whatever Java installation is specified by the property, for example: <code>java -Dcapsule.java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home -jar app.jar</code>.</p>
+
+<p>Running <code>java -Dcapsule.jvms -jar app.jar</code> will list all Java installations Capsule can find, and then quit without launching the app.</p>
+
+<h3>
+<a name="user-content-capsules-cache" class="anchor" href="#capsules-cache"><span class="octicon octicon-link"></span></a>Capsule's Cache</h3>
+
+<p>By default, Capsule will extract the capsule jar's contents -- except for class files placed directly in the jar -- into a cache directory. If the
+<code>Extract-Capsule</code> manifest attribute is set to <code>false</code>, the jar will not be extracted. The value of the <code>Extract-Capsule</code> attribute, can be overriden with the <code>capsule.extract</code> system property, as in <code>java -Dcapsule.extract=true -jar app.jar</code>.</p>
+
+<p>The capsule will be extracted once. Following run will compare the jar's modification date with that of the cache, and will re-write the cache only if the capsule jar is younger. You can force re-extraction of the capsule with <code>-Dcapsule.reset=true</code>.</p>
+
+<p>The location of the cache, as well as the location of the jar are communicated to the application through the <code>capsule.dir</code> and <code>capsule.jar</code> system properties respectively. Capsule defines these properties automatically, and the application may use them, for example, to find extracted resources. In addition, those two filesystem paths can be used within the manifest itself to set various values (system proeprties, environment variables, etc) by referencing them with <code>$CAPSULE_DIR</code> and <code>$CAPSULE_JAR</code> respectively.</p>
+
+<p>Capsule's cache is found, by default, at <code>~/.capsule/</code> on Unix/Linux/Mac OS machines, and at <code>%USERPROFILE%\AppData\Local\capsule\</code> on windows. The application caches are placed in the <code>apps/APP_ID</code> subdirectory of the cache, while the shared dependency cache is at the <code>deps</code> subdirectory. The location of the Capsule cache can be changed with environment variables: setting <code>CAPSULE_CACHE_NANE</code> determines the name of the topmost Capsule cache dir (i.e. "capsule" by default), while <code>CAPSULE_CACHE_DIR</code> can be used to set a precise path for the cache (e.g. `/tmp/capsule/).</p>
+
+<h3>
+<a name="user-content-dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>The capsule can specifiy external dependencies as coordinates in maven repositories. One way of specifying dependencies, is placing the app's <code>pom.xml</code> file in the capsule jar's root. Another is specifying the dependencies and repositories in the capsule's manifest.</p>
+
+<p>By default, Capsule will look for dependencies on Maven Central. If other repositories are needed (or if you don't want to access Maven Central), the <code>Repositories</code> attribute is a space-separated list of Maven repository URLs. The repositories will be searched in the order they are listed. If the <code>Repositories</code> attribute is found in the manifest, then Maven Central will not be searched. If you do want it searched in addition to other repsoitories, you can simply place the word <code>central</code> in the repository list rather than listing the full URL.</p>
+
+<p>The dependencies, (if not read from the POM), are listed in the <code>Dependencies</code> attribute, as a space-separated list of Maven coordinates in the Gradle format, i.e. <code>groupId:aritfactId:version</code>. Exclusions can be given as a comma separated list within parentheses, immediately following the main artifact, of <code>groupId:artifactId</code> coordinates, where the artifact can be the wildcard <code>*</code>. For example: </p>
+
+<p>Dependencies : com.esotericsoftware.kryo:kryo:2.23.0(org.ow2.asm:*)</p>
+
+<p>The dependencies are downloaded the firs time the capsule is launched, and placed in the <code>deps</code> subdirectory of the Capsule cache, where they are shared among all capsules.</p>
+
+<p>Adding <code>-Dcapsule.reset=true</code>, can force a re-download of SNAPSHOT versions.</p>
+
+<p>The command: <code>java -Dcapsule.tree -jar app.jar</code>, will print out the dependency tree for the module, and then quit without launching the app.</p>
+
+<h3>
+<a name="user-content-class-paths" class="anchor" href="#class-paths"><span class="octicon octicon-link"></span></a>Class Paths</h3>
+
+<p>By default, Capsule sets the application's class path to: the capsule jar iteslf, the application's cache directory (if the capsule is extracted) and every jar found in the root of the cache directory (i.e. every jar file placed in the capsule jar's root) -- in no particular order -- and, finally, the application's Maven dependencies in the order they are listen in the <code>Dependencies</code> attribute or the pom file.</p>
+
+<p>The classpath, however, can be customized by the <code>Class-Path</code> attribute, which can be given an ordered (space separated) list of jars and/or directories relative to the capsule jar root. This attribute only applies if the capsule is extracted, and if it is found in the manifest, then all jars in the cache's root will not be added automatically to the classpath.</p>
+
+<p>In addition to setting the application classpath, you can also specify the boot classpath. The <code>Boot-Class-Path</code> attribute is, similar to the <code>Class-Path</code> attribute, an ordered, space separated list of jars and/or directories relative to the capsule's root, that will become the application's boot classpath. If you don't want to replace the default Java boot classpath, but simply to tweak it, The <code>Boot-Class-Path-P</code> attribute can be used to specify a classpath to be prepended to the default boot classpath, and the <code>Boot-Class-Path-P</code> attribute can specify a class path that will be appended to the default.</p>
+
+<p>If the capsule is launched with a <code>-Xbootclasspath</code> option, it will override any setting by the capsule's manifest.</p>
+
+<p>The <code>Library-Path-A</code> manifest attribute can list jars or directories (relative to the capsule's root) that will be appended to the application's native library path. Similarly, <code>Library-Path-P</code>, can be used to prepend jars or directories to the default native library path.</p>
+
+<h3>
+<a name="user-content-jvm-arguments-system-properties-environment-variables-and-java-agents" class="anchor" href="#jvm-arguments-system-properties-environment-variables-and-java-agents"><span class="octicon octicon-link"></span></a>JVM Arguments, System Properties, Environment Variables and Java Agents</h3>
+
+<p>The <code>JVM-Args</code> manifest attribute can contain a space-separated list of JVM argument that will be used to launch the application. Any JVM arguments supplied during the capsule's launch, will override those in the manifest. For example, if the <code>JVM-Args</code> attribute contains <code>-Xmx500m</code>, and the capsule is launched with <code>java -Xmx800m -jar app.jar</code>, then the application will be launched with the <code>-Xmx800m</code> JVM argument.</p>
+
+<p>The <code>System-Properties</code> manifest attribute can contain a space-separated list of system properties that will be defined in the launched application. The properties are listed as <code>property=value</code> pairs (or just <code>property</code> for an empty value). Any system properties supplied during the capsule's launch, will override those in the manifest. For example, if the <code>JVM-Args</code> attribute contains <code>name=Mike</code>, and the capsule is launched with <code>java -Dname=Jason -jar app.jar</code>, then the application will see the <code>name</code> system-property defined as <code>Jason</code>.</p>
+
+<p>The <code>Environment-Variables</code> manifest attribute, is, just like <code>System-Properties</code>, a space-separated list of <code>var=value</code> pairs (or just <code>var</code> for an empty value). The specified values do not overwrite those already defined in the environment, unless they are listed as <code>var:=value</code> rather than <code>var=value</code>.</p>
+
+<p>The <code>Java-Agents</code> attribute can contain a space-separated list with the names of jars containing java agents. The agents are listed as <code>agent=params</code> or just <code>agent</code>, where <code>agent</code> is either the path of a JAR embedded in the capsule, relative to the capsule jar's root, or the coordinates of a Maven dependency.</p>
+
+<p>Remember that values listed in all these configuration values can contain the `<code>$CAPSULE_DIR</code> and <code>$CAPSULE_JAR</code> variables, discussed in the <em>Capsule's Cache</em> section.</p>
+
+<h3>
+<a name="user-content-scripts" class="anchor" href="#scripts"><span class="octicon octicon-link"></span></a>Scripts</h3>
+
+<p>While Capsule mostly makes startup scripts unnecessary, in some circumstances they can be useful. Capsule allows placing platform-specific scripts into the capsule jar, and executing them instead of launching a JVM and running <code>Application-Class</code>. The <code>Unix-Script</code> attribute specifies the location (relative to the capsule jar's root) of a POSIX shell script, to be run on POSIX machines, while <code>Windows-Script</code> specifies the location of a Windows script file. If only, say, <code>Unix-Script</code> is defined, then on Windows machines Capsule will simply run the <code>Application-Class</code> as usual.</p>
+
+<p>The scripts can make use of the <code>CAPSULE_CACHE_DIR</code> environment variable to locate capsule files. Scripts cannot be used if the <code>Extract-Capsule</code> attribute is <code>false</code>. </p>
+
+<h3>
+<a name="user-content-security-manager" class="anchor" href="#security-manager"><span class="octicon octicon-link"></span></a>Security Manager</h3>
+
+<p>The <code>Security-Policy</code> attribute specifies a Java <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/security/PolicyFiles.html">security policy file</a> to use for the application. Its value is the location of the security file relative to the capsule jar root. The <code>Security-Policy-A</code> achieves a similar purpose, only the security policy specified is added to the default one rather than replaces it. Finally, the <code>Security-Manager</code> attribute can specify a class to be used as the security manager for the application. </p>
+
+<p>If any of these three properties is set, a security manager will be in effect when the application runs. If the <code>Security-Manager</code> attribute is not set, the default security manager will be used.</p>
+
+<h2>
+<a name="user-content-reference" class="anchor" href="#reference"><span class="octicon octicon-link"></span></a>Reference</h2>
+
+<h3>
+<a name="user-content-manifest-attributes" class="anchor" href="#manifest-attributes"><span class="octicon octicon-link"></span></a>Manifest Attributes</h3>
+
+<p>Everywhere the word "list" is mentioned, it is whitespace-separated.</p>
+
+<ul>
+<li>
+<code>Application-Name</code>: the name of the application, used to define its ID</li>
+<li>
+<code>Application-Version</code>: the application's version, used to define its ID</li>
+<li>
+<code>Application-Class</code>: the application's main class</li>
+<li>
+<code>Unix-Script</code>: a startup script to be run <em>instead</em> of <code>Application-Class</code> on Unix/Linux/Mac OS, given as a path relative to the capsule's root</li>
+<li>
+<code>Windows-Script</code>: a startup script to be run <em>instead</em> of <code>Application-Class</code> on Windows, given as a path relative to the capsule's root</li>
+<li>
+<code>Extract-Capsule</code>: if <code>false</code>, the capsule jar will not be extracted to the filesystem (default: <code>true</code>)</li>
+<li>
+<code>Min-Java-Version</code>: the minimum Java version required to run the application</li>
+<li>
+<code>Java-Version</code>: the version of the Java installation required to run the application; Capsule will look for an appropriate installation</li>
+<li>
+<code>JVM-Args</code>: a list of JVM arguments that will be used to launch the application's Java process</li>
+<li>
+<code>Environment-Variables</code>: a list of environment variables that will be put in the applications environment; formatted <code>var=value</code> or <code>var</code>
+</li>
+<li>
+<code>System-Properties</code>: a list of system properties that will be defined in the applications JVM; formatted <code>prop=value</code> or <code>prop</code>
+</li>
+<li>
+<code>App-Class-Path</code>: a list of jars, relative to the capsule root, that will be put on the application's classpath, in the order they are listed</li>
+<li>
+<code>Capsule-In-Class-Path</code>: if set to <code>false</code>, the capsule jar itself will not be on the application's classpath (default: <code>true</code>)</li>
+<li>
+<code>Boot-Class-Path</code>: a list of jars and/or directories, realtive to the capsule root, that will be used as the application's boot classpath.</li>
+<li>
+<code>Boot-Class-Path-A</code>: a list of jars and/or directories, realtive to the capsule root, that will be appended to the applications default boot classpath</li>
+<li>
+<code>Boot-Class-Path-P</code>: a list of jars and/or directories, realtive to the capsule root, that will be <em>prepended</em> to the applications default boot classpath</li>
+<li>
+<code>Library-Path-A</code>: a list of jars and/or directories, realtive to the capsule root, that will be appended to the default native library path</li>
+<li>
+<code>Library-Path-P</code>: a list of jars and/or directories, realtive to the capsule root, that will be <em>prepended</em> to the default native library path</li>
+<li>
+<code>Security-Manager</code>: the name of a class that will serve as the application's security-manager</li>
+<li>
+<code>Security-Policy</code>: a security policy file, realtive to the capsule root, that will be used as the security policy</li>
+<li>
+<code>Security-Policy-A</code>: a security policy file, realtive to the capsule root, that will be appended to the default security policy</li>
+<li>
+<code>Java-Agents</code>: a list of java agents used by the application; formatted <code>agent</code> or <code>agent=arg1,arg2...</code>, where agent is either the path to a jar relative to the capsule root, or a Maven coordinate of a dependency</li>
+<li>
+<code>Repositories</code>: a list of Maven repository URLs</li>
+<li>
+<code>Dependencies</code>: a list of Maven dependencies given as <code>groupId:artifactId:version[(excludeGroupId:excludeArtifactId,...)]</code>
+</li>
+</ul><h3>
+<a name="user-content-manifest-variables" class="anchor" href="#manifest-variables"><span class="octicon octicon-link"></span></a>Manifest Variables</h3>
+
+<ul>
+<li>
+<code>$CAPSULE_JAR</code>: the full path to the capsule jar</li>
+<li>
+<code>$CAPSULE_DIR</code>: the full path to the application cache directory, if the capsule is extracted.</li>
+</ul><h3>
+<a name="user-content-system-properties" class="anchor" href="#system-properties"><span class="octicon octicon-link"></span></a>System Properties</h3>
+
+<ul>
+<li>
+<code>capsule.version</code>: if set, the capsule will print its Capsule version and quit without launching the app</li>
+<li>
+<code>capsule.tree</code>: if set, the capsule will print the app's dependency tree, and then quit without launching the app</li>
+<li>
+<code>capsule.jvms</code>: if set, the capsule will print the JVM installations it can locate with their versions, and then quit without launching the app</li>
+<li>
+<code>capsule.log</code>: if set to <code>verbose</code>, Capsule will print what it's doing</li>
+<li>
+<code>capsule.reset</code>: if set, forces re-extraction of the capsule, where applies, and/or re-downloading of SNAPSHOT dependencies</li>
+<li>
+<code>capsule.app.id</code>: sets the value of the application ID (see user guide)</li>
+<li>
+<code>capsule.java.home</code>: forces the capsule to use the given path to a Java installation when launching the application.</li>
+<li>
+<code>capsule.extract</code>: can be set to <code>true</code> or <code>false</code> to force extraction (or no extraction) of the capsule.</li>
+</ul><p>Capsule defines these system properties in the application's process:</p>
+
+<ul>
+<li>
+<code>capsule.jar</code>: the full path to the capsule's jar</li>
+<li>
+<code>capsule.dir</code>: if the jar has been extracted, the full path of the application cache.</li>
+</ul><h3>
+<a name="user-content-environment-variables" class="anchor" href="#environment-variables"><span class="octicon octicon-link"></span></a>Environment Variables</h3>
+
+<ul>
+<li>
+<code>CAPSULE_CACHE_NAME</code>: sets the <em>name</em> of the root of Capsule's cache in the default location (<code>~</code> on Unix, <code>%LOCALAPPDATA%</code> on Windows)</li>
+<li>
+<code>CAPSULE_CACHE_DIR</code>: sets the full path of the Capsule's cache</li>
+</ul><p>Capsule defines these variables in the application's environment:</p>
+
+<ul>
+<li>
+<code>CAPSULE_JAR</code>: the full path to the capsule's jar</li>
+<li>
+<code>CAPSULE_DIR</code>: if the jar has been extracted, the full path of the application cache.</li>
+</ul><h2>
+<a name="user-content-license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>Copyright (c) 2014, Parallel Universe Software Co. All rights reserved.
+
+This program and the accompanying materials are licensed under the terms 
+of the Eclipse Public License v1.0 as published by the Eclipse Foundation.
+
+    http://www.eclipse.org/legal/epl-v10.html
+</code></pre>
+
+<p>As Capsule does not link in any way with any of the code bundled in the Jar file, and simply treats it as raw data, Capsule is no different from a self-extracting Zip file (especially as manually unzipping the jar's contents is extrmely easy). Capsule's own license, therefore, does not interfere with the licensing of the bundled software.</p>
+
+<p>In particular, even though Capsule's license is incompatible with the GPL/LGPL, it is permitted to distribute GPL programs packaged as capsules, as Capsule is simply a packaging medium and an activation script, and does not restrict access to the packaged GPL code. Capsule does not add any capability to, nor removes any from the bundled application. It therefore falls under the definition of an "aggregate" in the GPL's terminology.</p></article>
+  </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.03852s from github-fe140-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+  </body>
+</html>
+

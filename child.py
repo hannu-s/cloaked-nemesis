@@ -5,23 +5,32 @@ from bs4 import BeautifulSoup
 import re
 from list_tool import ListTool
 from inspection import Inspection
+from xml_rw import XMLWriter
 
 class Child():
 	conn = None
-	def BLChild(self, conn, keywords, avoids, site, targetUrl, pagesToSearch, searchParams):
+	def BLChild(self, cid, conn, keywords, avoids, site, targetUrl, pagesToSearch, searchParams):
+		self.ownID = str(cid)
 		self.conn = conn
+		self.keywords = keywords
+		self.avoids = avoids
+		self.site = site
+		self.targetUrl = targetUrl
+		self.pagesToSearch = pagesToSearch
+		self.searchParams = searchParams
+
 		foundLinks = [targetUrl]
 		self.conn.send(foundLinks)
 		linksToRemove = self.conn.recv()
 		
-		
+		self.readReddit()
 
 		#very end
 		self.conn.send("Work succesful")
 		self.conn.close()
 
 	def readReddit(self):
-		h = httplib2.Http(".cache")
+		h = httplib2.Http(".cache", disable_ssl_certificate_validation=True)
 		(resp, content) = h.request(self.targetUrl, "GET",
 		                            headers={'cache-control':'no-cache'})
 		soup = BeautifulSoup(content)
@@ -39,17 +48,22 @@ class Child():
 			links.append(div.a.get_text())
 
 		for ind, url in enumerate(urls):
+			if url[4] == 's':
+				continue
+			print('Searching:', links[ind])
 			p = Page(url, links[ind])
 			p.followLink()
 			p.parseResults()
-			if not p.writePageData('pages/asd.txt'):
+			if not p.writePageData('pages/' + self.ownID + '_' + str(ind) + '.txt'):
 				print('Error occured while writing page data!')
 				return
-			p.getScore()
+			p.getScore(self.keywords, self.avoids)
 			p.releaseMemory()
 			pages.append(p)
 			insp.append(Inspection(links[ind], p.score, url, p.fileName))
 
+		writer = XMLWriter()
+		writer.writeMIXML(insp, 'results/' + self.ownID + '.xml')
 
 
 class Page():
@@ -80,24 +94,30 @@ class Page():
 		self.title = soup.title.string
 
 		for h in soup.find_all('h1'):
-			self.header.append(str(h.get_text()+" "))
+			self.header = str(h.get_text()).replace('\n','').split(' ')
+			#self.header.append(str(h.get_text()+" "))
 		for h in soup.find_all('h2'):
-			self.header.append(str(h.get_text()+" "))
+			self.header = str(h.get_text()).replace('\n','').split(' ')
+			#self.header.append(str(h.get_text()+" "))
 		for h in soup.find_all('h3'):
-			self.header.append(str(h.get_text()+" "))
+			self.header = str(h.get_text()).replace('\n','').split(' ')
+			#self.header.append(str(h.get_text()+" "))
 
 		for b in soup.find_all('b'):
-			self.spec.append(str(h.get_text()+" "))
+			self.spec = str(b.get_text()).replace('\n','').split(' ')
+			#self.spec.append(str(b.get_text()+" "))
 
-		for b in soup.find_all('i'):
-			self.spec.append(str(h.get_text()+" "))
+		#for b in soup.find_all('i'):
+			#self.spec.append(str(b.get_text()).replace('\n','').split(' '))
+			#self.spec.append(str(b.get_text()+" "))
 
 		for b in soup.find_all('p'):
-			self.norm.append(str(h.get_text()+" "))
+			self.norm = str(b.get_text()).replace('\n','').split(' ')
+			#self.norm.append(str(b.get_text()+" "))
 
 	def parseResults(self):
 		lt = ListTool()
-		patt = "^[a-zA-Z0-9]*$"
+		patt = "^[a-zA-Z0-9.,+-:;!-\"']*$"
 		self.link = self.link.split(' ')
 		self.title = self.title.split(' ')
 		for ind, item in enumerate(self.link):
@@ -122,19 +142,20 @@ class Page():
 
 		for ind, item in enumerate(self.norm):
 			if re.match(patt, item) == None or len(item) > self.maxLen:
+				print(item)
 				self.norm.pop(ind)
 		self.norm = lt.removeDuplicates(self.norm)
 
 	def writePageData(self, fileName):
 		self.fileName = fileName
 		t = ""
-		t = t.join(self.title) + '\n'
+		t = t.join(self.title).replace('\n','').replace('  ',' ') + '\n'
 		h = ""
-		h = h.join(self.header) + '\n'
+		h = h.join(self.header).replace('\n','').replace('  ',' ') + '\n'
 		s = ""
-		s = s.join(self.spec) + '\n'
+		s = s.join(self.spec).replace('\n','').replace('  ',' ') + '\n'
 		n = ""
-		n = n.join(self.norm)
+		n = n.join(self.norm).replace('\n','').replace('  ',' ')
 		try:
 			f = open(fileName, 'w+')
 			f.write(self.url + '\n' + t + h + s + n)

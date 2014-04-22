@@ -1,0 +1,161 @@
+status: 200
+content-length: 5433
+content-location: http://gcc.gnu.org/ml/gcc/2014-04/msg00195.html
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Apache
+last-modified: Tue, 22 Apr 2014 15:58:33 GMT
+connection: close
+etag: "96995e-1539-4f7a3b0222b97"
+date: Tue, 22 Apr 2014 17:49:51 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!-- MHonArc v2.6.16 -->
+<!--X-Subject: GCC 4.9.0 Released -->
+<!--X-From-R13: Xnxho Xryvarx <wnxhoNerqung.pbz> -->
+<!--X-Date: 22 Apr 2014 13:11:01 &#45;0000 -->
+<!--X-Message-Id: 20140422131054.GL1817@tucnak.redhat.com -->
+<!--X-Content-Type: text/plain -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Jakub Jelinek - GCC 4.9.0 Released</TITLE>
+</HEAD>
+<BODY>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--htdig_noindex-->
+<p>This is the mail archive of the 
+<tt>gcc@gcc.gnu.org</tt>
+mailing list for the <a href="/">GCC project</a>.
+
+
+<!--/htdig_noindex-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<!--htdig_noindex-->
+<HR>
+<table border="0">
+  <tr><th align="left">Index Nav:</th>
+      <td colspan="2">
+        [<A HREF="index.html#00195">Date&nbsp;Index</A>] [<a href="subjects.html#00195">Subject&nbsp;Index</a>] [<a href="authors.html#00195">Author&nbsp;Index</a>] [<A HREF="threads.html#00195">Thread&nbsp;Index</A>]
+      </td>
+  </tr>
+  <tr><th align="left">Message Nav:</th>
+      <td>[<A HREF="msg00194.html">Date&nbsp;Prev</A>]&nbsp;[<A HREF="msg00196.html">Date&nbsp;Next</A>]</td>
+      <td>[<A HREF="msg00194.html">Thread&nbsp;Prev</A>]&nbsp;[<A HREF="msg00200.html">Thread&nbsp;Next</A>]</td>
+  </tr>
+  <tr><th align="left">Other format:</th>
+  <td>[<a href="/cgi-bin/get-raw-msg?listname=gcc&date=2014-04&msgid=20140422131054.GL1817%40tucnak.redhat.com">Raw text</a>]</td>
+  </tr>
+</table>
+<!--/htdig_noindex-->
+
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>GCC 4.9.0 Released</h1>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>From</em>: Jakub Jelinek &lt;jakub at redhat dot com&gt;</li>
+<li><em>To</em>: gcc at gcc dot gnu dot org</li>
+<li><em>Date</em>: Tue, 22 Apr 2014 15:10:54 +0200</li>
+<li><em>Subject</em>: GCC 4.9.0 Released</li>
+<li><em>Authentication-results</em>: sourceware.org; auth=none</li>
+<li><em>Reply-to</em>: Jakub Jelinek &lt;jakub at redhat dot com&gt;</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre>One year and one month passed from the time when the last major version
+of the GNU Compiler Collection has been announced, so it is the time again
+to announce a new major GCC release, 4.9.0.
+
+GCC 4.9.0 is a major release containing substantial new
+functionality not available in GCC 4.8.x or previous GCC releases.
+
+The Local Register Allocator, introduced in GCC 4.8.0 for ia32 and
+x86-64 targets only, is now used also on the Aarch64, ARM, S/390
+and ARC targets by default and on PowerPC and RX targets optionally.
+
+There have been substantial improvements to C++ devirtualization
+and various scalability bottlenecks in the interprocedural optimizations
+and LTO have been fixed.
+
+Support for various C++14 additions have been added to the C++ Front End,
+on the standard C++ library side the most important addition is
+support for the C++11 &lt;regex&gt;.
+
+GCC 4.9.0 supports the OpenMP 4.0 standard for C and C++, and a partial
+implementation of the Cilk Plus extension for data and task parallelism.
+
+Various kinds of undefined behaviors in programs can be now diagnosed at
+runtime through Undefined Behavior Sanitizer.
+
+Support for the new little-endian powerpc64le-linux platform has been added,
+which defaults to the new PowerPC ELFV2 ABI.
+On x86-64 and ia32, support for the AVX-512 instruction set has been
+implemented.
+
+See
+
+ <a  rel="nofollow" href="http://gcc.gnu.org/gcc-4.9/changes.html">http://gcc.gnu.org/gcc-4.9/changes.html</a>
+
+for more information about changes in GCC 4.9.
+
+This release is available from the FTP servers listed here:
+
+ <a  rel="nofollow" href="http://www.gnu.org/order/ftp.html">http://www.gnu.org/order/ftp.html</a>
+
+The release is in gcc/gcc-4.9.0/ subdirectory.
+
+If you encounter difficulties using GCC 4.9, please do not contact me
+directly.  Instead, please visit <a  rel="nofollow" href="http://gcc.gnu.org">http://gcc.gnu.org</a> for information
+about getting help.
+
+
+Driving a leading free software project such as GNU Compiler Collection
+would not be possible without support from its many contributors.
+Not to only mention its developers but especially its regular testers
+and users which contribute to its high quality.  The list of individuals
+is too large to thank individually!
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<ul><li><strong>Follow-Ups</strong>:
+<ul>
+<li><strong><a name="00200" href="msg00200.html">Re: GCC 4.9.0 Released</a></strong>
+<ul><li><em>From:</em> Joern Rennecke</li></ul></li>
+</ul></li></ul>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<!--htdig_noindex-->
+<table border="0">
+  <tr><th align="left">Index Nav:</th>
+      <td colspan="2">
+        [<A HREF="index.html#00195">Date&nbsp;Index</A>] [<a href="subjects.html#00195">Subject&nbsp;Index</a>] [<a href="authors.html#00195">Author&nbsp;Index</a>] [<A HREF="threads.html#00195">Thread&nbsp;Index</A>]
+      </td>
+  </tr>
+  <tr><th align="left">Message Nav:</th>
+      <td>[<A HREF="msg00194.html">Date&nbsp;Prev</A>]&nbsp;[<A HREF="msg00196.html">Date&nbsp;Next</A>]</td>
+      <td>[<A HREF="msg00194.html">Thread&nbsp;Prev</A>]&nbsp;[<A HREF="msg00200.html">Thread&nbsp;Next</A>]</td>
+  </tr>
+</table>
+<!--/htdig_noindex-->
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

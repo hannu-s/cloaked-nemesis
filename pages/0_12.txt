@@ -1,0 +1,5 @@
+http://www.scala-lang.org/news/2014/04/21/release-notes-2.11.0.html
+Scala2.11.0isnowavailable!TheProgrammingLanguage
+Licenseclarification
+
+Copyright2002-PolytechniquedeLausanneLausanne,Switzerland

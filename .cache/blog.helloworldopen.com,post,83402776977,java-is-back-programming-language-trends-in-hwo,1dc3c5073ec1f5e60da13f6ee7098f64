@@ -1,0 +1,552 @@
+status: 200
+x-ua-device: desktop
+content-location: http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo
+x-tumblr-pixel: 2
+vary: X-UA-Device
+accept-ranges: bytes
+x-tumblr-user: helloworldopen
+content-length: 43536
+connection: close
+-content-encoding: gzip
+link: <http://37.media.tumblr.com/avatar_d0c7168de52a_128.png>; rel=icon
+x-ua-compatible: IE=Edge,chrome=1
+date: Tue, 22 Apr 2014 17:49:59 GMT
+p3p: CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+content-type: text/html; charset=utf-8
+x-tumblr-pixel-1: N1wvamF2YS1pcy1iYWNrLXByb2dyYW1taW5nLWxhbmd1YWdlLXRyZW5kcy1pbi1od28iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiI4MzQwMjc3Njk3NyIsImJsb2dpZCI6IjE3NjcyNDQ0OSIsInNvdXJjZSI6MzN9XX0=&U=GLPJJGFLMO&K=d4ff5a7a31ba0d2b25bb90b456cf290772fb6a84f8084b32287609a976b95a2e
+x-tumblr-pixel-0: http://www.tumblr.com/impixu?T=1398188940&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5oZWxsb3dvcmxkb3Blbi5jb21cL3Bvc3RcLzgzNDAyNzc2OTc3XC9qYXZhLWlzLWJhY2stcHJvZ3JhbW1pbmctbGFuZ3VhZ2UtdHJlbmRzLWluLWh3byIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5In0=&U=OFFBJDEABH&K=065358d6a948ed9a85526d8b3eef74ec248f3473cc45865a04ce548d5cde4603--http://www.tumblr.com/impixu?T=1398188940&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuaGVsbG93b3JsZG9wZW4uY29tXC9wb3N0XC84MzQwMjc3Njk3
+
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=c9a24c93905a6db0265be4f39f27f15e"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+        
+        <meta charset="utf-8">
+        <title>Hello World Open — Java is back? - Programming language trends in HWO</title>
+        
+        <meta name="description" content="Java is back? - Programming language trends in HWO Hello World Open is an international coding competition where teams develop an AI for a race car in various programming languages. 2345 teams have...">
+        
+        
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" href="http://37.media.tumblr.com/avatar_d0c7168de52a_128.png">
+        <link rel="apple-touch-icon-precomposed" href="http://37.media.tumblr.com/avatar_d0c7168de52a_128.png">
+        <link rel="alternate" type="application/rss+xml" href="http://blog.helloworldopen.com/rss">
+        
+        <link rel="stylesheet" href="http://static.tumblr.com/vr9xgox/PuGmmhqcs/normalize.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/vr9xgox/qE8n2yg06/optica-icons.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/vr9xgox/zTFn329nm/main.css">
+        
+        <link rel="stylesheet" href="http://hwo2014-ext-assets.s3.amazonaws.com/ext/hwo-webfonts.css">
+
+        <!-- HTML5 Shiv -->
+        <!--[if lt IE 9]>
+            <script src="http://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+            /* Colors */
+            body {
+                font-family: "PlutoSansRegular";
+                background: #15111b;
+            }
+
+            h1 {
+                font-family: "RBNo31-Black", "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            h1 a,
+            #pagination a,
+            .exposed-nav-wrapper li a,
+            .search-header {
+                color: #ffffff;
+            }
+            
+            .sub-title {
+                color: #ff4448;
+                text-transform: uppercase;
+                opacity: 1;
+                
+            }
+            
+            .sub-title a {
+                color: #ff4448;
+            }
+            
+            #pagination a.next:after {
+                border-left-color: #ffffff;
+            }
+
+            #pagination a.previous:after {
+                border-right-color: #ffffff;
+            }
+
+            .h-line {
+                background: #ffffff;
+            }
+
+            a {
+                color: #529ECC;
+            }
+
+            .loader .loader-bar {
+                background-color: #ffffff;
+            }
+
+            .link-wrapper h2 a {
+                background-color: #529ECC;
+            }
+            
+            .header-image {
+                background-image: url(http://static.tumblr.com/03e9d06161f4abb805b7282349f5c157/airykpv/OE8n3cph8/tumblr_static_autokuvitus_1080.jpg);
+            }
+            
+            .logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 9999;
+                width: 170px;
+                height: 170px;
+                margin: -85px 0 0 -85px;
+            }
+            
+            .logo img {
+                width: 100%;
+                height: auto;
+            }
+
+            .user-avatar {
+                background-color: #15111b;
+                border-color: #15111b;
+            }
+
+            .avatar-style-square .user-avatar {
+                -wekbit-box-shadow: 0 0 0 4px #15111b;
+                -moz-box-shadow: 0 0 0 4px #15111b;
+                box-shadow: 0 0 0 4px #15111b;
+            }
+            
+            .no-header-image .selector .bar-icon {
+                background: #ffffff;
+            }
+
+            .no-header-image .search-only .selector .icon {
+                color: #ffffff;
+            }
+            
+            .post-wrapper {
+                border-radius: 0;
+                color: #fff;
+                background-color: #1f2332;
+            }
+            
+            .post-wrapper a {
+                color: #fff;
+            }
+            
+            .post-controls li .reblog_button,
+            .post-controls li .share {
+                color: #ff4448;
+                opacity: 1;
+            }
+            
+            .post-controls li .reblog_button svg {
+                fill: #ff4448;
+            }
+            
+            .post h2,
+            .post h3 {
+                font-family: "PlutoSansMedium";
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+            
+            .post h2 a {
+                color: #fff;
+            }
+            
+            .post p {
+                color: #e2e2ff;
+            }
+
+            .body-text {
+                line-height: 1.33333333;
+            }
+            
+            .quote .post > blockquote {
+                font-family: "RBNo31-Black";
+                text-transform: uppercase;
+            }
+
+            @media screen and (max-device-width: 568px) {
+                .header-image {
+                    background-image: url(http://static.tumblr.com/03e9d06161f4abb805b7282349f5c157/airykpv/OE8n3cph8/tumblr_static_autokuvitus_1080_1024.jpg);
+                }
+
+                .nav-menu-bg,
+                .nav-menu-wrapper .nav-menu.active:before,
+                .nav-menu .pop-menu ul {
+                    background: #15111b;
+                }
+
+                .nav-menu.active .selector .bar-icon,
+                .below-header .selector .bar-icon {
+                    background: #ffffff;
+                }
+
+                .nav-menu .pop-menu ul li a,
+                .below-header .search-only .selector .icon {
+                    color: #ffffff;
+                }
+                
+                .avatar-style-square .user-avatar {
+                    -wekbit-box-shadow: 0 0 0 3px #15111b;
+                    -moz-box-shadow: 0 0 0 3px #15111b;
+                    box-shadow: 0 0 0 3px #15111b;
+                }
+
+            }
+
+            /* Custom CSS */
+            
+        </style>
+    <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=helloworldopen&postID=83402776977" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="Java is back? - Programming language trends in HWO" /><meta property="og:url" content="http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo" /><meta property="og:description" content="Hello World Open is an international coding competition where teams develop an AI for a race car in various programming languages. 2345 teams have already signed up to Hello World Open. What do the..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="https://31.media.tumblr.com/7807f1ec948939c6fccd0fa6d66fa501/tumblr_inline_n4drm0klsW1rlhc9s.png" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="Hello World Open is an international coding competition where teams develop an AI for a race car in various programming languages. 2345 teams have already signed up to Hello World Open. What do the choices made by the competitors tell about the global trends in software development?&nbsp; Let&rsquo;s see.
+ 
+Java is the number one
+ Probably the most common language used globally at work has been chosen by 499 teams so far. Java has clearly risen on the list, compared to the Hello World Open 2012, Finnish Coding Championships. Back then Java used to be the choice of only 9&nbsp;% of the teams. &rdquo;Java refuses to die&rdquo;, says Juha, a member of the Hello World Open tech team. The popularity of Java managed to surprise the other members of the team too. &rdquo;Well, it&rsquo;s a kind of an old but reliable dinosaur, but the new Java 8 might bring some changes&rdquo;, Mikko adds.
+Python comes second
+ The number two on the list is Python, chosen by 479 teams. &rdquo;It&rsquo;s probably the first language taught in universities&rdquo;, Teemu explains, although he himself tells that he prefers to code with Ruby. Mikko says that one reason might be Python&rsquo;s popularity among such trends as datamining, NumPy and artificial intelligence research. Python was a number two in the year 2012 as well with 27.5%.
+Ruby&rsquo;s popularity drops
+ On the contrary, Ruby seems to have lost its popularity among the majority. It used to be number one in Hello World Open 2012 (with 28.4%), but is now set far away from the lead. &rdquo;As a programming language, Ruby was really popular around the year 2012&rdquo;, Mikko says. Now it seems like Ruby&rsquo;s ran out of fashion.
+Haskell the underdog
+ Surprisingly, Haskell has climbed near Ruby on the list. Although seen as quite of an academic language, the tech team thinks there&rsquo;s still something special about Haskell. &rdquo;It&rsquo;s got a lot of unique features&rdquo;, Juha describes. &rdquo;And a nice emphasis on functional programming&rdquo;, he adds.
+ What we can&rsquo;t compare are the new languages like C, C++ and C# / Mono which we didn&rsquo;t have the last time. More surprises coming up! This is your chance to defend your favourite language&rsquo;s honor :)
+ Sign up ends on tuesday at 1&nbsp;pm GMT+3.
+
+ 
+LanguageTeam countJava49921.29%Python47920.44%C# / Mono31813.57%JavaScript23610.07%C++1677.12%C1405.97%Clojure974.14%Ruby944.01%Scala863.67%Haskell753.20%Go682.90%CoffeeScript261.11%PHP261.11%Lua140.60%F#100.43%Erlang50.21%Perl20.09%Rust20.09%" /><meta name="twitter:title" content="Java is back? - Programming language trends in HWO" /><meta name="twitter:url" content="http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=helloworldopen&amp;postID=83402776977&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=helloworldopen&amp;postID=83402776977&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=helloworldopen&amp;postID=83402776977&amp;referrer=twitter-cards" />
+
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=c5febf8fb0ca90d929036d9212393c57"></script>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+</head>
+    <body data-urlencoded-name="helloworldopen" class="regular permalink">
+        <section id="page">
+            <div class="nav-menu-wrapper ">
+                <nav class="nav-menu pop">
+                    <a class="selector">
+                        
+                            <div class="bar-icon-wrapper">
+                                <span class="bar-icon"></span>
+                                <span class="bar-icon"></span>
+                                <span class="bar-icon"></span>
+                            </div>
+                        
+                        
+                    </a>
+                    <div class="pop-menu west">
+                        <ul>
+                            <li class="no-hover search">
+                                <form action="/search" method="get" id="search">
+                                    <input type="text" name="q" id="q" placeholder="Search" value="">
+                                    <button type="submit" class="icon-search_16"></button>
+                                </form>
+                            </li>
+                            
+                                <li>
+                                    <a href="/archive" class="archive">Archive <i class="icon-arrow_carrot_right"></i></a>
+                                </li>
+                                
+                                
+                                
+                            
+                        </ul>
+                    </div> 
+                </nav>
+                <div class="glass"></div>
+            </div>
+            <div class="nav-menu-bg"></div>
+            <div class="header-wrapper
+                
+                
+                avatar-hidden
+                ">
+
+                <header id="header">
+                    
+                    <div class="header-image-wrapper">
+                        <a href="http://helloworldopen.com/" class="logo"><img src="http://helloworldopen.com/ext/logo-170.svg"></a>
+                        <a href="/" class="header-image parallax cover" data-bg-image="http://static.tumblr.com/03e9d06161f4abb805b7282349f5c157/airykpv/OE8n3cph8/tumblr_static_autokuvitus_1080.jpg"></a>
+                    </div>
+                    
+
+                    <div class="blog-title content">
+                        <figure class="avatar-wrapper">
+                            <a href="/" style="background-image: url(http://37.media.tumblr.com/avatar_d0c7168de52a_128.png)" class="user-avatar"><img src="http://37.media.tumblr.com/avatar_d0c7168de52a_128.png" alt="" class="print-only invisible"></a>
+                        </figure>
+
+                        <div class="title-group">
+                            
+                            <h1><a href="/">Hello World Open</a></h1>
+                            
+                            
+                            <span class="sub-title">
+                                Coding World Championships. Sign up! <a href="http://helloworldopen.com">helloworldopen.com</a>
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    
+                </header>
+            </div>
+            
+            <section id="posts" class="content clearfix   avatar-hidden">
+    
+                <div data-page-id="1">
+                    
+                            <article class="text not-page post-83402776977  active exposed" data-post-id="post_83402776977">
+                                <div class="post-wrapper clearfix">
+                                    
+                                    <section class="post">
+                                        
+                                            <h2><a href="http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo">Java is back? - Programming language trends in HWO</a></h2>
+                                            
+                                            <div class="body-text">
+                                                <p>Hello World Open is an international coding competition where teams develop an AI for a race car in various programming languages. 2345 teams have already signed up to Hello World Open. What do the choices made by the competitors tell about the global trends in software development?  Let’s see.</p>
+<p><img alt="image" src="https://31.media.tumblr.com/7807f1ec948939c6fccd0fa6d66fa501/tumblr_inline_n4drm0klsW1rlhc9s.png"/></p>
+<h3>Java is the number one</h3>
+<p>Probably the most common language used globally at work has been chosen by 499 teams so far. Java has clearly risen on the list, compared to the Hello World Open 2012, Finnish Coding Championships. Back then Java used to be the choice of only 9 % of the teams.<br/><br/>”Java refuses to die”, says Juha, a member of the Hello World Open tech team.<br/><br/>The popularity of Java managed to surprise the other members of the team too.<br/><br/>”Well, it’s a kind of an old but reliable dinosaur, but the new Java 8 might bring some changes”, Mikko adds.</p>
+<h3>Python comes second</h3>
+<p>The number two on the list is Python, chosen by 479 teams.<br/><br/>”It’s probably the first language taught in universities”, Teemu explains, although he himself tells that he prefers to code with Ruby.<br/><br/>Mikko says that one reason might be Python’s popularity among such trends as datamining, NumPy and artificial intelligence research. Python was a number two in the year 2012 as well with 27.5%.</p>
+<h3>Ruby’s popularity drops</h3>
+<p>On the contrary, Ruby seems to have lost its popularity among the majority. It used to be number one in Hello World Open 2012 (with 28.4%), but is now set far away from the lead.<br/><br/>”As a programming language, Ruby was really popular around the year 2012”, Mikko says.<br/><br/>Now it seems like Ruby’s ran out of fashion.</p>
+<h3>Haskell the underdog</h3>
+<p>Surprisingly, Haskell has climbed near Ruby on the list. Although seen as quite of an academic language, the tech team thinks there’s still something special about Haskell.<br/><br/>”It’s got a lot of unique features”, Juha describes. ”And a nice emphasis on functional programming”, he adds.</p>
+<p>What we can’t compare are the new languages like C, C++ and C# / Mono which we didn’t have the last time. More surprises coming up! This is your chance to defend your favourite language’s honor :)</p>
+<p><a href="https://helloworldopen.com/signup">Sign up</a> ends on tuesday at 1 pm GMT+3.</p>
+
+<p></p>
+<table cellpadding="2" cellspacing="2"><tr><td><b>Language</b></td><td><b>Team count</b></td><td></td></tr><tr><td>Java</td><td>499</td><td>21.29%</td></tr><tr><td>Python</td><td>479</td><td>20.44%</td></tr><tr><td>C# / Mono</td><td>318</td><td>13.57%</td></tr><tr><td>JavaScript</td><td>236</td><td>10.07%</td></tr><tr><td>C++</td><td>167</td><td>7.12%</td></tr><tr><td>C</td><td>140</td><td>5.97%</td></tr><tr><td>Clojure</td><td>97</td><td>4.14%</td></tr><tr><td>Ruby</td><td>94</td><td>4.01%</td></tr><tr><td>Scala</td><td>86</td><td>3.67%</td></tr><tr><td>Haskell</td><td>75</td><td>3.20%</td></tr><tr><td>Go</td><td>68</td><td>2.90%</td></tr><tr><td>CoffeeScript</td><td>26</td><td>1.11%</td></tr><tr><td>PHP</td><td>26</td><td>1.11%</td></tr><tr><td>Lua</td><td>14</td><td>0.60%</td></tr><tr><td>F#</td><td>10</td><td>0.43%</td></tr><tr><td>Erlang</td><td>5</td><td>0.21%</td></tr><tr><td>Perl</td><td>2</td><td>0.09%</td></tr><tr><td>Rust</td><td>2</td><td>0.09%</td></tr></table>
+                                            </div>
+                                            
+                                        
+
+                                        
+
+                                        
+
+                                        
+
+
+                                        
+
+
+                                        
+
+
+                                        
+
+
+                                        
+
+                                        
+
+                                        
+
+                                        
+                                                                            
+                                        
+
+                                    </section>
+                                    
+                                    
+                                    <section class="panel">
+                                        <footer class="post-footer">
+                                            <section class="meta"> 
+                                                <ul class="date-notes">
+                                                    
+                                                    <li class="post-notes">
+                                                        <a href="http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo#notes">11 notes</a>
+                                                    </li>
+                                                    
+                                                    <li class="post-date"> 
+                                                        <a href="http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo" title="1 day ago">Apr 21st, 2014</a>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                            
+                                            <section class="post-controls">
+                                                <ul>
+                                                    <li class="share-control">
+                                                        <nav class="pop">
+                                                            <a href="#" class="share selector icon-export"></a>
+                                                            <div class="pop-menu share-menu south" id="share_83402776977">
+                                                                <ul>
+                                                                    <li class="open-in-app"><a href="#" class="share-item open-in-app" data-post="83402776977">Open in app</a></li>
+                                                                    <li><a href="http://facebook.com/sharer.php?u=http%3A%2F%2Fblog.helloworldopen.com%2Fpost%2F83402776977%2Fjava-is-back-programming-language-trends-in-hwo&amp;t=Java%20is%20back%3F%20-%20Programming%20language%20trends%20in%20HWO" class="share-item facebook" target="_blank">Facebook</a></li>
+                                                                    <li><a href="https://twitter.com/intent/tweet?text=Java%20is%20back%3F%20-%20Programming%20language%20trends%20in%20HWO%20-%20Hello%20World%20Open%20is%20an%20international%20coding...%20http%3A%2F%2Ftmblr.co%2FZRTo3o1DhCM6H" class="share-item twitter" target="_blank">Tweet</a></li>
+                                                                    <li><a href="mailto:?subject=A%20post%20from%20Hello%20World%20Open&amp;body=Java%20is%20back%3F%20-%20Programming%20language%20trends%20in%20HWO%20-%20Hello%20World%20Open%20is%20an%20international%20coding%20competition%20where%20teams%20develop%20an%20AI%20for%20a%20race%20car%20in...%20http%3A%2F%2Fblog.helloworldopen.com%2Fpost%2F83402776977%2Fjava-is-back-programming-language-trends-in-hwo" class="share-item mail">Mail</a></li>
+                                                                    <li><a href="http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo" class="share-item permalink">Permalink <i class="icon-arrow_carrot_right"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                    </li>
+                                                    <li class="reblog-control"><a href="http://www.tumblr.com/reblog/83402776977/W3GUX2TU" class="reblog_button"style="display: block;width:21px;height:21px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                                                    <li class="like-control"><div class="like_button" data-post-id="83402776977" id="like_button_83402776977"><iframe id="like_iframe_83402776977" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=helloworldopen&amp;post_id=83402776977&amp;color=white&amp;rk=W3GUX2TU" scrolling="no" width="20" height="20" frameborder="0" class="like_toggle" allowTransparency="true"></iframe></div></li>
+                                                </ul>
+                                            </section>
+                                        </footer>
+                                    </section>
+                                    
+                                    
+
+                                        
+                                        <section id="notes" class="notes-wrapper clearfix">
+                                            <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_thewuf without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://thewuf.tumblr.com/" title="Aron " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_22094c403fee_64.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://thewuf.tumblr.com/" title="Aron" rel="nofollow">thewuf</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_midnighttomfoolery without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://midnighttomfoolery.tumblr.com/" title="Midnight Tomfoolery"><img src="http://24.media.tumblr.com/avatar_e363a4659a44_64.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://midnighttomfoolery.tumblr.com/post/83495343908"><a rel="nofollow" href="http://midnighttomfoolery.tumblr.com/" class="tumblelog" title="Midnight Tomfoolery">midnighttomfoolery</a> reblogged this from <a rel="nofollow" href="http://blog.helloworldopen.com/" class="source_tumblelog" title="Hello World Open">helloworldopen</a></span><div class="clear"></div></li><li class="note reblog tumblelog_yatmsu without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://yatmsu.tumblr.com/" title="世界の中のTumblr"><img src="http://31.media.tumblr.com/avatar_b0cc477f1dba_64.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://yatmsu.tumblr.com/post/83474731913"><a rel="nofollow" href="http://yatmsu.tumblr.com/" class="tumblelog" title="世界の中のTumblr">yatmsu</a> reblogged this from <a rel="nofollow" href="http://blog.helloworldopen.com/" class="source_tumblelog" title="Hello World Open">helloworldopen</a></span><div class="clear"></div></li><li class="note reblog tumblelog_soukix without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://soukix.tumblr.com/" title="Heaven or Hell"><img src="http://31.media.tumblr.com/avatar_995517bd2039_64.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://soukix.tumblr.com/post/83469745425"><a rel="nofollow" href="http://soukix.tumblr.com/" class="tumblelog" title="Heaven or Hell">soukix</a> reblogged this from <a rel="nofollow" href="http://blog.helloworldopen.com/" class="source_tumblelog" title="Hello World Open">helloworldopen</a></span><div class="clear"></div></li><li class="note like tumblelog_imiith without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://imiith.tumblr.com/" title="Hello " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_82b9590f73e1_64.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://imiith.tumblr.com/" title="Hello" rel="nofollow">imiith</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_jasonyl0806 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://jasonyl0806.tumblr.com/" title="JasonShawn"><img src="http://37.media.tumblr.com/avatar_3b6a8dcc26d0_64.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://jasonyl0806.tumblr.com/post/83454108387"><a rel="nofollow" href="http://jasonyl0806.tumblr.com/" class="tumblelog" title="JasonShawn">jasonyl0806</a> reblogged this from <a rel="nofollow" href="http://blog.helloworldopen.com/" class="source_tumblelog" title="Hello World Open">helloworldopen</a></span><div class="clear"></div></li><li class="note like tumblelog_jasonyl0806 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://jasonyl0806.tumblr.com/" title="JasonShawn " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_3b6a8dcc26d0_64.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://jasonyl0806.tumblr.com/" title="JasonShawn" rel="nofollow">jasonyl0806</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_heartborne without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://heartborne.tumblr.com/" title="Keep it &#039;V&#039; " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_33fdaed3f721_64.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://heartborne.tumblr.com/" title="Keep it &#039;V&#039;" rel="nofollow">heartborne</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_canadianpierre without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://canadianpierre.tumblr.com/" title="Pierre&#039;s Tumblr"><img src="http://31.media.tumblr.com/avatar_3f518eb55a7a_64.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://canadianpierre.tumblr.com/post/83440428624"><a rel="nofollow" href="http://canadianpierre.tumblr.com/" class="tumblelog" title="Pierre&#039;s Tumblr">canadianpierre</a> reblogged this from <a rel="nofollow" href="http://blog.helloworldopen.com/" class="source_tumblelog" title="Hello World Open">helloworldopen</a></span><div class="clear"></div></li><li class="note like tumblelog_canadianpierre without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://canadianpierre.tumblr.com/" title="Pierre&#039;s Tumblr " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_3f518eb55a7a_64.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://canadianpierre.tumblr.com/" title="Pierre&#039;s Tumblr" rel="nofollow">canadianpierre</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sebashollow without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sebashollow.tumblr.com/" title="Sebastian " rel="nofollow"><img src="http://24.media.tumblr.com/avatar_b63db8be176e_64.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sebashollow.tumblr.com/" title="Sebastian" rel="nofollow">sebashollow</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_helloworldopen original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://blog.helloworldopen.com/" title="Hello World Open"><img src="http://24.media.tumblr.com/avatar_d0c7168de52a_64.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://blog.helloworldopen.com/post/83402776977"><a rel="nofollow" href="http://blog.helloworldopen.com/" class="tumblelog" title="Hello World Open">helloworldopen</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+                                        </section>
+                                        
+
+                                        
+
+                                            
+
+                                        
+
+                                    
+                                </div>
+                            </article>
+                    
+                </div>
+            </section>
+            <footer id="footer" class="content clearfix">
+                
+            </footer>
+        </section>
+        <script>
+            var Optica = {};
+            Optica.ENDLESS_SCROLLING = true;
+            Optica.LAYOUT = "regular";
+            Optica.GRID_LAYOUT = (Optica.LAYOUT === 'grid');
+            Optica.ENDLESS_NOTES_SCROLLING = true;
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="http://static.tumblr.com/vr9xgox/sBgmmjhyw/jquery-1.9.1.min.js"%3E%3C/script%3E'));</script>
+        <script src="http://static.tumblr.com/vr9xgox/Azhmnml1q/jquery.masonry.min.js"></script>
+        <script src="http://static.tumblr.com/vr9xgox/3JIn2yjeo/main-min.js"></script>
+
+        
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              ga('create', 'UA-1103427-6', 'tumblr.com');
+              ga('send', 'pageview');
+            </script>
+        
+    <!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "http://assets.tumblr.com/analytics.html?dc636e9b34dfd27b194aed14513506cb#http://blog.helloworldopen.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/83402776977/java-is-back-programming-language-trends-in-hwo?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script>
+            var _qevents = _qevents || [];
+            (function() {
+                var s = document.createElement('script');
+                var el = document.getElementsByTagName('script')[0];
+                s.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+                el.parentNode.insertBefore(s, el);
+            })();
+        </script><script type="text/javascript">
+            _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
+        </script><noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1398188940&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5oZWxsb3dvcmxkb3Blbi5jb21cL3Bvc3RcLzgzNDAyNzc2OTc3XC9qYXZhLWlzLWJhY2stcHJvZ3JhbW1pbmctbGFuZ3VhZ2UtdHJlbmRzLWluLWh3byIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5In0=&U=BDJNKKKKBO&K=29fbe7b1d0b673ee394e8f0c9602b5a78cb51aac2729ac2a16d652af93641c0f&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1398188940&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5oZWxsb3dvcmxkb3Blbi5jb21cL3Bvc3RcLzgzNDAyNzc2OTc3XC9qYXZhLWlzLWJhY2stcHJvZ3JhbW1pbmctbGFuZ3VhZ2UtdHJlbmRzLWluLWh3byIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5Iiwibm9zY3JpcHQiOjF9&U=BDJNKKKKBO&K=564a70e1a579cd200096f0a11cceb182a9de41280965e25e9c522d5d0c256ad8&R="></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1398188940&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuaGVsbG93b3JsZG9wZW4uY29tXC9wb3N0XC84MzQwMjc3Njk3N1wvamF2YS1pcy1iYWNrLXByb2dyYW1taW5nLWxhbmd1YWdlLXRyZW5kcy1pbi1od28iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiI4MzQwMjc3Njk3NyIsImJsb2dpZCI6IjE3NjcyNDQ0OSIsInNvdXJjZSI6MzN9XX0=&U=MPKJNGEJNA&K=f76d69e06c8e2048b08c27065497ea2883f04943a73283c6c3b3996c5022d6ce&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1398188940&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuaGVsbG93b3JsZG9wZW4uY29tXC9wb3N0XC84MzQwMjc3Njk3N1wvamF2YS1pcy1iYWNrLXByb2dyYW1taW5nLWxhbmd1YWdlLXRyZW5kcy1pbi1od28iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiI4MzQwMjc3Njk3NyIsImJsb2dpZCI6IjE3NjcyNDQ0OSIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=MPKJNGEJNA&K=4878bb72a689d45e8570685e54edf70b30658da445e1b95f0d98b9c6c0d2f025&R="></noscript><script>
+                (function() {
+                    var s = document.createElement('script');
+                    var el = document.getElementsByTagName('script')[0];
+                    s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://l') + '.yimg.com/ss/rapid-3.14.js';
+                    s.onload = function(){
+                        var YAHOO = window.YAHOO;
+                        if (YAHOO) {
+                            YAHOO.i13n.beacon_server = 'nol.yahoo.com';
+                            var keys = { pd:'/post/:id/:summary', _li:0, i_rad:0, i_strm:0, b_id:176724449 };
+                            var conf = {
+                                                                spaceid:1197719230,
+                                client_only:1,
+                                yql_enabled:false,
+                                keys:keys
+                            }
+                            YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                        }
+                    }
+                    el.parentNode.insertBefore(s, el);
+                })();
+            </script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=44989c11a759367f3ed3eaef99e427cd#src=http%3A%2F%2Fblog.helloworldopen.com%2Fpost%2F83402776977%2Fjava-is-back-programming-language-trends-in-hwo&amp;pid=83402776977&amp;rk=W3GUX2TU&amp;lang=en_US&amp;name=helloworldopen&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_d0c7168de52a_64.png&amp;title=Hello+World+Open&amp;url=http%3A%2F%2Fblog.helloworldopen.com%2F&amp;page_slide=slide"></iframe><div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://www.tumblr.com/assets/html/iframe/teaser.html?_v=cdae7710c0634398938e9c8f9fb32ad6#src=http%3A%2F%2Fblog.helloworldopen.com%2Fpost%2F83402776977%2Fjava-is-back-programming-language-trends-in-hwo&amp;pid=83402776977&amp;rk=W3GUX2TU&amp;lang=en_US&amp;name=helloworldopen&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_d0c7168de52a_64.png&amp;title=Hello+World+Open&amp;url=http%3A%2F%2Fblog.helloworldopen.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=98cbe34b55e041c172fb5c894227a2f5");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

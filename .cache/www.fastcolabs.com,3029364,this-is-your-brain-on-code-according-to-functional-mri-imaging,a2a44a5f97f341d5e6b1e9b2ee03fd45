@@ -1,0 +1,1907 @@
+status: 200
+x-response-time: 546ms
+content-length: 103783
+via: 1.1 varnish
+content-location: http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging
+x-cache: HIT, HIT
+accept-ranges: bytes
+x-timer: S1398188997.679726124,VS0,VE0
+vary: Accept-Encoding
+-content-encoding: gzip
+server: nginx
+last-modified: Tue, 22 Apr 2014 17:41:58 GMT
+connection: keep-alive
+x-served-by: cache-v41-ASH, cache-am71-AMS
+x-cache-hits: 1, 2
+cache-control: max-age=0
+date: Tue, 22 Apr 2014 17:49:57 GMT
+x-rid: y3mw2t
+content-type: text/html; charset=utf-8
+age: 479
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/NewsArticle" itemid="http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging"><!--<![endif]-->
+    <head>
+
+        
+  
+    
+    
+    
+    
+    <script>
+      (function(){({mobiles:"iphone ipod blackberry android motorola bb10 mobile".split(" "),mobileExempts:["ipad"],start:function(){var a=window.location.href;a.match(/http:\/\/(.[^\/?]+)/);var c=this.isMobile();!this.readCookie("_nored")&&this.isMobile()&&(c&&-1<a.toLowerCase().indexOf("fullsite")&&!this.readCookie("_nored")?this.createCookie("_nored","1",1):c&&this.readCookie("_noread")||!c||(a=a.replace("www.","").replace("http://","http://m."),window.location=a))},isMobile:function(){for(var a=navigator.userAgent.toLowerCase(),
+  c=this.mobiles,f=c.length,b=this.mobileExempts,d=b.length,e=0;e<d;e++)if(-1<a.search(b[e]))return!1;for(e=0;e<f;e++)if(-1<a.search(c[e]))return!0;return!1},createCookie:function(a,c,f){var b="",d=new Date;f&&(d.setTime(d.getTime()+864E5*f),b="; expires="+d.toGMTString());document.cookie=a+"="+c+b+"; path=/"},readCookie:function(a){a+="=";for(var c=document.cookie.split(";"),f=c.length,b=[],d=0;d<f;d++){for(b=c[d];" "===b.charAt(0);)b=b.substring(1,b.length);if(0===b.indexOf(a))return b.substring(a.length,
+  b.length)}return null},eraseCookie:function(a){this.createCookie(a,"",-1)}}).start()})();
+    </script>
+    
+  
+
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>This Is Your Brain On Code, According To Functional MRI Imaging ⚙ Co.Labs ⚙ code + community</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        
+        <link rel="stylesheet" href="/css/main.css"/>
+        
+
+        
+
+
+
+<meta name="description" content="Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing..."/>
+<link rel="canonical" href="http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging"/>
+
+ <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging">
+
+
+
+  <meta property="og:type" content="article">
+
+  <meta property="og:title" content="This Is Your Brain On Code, According To Functional MRI Imaging">
+
+  <meta property="og:url" content="http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging">
+
+  <meta property="og:locale" content="en_US">
+
+  <meta property="og:description" content="Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing...">
+
+  <meta property="og:image" content="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg">
+
+  <meta property="og:site_name" content="Co.Labs">
+
+  <meta property="fb:app_id" content="147469925415420">
+
+  <meta property="fb:admins" content="100000062710915">
+
+  <meta property="article:published_time" content="2014-04-21T13:00:00.000Z">
+
+  <meta property="article:modified_time" content="2014-04-20T02:11:22.000Z">
+
+  <meta property="article:publisher" content="https://www.facebook.com/fastcolabs">
+
+  <meta property="article:section" content="Co.Labs">
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="This Is Your Brain On Code, According To Functional MRI Imaging">
+
+  <meta name="twitter:description" content="Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing...">
+
+  <meta name="twitter:url" content="http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging">
+
+  <meta name="twitter:site" content="@FastCoLabs">
+
+  <meta name="twitter:image" content="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg">
+
+  <meta name="twitter:domain" content="fastcolabs.com">
+
+  <meta name="twitter:creator" content="@tinamirtha">
+
+
+
+  <meta itemprop="name" content="This Is Your Brain On Code, According To Functional MRI Imaging">
+
+  <meta itemprop="description" content="Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing...">
+
+  <meta itemprop="image" content="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg">
+
+
+
+
+
+
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml">
+
+        <script src="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/js/vendor/modernizr.min.js"></script>
+        <script src="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/js/vendor/jquery.min.js"></script>
+
+        
+  
+  <script>
+  var _prum = [['id', '51954fe2abe53d0e77000000'],
+               ['mark', 'firstbyte', (new Date()).getTime()]];
+  (function() {
+      var s = document.getElementsByTagName('script')[0]
+        , p = document.createElement('script');
+      p.async = 'async';
+      p.src = '//rum-static.pingdom.net/prum.min.js';
+      s.parentNode.insertBefore(p, s);
+  })();
+  </script>
+
+
+
+  
+  <script type="text/javascript">
+    var _sf_startpt=(new Date()).getTime();
+  </script>
+
+
+
+  
+  <script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6916907" });
+    (function() {
+      var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+      s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+      el.parentNode.insertBefore(s, el);
+    })();
+  </script>
+
+
+
+  
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(
+      ['_setAccount', 'UA-4300461-31'],
+      ['_trackPageview'],
+      ['rollup._setAccount', 'UA-4300461-33'],
+      ['rollup._trackPageview']
+    );
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+  
+  <script type="text/javascript">
+  
+  (function () {
+  	var d = new Image(1, 1);
+  	d.onerror = d.onload = function () {
+  	  d.onerror = d.onload = null;
+  	};
+  	d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-805310h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+
+  function Nielsen_Event() {
+  	var d = new Image(1, 1);
+  	d.onerror = d.onload = function () { d.onerror = d.onload = null; };
+  	d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-805310h&cg=0&cc=1&si=", escape(window.location.href),
+  	"&rp=", escape(document.referrer),
+  	"&ts=compact&c0=usergen,1&rnd=",(new Date()).getTime()].join('');
+  };
+  
+  </script>
+
+
+
+  
+  
+
+  <script type="text/javascript" language="JavaScript">
+  var CA = window.CA || {};
+  CA.cmd = CA.cmd || [];
+  CA.cmd.push(function() {
+    CA.doTargeting({id:40046 , defaultKVP:rasegs=seg2});
+  });
+  CA.getDefaultKeyValue = CA.getTargetKeyValues = function () {return "rasegs=seg2"};
+  (function (){
+    var p = document.createElement("script");
+    p.type = "text/javascript";
+    p.async = true;
+    p.src = (document.location.protocol != "https:" ? "http" : "https") + "://p0.raasnet.com/partners/dfp_async1.js";
+    var s = document.getElementsByTagName("script"); s[s.length-1].parentNode.appendChild(p);
+  })();
+
+  </script>
+  
+
+  <script type="text/javascript">
+  var _ca_id=85327;
+  </script>
+  <script type="text/javascript">
+  (function (){
+  var p,s;
+  p = document.createElement("script");
+  p.type = "text/javascript";
+  p.async = true;
+  p.src = (document.location.protocol != "https:" ? "http" : "https") + "://p0.raasnet.com/partners/_ca.js";
+  s = document.getElementsByTagName("script"); s[s.length-1].parentNode.appendChild(p);
+  })();
+  </script>
+
+
+
+<script type="text/javascript">
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement("script");
+    gads.async = true;
+    gads.type = "text/javascript";
+    var useSSL = "https:" == document.location.protocol;
+    gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+    var node =document.getElementsByTagName("script")[0];
+    node.parentNode.insertBefore(gads, node);
+   })();
+</script>
+
+
+<script>
+(function() {
+  var s = document.getElementsByTagName('script')[0]
+    , p = document.createElement('script');
+  p.async = 'async';
+  p.src = '//content.dl-rms.com/rms/mother/9001/nodetag.js';
+  s.parentNode.insertBefore(p, s);
+})();
+</script>
+
+    </head>
+    <body class="<!--[if IE]>ie<![endif]-->">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+          
+
+<header id="header" class="absolute">
+  <div class="header-wrap">
+
+      
+
+
+      <div class="ad-unit hide-for-small hide-on-print" data-advertising="flexleaderboard" data-cb-ad-id="Top" data-cb-dfp-id="unit=page_top;size=970x90,970x66,970x60;pos=top">
+            <div class="dart-ad hide-on-print" id="ad-unit-top-header"></div>
+      </div>
+
+      
+
+
+<div class="contain-to-grid clearfix"> 
+
+  <nav id="navigation" class="top-bar">
+
+  <ul class="title">
+    
+    <li class="name">
+      
+      
+       <h1 itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="//www.fastcompany.com/">
+          <img itemprop="logo" alt="Fast Company logo" title="Fast Company" src="//g.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svg/FastCompany-logo-white.svg" data-svg-fallback="//h.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svgfallback/FastCompany-logo-white.png" class="svg-fallback-nav" width="100" height="18">
+        </a>
+       </h1>
+       
+       <div class="hide" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="//wwww.fastcompany.com/" itemprop="url"><span itemprop="title">Fast Company</span></a>
+       </div>
+    </li>
+    <li class="toggle-topbar">
+      <a  href="#"
+          data-event-category="topbar"
+          data-event-action="toggle"
+          data-event-label="Topbar: Brands"></a>
+    </li>
+  </ul>
+
+  <section class="hide-on-print">
+
+    
+    <ul class="left brands hide-for-medium-down">
+      <li class="codesign">
+        <a href="//www.fastcodesign.com">
+        <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svg/fastcodesign-dark.svg" data-svg-fallback="//d.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svgfallback/fastcodesign-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Design
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="coexist">
+        <a href="//www.fastcoexist.com">
+        <img src="//h.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svg/fastcoexist-dark.svg" data-svg-fallback="//g.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svgfallback/fastcoexist-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Exist
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="cocreate">
+        <a href="//www.fastcocreate.com">
+        <img src="//a.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svg/fastcocreate-dark.svg" data-svg-fallback="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svgfallback/fastcocreate-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Create
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="colabs">
+        <a href="//www.fastcolabs.com">
+        <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svg/fastcolabs-dark.svg" data-svg-fallback="//d.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svgfallback/fastcolabs-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Labs
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+    </ul>
+
+    
+    <ul class="left hide-for-medium-down circle-plus">
+      <li class="has-megadrop hide-for-small brands">
+        <a  href="#megadrop-brands"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Brands">
+          <span class="icon icon-plus-sign icon-plus-circle icon-inverse" title="Expand"></span>
+        </a>
+      </li>
+    </ul>
+
+    
+    <ul class="right">
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-megadrop features">
+        <a  href="#megadrop-features"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Features">Features</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="subscribe">
+        <a  href="//www.fastcompany.com/newsletters"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Emails">Emails</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-megadrop issues">
+        <a  href="#megadrop-issues"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Issues">Issues</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="print-subscribe">
+        
+          <a  href="https://magazine.fastcompany.com/loc/FST/topnavcolabs1"
+              class="toggle-megadrop"
+              target="_blank"
+              data-event-category="topbar"
+              data-event-action="click"
+              data-event-label="Topbar: Subscribe">Subscribe</a>
+        
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-button search" data-name="search">
+        <a  href="#search"
+            class="toggle-notify"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Search">
+          <span class="icon-search icon" title="Search"></span>
+        </a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-button rss">
+        <a  href="/rss.xml"
+            rel="feed"
+            class="toggle-notify"
+            data-event-category="topbar"
+            data-event-action="click"
+            data-event-label="Topbar: RSS">
+          <span class="icon-rss icon" title="RSS"></span>
+        </a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-dropdown editions">
+        <a  href="#"
+            rel="share"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Editions">
+          <span class="icon-globe icon" title="Editions"></span>
+        </a>
+        <ul class="dropdown">
+          <li><label>Editions</label></li>
+          <li class="divider"></li>
+          <li><a href="http://www.fastcompany.cn">China</a></li>
+        </ul>
+      </li>
+
+      
+      
+        <li class="divider show-for-small"></li>
+        <li class="has-dropdown share">
+          <a  href="#"
+              rel="share"
+              data-event-category="topbar"
+              data-event-action="toggle"
+              data-event-label="Topbar: Share">
+            <span class="icon-share-this icon" title="Share"></span>
+          </a>
+          <ul class="dropdown">
+            <li><label>Find Us</label></li>
+            <li class="divider"></li>
+            
+              <li><a href="http://www.facebook.com/fastcolabs" class="network-facebook">Facebook</a></li>
+            
+              <li><a href="https://twitter.com/FastCoLabs" class="network-twitter">Twitter</a></li>
+            
+              <li><a href="https://plus.google.com/u/0/b/118243011872731622612/118243011872731622612/posts" class="network-googleplus">Google+</a></li>
+            
+              <li><a href="https://alpha.app.net/fastcolabs" class="network-appnet">App.net</a></li>
+            
+          </ul>
+        </li>
+      
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-dropdown login not-loggedin">
+        <a  href="#"
+            rel="login"
+            data-event-category="topbar"
+            data-event-action="click"
+            data-event-label="Topbar: Login">
+          <span class="icon-user" title="Sign in"></span>
+        </a>
+        <ul class="dropdown" id="visitor-dropdown-topbar">
+
+          <li class="has-dropdown hide-override is-moderator is-administrator is-editor"><a href="#"
+            class="hide-override is-moderator is-administrator is-editor"><i class="icon icon-comments"></i></a>
+            <ul class="dropdown">
+
+             <li class="hide-override is-moderator is-administrator is-editor"><a href="#"
+              class="hide-override is-moderator is-administrator is-editor"
+              rel="moderate"
+              data-event-category="topbar"
+              data-event-action="toggle"
+              data-event-label="Topbar: Moderate">Moderate</a></li>
+            </ul>
+          </li>
+
+            <li class="has-dropdown hide-override is-administrator"><a href="#"
+              class="hide-override is-administrator">
+              <i class="icon icon-magic"></i></a>
+              <ul class="dropdown">
+               <li ><a href="#"
+                class="hide-override is-administrator"
+                rel="bless"
+                data-event-category="topbar"
+                data-event-action="toggle"
+                data-event-label="Topbar: Bless">Bless</a>
+              </li>
+            </ul>
+          </li>
+
+
+
+
+
+          <li><a href="#"
+            class="logout"
+            rel="logout"
+            data-event-category="topbar"
+            data-event-action="click"
+            data-event-label="Topbar: Logout">Sign&nbsp;Out</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  </nav>
+
+</div>
+
+
+      <div id="notify" class="hide-on-print">
+  <div class="notify-wrap">
+
+    <div id="notify-search" data-name="search" class="message search persist">
+  <div class="message-wrap row">
+
+    <div class="three columns"></div>
+
+    <div class="six columns">
+
+      <div id="search-form">
+        <form class="search" action="/search/" method="get">
+
+          <div class="row collapse">
+
+            <div class="ten mobile-three columns">
+              <input type="text" />
+            </div>
+
+            <div class="two mobile-one columns">
+              <a class="button expand postfix">Search</a>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+    <div class="two columns"></div>
+
+    <div class="one columns">
+      <span class="close icon close-message">Close</span>
+    </div>
+
+
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+  </div>
+
+</header>
+
+
+<div id="sticky-top-bar-wrapper">
+  <div id="sticky-top-bar"></div>
+</div>
+
+<div id="megadrop">
+  <div class="megadrop-wrapper row">
+    <div class="mobile-main-nav-padding">
+
+      <section id="megadrop-brands"    data-order="1" data-name="brands"    class="card"></section>
+      <section id="megadrop-features"  data-order="2" data-name="features"  class="card"></section>
+      <section id="megadrop-issues"    data-order="3" data-name="issues"    class="card"></section>
+      <section id="megadrop-subscribe" data-order="4" data-name="subscribe" class="card"></section>
+      <section id="megadrop-visitor"   data-order="5" data-name="visitor"   class="card"></section>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="admin-panel"></div>
+
+          <div id="non-displayable" class="hide-override">
+  
+</div>
+          <div id="page" class="identity-fastcolabs kind-article type-post slug-fastcolabs">
+
+  <section id="page-jumbotron" class="hide-on-print">
+    <div class="container">
+      
+
+  
+    
+
+      
+        <figure class="jumbotron" itemscope itemprop="image" itemtype="http://schema.org/ImageObject">
+
+          <img src="//g.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg" width="1280" height="720" id="poster" itemprop="contentUrl representativeOfPage">
+
+          
+
+        </figure>
+
+      
+
+    
+
+  
+
+
+
+
+  
+    <span itemscope itemtype="http://schema.org/Organization">
+     <a itemprop="url" href="//www.fastcolabs.com" id="logo" class="navigate hide-for-small hide-on-print">
+      
+       <img itemprop="logo" src="//d.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svg/fastcolabs-dark-txt.svg" data-svg-fallback="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/svgfallback/fastcolabs-dark-txt.png" width="100" height="123" class="hide-on-print">
+      
+     </a>
+    </span>
+    
+    <span class="hide" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="//www.fastcolabs.com" itemprop="url"><span itemprop="title">Co.Labs</span></a>
+    </span>
+  
+
+
+    </div>
+  </section>
+
+  <div class="page-inner">
+
+    <div class="page-background hide-on-print">
+      <div class="tile"></div>
+      <div class="gradient"></div>
+    </div>
+
+    <div id="page-main" class="page-main row">
+
+      <div class="page-main-wrap">
+
+        <div id="page-body" class="eight columns">
+          <section id="page-body-content" class="page-body">
+            <div class="container">
+              <article data-resource-id="3029364" 
+          id="post-3029364"
+          class="node full-view kind-article slug-fastcolabs clearfix">
+
+  <div class="pull-left-meta hide-for-large">
+    <div class="hide-for-medium-down">
+      <p>2014-04-21</p>
+        
+
+          
+
+            
+
+            
+              <h4 class="tag">
+                <p><a href="/"><span>Co.Labs</span></a></p>
+              </h4>
+            
+
+          
+
+        
+    </div>
+  </div>
+
+  <header>
+
+    <div class="summary row collapse">
+      
+
+      
+
+      <h1 class="title twelve columns" itemprop="title headline">This Is Your Brain On Code, According To Functional MRI Imaging</h1>
+
+      
+      <span class="deck nine columns pull-three" itemprop="deck description"><p>Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing centers of our brains.</p></span>
+      
+    </div>
+
+    <div class="tools row collapse">
+
+      <div class="five columns" itemscope itemtype="http://schema.org/Person">
+        
+            
+            <div class="byline">
+              By
+              
+                
+                  
+
+                  
+                    
+                      <a rel="author" href="http://www.fastcompany.com/user/tina-amirtha" itemprop="byline">Tina Amirtha</a>
+                    
+                  
+                
+
+              
+            </div>
+            
+        
+      </div>
+
+      <div class="six columns hide-on-print">
+        <div class="share-box"></div>
+      </div>
+
+    </div>
+
+    
+
+    <hr class="hr-long" />
+
+  </header>
+
+  <hr class="break"/>
+
+  <div class="row collapse">
+    <div class="body prose twelve columns" itemprop="body articleBody">
+      
+
+<aside class="info"><div class="info-inner"><p>This story contains interviews with <a href="//www.fastcompany.com/person/christian-kästner" class="profile">Christian Kästner</a>, assistant professor at Carnegie Mellon University; <a href="//www.fastcompany.com/person/amy-hirotaka" class="profile">Amy Hirotaka</a>, state policy and advocacy manager at Code.org; and <a href="//www.fastcompany.com/person/janet-siegmund" class="profile">Janet Siegmund</a>, researcher at the University of Passau.</p></div></aside>
+
+<p>In order to expose more students to computer science, 17 states have passed legislation to create <a href="http://www.edweek.org/ew/articles/2014/02/26/22computer_ep.h33.html" target="_blank">basic math and science requirements</a> in the curriculum, rather than count as electives. But lawmakers in Texas have made computer programming count toward a <a href="http://www.theepochtimes.com/n3/486970-kentucky-coding-foreign-language-requirement-in-schools-may-be-satisfied-with-computer-programming/" target="_blank">foreign language requirement</a>, with Kentucky and New Mexico gearing up to follow suit.</p>
+
+<p>So, is coding language or math?</p>
+
+<h4><a name="How_Human_Brains_Interpret_Coding">How Human Brains Interpret Coding</a></h4>
+
+<p>Here's how the debate is shaping up. Those in the math and science camp argue that computer science encompasses more than just the "language" the computer can interpret--specifically, it requires learning algorithm logic that necessitates specially trained technical instructors.</p>
+
+<p>On the other hand, the  "code-is-a-foreign-language" proponents are fiercely stating their case, seeing an opportunity to fill in curriculum gaps left behind by <a href="http://www.techrepublic.com/article/coding-as-a-second-language-kentucky-jockeys-to-be-next-to-join-the-movement/#." target="_blank">shrinking foreign language departments</a> in schools.</p>
+
+<p>While lawmakers and educators alike fight over whether computer programming is considered a foreign language or a math, there has been virtually no scientific evidence to support or refute either case. That is, until now.</p>
+
+<h4><a name="The_Study">The Study</a></h4>
+
+<p>Researchers at the University of Passau, University of Magdeburg, Carnegie Mellon, Georgia Tech, the Leibniz Institute for Neurobiology, and the Metop Research Institute put their heads together to figure out how exactly computer programmers understand code. Their study was accepted to this year's International Conference on Software Engineering.</p>
+
+<p>This is the first study in which scientists have looked into the brains of programmers, using the imaging tools of neuroscience. You can find the <a href="http://www.cs.cmu.edu/%7Eckaestne/pdf/icse14_fmri.pdf" target="_blank">study here in PDF form</a>.</p>
+
+<p>Primary author of the study, computer scientist Janet Siegmund at the University of Passau, was so interested in the "language or math" debate that she decided to peer into the brains of computer programmers using an MRI, in hopes of shedding some light on the issue.</p>
+
+<p>“That was actually my starting point,” Siegmund says. She wanted to know how the brain registered the act of programming, which led her to her current research question, "How do coders understand code?"</p>
+
+<p>In the experiment, 17 participants interpreted a few lines of code while lying down inside an <a href="http://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging" target="_blank">fMRI machine</a>. All of the test subjects were university students that had an undergraduate understanding of programming and the Java language. Two of the 17 participants happened to be female.</p>
+
+<p>Each person read several different Java code snippets of similar difficulty so that the researchers could average the resulting brain imaging data. To rule out brain activity that was not related to interpreting code, the researchers subtracted imaging data related to an error detection task. They found that error detection did not activate the parts of the brain that dealt with the code interpretation task.</p>
+
+<p>All of the test code consisted of several lines, at the end of which the program would print an output. The participants’ task was to predict the printed output after studying the code. All of the participants were capable of understanding the code within the given time frame.</p>
+
+<h4><a name="The_ProgrammingLanguage_Link">The Programming-Language Link</a></h4>
+
+<p>So, does computer programming fall into the languages subject area?</p>
+
+<p>“It appears to make some sense, based on what we have learned from the study,” Siegmund says.</p>
+
+<p>But Siegmund stresses that more research would better solidify her conclusions, especially since this was an initial attempt to answer the math-or-language question. She says, “Actually, with these kinds of studies, you should always say that more studies need to be done. But what we found is that it appears to be related.”</p>
+
+<p>Future studies might improve on the current experiment. “We had a very artificial kind of testing because you really had just small source-code snippets with, like, 20 lines of code,” Siegmund says. Anything larger would have fallen out of the viewing area of the small mirror that was tacked onto the inside of the fMRI machine.</p>
+
+<p>What’s more is that the code could not be so difficult that the subject could not finish the task within the allotted time. Real-world programs usually contain numerous lines and would likely stump the external reviewer.</p>
+
+<p>Christian Kästner, the second author of the study, elaborates on why more work needs to be done. He says, “There is no clear evidence that learning a programming language is like learning a foreign language, but our results show that there are clearly similarities in brain activations that show that the hypothesis is plausible.”</p>
+
+<p>It is important to note that the participants did not actively write computer programs in the experiment. They merely read code chunks for understanding. So, it is inaccurate to definitively say that computer programming is more a language than a math. The truth is still out there.</p>
+
+<h4><a name="Neuroscience_And_Computer_Science_Collide">Neuroscience And Computer Science Collide</a></h4>
+
+<p>Earlier attempts to understand programmers’ cognitive abilities used qualitative measures and mostly relied on self-reports from the programmers the experiments were done on. But Siegmund decided to use a hard-data method from neuroscience to directly measure a programmer’s understanding of the code using fMRI imaging.</p>
+
+<figure class="inline-large inline">
+<img src="//g.fastcompany.net/multisite_files/fastcompany/imagecache/inline-large/inline/2014/04/3029364-inline-activation.jpg" alt=""/><figcaption>The colored areas were the active brain regions when the participants read and understood the code.</figcaption>
+
+<p></figure></p>
+
+<p>Embracing the tool carried a learning curve. “You need a lot of experience with fMRI studies. You need to know how the machine works and what you can do with the data,” Siegmund says.</p>
+
+<p>A chance meeting with biologists at a conference brought in the know-how that Siegmund and her colleagues needed in order to properly plan out and interpret the data from their fMRI study. “I don’t think we would have been there if we didn’t have the new biologists on board,” Siegmund says.</p>
+
+<h4><a name="Blurred_Lines_Between_Math_And_Language">Blurred Lines Between Math And Language</a></h4>
+
+<p>The study might give insight into how reading code could impact a student’s brain. Even so, it is difficult to know for certain if other parts of the brain were activated.</p>
+
+<p>Last year, neuroscientists <a href="http://www.jneurosci.org/content/33/16/6709.abstract" target="_blank">did a study</a> on patients whose brains were implanted with electrodes. Using this invasive method, they were able to pinpoint a region of the brain that processes numerals, called the inferior temporal gyrus. They further concluded that this region is physically near the area responsible for language processing.</p>
+
+<p>It is possible that the fMRI in Siegmund’s study may not have been able to detect activity in this region. Maia Szalavitz, writing for <em><a href="http://healthland.time.com/2013/04/23/your-brain-on-math/" target="_blank">Time</a></em>, wrote, “Since the inferior temporal gyrus is so close to the ear canals, functional MRI machines, which detect changes in oxygen use and blood flow by nerve cells, may not be as sensitive to the activity of neurons tucked away in that area.”</p>
+
+<p>Even more evidence confounds the distinction between language and calculation processing areas of the brain. A year 2000 <a href="http://www.ncbi.nlm.nih.gov/pubmed/10678698" target="_blank">study</a> concluded that the same region that is responsible for processing semantics is also important when performing mental calculations. Incidentally, Siegmund and her colleagues found activity in this same region.</p>
+
+<p>No matter which way you look at it, most brain imaging studies remind readers that activated areas that show up with the chosen imaging method correspond to several different processes that are open to interpretation.</p>
+
+<p>Siegmund and her colleagues also concede that the way they interpreted their study’s results is open for review, writing in the paper that they might have missed important processes.</p>
+
+<p>But Siegmund reiterates, “The activation pattern that we found shows very clear and really distinct areas are activated that are related to our current understanding of program comprehension.”</p>
+
+<h4><a name="CompSci_Is_More_Than_Just_Code">Comp-Sci Is More Than Just Code</a></h4>
+
+<p>Even if Siegmund’s and Kästner’s study has showed a relationship between reading a computer program and the brain’s language centers, it does not speak to the field of computer science as a whole.</p>
+
+<p>Amy Hirotaka, state policy and advocacy manager at the non-profit <a href="http://codeorg.tumblr.com/post/75129943201/language" target="_blank">Code.org</a>, wrote in an email to us, “Computer science is more than just code. The fundamental concepts of computer science--like logic and problem solving--align well with mathematics and science disciplines, extending beyond simply learning a programming language.”</p>
+
+<p>Considering now that computer science could come out of a school’s foreign language department, Hirotaka sees issues with teacher quality down the line. Each department has its own ways of certifying a teacher’s credentials. It suffices to say that getting foreign language and mathematics departments to converge on one credentialing standard would create an administrative mess, even if it would give students more foreign language options.</p>
+
+<p>Hirotaka added, “Counting computer science as a foreign language might sound like a creative fix, but it causes major problems when it comes to teacher certification and departmental alignment.”</p>
+
+<h4><a name="Programmers_Brains_In_The_Real_World">Programmers’ Brains In The Real World</a></h4>
+
+<p>School policies aside, the study could pave the way for improvements in the programming field. Kästner is quick to point out that using neuroscience can help us determine what makes a great programmer different from an average one.</p>
+
+<p>“We still have no clear idea how to train really good developers. For decades researchers have found that there are individual programmers who program more productively at higher quality and also do most of the communication in the project. These are often referred to as 10Xers because many studies found that they produce ten times more code, or in a tenth of the time or do ten times more communication,” Kästner says.</p>
+
+<p>He adds, “We know that these developers exist; we often quickly recognize them. Most of us know at least one such developer, and every tech company tries to hire them. But we have no idea how they got there or whether we could train others to excel at similar levels. Studying how program comprehension differs among novices, professionals, and 10Xers may allow us to get a better understanding of what makes a truly excellent programmer.”</p>
+
+<p>Siegmund imagines that the research could result in better software syntax. “Now that we actually have a better idea of what is happening inside a programmer’s brain, we found that it was related to natural language processing. Maybe programming languages should be more like natural languages,” she says.</p>
+
+<p>“The more domain-specific languages, like SQL, are more close to natural language processing. It would come closer than Java,” says Siegmund.</p>
+
+<p>All things considered, the researchers’ biggest takeaway from studying programmers’ brain activity is the possibility for even more discoveries in computer science and software engineering.</p>
+
+<p>“This opens the door for many future studies in this field. The actual activations found in this study are nice and confirm mostly what we expected, but the key result is a proof of concept of using fMRI as a tool in software engineering research,” says Kästner.</p>
+
+<p>If you want to get your language processing centers working away, try perusing the Java snippets from the study <a href="http://tinyurl.com/ProgramComprehensionAndfMRI" target="_blank">here</a>.</p>
+    </div>
+
+    
+      <div class="twelve columns poster-credit" itemprop="caption contributor">
+        <span><p>[Image: Flickr user <a href="https://www.flickr.com/photos/flamephoenix1991/8376271918" target="_blank">_DJ_</a>]</p></span>
+      </div>
+    
+
+    
+  </div>
+
+  <div class="after-body clearfix">
+
+    
+
+    <div class="share-box clearfix hide-on-print"></div>
+
+    <br class="clear" />
+    <hr class="hr-long" />
+
+    
+
+    
+    <aside id="author" class="clearfix  ">
+      <div class="author-wrap clearfix">
+
+        <div class="row">
+
+         
+            <div class="three columns mobile-one">
+              <figure class="poster">
+                <a class="author-readmore" href="http://www.fastcompany.com/user/tina-amirtha">
+                  <img class="author-headshot" src="//h.fastcompany.net/multisite_files/fastcompany/imagecache/profile-s/profile/3026554-photo-img0954.jpg" />
+                </a>
+              </figure>
+            </div>
+            <div class="teaser nine columns mobile-three">
+          
+
+
+              <h4 class="author-name" itemprop="author">Tina Amirtha</h4>
+              
+                <div class="author-teaser">
+                  <p>I'm a senior writer for Fast Co.Labs. My writing revolves around technology that enhances how we see, hear and experience things and tends toward women in STEM.</p>
+
+<p>Since 2009, I've developed data-mining software, aside from writing. I have two engineering degrees and am a graduate of Northwestern.</p>
+
+<p>I'm from Chicago. Follow me on Twitter @tinamirtha.</p>
+
+<p>Here's my website.</p></p>
+                </div>
+                
+                <div class="author-readmore">
+                 <a href="http://www.fastcompany.com/user/tina-amirtha">Continue</a>
+                </div>
+                
+
+              
+            </div>
+
+          </div>
+
+      </div>
+    </aside>
+
+    
+
+    <aside class="pager clearfix">
+      <div class="pager-wrap clearfix">
+
+        <div class="row">
+
+          <div class="twelve columns">
+
+            <div class="three columns mobile-two pager-page previous">
+              
+            </div>
+
+            <div class="six columns hide-for-small time">
+              <time itemprop="datePublished" datetime="2014-04-21">April 21, 2014 | 9:00 AM</time>
+            </div>
+
+            <div class="three columns mobile-two pager-page next end">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <hr class="hr-long" />
+
+    <aside id="related"></aside>
+    <section id="comments"></section>
+  </div>
+</article>
+
+<br class="clearfix show-for-small" />
+
+
+
+
+
+
+
+            </div>
+          </section>
+
+          <section id="page-body-after" class="page-body-after">
+              
+          </section>
+        </div>
+
+        <br class="clear show-for-small" />
+
+        <aside id="page-series" class="four columns page-sidebar hide-on-print series clearfix">
+          <div class="container">
+            
+          </div>
+        </aside>
+
+        <br class="clear show-for-small" />
+
+        <aside id="page-sidebar" class="four columns page-sidebar hide-on-print">
+          <div class="container">
+            <div id="sidebar-top" class="hide-on-print" data-region="sidebar_nofollow">
+
+<div id="sidebar-add-unit-imu_1" data-name="imu_1">
+  <div class="block ad-unit" data-advertising="imu_1" data-cb-ad-id="imu_1" data-cb-dfp-id="unit=imu_1;size=300x250,300x600,300x1050;pos=imu_1">
+      <div class="dart-ad" id="ad-unit-sidebar-imu_1"></div>
+      <div class="ad-label"></div>
+  </div>
+</div>
+
+
+</div>
+
+<div id="sidebar-follow" class="hide-on-print hide-for-small" data-region="sidebar">
+
+    <div id="sidebar-block-branding" data-name="branding">
+<div class="block">
+
+  <canvas id="canvas" width="300" height="300">
+    <div class="branding-fallback"></div>
+  </canvas>
+
+  <hgroup>
+    <h3><a href="/">Co.LABS</a></h3>
+    <h5 class="editor">Editor: <a href="/user/chris-dannen">Chris Dannen</a></h5>
+  </hgroup>
+
+</div>
+</div>
+
+
+    <div id="sidebar-block-newsletters" class="hide-for-small" data-name="newsletters">
+  <div class="block">
+  	<div class="wrapper">
+	    <h2>Subscribe to Newsletters</h2>
+
+  		<div class = "subscribe-form">
+  			<div class="form-padding">
+  				<form action="//www.fastcompany.com/newsletters">
+  					<label for="email">Enter Your Email:</label>
+  				    <input type="text" value="" name="email" class="email" id="email" placeholder="@" />
+  				    	<input type="submit" id="subscribe" value="submit" class="btn" alt="Subscribe"/>
+			    </form>
+		    </div>
+	   	</div>
+
+   	</div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-featured_colabs1" class="sidebar-block-featured hide-for-small" data-name="featured_colabs1">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3029183"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3029183/7-dead-simple-ways-to-make-your-own-gifs"
+            title="7 Dead Simple Ways To Make Your Own GIFs"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//b.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/04/3029183-poster-p-1-30291837-dead-simple-ways-to-make-your-own-gifs.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3029183/7-dead-simple-ways-to-make-your-own-gifs"
+          title="7 Dead Simple Ways To Make Your Own GIFs"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">7 Dead Simple Ways To Make Your Own GIFs</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3025785"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs dark" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-dark-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3025785/meet-the-man-who-solved-the-mysterious-cicada-3301-puzzle"
+            title="Meet The Man Who Solved The Mysterious Cicada 3301 Puzzle"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//h.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/01/3025785-poster-p-1-meet-the-man-who-solved-the-mysterious-cicada-3301-puzzle.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3025785/meet-the-man-who-solved-the-mysterious-cicada-3301-puzzle"
+          title="Meet The Man Who Solved The Mysterious Cicada 3301 Puzzle"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Meet The Man Who Solved The Mysterious Cicada 3301 Puzzle</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3027542"
+  class="node teaser-view sidebar kind-slideshow site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3027542/inside-fiftythrees-jaw-dropping-new-office-space"
+            title="Inside FiftyThree&#x27;s Jaw-Dropping New Office Space"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//b.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/03/3027542-poster-p-1-inside-fiftythrees-jaw-dropping-new-office-space.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3027542/inside-fiftythrees-jaw-dropping-new-office-space"
+          title="Inside FiftyThree&#x27;s Jaw-Dropping New Office Space"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Inside FiftyThree's Jaw-Dropping New Office Space</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3028379"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3028379/a-futuristic-look-at-the-nation-of-san-francisco"
+            title="A Futuristic Look At The Nation Of San Francisco"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//g.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/03/3028379-poster-p-1-a-futuristic-look-at-the-nation-of-san-francisco.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3028379/a-futuristic-look-at-the-nation-of-san-francisco"
+          title="A Futuristic Look At The Nation Of San Francisco"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">A Futuristic Look At The Nation Of San Francisco</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3028265"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3028265/how-i-narrowed-down-the-location-of-malaysia-air-using-monte-carlo-data-models"
+            title="How I Narrowed Down The Location Of Malaysia Air Using &quot;Monte Carlo&quot; Data Models"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//g.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/03/3028265-poster-p-1-how-i-narrowed-down-the-location-of-malaysia-air-using-monte-carlo-data-models.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3028265/how-i-narrowed-down-the-location-of-malaysia-air-using-monte-carlo-data-models"
+          title="How I Narrowed Down The Location Of Malaysia Air Using &quot;Monte Carlo&quot; Data Models"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">How I Narrowed Down The Location Of Malaysia Air Using "Monte Carlo" Data Models</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3029292"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3029292/why-the-webview-is-the-future-of-mac-os-x-apps"
+            title="Why The WebView Is The Future Of Mac OS X Apps"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//a.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/04/3029292-poster-p-3-3029292-why-the-webview-is-the-future-of-mac-os-x-apps.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3029292/why-the-webview-is-the-future-of-mac-os-x-apps"
+          title="Why The WebView Is The Future Of Mac OS X Apps"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Why The WebView Is The Future Of Mac OS X Apps</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div id="sidebar-add-unit-imu_2" data-name="imu_2">
+  <div class="block ad-unit" data-advertising="imu_2" data-cb-ad-id="imu_2" data-cb-dfp-id="unit=imu_2;size=300x250,300x600,300x1050;pos=imu_2">
+      <div class="dart-ad" id="ad-unit-sidebar-imu_2"></div>
+      <div class="ad-label"></div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-featured_colabs2" class="sidebar-block-featured hide-for-small" data-name="featured_colabs2">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3027907"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs dark" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-dark-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3027907/what-engineers-at-facebook-pinterest-snapchat-airbnb-and-spotify-listen-to-while-coding"
+            title="What Engineers At Facebook, Pinterest, Snapchat, Airbnb, And Spotify Listen To While Coding"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//d.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/03/3027907-poster-p-1-what-engineers-at-facebook-pinterest-snapchat-airbnb-and-spotify-listen-to-while-coding.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3027907/what-engineers-at-facebook-pinterest-snapchat-airbnb-and-spotify-listen-to-while-coding"
+          title="What Engineers At Facebook, Pinterest, Snapchat, Airbnb, And Spotify Listen To While Coding"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">What Engineers At Facebook, Pinterest, Snapchat, Airbnb, And Spotify Listen To While Coding</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3028052"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3028052/four-robots-that-talk-trash-to-your-face"
+            title="Four Robots That Talk Trash To Your Face"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/03/3028052-poster-p-1-four-robots-that-talk-trash-to-your-face.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3028052/four-robots-that-talk-trash-to-your-face"
+          title="Four Robots That Talk Trash To Your Face"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Four Robots That Talk Trash To Your Face</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div id="sidebar-add-unit-imu_3" data-name="imu_3">
+  <div class="block ad-unit" data-advertising="imu_3" data-cb-ad-id="imu_3" data-cb-dfp-id="unit=imu_3;size=300x250,300x600,300x1050;pos=imu_3">
+      <div class="dart-ad" id="ad-unit-sidebar-imu_3"></div>
+      <div class="ad-label"></div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-featured_colabs3" class="sidebar-block-featured hide-for-small" data-name="featured_colabs3">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3020181"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-open-company">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="/section/open-company">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3020181/open-company/inside-githubs-super-lean-management-strategy-and-how-it-drives-innovation"
+            title="Inside GitHub&#x27;s Super-Lean Management Strategy--And How It Drives Innovation"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//f.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2013/10/3020181-poster-p-1-inside-githubs-super-lean-management-strategy-and-how-it-drives-innovation.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3020181/open-company/inside-githubs-super-lean-management-strategy-and-how-it-drives-innovation"
+          title="Inside GitHub&#x27;s Super-Lean Management Strategy--And How It Drives Innovation"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Inside GitHub's Super-Lean Management Strategy--And How It Drives Innovation</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3026698"
+  class="node teaser-view sidebar kind-slideshow site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3026698/inside-duckduckgo-googles-tiniest-fiercest-competitor"
+            title="Inside DuckDuckGo, Google&#x27;s Tiniest, Fiercest Competitor"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/02/3026698-poster-p-1-inside-duck-duck-go.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3026698/inside-duckduckgo-googles-tiniest-fiercest-competitor"
+          title="Inside DuckDuckGo, Google&#x27;s Tiniest, Fiercest Competitor"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Inside DuckDuckGo, Google's Tiniest, Fiercest Competitor</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    
+
+    <div id="sidebar-block-contributors" class="hide-for-small" data-name="contributors_colabs">
+  <div class="block contributors" style='overflow-y: auto;'>
+    <h4 class="subheader"><span>Contributors</span></h4>
+    <div class="users-container">
+    	<ul class="user-list">
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/chris-dannen" class="blockqueue-node-2" title="Chris Dannen">
+    
+		  <img src="//f.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/2118986-photo-150084210101279884378256632198885o.jpg" alt="" title="Chris Dannen">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/john-paul-titlow" class="blockqueue-node-2" title="John Paul Titlow">
+    
+		  <img src="//c.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3007390-photo-jpt-headshot-500.jpg" alt="" title="John Paul Titlow">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/ciara-byrne" class="blockqueue-node-2" title="Ciara Byrne">
+    
+		  <img src="//d.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3006504-photo-ciara-profile.jpg" alt="" title="Ciara Byrne">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/david-lumb" class="blockqueue-node-2" title="David Lumb">
+    
+		  <img src="//a.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3013344-photo-potomacheadshot-copy.jpg" alt="" title="David Lumb">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/gabe-stein" class="blockqueue-node-2" title="Gabe Stein">
+    
+		  <img src="//d.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3007130-photo-46dor2d33uinnbqmkx1i.png" alt="" title="Gabe Stein">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcompany.com/user/jay-cassano" class="blockqueue-node-2" title="Jay Cassano">
+    
+		  <img src="//b.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3008086-photo-me-headshot.jpg" alt="" title="Jay Cassano">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/luke-dormehl" class="blockqueue-node-2" title="Luke Dormehl">
+    
+		  <img src="//f.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3014172-photo-author-pic.jpg" alt="" title="Luke Dormehl">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/matt-hartigan" class="blockqueue-node-2" title="Matt Hartigan">
+    
+		  <img src="//a.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3017018-photo-10134143560934778499141137763585n.jpg" alt="" title="Matt Hartigan">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/michael-grothaus" class="blockqueue-node-2" title="Michael Grothaus">
+    
+		  <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3006268-photo-p10100282-copy.jpg" alt="" title="Michael Grothaus">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcompany.com/user/neal-ungerleider" class="blockqueue-node-2" title="Neal Ungerleider">
+    
+		  <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/2260653-photo-vegasneonmuseum_0.jpg" alt="" title="Neal Ungerleider">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/tyler-hayes" class="blockqueue-node-2" title="Tyler Hayes">
+    
+		  <img src="//a.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3013549-photo-2f9f9d1a9f18296fc7c5d2105ff883a8.jpeg" alt="" title="Tyler Hayes">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/adam-popescu" class="blockqueue-node-2" title="Adam Popescu">
+    
+		  <img src="//c.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3025296-photo-fast.jpg" alt="" title="Adam Popescu">
+    
+	</a>
+</div>
+</li>
+        
+          <li><div class="user">
+	<a href="http://www.fastcolabs.com/user/steven-melendez" class="blockqueue-node-2" title="Steven Melendez">
+    
+		  <img src="//f.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3022416-photo-headshot.jpg" alt="" title="Steven Melendez">
+    
+	</a>
+</div>
+</li>
+        
+    	</ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-trending" class="hide-for-small" data-name="trending">
+  <div class="block trending">
+    <h4 class="subheader trending"><span>Trending Articles</span></h4>
+    <ol class="trending"></ol>
+  </div>
+</div>
+
+
+
+    <div id="sidebar-block-featured_colabs4" class="sidebar-block-featured hide-for-small" data-name="featured_colabs4">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3026423"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+    
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs dark" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/fl/images/svg/fastcolabs-dark-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3026423/why-google-is-investing-in-deep-learning"
+            title="Why Google Is Investing In Deep Learning"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//c.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/02/3026423-poster-p-1-why-google-is-investing-in-deep-learning.jpg" />
+        
+
+        </a>
+      
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3026423/why-google-is-investing-in-deep-learning"
+          title="Why Google Is Investing In Deep Learning"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Why Google Is Investing In Deep Learning</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-footer" data-name="footer">
+  <div class="block">
+    <footer class="closure">
+      <ul class="links">
+        <li><a href="http://mediakit.fastcompany.com/">Advertise</a></li>
+        <li><a href="http://www.fastcompany.com/privacy-policy">Privacy Policy</a></li>
+        <li><a href="http://www.fastcompany.com/terms-and-conditions">Terms</a></li>
+        <li><a href="http://www.fastcompany.com/about-us">About Us</a></li>
+      </ul>
+
+      <hr class="hr-sidebar" />
+
+      <p>
+        <small class="copyright"><a href="http://www.fastcompany.com/">Fast Company</a> &amp; <a href="http://www.inc.com">Inc</a> &copy; 2014 Mansueto Ventures, LLC.</small>
+        <a href="http://www.aboutads.info/" target="_new" class="icon_adoption" rel="nofollow">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAAAAAC4QtCeAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAJ0Uk5TAAB2k804AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAEgAAABIAEbJaz4AAACASURBVAjXYyir3PaDAQby09KL9/2FcjIWf1mbVX0Mwklfw8DwbF5awzkwZzXDjco/j/vTuq+COe93APXcLE5bCeKczvzOwPCoPG0xiHMq6/f9SWkdF4HK1jKcyepJazgFNnrBpwtpVUchRuempR17+htqaU/55l9w5xzf+RHOBgC94zlXyQTR6wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0wMy0wOFQxOToxMDo0NC0wNTowMNnS5vEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTMtMDMtMDhUMTk6MTA6NDQtMDU6MDCoj15NAAAAAElFTkSuQmCC" width="12" height="13" alt="">
+        </a>
+      </p>
+
+    </footer>
+  </div>
+</div>
+
+
+</div>
+
+
+          </div>
+        </aside>
+
+      </div><!-- .page-main-wrap -->
+
+    </div><!-- /#page-main -->
+
+  </div><!-- /.page-inner -->
+
+</div><!-- /#page -->
+
+          
+
+          
+        </div>
+
+        
+        <div id="dialog"></div>
+        <div id="dialog-bg"></div>
+
+        
+        <div id="search-modal" class="reveal-modal large twelve columns hide-on-print"></div>
+        
+
+        
+        <div id="send-article-modal" class="reveal-modal small hide-on-print" style="z-index: 9999;"></div>
+
+        
+        <div id="login-modal" class="reveal-modal large hide-on-print" style="z-index: 9999;"></div>
+
+        
+        <div class="timestamp-wrapper">
+          <div class="timestamp-inner">
+            <div class="timestamp">
+              <p><time pubdate class="date"></time></p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div id="widget-admin-modal" class="reveal-modal large twelve columns hide-on-print"></div>
+
+        <div id="message-space"></div>
+
+        
+
+  
+  <script type="text/javascript" src="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/js/vendor/omniture-scode-prod.js"></script>
+  <script type="text/javascript"><!--
+
+  
+    
+    fastco_s.server="fastcolabs";
+    
+    fastco_s.pageName="fastcolabs:3029364:this-is-your-brain-on-code-according-to-functional-mri-imaging";
+    fastco_s.events="event9";
+
+    fastco_s.prop1="technology";
+    fastco_s.prop2="technology";
+    fastco_s.prop3="This Is Your Brain On Code, According To Functional MRI Imaging";
+    fastco_s.prop4="http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging";
+    fastco_s.prop8="Tyler Hayes";
+    fastco_s.prop9="2014-04-21";
+    fastco_s.prop10="3029364";
+    fastco_s.prop11="Tyler Hayes";
+    fastco_s.prop13="1";
+    fastco_s.prop21="anonymous";
+    fastco_s.prop22="anonymous:fastcolabs:3029364:this-is-your-brain-on-code-according-to-functional-mri-imaging";
+    fastco_s.prop23="anonymous";
+    fastco_s.prop28="article";
+    
+
+    
+  
+
+  var s_code=fastco_s.t();if(s_code)document.write(s_code)//--></script>
+  <script type="text/javascript"><!--
+  if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+  //--></script><noscript><img src="http://grunerandjahr.112.2o7.net/b/ss/gjincfastcoprod/1/H.24.4--NS/0/5658306"
+  height="1" width="1" alt="" style="border:0;" /></noscript><!--/DO NOT REMOVE/-->
+  
+
+
+
+  
+  <script type="text/javascript">
+  var _sf_async_config={uid:2768,domain:"fastcolabs.com",sections:"fastcolabs.com",authors:"Tina Amirtha"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+         "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+  </script>
+
+
+
+  
+  <noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=6916907&cv=2.0&cj=1" />
+  </noscript>
+
+
+
+  
+  <noscript>
+    <div>
+      <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-805310h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+      width="1" height="1" alt="" />
+    </div>
+  </noscript>
+
+
+
+        <script type="text/javascript">
+  window.bootstrap_type = 'post';
+  window.bootstrap_kind = 'article';
+  window.bootstrap_id = '3029364';
+  window.bootstrap_obj = {"id":3029364,"solrId":"fastcompany|node|3029364","nid":3029364,"md5":"b1f23d8515e8696c43fa12f0d2c6d73e","type":"post","kind":"article","site":{"name":"fastcolabs.com","title":"Co.Labs","url":"http://www.fastcolabs.com","slug":"fastcolabs"},"site_id":"fastcompany","status":true,"updated":"2014-04-20T02:11:22.000Z","published":"2014-04-21T13:00:00.000Z","available_date":"2014-04-21T13:00:00.000Z","url":"http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging","isOwnSite":true,"path":"/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging","title":"This Is Your Brain On Code, According To Functional MRI Imaging","isArticle":true,"blocks":{"sidebar":["branding","newsletters","featured_colabs1","imu_2","featured_colabs2","imu_3","featured_colabs3","contributors_colabs","trending","featured_colabs4","footer"],"sidebar_nofollow":["imu_1"]},"ads":{"path":"/4160/mv.fclabs/technology/technology"},"poster":{"shade":false,"hideLogo":false,"assets":{"original":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","url":"//b.fastcompany.net/multisite_files/fastcompany/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","mimetype":"image/jpeg","width":1920,"height":1080,"ratio":1.7777777777777777,"is_placeholder":false},"full":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/1280//poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","url":"//g.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","mimetype":"image/jpeg","width":1280,"height":720,"ratio":1.7777777777777777,"is_placeholder":false},"teaser":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/620x350//poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","url":"//h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","mimetype":"image/jpeg","width":620,"height":350,"ratio":1.7714285714285714,"is_placeholder":false},"sidebar":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/300x166//poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","url":"//d.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","mimetype":"image/jpeg","width":300,"height":166,"ratio":1.8072289156626506,"is_placeholder":false},"thumbnail":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/320x240//poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","url":"//c.fastcompany.net/multisite_files/fastcompany/imagecache/320x240/poster/2014/04/3029364-poster-p-1-3029364-this-is-your-brain-on-code-according-to-functional-mri-imaging.jpg","mimetype":"image/jpeg","width":320,"height":240,"ratio":1.3333333333333333,"is_placeholder":false}},"caption":null,"credit":"<p>[Image: Flickr user <a href=\"https://www.flickr.com/photos/flamephoenix1991/8376271918\" target=\"_blank\">_DJ_</a>]</p>"},"labels":{"topics":[{"plain":"Technology","slug":"technology"}]},"teaser":{"html":"<p>Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing centers of our brains.</p>","plain":"Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing centers of our brains."},"analytics":{"omniture":{"server":"fastcolabs","channel":"technology","pageName":"fastcolabs:3029364:this-is-your-brain-on-code-according-to-functional-mri-imaging","pageType":"","prop1":"technology","prop2":"technology","prop3":"This Is Your Brain On Code, According To Functional MRI Imaging","prop4":"http:\\/\\/www.fastcolabs.com\\/3029364\\/this-is-your-brain-on-code-according-to-functional-mri-imaging","prop5":"","prop6":"","prop8":"Tyler Hayes","prop9":"2014-04-21","prop10":3029364,"prop11":"Tyler Hayes","prop13":"1","prop28":"article","prop30":"","events":"event9"}},"date":{"updated":{"datetime":"2014-04-20T02:11:22.000Z","short":"2014-04-19","medium":"April 19, 2014","long":"April 19, 2014 | 10:11 PM"},"published":{"datetime":"2014-04-21T13:00:00.000Z","short":"2014-04-21","medium":"April 21, 2014","long":"April 21, 2014 | 9:00 AM"}},"meta":{"title":null,"description":null,"canonical_url":null},"poster_element":{"full":"image","teaser":"image"},"cache_lifetime":null,"headline":{"html":"This Is Your Brain On Code, According To Functional MRI Imaging","plain":"This Is Your Brain On Code, According To Functional MRI Imaging"},"amazon_affiliate":true,"author":{"display_name":"Tina Amirtha","id":"fastcompany|node|3026554","uid":374716,"nid":3026554,"name":"tina-amirtha","email":"tinamirtha@gmail.com","site_id":"fastcompany","site":"fastcompany.com","url":"http://www.fastcompany.com/user/tina-amirtha","path":null,"images":{"full":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/profile/3026554-photo-img0954.jpg","url":"//c.fastcompany.net/multisite_files/fastcompany/profile/3026554-photo-img0954.jpg","mimetype":"image/jpeg","is_placeholder":false},"small":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/59x59//profile/3026554-photo-img0954.jpg","url":"//g.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3026554-photo-img0954.jpg","mimetype":"image/jpeg","is_placeholder":false,"height":59,"width":59},"thumb":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/profile-s//profile/3026554-photo-img0954.jpg","url":"//h.fastcompany.net/multisite_files/fastcompany/imagecache/profile-s/profile/3026554-photo-img0954.jpg","mimetype":"image/jpeg","is_placeholder":false}},"social":{"linkedin":{"username":"tinaamirtha","uid":"tinaamirtha","url":"http://www.linkedin.com/in/tinaamirtha","site":{"title":"Linkedin","slug":"linkedin"}},"instagram":{"username":"thina3","uid":"thina3","url":"http://instagram.com/thina3","site":{"title":"Instagram","slug":"instagram"}},"github":{"username":"thina3","uid":"thina3","url":"http://www.github.com/thina3","site":{"title":"Github","slug":"github"}},"googleplus":{"username":"105925285754941464831","uid":"105925285754941464831","url":"https://plus.google.com/u/0/105925285754941464831/posts","site":{"title":"Google+","slug":"google-plus"}},"tumblr":{"username":"thina3","uid":"thina3","url":"http://thina3.tumblr.com/","site":{"title":"Tumblr","slug":"tumblr"}},"twitter":{"username":"tinamirtha","uid":"tinamirtha","url":"http://www.twitter.com/tinamirtha","site":{"title":"Twitter","slug":"twitter"}}},"teaser":{"html":"<p>I'm a senior writer for Fast Co.Labs. My writing revolves around technology that enhances how we see, hear and experience things and tends toward women in STEM.</p>\n\n<p>Since 2009, I've developed data-mining software, aside from writing. I have two engineering degrees and am a graduate of Northwestern.</p>\n\n<p>I'm from Chicago. Follow me on Twitter @tinamirtha.</p>\n\n<p>Here's my website.</p></p>","plain":"I'm a senior writer for Fast Co.Labs. My writing revolves around technology that enhances how we see, hear and experience things and tends toward women in STEM.\n\nSince 2009, I've developed data-mining software, aside from writing. I have two engineering degrees and am a graduate of Northwestern.\n\nI'm from Chicago. Follow me on Twitter @tinamirtha.\n\nHere's my website."},"roles":{"staff":true},"items":[{"display_name":"Tina Amirtha","id":"fastcompany|node|3026554","uid":374716,"nid":3026554,"name":"tina-amirtha","email":"tinamirtha@gmail.com","site_id":"fastcompany","site":"fastcompany.com","url":"http://www.fastcompany.com/user/tina-amirtha","path":null,"images":{"full":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/profile/3026554-photo-img0954.jpg","url":"//c.fastcompany.net/multisite_files/fastcompany/profile/3026554-photo-img0954.jpg","mimetype":"image/jpeg","is_placeholder":false},"small":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/59x59//profile/3026554-photo-img0954.jpg","url":"//g.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3026554-photo-img0954.jpg","mimetype":"image/jpeg","is_placeholder":false,"height":59,"width":59},"thumb":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/profile-s//profile/3026554-photo-img0954.jpg","url":"//h.fastcompany.net/multisite_files/fastcompany/imagecache/profile-s/profile/3026554-photo-img0954.jpg","mimetype":"image/jpeg","is_placeholder":false}},"social":{"linkedin":{"username":"tinaamirtha","uid":"tinaamirtha","url":"http://www.linkedin.com/in/tinaamirtha","site":{"title":"Linkedin","slug":"linkedin"}},"instagram":{"username":"thina3","uid":"thina3","url":"http://instagram.com/thina3","site":{"title":"Instagram","slug":"instagram"}},"github":{"username":"thina3","uid":"thina3","url":"http://www.github.com/thina3","site":{"title":"Github","slug":"github"}},"googleplus":{"username":"105925285754941464831","uid":"105925285754941464831","url":"https://plus.google.com/u/0/105925285754941464831/posts","site":{"title":"Google+","slug":"google-plus"}},"tumblr":{"username":"thina3","uid":"thina3","url":"http://thina3.tumblr.com/","site":{"title":"Tumblr","slug":"tumblr"}},"twitter":{"username":"tinamirtha","uid":"tinamirtha","url":"http://www.twitter.com/tinamirtha","site":{"title":"Twitter","slug":"twitter"}}},"teaser":{"html":"<p>I'm a senior writer for Fast Co.Labs. My writing revolves around technology that enhances how we see, hear and experience things and tends toward women in STEM.</p>\n\n<p>Since 2009, I've developed data-mining software, aside from writing. I have two engineering degrees and am a graduate of Northwestern.</p>\n\n<p>I'm from Chicago. Follow me on Twitter @tinamirtha.</p>\n\n<p>Here's my website.</p></p>","plain":"I'm a senior writer for Fast Co.Labs. My writing revolves around technology that enhances how we see, hear and experience things and tends toward women in STEM.\n\nSince 2009, I've developed data-mining software, aside from writing. I have two engineering degrees and am a graduate of Northwestern.\n\nI'm from Chicago. Follow me on Twitter @tinamirtha.\n\nHere's my website."},"roles":{"staff":true}}],"hideByline":false,"hideBy":false,"multiAuthor":false,"hideAuthorBox":false},"disqus":{"domain":"fastcompany","status":true,"identifier":"node/3029364","url":"http://www.fastcompany.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging","title":"This Is Your Brain On Code, According To Functional MRI Imaging"},"slides":null,"videos":null,"attribution":null,"deck":{"html":"<p>Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing centers of our brains.</p>","plain":"Non-coders often associate programming with math, but researchers have used fMRI readings to discover a possible link to the language processing centers of our brains."},"body":"\n\n<aside class=\"info\"><div class=\"info-inner\"><p>This story contains interviews with Christian Kästner, assistant professor at Carnegie Mellon University; Amy Hirotaka, state policy and advocacy manager at Code.org; and Janet Siegmund, researcher at the University of Passau.</p></div></aside>\n\n<p>In order to expose more students to computer science, 17 states have passed legislation to create <a href=\"http://www.edweek.org/ew/articles/2014/02/26/22computer_ep.h33.html\" target=\"_blank\">basic math and science requirements</a> in the curriculum, rather than count as electives. But lawmakers in Texas have made computer programming count toward a <a href=\"http://www.theepochtimes.com/n3/486970-kentucky-coding-foreign-language-requirement-in-schools-may-be-satisfied-with-computer-programming/\" target=\"_blank\">foreign language requirement</a>, with Kentucky and New Mexico gearing up to follow suit.</p>\n\n<p>So, is coding language or math?</p>\n\n<h4><a name=\"How_Human_Brains_Interpret_Coding\">How Human Brains Interpret Coding</a></h4>\n\n<p>Here's how the debate is shaping up. Those in the math and science camp argue that computer science encompasses more than just the \"language\" the computer can interpret--specifically, it requires learning algorithm logic that necessitates specially trained technical instructors.</p>\n\n<p>On the other hand, the  \"code-is-a-foreign-language\" proponents are fiercely stating their case, seeing an opportunity to fill in curriculum gaps left behind by <a href=\"http://www.techrepublic.com/article/coding-as-a-second-language-kentucky-jockeys-to-be-next-to-join-the-movement/#.\" target=\"_blank\">shrinking foreign language departments</a> in schools.</p>\n\n<p>While lawmakers and educators alike fight over whether computer programming is considered a foreign language or a math, there has been virtually no scientific evidence to support or refute either case. That is, until now.</p>\n\n<h4><a name=\"The_Study\">The Study</a></h4>\n\n<p>Researchers at the University of Passau, University of Magdeburg, Carnegie Mellon, Georgia Tech, the Leibniz Institute for Neurobiology, and the Metop Research Institute put their heads together to figure out how exactly computer programmers understand code. Their study was accepted to this year's International Conference on Software Engineering.</p>\n\n<p>This is the first study in which scientists have looked into the brains of programmers, using the imaging tools of neuroscience. You can find the <a href=\"http://www.cs.cmu.edu/%7Eckaestne/pdf/icse14_fmri.pdf\" target=\"_blank\">study here in PDF form</a>.</p>\n\n<p>Primary author of the study, computer scientist Janet Siegmund at the University of Passau, was so interested in the \"language or math\" debate that she decided to peer into the brains of computer programmers using an MRI, in hopes of shedding some light on the issue.</p>\n\n<p>“That was actually my starting point,” Siegmund says. She wanted to know how the brain registered the act of programming, which led her to her current research question, \"How do coders understand code?\"</p>\n\n<p>In the experiment, 17 participants interpreted a few lines of code while lying down inside an <a href=\"http://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging\" target=\"_blank\">fMRI machine</a>. All of the test subjects were university students that had an undergraduate understanding of programming and the Java language. Two of the 17 participants happened to be female.</p>\n\n<p>Each person read several different Java code snippets of similar difficulty so that the researchers could average the resulting brain imaging data. To rule out brain activity that was not related to interpreting code, the researchers subtracted imaging data related to an error detection task. They found that error detection did not activate the parts of the brain that dealt with the code interpretation task.</p>\n\n<p>All of the test code consisted of several lines, at the end of which the program would print an output. The participants’ task was to predict the printed output after studying the code. All of the participants were capable of understanding the code within the given time frame.</p>\n\n<h4><a name=\"The_ProgrammingLanguage_Link\">The Programming-Language Link</a></h4>\n\n<p>So, does computer programming fall into the languages subject area?</p>\n\n<p>“It appears to make some sense, based on what we have learned from the study,” Siegmund says.</p>\n\n<p>But Siegmund stresses that more research would better solidify her conclusions, especially since this was an initial attempt to answer the math-or-language question. She says, “Actually, with these kinds of studies, you should always say that more studies need to be done. But what we found is that it appears to be related.”</p>\n\n<p>Future studies might improve on the current experiment. “We had a very artificial kind of testing because you really had just small source-code snippets with, like, 20 lines of code,” Siegmund says. Anything larger would have fallen out of the viewing area of the small mirror that was tacked onto the inside of the fMRI machine.</p>\n\n<p>What’s more is that the code could not be so difficult that the subject could not finish the task within the allotted time. Real-world programs usually contain numerous lines and would likely stump the external reviewer.</p>\n\n<p>Christian Kästner, the second author of the study, elaborates on why more work needs to be done. He says, “There is no clear evidence that learning a programming language is like learning a foreign language, but our results show that there are clearly similarities in brain activations that show that the hypothesis is plausible.”</p>\n\n<p>It is important to note that the participants did not actively write computer programs in the experiment. They merely read code chunks for understanding. So, it is inaccurate to definitively say that computer programming is more a language than a math. The truth is still out there.</p>\n\n<h4><a name=\"Neuroscience_And_Computer_Science_Collide\">Neuroscience And Computer Science Collide</a></h4>\n\n<p>Earlier attempts to understand programmers’ cognitive abilities used qualitative measures and mostly relied on self-reports from the programmers the experiments were done on. But Siegmund decided to use a hard-data method from neuroscience to directly measure a programmer’s understanding of the code using fMRI imaging.</p>\n\n<figure class=\"inline-large inline\">\n<img src=\"//g.fastcompany.net/multisite_files/fastcompany/imagecache/inline-large/inline/2014/04/3029364-inline-activation.jpg\" alt=\"\"/><figcaption>The colored areas were the active brain regions when the participants read and understood the code.</figcaption>\n\n<p></figure></p>\n\n<p>Embracing the tool carried a learning curve. “You need a lot of experience with fMRI studies. You need to know how the machine works and what you can do with the data,” Siegmund says.</p>\n\n<p>A chance meeting with biologists at a conference brought in the know-how that Siegmund and her colleagues needed in order to properly plan out and interpret the data from their fMRI study. “I don’t think we would have been there if we didn’t have the new biologists on board,” Siegmund says.</p>\n\n<h4><a name=\"Blurred_Lines_Between_Math_And_Language\">Blurred Lines Between Math And Language</a></h4>\n\n<p>The study might give insight into how reading code could impact a student’s brain. Even so, it is difficult to know for certain if other parts of the brain were activated.</p>\n\n<p>Last year, neuroscientists <a href=\"http://www.jneurosci.org/content/33/16/6709.abstract\" target=\"_blank\">did a study</a> on patients whose brains were implanted with electrodes. Using this invasive method, they were able to pinpoint a region of the brain that processes numerals, called the inferior temporal gyrus. They further concluded that this region is physically near the area responsible for language processing.</p>\n\n<p>It is possible that the fMRI in Siegmund’s study may not have been able to detect activity in this region. Maia Szalavitz, writing for <em><a href=\"http://healthland.time.com/2013/04/23/your-brain-on-math/\" target=\"_blank\">Time</a></em>, wrote, “Since the inferior temporal gyrus is so close to the ear canals, functional MRI machines, which detect changes in oxygen use and blood flow by nerve cells, may not be as sensitive to the activity of neurons tucked away in that area.”</p>\n\n<p>Even more evidence confounds the distinction between language and calculation processing areas of the brain. A year 2000 <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10678698\" target=\"_blank\">study</a> concluded that the same region that is responsible for processing semantics is also important when performing mental calculations. Incidentally, Siegmund and her colleagues found activity in this same region.</p>\n\n<p>No matter which way you look at it, most brain imaging studies remind readers that activated areas that show up with the chosen imaging method correspond to several different processes that are open to interpretation.</p>\n\n<p>Siegmund and her colleagues also concede that the way they interpreted their study’s results is open for review, writing in the paper that they might have missed important processes.</p>\n\n<p>But Siegmund reiterates, “The activation pattern that we found shows very clear and really distinct areas are activated that are related to our current understanding of program comprehension.”</p>\n\n<h4><a name=\"CompSci_Is_More_Than_Just_Code\">Comp-Sci Is More Than Just Code</a></h4>\n\n<p>Even if Siegmund’s and Kästner’s study has showed a relationship between reading a computer program and the brain’s language centers, it does not speak to the field of computer science as a whole.</p>\n\n<p>Amy Hirotaka, state policy and advocacy manager at the non-profit <a href=\"http://codeorg.tumblr.com/post/75129943201/language\" target=\"_blank\">Code.org</a>, wrote in an email to us, “Computer science is more than just code. The fundamental concepts of computer science--like logic and problem solving--align well with mathematics and science disciplines, extending beyond simply learning a programming language.”</p>\n\n<p>Considering now that computer science could come out of a school’s foreign language department, Hirotaka sees issues with teacher quality down the line. Each department has its own ways of certifying a teacher’s credentials. It suffices to say that getting foreign language and mathematics departments to converge on one credentialing standard would create an administrative mess, even if it would give students more foreign language options.</p>\n\n<p>Hirotaka added, “Counting computer science as a foreign language might sound like a creative fix, but it causes major problems when it comes to teacher certification and departmental alignment.”</p>\n\n<h4><a name=\"Programmers_Brains_In_The_Real_World\">Programmers’ Brains In The Real World</a></h4>\n\n<p>School policies aside, the study could pave the way for improvements in the programming field. Kästner is quick to point out that using neuroscience can help us determine what makes a great programmer different from an average one.</p>\n\n<p>“We still have no clear idea how to train really good developers. For decades researchers have found that there are individual programmers who program more productively at higher quality and also do most of the communication in the project. These are often referred to as 10Xers because many studies found that they produce ten times more code, or in a tenth of the time or do ten times more communication,” Kästner says.</p>\n\n<p>He adds, “We know that these developers exist; we often quickly recognize them. Most of us know at least one such developer, and every tech company tries to hire them. But we have no idea how they got there or whether we could train others to excel at similar levels. Studying how program comprehension differs among novices, professionals, and 10Xers may allow us to get a better understanding of what makes a truly excellent programmer.”</p>\n\n<p>Siegmund imagines that the research could result in better software syntax. “Now that we actually have a better idea of what is happening inside a programmer’s brain, we found that it was related to natural language processing. Maybe programming languages should be more like natural languages,” she says.</p>\n\n<p>“The more domain-specific languages, like SQL, are more close to natural language processing. It would come closer than Java,” says Siegmund.</p>\n\n<p>All things considered, the researchers’ biggest takeaway from studying programmers’ brain activity is the possibility for even more discoveries in computer science and software engineering.</p>\n\n<p>“This opens the door for many future studies in this field. The actual activations found in this study are nice and confirm mostly what we expected, but the key result is a proof of concept of using fMRI as a tool in software engineering research,” says Kästner.</p>\n\n<p>If you want to get your language processing centers working away, try perusing the Java snippets from the study <a href=\"http://tinyurl.com/ProgramComprehensionAndfMRI\" target=\"_blank\">here</a>.</p>","magazine":null,"parallax":null,"spokenLayer":false,"sponsored":false,"twitter_headline":null,"google_news":{"editors_picks":false,"standout":false},"inline_custom_css":null,"widget_custom_content":null,"custom_header":null,"sticky_top_bar":null,"hide_outbrain":false,"hide_comments":false,"hide_afterbody":false,"rank_order":{},"displayable":null,"poster_iframe":{},"topic":{"plain":"Technology","slug":"technology"},"slug":{"title":"Co.Labs","name":"fastcolabs.com","url":"http://www.fastcolabs.com/technology","slug":"fastcolabs","topicslug":"technology"},"related":{"profiles":{"items":[{"full_name":"Amy Hirotaka","name":"amy-hirotaka","path":"/person/amy-hirotaka"},{"full_name":"Christian Kästner","name":"christian-kästner","path":"/person/christian-kästner"},{"full_name":"Janet Siegmund","name":"janet-siegmund","path":"/person/janet-siegmund"}]}},"self_link":"/api/v1/posts/3029364.html?fields=blocks%2Cads%2Cposter%2Clabels%2Cteaser%2Canalytics%2Cdate%2Cmeta%2Cposter_element%2Cslug%2Ccache_lifetime%2Cheadline%2Camazon_affiliate%2Cauthor%2Cdisqus%2Cseries%2Cslides%2Cvideos%2Cattribution%2Cdeck%2Cbody%2Cmagazine%2Cseries_order%2Cparallax%2CspokenLayer%2Csponsored%2Ctwitter_headline%2Cgoogle_news%2Crelated_works%2Crelated_profiles%2Cinline_custom_css%2Cwidget_custom_content%2Ccustom_header%2Csticky_top_bar%2Chide_outbrain%2Chide_comments%2Chide_afterbody%2Crank_order%2Ccustom_header%2Cdisplayable%2Cposter_iframe&limit=1","welcomeAd":{"frequency":"24","ipadOnly":"0","onOff":"0"},"config":{"analytics":{"omniture":{"server":"fastcolabs","tracking_pixel":"http://grunerandjahr.112.2o7.net/b/ss/gjincfastcoprod/1/H.24.4--NS/0/5658306","s_code":"//b.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/js/vendor/omniture-scode-prod.js"},"redaril":{"rid":"1966:1965","RADFP":40046,"ca_id":85327},"nielsen":{"client_id":"us-805310h"},"google_analytics":{"web_property_id":"UA-4300461-31","rollup_property_id":"UA-4300461-33"},"comscore":{"c1":2,"c2":6916907,"publisher_id":6916907},"chartbeat":{"uid":2768,"domain":"fastcolabs.com","sections":"fastcolabs.com","authors":"Tyler Hayes"},"pingdom":{"id":"51954fe2abe53d0e77000000"},"buzzfeed":{"domain":"fastcolabs.com"}},"comments":{"server":"/comment","forum":"fastcolabs"},"disqus":{"_api_key":"sSxne7WU9G3cjfQ0SYj1AKNs45625ARssbQLkoBWvOy88Lh4GEdoE4AVwEz376pg","forum":"fastcolabs","developer":1},"embed":{"liverail_publisher_id":1562,"player_profile":"fastcolabs_episode","colors":{"highlight":"#ff1200"},"watermark":{"url":"//f.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/watermark.png","height":250,"width":250},"placeholder":{"url":"/embed/placeholder.png","height":480,"width":852}},"facebook":{"admins":100000062710915,"app_id":147469925415420,"locale":"en_US","publisher":"https://www.facebook.com/fastcolabs","channel_path":"/channel.html"},"fastyou":{"server":"//www.fastyou.com"},"identity":{"name":"fastcolabs.com","slug":"fastcolabs","site_name":"Co.Labs","site_url":"//www.fastcolabs.com","front":"/","base_path":"/","files_dir":"multisite_files/fastcompany","poster_default":{"protocol":"http","host":"%s.fastcompany.net","path":"/asset_files/static/placeholders/fastcolabs-%d.jpg","basepath":"/asset_files/static","height":720,"width":1280},"slogan":"code + community","description":"This site is a workshop where everyone in the coding community can learn, share, collaborate, and build.","copyright":"Copyright 2013, Mansueto Ventures","logo":"//g.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/colabs_logo_dark.png","gnewslogo":"//g.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/gnewslogo.png","delimiter":"⚙","site_zone":"mansueto.fclabs","timezone":"America/New_York","magazine_subscription_link":"https://magazine.fastcompany.com/loc/FST/topnavcolabs1","editor":{"name":"Chris Dannen","email":"cdannen@fastcompany.com"},"contact":{"name":"Fast Company","email":"faster@fastcompany.com"},"keywords":["code","github","news","blog"],"social":{"facebook":{"networkName":"Facebook","userid":"FastCoLabs","url":"http://www.facebook.com/fastcolabs"},"twitter":{"networkName":"Twitter","userid":"FastCoLabs","url":"https://twitter.com/FastCoLabs"},"googleplus":{"networkName":"Google+","userid":"118243011872731622612","url":"https://plus.google.com/u/0/b/118243011872731622612/118243011872731622612/posts"},"appnet":{"networkName":"App.net","userid":"fastcolabs","url":"https://alpha.app.net/fastcolabs"}}},"pinterest":{"domain_verify":"4f13da17c1fa28e45e21ad33caacf1dd"},"twitter":{"site":"FastCoLabs","via":"FastCoLabs","related":"FastCoLabs"}}};
+  window.bootstrap_config = {"analytics":{"omniture":{"server":"fastcolabs","tracking_pixel":"http://grunerandjahr.112.2o7.net/b/ss/gjincfastcoprod/1/H.24.4--NS/0/5658306","s_code":"//b.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/js/vendor/omniture-scode-prod.js"},"redaril":{"rid":"1966:1965","RADFP":40046,"ca_id":85327},"nielsen":{"client_id":"us-805310h"},"google_analytics":{"web_property_id":"UA-4300461-31","rollup_property_id":"UA-4300461-33"},"comscore":{"c1":2,"c2":6916907,"publisher_id":6916907},"chartbeat":{"uid":2768,"domain":"fastcolabs.com","sections":"fastcolabs.com","authors":"Tyler Hayes"},"pingdom":{"id":"51954fe2abe53d0e77000000"},"buzzfeed":{"domain":"fastcolabs.com"}},"comments":{"server":"/comment","forum":"fastcolabs"},"disqus":{"forum":"fastcolabs","developer":1},"embed":{"liverail_publisher_id":1562,"player_profile":"fastcolabs_episode","colors":{"highlight":"#ff1200"},"watermark":{"url":"//f.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/watermark.png","height":250,"width":250},"placeholder":{"url":"/embed/placeholder.png","height":480,"width":852}},"facebook":{"admins":100000062710915,"app_id":147469925415420,"locale":"en_US","publisher":"https://www.facebook.com/fastcolabs","channel_path":"/channel.html"},"fastyou":{"server":"//www.fastyou.com"},"identity":{"name":"fastcolabs.com","slug":"fastcolabs","site_name":"Co.Labs","site_url":"//www.fastcolabs.com","front":"/","base_path":"/","files_dir":"multisite_files/fastcompany","poster_default":{"protocol":"http","host":"%s.fastcompany.net","path":"/asset_files/static/placeholders/fastcolabs-%d.jpg","basepath":"/asset_files/static","height":720,"width":1280},"slogan":"code + community","description":"This site is a workshop where everyone in the coding community can learn, share, collaborate, and build.","copyright":"Copyright 2013, Mansueto Ventures","logo":"//g.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/colabs_logo_dark.png","gnewslogo":"//g.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/images/gnewslogo.png","delimiter":"⚙","site_zone":"mansueto.fclabs","timezone":"America/New_York","magazine_subscription_link":"https://magazine.fastcompany.com/loc/FST/topnavcolabs1","editor":{"name":"Chris Dannen","email":"cdannen@fastcompany.com"},"contact":{"name":"Fast Company","email":"faster@fastcompany.com"},"keywords":{"0":"code","1":"github","2":"news","3":"blog"},"social":{"facebook":{"networkName":"Facebook","userid":"FastCoLabs","url":"http://www.facebook.com/fastcolabs"},"twitter":{"networkName":"Twitter","userid":"FastCoLabs","url":"https://twitter.com/FastCoLabs"},"googleplus":{"networkName":"Google+","userid":"118243011872731622612","url":"https://plus.google.com/u/0/b/118243011872731622612/118243011872731622612/posts"},"appnet":{"networkName":"App.net","userid":"fastcolabs","url":"https://alpha.app.net/fastcolabs"}}},"pinterest":{"domain_verify":"4f13da17c1fa28e45e21ad33caacf1dd"},"twitter":{"site":"FastCoLabs","via":"FastCoLabs","related":"FastCoLabs"},"env":"production"};
+</script>
+
+
+        
+
+        
+          <script data-main="/js/amd-app" src="//a.fastcompany.net/multisite_files/fastcompany/static/sites/201404/925/js/vendor/require.js"></script>
+        
+
+    </body>
+</html>

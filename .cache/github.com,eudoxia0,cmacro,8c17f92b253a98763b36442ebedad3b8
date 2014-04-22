@@ -1,0 +1,981 @@
+status: 200
+content-length: 51590
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src https://github.global.ssl.fastly.net https://ssl.google-analytics.com https://collector-cdn.github.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' https://github.global.ssl.fastly.net; object-src https://github.global.ssl.fastly.net
+set-cookie: _gh_sess=BAh7CToPc2Vzc2lvbl9pZEkiJWYxZjI5NDMxNjI3YzM3NmI1M2UwMjMyNTA1MzAzN2YyBjoGRUY6DXNweV9yZXBvSSIUZXVkb3hpYTAvY21hY3JvBjsGVDoQc3B5X3JlcG9fYXRJdToJVGltZQ3RjhyAX5%2B%2BXwo6DW5hbm9fbnVtaQKUAzoNbmFub19kZW5pBjoNc3VibWljcm8iB5FgOgtvZmZzZXRp%2FpCdOgl6b25lSSIIUERUBjsGVDoQX2NzcmZfdG9rZW5JIjFpY3J3VUlxT0RFY2dTTVljN0NOQzBqZFYyVDd0OXRaVlVhQUFpeldNUWxjPQY7BkY%3D--2b1b35c0b5d6164f852760f012ff332111f55159; path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+server: GitHub.com
+x-served-by: a0387c52951b3c2853740ef9cede1dec
+etag: "5a890cb3a05b611a3de5b5466ac03084"
+x-github-request-id: 58739B02:43A0:1FBF843:5356A5AF
+cache-control: private, max-age=0, must-revalidate
+date: Tue, 22 Apr 2014 17:23:59 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+-content-encoding: gzip
+content-location: https://github.com/eudoxia0/cmacro
+-varied-accept-encoding: gzip, deflate
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>eudoxia0/cmacro · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="eudoxia0/cmacro" name="twitter:title" /><meta content="cmacro - Lisp macros for C" name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/1612511?s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/1612511?s=400" property="og:image" /><meta content="eudoxia0/cmacro" property="og:title" /><meta content="https://github.com/eudoxia0/cmacro" property="og:url" /><meta content="cmacro - Lisp macros for C" property="og:description" />
+
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="/_sockets" />
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="58739B02:43A0:1FBF843:5356A5AF" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://github.global.ssl.fastly.net/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="4Iv/FDdn1fFzde2tBTK4R5D8obwXI5gss65mnPAgpB5OYqRyEWb27eEOtgh6HEhQjfQD4uDG1QijHxE4IempPQ==" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-5da842ffec8a31b5975487ab1278c7ac16876671.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-84fff2ce527238f195901d5920534eeeb2a47b8c.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+        <script crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/frameworks-f8f8d8ee1afb4365ba5e002fdbc3c8e61738713b.js" type="text/javascript"></script>
+        <script async="async" crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/github-9b5ee003ab01a44bbc43a93276724dcc2d33a087.js" type="text/javascript"></script>
+        
+        
+      <meta http-equiv="x-pjax-version" content="2e813adb5e95514017718ef18ba6d986">
+
+      
+  <meta name="description" content="cmacro - Lisp macros for C" />
+
+  <meta content="1612511" name="octolytics-dimension-user_id" /><meta content="eudoxia0" name="octolytics-dimension-user_login" /><meta content="19028064" name="octolytics-dimension-repository_id" /><meta content="eudoxia0/cmacro" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="19028064" name="octolytics-dimension-repository_network_root_id" /><meta content="eudoxia0/cmacro" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/eudoxia0/cmacro/commits/master.atom" rel="alternate" title="Recent Commits to cmacro:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Feudoxia0%2Fcmacro">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="eudoxia0/cmacro"
+      data-branch="master"
+      data-sha="350a5240ca7f1b10b7fbc7daeb0b98344c0098cf"
+  >
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="eudoxia0/cmacro" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+    <a href="/login?return_to=%2Feudoxia0%2Fcmacro"
+    class="minibutton with-count js-toggler-target star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+    <a class="social-count js-social-count" href="/eudoxia0/cmacro/stargazers">
+      112
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Feudoxia0%2Fcmacro"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-git-branch"></span>Fork
+      </a>
+      <a href="/eudoxia0/cmacro/network" class="social-count">
+        5
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/eudoxia0" class="url fn" itemprop="url" rel="author"><span itemprop="title">eudoxia0</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/eudoxia0/cmacro" class="js-current-repository js-repo-home-link">cmacro</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline with-full-navigation ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/eudoxia0/cmacro" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /eudoxia0/cmacro">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/eudoxia0/cmacro/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /eudoxia0/cmacro/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>2</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/eudoxia0/cmacro/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /eudoxia0/cmacro/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/eudoxia0/cmacro/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /eudoxia0/cmacro/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/eudoxia0/cmacro/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /eudoxia0/cmacro/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="/eudoxia0/cmacro/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /eudoxia0/cmacro/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/eudoxia0/cmacro.git" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/eudoxia0/cmacro.git" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/eudoxia0/cmacro" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/eudoxia0/cmacro" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+
+                <a href="/eudoxia0/cmacro/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download eudoxia0/cmacro as a zip file"
+                   title="Download eudoxia0/cmacro as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<span id="js-show-full-navigation"></span>
+
+<div class="repository-meta js-details-container ">
+    <div class="repository-description js-details-show">
+      <p>Lisp macros for C</p>
+    </div>
+
+
+
+</div>
+
+<div class="capped-box overall-summary ">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/eudoxia0/cmacro/commits/master">
+            <span class="num">
+              <span class="octicon octicon-history"></span>
+              221
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/eudoxia0/cmacro/branches">
+          <span class="num">
+            <span class="octicon octicon-git-branch"></span>
+            1
+          </span>
+          branch
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/eudoxia0/cmacro/releases">
+          <span class="num">
+            <span class="octicon octicon-tag"></span>
+            0
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/eudoxia0/cmacro/graphs/contributors">
+    <span class="num">
+      <span class="octicon octicon-organization"></span>
+      1
+    </span>
+    contributor
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/eudoxia0/cmacro/search?l=common%20lisp">
+                <span class="color-block language-color" style="background-color:#3fb68b;"></span>
+                <span class="lang">Common Lisp</span>
+                <span class="percent">95.8%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/eudoxia0/cmacro/search?l=c">
+                <span class="color-block language-color" style="background-color:#555;"></span>
+                <span class="lang">C</span>
+                <span class="percent">4.2%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="tooltipped tooltipped-s" aria-label="Show language statistics">
+    <a href="#"
+     class="repository-lang-stats-graph js-toggle-lang-stats"
+     style="background-color:#555">
+  <span class="language-color" style="width:95.8%; background-color:#3fb68b;" itemprop="keywords">Common Lisp</span><span class="language-color" style="width:4.2%; background-color:#555;" itemprop="keywords">C</span>
+    </a>
+  </div>
+
+
+
+<div class="file-navigation in-mid-page">
+    <a href="/eudoxia0/cmacro/compare" aria-label="Compare, review, create a pull request" class="minibutton compact primary tooltipped tooltipped-s" aria-label="Compare &amp; review" data-pjax>
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/eudoxia0/cmacro/tree/master"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/eudoxia0/cmacro" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">cmacro</span></a></span></span><span class="separator"> / </span><form action="/login?return_to=%2Feudoxia0%2Fcmacro" aria-label="Sign in to make or propose changes" class="js-new-blob-form tooltipped tooltipped-e new-file-link" method="post"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-file-add" data-test-id="create-new-git-file" role="button"></span></form></div>
+</div>
+
+
+
+<a href="/eudoxia0/cmacro/find/master"
+  data-hotkey="t" class="js-show-file-finder" style="display:none" data-pjax>Show File Finder</a>
+<div class="bubble files-bubble">
+
+  
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/eudoxia0/cmacro/commit/51e511c4e18325d34d90da9216a62f911160df68" class="message" data-pjax="true" title="Clone asdf-linguist repo">Clone asdf-linguist repo</a>
+        
+    </p>
+    <div class="commit-meta">
+      <span aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="51e511c4e18325d34d90da9216a62f911160df68" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+      <a href="/eudoxia0/cmacro/commit/51e511c4e18325d34d90da9216a62f911160df68" class="sha-block" data-pjax>latest commit <span class="sha">51e511c4e1</span></a>
+
+      <div class="authorship">
+        <img alt="Fernando Borretti" class="gravatar js-avatar" data-user="1612511" height="20" src="https://avatars3.githubusercontent.com/u/1612511?s=140" width="20" />
+        <span class="author-name"><a href="/eudoxia0" data-skip-pjax="true" rel="author">eudoxia0</a></span>
+        authored <local-time class="updated" datetime="2014-04-22T08:37:29-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 08:37:29 -0300">April 22, 2014</local-time>
+
+      </div>
+    </div>
+  </div>
+
+  <table class="files" data-pjax>
+
+    
+<tbody class=""
+  data-url="/eudoxia0/cmacro/file-list/master">
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/tree/master/grammar" class="js-directory-link" id="b3d1bd6a249a6a85c42bc5762cec6e1f-600f94dd971d7054ca1692a5c8ff1d2d197d234f" title="grammar">grammar</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/1b67f874f54b76427d90b813c5b1e582e50af576" class="message" data-pjax="true" title="Record line numbers in tokens">Record line numbers in tokens</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-16T18:22:19-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-16 18:22:19 -0300">April 16, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/tree/master/src" class="js-directory-link" id="25d902c24283ab8cfbac54dfa101ad31-e67f99353d88a4bf55c1301dcb9a3e2e10052cb7" title="src">src</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/b2ad36f69c52fbdf75e54f4692a691b8f42b512f" class="message" data-pjax="true" title="Fix variable matching">Fix variable matching</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-22T08:23:17-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 08:23:17 -0300">April 22, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/tree/master/t" class="js-directory-link" id="e358efa489f58062f10dd7316b65649e-7708d306dc41124662395855466d012ae1bca7e2" title="t">t</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/1353c04ac982463b9a624671ea94e0ba699f48b4" class="message" data-pjax="true" title="Add splice operator">Add splice operator</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-21T19:36:53-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-21 19:36:53 -0300">April 21, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-f6c503b6c34cfe0ad9bf0443368323e6c84dba54" title=".gitignore">.gitignore</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/7e666d424f92695e7f1b24b878c3a03b43dba770" class="message" data-pjax="true" title="Add executable to .gitignore">Add executable to .gitignore</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-15T20:07:06-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-15 20:07:06 -0300">April 15, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/blob/master/Makefile" class="js-directory-link" id="b67911656ef5d18c4ae36cb6741b7965-98a7141ffe92c631b4dbae17f0ea1faf9b5f6f52" title="Makefile">Makefile</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/51e511c4e18325d34d90da9216a62f911160df68" class="message" data-pjax="true" title="Clone asdf-linguist repo">Clone asdf-linguist repo</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-22T08:37:29-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 08:37:29 -0300">April 22, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/blob/master/README.md" class="js-directory-link" id="04c6e90faac2675aa89e2176d2eec7d8-789438e17a608bca49c66f66b14f9607bdffa358" title="README.md">README.md</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/ec842aef2cb7012f5a9f99a403f367c67b4a8a37" class="message" data-pjax="true" title="Expand README">Expand README</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-22T08:25:32-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-22 08:25:32 -0300">April 22, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/blob/master/cmacro-test.asd" class="js-directory-link" id="af227cc968070c8110b6bbfd7c50ae99-dd2074007588830c3dbc3bdbfe0a19ba35cfc013" title="cmacro-test.asd">cmacro-test.asd</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/daa12eedd80d0e01584393b681fe8968d1163526" class="message" data-pjax="true" title="Add tests">Add tests</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-09T16:02:27-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-09 16:02:27 -0300">April 09, 2014</local-time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/blob/master/cmacro.asd" class="js-directory-link" id="d29c1b486dae84a4c8a203fd19d341d0-ae43154ac9029eecefd285a5ba85766c249e74ab" title="cmacro.asd">cmacro.asd</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/eudoxia0/cmacro/commit/654988799a4e1a4514b6712d948e6c150178af39" class="message" data-pjax="true" title="Move printing stuff to separate file">Move printing stuff to separate file</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><local-time datetime="2014-04-17T18:03:26-03:00" from="now" title-format="%Y-%m-%d %H:%M:%S %z" title="2014-04-17 18:03:26 -0300">April 17, 2014</local-time></span></td>
+    </tr>
+</tbody>
+
+  </table>
+</div>
+
+  <div id="readme" class="clearfix announce instapaper_body md">
+    <span class="name">
+      <span class="octicon octicon-book"></span>
+      README.md
+    </span>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a name="user-content-cmacro-lisp-macros-for-c" class="anchor" href="#cmacro-lisp-macros-for-c"><span class="octicon octicon-link"></span></a>cmacro: Lisp macros for C</h1>
+
+<h1>
+<a name="user-content-usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Macros are written directly in the source, and the <code>cmc</code> program is used to
+process a file with macros to a macroexpanded file.</p>
+
+<div class="highlight highlight-bash"><pre>cmc code.cm -o code.c
+</pre></div>
+
+<h1>
+<a name="user-content-installing-and-using" class="anchor" href="#installing-and-using"><span class="octicon octicon-link"></span></a>Installing and Using</h1>
+
+<ol>
+<li>Install SBCL through your favorite package manager:</li>
+</ol><div class="highlight highlight-bash"><pre>apt-get install sbcl
+pacman -S sbcl
+yum install sbcl
+brew install sbcl
+</pre></div>
+
+<ol>
+<li><code>make</code></li>
+<li><code>sudo make install</code></li>
+</ol><h1>
+<a name="user-content-what" class="anchor" href="#what"><span class="octicon octicon-link"></span></a>What?</h1>
+
+<p>A macro is a function that operates on your code's abstract syntax tree rather
+than values. Macros in cmacro have nothing to do with the C preprocessor except
+they happen at compile time, and have no knowledge of run-time values.</p>
+
+<p>In cmacro, a macro maps patterns in the code to templates. A macro may have
+multiple cases, each matching multiple patterns, but each producing code through
+the same template.</p>
+
+<p>Macros are not primarily about safety and performance[1]: They are about the
+programmer. Macros give you automation, plain and simple. They allow you to
+abstract away and remove repetition in places where a functional or
+object-oriented approach can't. For example, Common Lisp's
+<a href="http://clhs.lisp.se/Body/m_w_open.htm">WITH-OPEN-FILE</a> macro helps with the
+common pattern of 'acquire a resource, apply something to it, and close
+it'. While this can be done in languages that support (And have simple syntax
+for) anonymous functions, macros help reduce this syntactico overhead.</p>
+
+<p>cmacro has a very lenient notion of C syntax, which means you can write macros
+to implement DSLs with any syntax you like. You could implement Lisp-like prefix
+notation, or a DSL for routing URLs, or the decorator pattern, for example.</p>
+
+<p>For a very simple example, this very simple macro matches anything of the form
+<code>unless &lt;cond&gt;</code>, where <code>&lt;cond&gt;</code> is any arbitrary expression, and performs a
+simple transformation:</p>
+
+<div class="highlight highlight-c"><pre><span class="n">macro</span> <span class="n">unless</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="p">{</span>
+    <span class="n">match</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">template</span>
+      <span class="p">(</span><span class="o">!</span><span class="err">$</span><span class="p">(</span><span class="n">cond</span><span class="p">))</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>With this definition, code like <code>unless(buffer.empty)</code> becomes <code>if(!(buffer.empty))</code>.</p>
+
+<p>A more complicated macro can match multiple patterns, like the <code>route</code> macro
+which implements a DSL for defining routes in a hypothetical C web framework.</p>
+
+<div class="highlight highlight-c"><pre><span class="n">macro</span> <span class="n">route</span> <span class="p">{</span>
+  <span class="cm">/* Route all requests to 'url' to 'route'. Optionally discriminate by HTTP</span>
+<span class="cm">  method (GET by default). */</span>
+  <span class="k">case</span> <span class="p">{</span>
+    <span class="n">match</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="err">$</span><span class="p">(</span><span class="n">route</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">template</span> <span class="p">{</span>
+      <span class="n">register_route</span><span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">url</span><span class="p">),</span> <span class="err">$</span><span class="p">(</span><span class="n">route</span><span class="p">),</span> <span class="n">HTTP_GET</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">case</span> <span class="p">{</span>
+    <span class="n">match</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="p">[</span><span class="err">$</span><span class="p">(</span><span class="n">method</span><span class="p">)]</span> <span class="o">=&gt;</span> <span class="err">$</span><span class="p">(</span><span class="n">route</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">template</span> <span class="p">{</span>
+      <span class="n">register_route</span><span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">url</span><span class="p">),</span> <span class="err">$</span><span class="p">(</span><span class="n">route</span><span class="p">),</span> <span class="err">$</span><span class="p">(</span><span class="n">method</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage with the lambda macro (See below)</span>
+<span class="n">route</span> <span class="s">"/profile/&lt;user&gt;"</span> <span class="o">=&gt;</span>
+  <span class="n">lambda</span><span class="p">(</span><span class="n">Req</span><span class="o">*</span> <span class="n">request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Resp</span> <span class="p">{</span> <span class="k">return</span> <span class="n">Authenticate</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">user</span><span class="p">);</span> <span class="p">}</span>
+</pre></div>
+
+<h1>
+<a name="user-content-why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h1>
+
+<p>Because a language without macros is a tool: You write application with it. A
+language with macros is building material: You shape it and grow it <em>into</em> your
+application.</p>
+
+<p>There is a sweet spot between low-level performance and control and high-level
+metaprogramming that is not yet occupied by any language: Metaprogramming, being
+an inherently compile-time thing, can be done in the absence of automatic memory
+management or dynamic typing. <a href="http://www.rust-lang.org/">Rust</a> seems to want to
+fill this, and I also approached this problem with
+<a href="https://github.com/eudoxia0/Hylas-Lisp">Hylas Lisp</a>, but I feel this approach
+of adding metaprogramming to C - A simple language, with a long history, that
+runs truly everywhere - can become useful.</p>
+
+<h1>
+<a name="user-content-examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
+
+<h2>
+<a name="user-content-lambda" class="anchor" href="#lambda"><span class="octicon octicon-link"></span></a><code>lambda</code>
+</h2>
+
+<div class="highlight highlight-c"><pre><span class="n">macro</span> <span class="n">lambda</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="p">{</span>
+    <span class="n">match</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="err">$</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">toplevel</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="err">@</span><span class="n">gensym</span> <span class="n">lambda</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">template</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="err">@</span><span class="n">getsym</span> <span class="n">lambda</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>
+<a name="user-content-anaphoric-if" class="anchor" href="#anaphoric-if"><span class="octicon octicon-link"></span></a>Anaphoric <code>if</code>
+</h2>
+
+<p>This stores the result of the condition in the variable <code>it</code>. See
+<a href="http://common-lisp.net/project/anaphora/">Anaphora</a> for a collection of similar
+anaphoric macros.</p>
+
+<div class="highlight highlight-c"><pre><span class="n">macro</span> <span class="n">aif</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="p">{</span>
+    <span class="n">match</span> <span class="p">{</span>
+      <span class="err">$</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">template</span> <span class="p">{</span>
+      <span class="n">typeof</span><span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">cond</span><span class="p">))</span> <span class="n">it</span> <span class="o">=</span> <span class="err">$</span><span class="p">(</span><span class="n">cond</span><span class="p">);</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>
+<a name="user-content-foreach" class="anchor" href="#foreach"><span class="octicon octicon-link"></span></a><code>forEach</code>
+</h2>
+
+<div class="highlight highlight-c"><pre><span class="n">macro</span> <span class="n">forEach</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="p">{</span>
+    <span class="n">match</span> <span class="p">{</span>
+      <span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">item</span><span class="p">),</span> <span class="err">$</span><span class="p">(</span><span class="n">collection</span><span class="p">))</span> <span class="err">$</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="n">template</span> <span class="p">{</span>
+      <span class="p">{</span>
+        <span class="kt">size_t</span> <span class="n">index</span><span class="p">;</span>
+        <span class="n">typeof</span><span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">collection</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span> <span class="err">$</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+        <span class="k">for</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">item</span> <span class="o">=</span> <span class="n">nth</span><span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">collection</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+            <span class="n">index</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">(</span><span class="err">$</span><span class="p">(</span><span class="n">collection</span><span class="p">));</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">)</span>
+        <span class="err">$</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h1>
+<a name="user-content-variables" class="anchor" href="#variables"><span class="octicon octicon-link"></span></a>Variables</h1>
+
+<p>The syntax for variables is just a name followed by an optional,
+space-separatedl list of <em>qualifiers</em>, enclosed in the <code>$()</code> operator, eg:
+<code>$(var)</code>, <code>$(body ident)</code>, <code>$(arg const)</code>.</p>
+
+<h2>
+<a name="user-content-qualifiers" class="anchor" href="#qualifiers"><span class="octicon octicon-link"></span></a>Qualifiers</h2>
+
+<ul>
+<li>None: The variable matches any expression.</li>
+<li>
+<code>rest</code>: Match multiple expressions (Like C's <code>...</code>).</li>
+<li>
+<code>ident</code>: Matches Identifiers.</li>
+<li>
+<code>int</code>: Integers.</li>
+<li>
+<code>float</code>: Floats.</li>
+<li>
+<code>num</code>: Integers and floats.</li>
+<li>
+<code>string</code>: String literals.</li>
+<li>
+<code>const</code>: The equivalent of <code>(or int float string)</code>.</li>
+<li>
+<code>op</code>: Operators.</li>
+<li>
+<code>list</code>, <code>array</code>, <code>block</code>: Matches expressions of the form <code>(...)</code>, <code>[...]</code>,
+<code>{...}</code>.</li>
+</ul><h1>
+<a name="user-content-template-operations" class="anchor" href="#template-operations"><span class="octicon octicon-link"></span></a>Template operations</h1>
+
+<p>These use regular variable syntax but the text starts with a '@'.</p>
+
+<ul>
+<li>
+<code>gensym &lt;label&gt;</code>: Generates a unique identifier associated with <code>label</code>.</li>
+<li>
+<code>getsym &lt;label&gt; [n]</code>: Gets the latest identifier associated with <code>label</code>, or
+optionally the <code>n</code>-th last identifier.</li>
+<li>
+<code>to-string &lt;var&gt;</code>: Since string literals in C can contain variable notation,
+you have to explicity use this to stringify a variable. Note, also, that C
+concatenates string that appear next to each other in the source.</li>
+<li>
+<code>splice &lt;var&gt;</code>: If <code>var</code> is a block (ie <code>(...)</code>, <code>[...]</code>, <code>{...}</code>) this
+expression removes the block separators, leaving just the block body.</li>
+</ul><h1>
+<a name="user-content-acknowledgments" class="anchor" href="#acknowledgments"><span class="octicon octicon-link"></span></a>Acknowledgments</h1>
+
+<p>The <a href="http://www.quut.com/c/ANSI-C-grammar-l-2011.html">lex</a> and
+<a href="http://www.quut.com/c/ANSI-C-grammar-y.html">yacc</a> grammars were originally
+posted by Jeff Lee in 1985, and rescued and updated to the recent standards by
+<a href="mailto:jutta@pobox.com">Jutta Degener</a>.</p>
+
+<p>The syntax for macro definition was inspired by Mozilla's great
+<a href="http://sweetjs.org/">sweet.js</a> library. Originally I considered multiple
+different ways of defining them, including external YAML files or just piping
+the AST to an XSLT or similar program, but this seemed like the best way.</p>
+
+<p>The Makefile is largely based on that of
+<a href="http://tapoueh.org/">Dimitri Fontaine</a>'s
+<a href="https://github.com/dimitri/pgloader">pgloader</a> utility.</p>
+
+<p>Peter Norvig's <strong>Paradigms of Artificial Intelligence Programming</strong> chapter on
+Eliza was used as a reference for the pattern-matching engine.</p>
+
+<h1>
+<a name="user-content-license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>Copyright (c) 2014 Fernando Borretti (<a href="mailto:eudoxiahp@gmail.com">eudoxiahp@gmail.com</a>)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></article>
+  </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.03515s from github-fe135-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+  </body>
+</html>
+

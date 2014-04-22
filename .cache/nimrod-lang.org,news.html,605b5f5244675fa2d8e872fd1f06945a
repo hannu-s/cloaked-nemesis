@@ -1,0 +1,702 @@
+status: 200
+content-length: 88904
+content-location: http://nimrod-lang.org/news.html#Z2014-04-21-version-0-9-4-released
+vary: Accept-Encoding
+server: nginx/1.5.0
+last-modified: Tue, 22 Apr 2014 14:23:39 GMT
+connection: keep-alive
+-content-encoding: gzip
+date: Tue, 22 Apr 2014 17:49:55 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<html>
+
+<head>
+  <title>Nimrod Programming Language</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <link href="news.xml" title="Recent changes" type="application/atom+xml" rel="alternate">
+</head>
+
+<body>
+  <div id="site">
+    <!-- site_head -->
+    <div id="site_head">
+      <div id="logo"></div>
+    </div>
+
+    <!-- site_neck -->
+    <div id="site_neck">
+          <a
+        href="index.html" title = "Nimrod - home">home</a>
+          <a class="active" 
+        href="news.html" title = "Nimrod - news">news</a>
+          <a
+        href="documentation.html" title = "Nimrod - docs">docs</a>
+          <a
+        href="download.html" title = "Nimrod - download">download</a>
+          <a
+        href="community.html" title = "Nimrod - community">community</a>
+          <a
+        href="question.html" title = "Nimrod - FAQ">FAQ</a>
+    </div>
+
+    <!-- site_body -->
+    <div id="site_body">
+
+      <!-- sidebar_wrapper -->
+      <div id="sidebar_wrap">
+        <div id="sidebar">
+          <div id="sidebar_head"></div>
+          <h2>Latest News</h2>
+          <a class="news" href="news.html#Z2014-04-21-version-0-9-4-released">
+  <h3>Apr 21, 2014</h3>
+  <p>Nimrod version 0.9.4 has been released!</p>
+</a>
+
+<a class="news" href="news.html#Z2014-02-11-nimrod-featured-in-dr-dobb-s-journal">
+  <h3>Feb 11, 2014</h3>
+  <p>Nimrod featured in Dr. Dobb's Journal</p>
+</a>
+
+<a class="news" href="news.html#Z2014-01-15-andreas-rumpf-s-talk-on-nimrod-at-strange-loop-2013-is-now-online">
+  <h3>Jan 15, 2014</h3>
+  <p>Andreas Rumpf's talk on Nimrod at Strange Loop 2013 is now online.</p>
+</a>
+
+<a class="news" href="news.html#Z2013-05-20-new-website-design">
+  <h3>May 20, 2013</h3>
+  <p>New website design!</p>
+</a>
+
+<a class="news" href="news.html#Z2013-05-20-version-0-9-2-released">
+  <h3>May 20, 2013</h3>
+  <p>Nimrod version 0.9.2 has been released!</p>
+</a>
+
+<a class="news" href="news.html#Z2012-09-23-version-0-9-0-released">
+  <h3>Sep 23, 2012</h3>
+  <p>Nimrod version 0.9.0 has been released!</p>
+</a>
+
+<a class="news" href="news.html#Z2012-02-09-version-0-8-14-released">
+  <h3>Feb 9, 2012</h3>
+  <p>Nimrod version 0.8.14 has been released!</p>
+</a>
+
+<a class="news" href="news.html#Z2011-07-10-version-0-8-12-released">
+  <h3>Jul 10, 2011</h3>
+  <p>Nimrod version 0.8.12 has been released!</p>
+</a>
+
+<a class="news" href="news.html#Z2010-10-20-version-0-8-10-released">
+  <h3>Oct 20, 2010</h3>
+  <p>Nimrod version 0.8.10 has been released!</p>
+</a>
+
+<a class="news" href="news.html#Z2010-03-14-version-0-8-8-released">
+  <h3>Mar 14, 2010</h3>
+  <p>Nimrod version 0.8.8 has been released!</p>
+</a>
+
+
+          <h2>More Links</h2>
+          <a class="link" href="http://forum.nimrod-code.org" id="link_forum">User Forum</a>
+          <a class="link" href="https://github.com/nimrod-code/Aporia" id="link_aporia">Aporia IDE</a>
+          <a class="link" href="http://build.nimrod-code.org" id="link_nimbuild">Nimbuild</a>
+        </div>
+      </div>
+      <!-- page -->
+      <div id="page">
+      
+        
+<h1 id="Z2014-04-21-version-0-9-4-released">2014-04-21 Version 0.9.4 released</h1><p>The Nimrod development community is proud to announce the release of version 0.9.4 of the Nimrod compiler and tools. <strong>Note: This release has to be considered beta quality! Lots of new features have been implemented but unfortunately some do not fullfill our quality standards yet.</strong></p>
+<p>Prebuilt binaries and instructions for building from source are available on the <a class="reference external" href="download.html">download page</a>.</p>
+<p>This release includes about <a class="reference external" href="https://github.com/Araq/Nimrod/compare/v0.9.2...v0.9.4">1400 changes</a> in total including various bug fixes, new languages features and standard library additions and improvements. This release brings with it support for user-defined type classes, a brand new VM for executing Nimrod code at compile-time and new symbol binding rules for clean templates.</p>
+<p>It also introduces support for the brand new <a class="reference external" href="https://github.com/nimrod-code/babel">Babel package manager</a> which has itself seen its first release recently. Many of the wrappers that were present in the standard library have been moved to separate repositories and should now be installed using Babel.</p>
+<p>Apart from that a new <strong>experimental</strong> Asynchronous IO API has been added via the <tt class="docutils literal"><span class="pre">asyncdispatch</span></tt> and <tt class="docutils literal"><span class="pre">asyncnet</span></tt> modules. The <tt class="docutils literal"><span class="pre">net</span></tt> and <tt class="docutils literal"><span class="pre">rawsockets</span></tt> modules have also been added and they will likely replace the sockets module in the next release. The Asynchronous IO API has been designed to take advantage of Linux's epoll and Windows' IOCP APIs, support for BSD's kqueue has not been implemented yet but will be in the future. The Asynchronous IO API provides both a callback interface and an interface which allows you to write code as you would if you were writing synchronous code. The latter is done through the use of an <tt class="docutils literal"><span class="pre">await</span></tt> macro which behaves similar to C#'s await. The following is a very simple chat server demonstrating Nimrod's new async capabilities.</p>
+<pre><span class="Keyword">import</span> <span class="Identifier">asyncnet</span><span class="Punctuation">,</span> <span class="Identifier">asyncdispatch</span>
+
+<span class="Keyword">var</span> <span class="Identifier">clients</span><span class="Punctuation">:</span> <span class="Identifier">seq</span><span class="Punctuation">[</span><span class="Identifier">PAsyncSocket</span><span class="Punctuation">]</span> <span class="Operator">=</span> <span class="Operator">@</span><span class="Punctuation">[</span><span class="Punctuation">]</span>
+
+<span class="Keyword">proc</span> <span class="Identifier">processClient</span><span class="Punctuation">(</span><span class="Identifier">client</span><span class="Punctuation">:</span> <span class="Identifier">PAsyncSocket</span><span class="Punctuation">)</span> <span class="Punctuation">{</span><span class="Operator">.</span><span class="Identifier">async</span><span class="Operator">.</span><span class="Punctuation">}</span> <span class="Operator">=</span>
+  <span class="Keyword">while</span> <span class="Identifier">true</span><span class="Punctuation">:</span>
+    <span class="Keyword">let</span> <span class="Identifier">line</span> <span class="Operator">=</span> <span class="Identifier">await</span> <span class="Identifier">client</span><span class="Operator">.</span><span class="Identifier">recvLine</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
+    <span class="Keyword">for</span> <span class="Identifier">c</span> <span class="Keyword">in</span> <span class="Identifier">clients</span><span class="Punctuation">:</span>
+      <span class="Identifier">await</span> <span class="Identifier">c</span><span class="Operator">.</span><span class="Identifier">send</span><span class="Punctuation">(</span><span class="Identifier">line</span> <span class="Operator">&amp;</span> <span class="StringLit">&quot;</span><span class="EscapeSequence">\c</span><span class="EscapeSequence">\L</span><span class="StringLit">&quot;</span><span class="Punctuation">)</span>
+
+<span class="Keyword">proc</span> <span class="Identifier">serve</span><span class="Punctuation">(</span><span class="Punctuation">)</span> <span class="Punctuation">{</span><span class="Operator">.</span><span class="Identifier">async</span><span class="Operator">.</span><span class="Punctuation">}</span> <span class="Operator">=</span>
+  <span class="Keyword">var</span> <span class="Identifier">server</span> <span class="Operator">=</span> <span class="Identifier">newAsyncSocket</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
+  <span class="Identifier">server</span><span class="Operator">.</span><span class="Identifier">bindAddr</span><span class="Punctuation">(</span><span class="Identifier">TPort</span><span class="Punctuation">(</span><span class="DecNumber">12345</span><span class="Punctuation">)</span><span class="Punctuation">)</span>
+  <span class="Identifier">server</span><span class="Operator">.</span><span class="Identifier">listen</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
+  
+  <span class="Keyword">while</span> <span class="Identifier">true</span><span class="Punctuation">:</span>
+    <span class="Keyword">let</span> <span class="Identifier">client</span> <span class="Operator">=</span> <span class="Identifier">await</span> <span class="Identifier">server</span><span class="Operator">.</span><span class="Identifier">accept</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
+    <span class="Identifier">clients</span><span class="Operator">.</span><span class="Identifier">add</span> <span class="Identifier">client</span>
+    
+    <span class="Identifier">processClient</span><span class="Punctuation">(</span><span class="Identifier">client</span><span class="Punctuation">)</span>
+
+<span class="Identifier">serve</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
+<span class="Identifier">runForever</span><span class="Punctuation">(</span><span class="Punctuation">)</span></pre><p>Note that this feature has been implemented with Nimrod's macro system and so <tt class="docutils literal"><span class="pre">await</span></tt> and <tt class="docutils literal"><span class="pre">async</span></tt> are no keywords.</p>
+<p>Syntactic sugar for anonymous procedures has also been introduced. It too has been implemented as a macro. The following shows some simple usage of the new syntax:</p>
+<pre><span class="Keyword">import</span> <span class="Identifier">future</span>
+
+<span class="Keyword">var</span> <span class="Identifier">s</span> <span class="Operator">=</span> <span class="Operator">@</span><span class="Punctuation">[</span><span class="DecNumber">1</span><span class="Punctuation">,</span> <span class="DecNumber">2</span><span class="Punctuation">,</span> <span class="DecNumber">3</span><span class="Punctuation">,</span> <span class="DecNumber">4</span><span class="Punctuation">,</span> <span class="DecNumber">5</span><span class="Punctuation">]</span>
+<span class="Identifier">echo</span><span class="Punctuation">(</span><span class="Identifier">s</span><span class="Operator">.</span><span class="Identifier">map</span><span class="Punctuation">(</span><span class="Punctuation">(</span><span class="Identifier">x</span><span class="Punctuation">:</span> <span class="Identifier">int</span><span class="Punctuation">)</span> <span class="Operator">=&gt;</span> <span class="Identifier">x</span> <span class="Operator">*</span> <span class="DecNumber">5</span><span class="Punctuation">)</span><span class="Punctuation">)</span></pre><p>A list of changes follows, for a comprehensive list of changes take a look <a class="reference external" href="https://github.com/Araq/Nimrod/compare/v0.9.2...v0.9.4">here</a>.</p>
+
+<h2 id="library-additions">Library Additions</h2><ul class="simple"><li>Added <tt class="docutils literal"><span class="pre">macros.genSym</span></tt> builtin for AST generation.</li>
+<li>Added <tt class="docutils literal"><span class="pre">macros.newLit</span></tt> procs for easier AST generation.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">logging</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">asyncdispatch</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">asyncnet</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">net</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">rawsockets</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">selectors</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">asynchttpserver</span></tt>.</li>
+<li>Added support for the new asynchronous IO in the <tt class="docutils literal"><span class="pre">httpclient</span></tt> module.</li>
+<li>Added a Python-inspired <tt class="docutils literal"><span class="pre">future</span></tt> module that feature upcoming additions to the <tt class="docutils literal"><span class="pre">system</span></tt> module.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>The scoping rules for the <tt class="docutils literal"><span class="pre">if</span></tt> statement changed for better interaction with the new syntactic construct <tt class="docutils literal"><span class="pre">(;)</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">OSError</span></tt> family of procedures has been deprecated. Procedures with the same name but which take different parameters have been introduced. These procs now require an error code to be passed to them. This error code can be retrieved using the new <tt class="docutils literal"><span class="pre">OSLastError</span></tt> proc.</li>
+<li><tt class="docutils literal"><span class="pre">os.parentDir</span></tt> now returns &quot;&quot; if there is no parent dir.</li>
+<li>In CGI scripts stacktraces are shown to the user only if <tt class="docutils literal"><span class="pre">cgi.setStackTraceStdout</span></tt> is used.</li>
+<li>The symbol binding rules for clean templates changed: <tt class="docutils literal"><span class="pre">bind</span></tt> for any symbol that's not a parameter is now the default. <tt class="docutils literal"><span class="pre">mixin</span></tt> can be used to require instantiation scope for a symbol.</li>
+<li><tt class="docutils literal"><span class="pre">quoteIfContainsWhite</span></tt> now escapes argument in such way that it can be safely passed to shell, instead of just adding double quotes.</li>
+<li><tt class="docutils literal"><span class="pre">macros.dumpTree</span></tt> and <tt class="docutils literal"><span class="pre">macros.dumpLisp</span></tt> have been made <tt class="docutils literal"><span class="pre">immediate</span></tt>, <tt class="docutils literal"><span class="pre">dumpTreeImm</span></tt> and <tt class="docutils literal"><span class="pre">dumpLispImm</span></tt> are now deprecated.</li>
+<li>The <tt class="docutils literal"><span class="pre">nil</span></tt> statement has been deprecated, use an empty <tt class="docutils literal"><span class="pre">discard</span></tt> instead.</li>
+<li><tt class="docutils literal"><span class="pre">sockets.select</span></tt> now prunes sockets that are <strong>not</strong> ready from the list of sockets given to it.</li>
+<li>The <tt class="docutils literal"><span class="pre">noStackFrame</span></tt> pragma has been renamed to <tt class="docutils literal"><span class="pre">asmNoStackFrame</span></tt> to ensure you only use it when you know what you're doing.</li>
+<li>Many of the wrappers that were present in the standard library have been moved to separate repositories and should now be installed using Babel.</li>
+</ul>
+
+<h2 id="compiler-additions">Compiler Additions</h2><ul class="simple"><li>The compiler can now warn about &quot;uninitialized&quot; variables. (There are no real uninitialized variables in Nimrod as they are initialized to binary zero). Activate via <tt class="docutils literal"><span class="pre">{.warning[Uninit]:on.}</span></tt>.</li>
+<li>The compiler now enforces the <tt class="docutils literal"><span class="pre">not nil</span></tt> constraint.</li>
+<li>The compiler now supports a <tt class="docutils literal"><span class="pre">codegenDecl</span></tt> pragma for even more control over the generated code.</li>
+<li>The compiler now supports a <tt class="docutils literal"><span class="pre">computedGoto</span></tt> pragma to support very fast dispatching for interpreters and the like.</li>
+<li>The old evaluation engine has been replaced by a proper register based virtual machine. This fixes numerous bugs for <tt class="docutils literal"><span class="pre">nimrod i</span></tt> and for macro evaluation.</li>
+<li><tt class="docutils literal"><span class="pre">--gc:none</span></tt> produces warnings when code uses the GC.</li>
+<li>A <tt class="docutils literal"><span class="pre">union</span></tt> pragma for better C interoperability is now supported.</li>
+<li>A <tt class="docutils literal"><span class="pre">packed</span></tt> pragma to control the memory packing/alignment of fields in an object.</li>
+<li>Arrays can be annotated to be <tt class="docutils literal"><span class="pre">unchecked</span></tt> for easier low level manipulations of memory.</li>
+<li>Support for the new Babel package manager.</li>
+</ul>
+
+<h2 id="language-additions">Language Additions</h2><ul class="simple"><li>Arrays can now be declared with a single integer literal <tt class="docutils literal"><span class="pre">N</span></tt> instead of a range; the range is then <tt class="docutils literal"><span class="pre">0..N-1</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">requiresInit</span></tt> pragma to enforce explicit initialization.</li>
+<li>Exported templates are allowed to access hidden fields.</li>
+<li>The <tt class="docutils literal"><span class="pre">using statement</span></tt> enables you to more easily author domain-specific languages and libraries providing OOP-like syntactic sugar.</li>
+<li>Added the possibility to override various dot operators in order to handle calls to missing procs and reads from undeclared fields at compile-time.</li>
+<li>The overload resolution now supports <tt class="docutils literal"><span class="pre">static[T]</span></tt> params that must be evaluable at compile-time.</li>
+<li>Support for user-defined type classes has been added.</li>
+<li>The <em>command syntax</em> is supported in a lot more contexts.</li>
+<li>Anonymous iterators are now supported and iterators can capture variables of an outer proc.</li>
+<li>The experimental <tt class="docutils literal"><span class="pre">strongSpaces</span></tt> parsing mode has been implemented.</li>
+<li>You can annotate pointer types with regions for increased type safety.</li>
+<li>Added support for the builtin <tt class="docutils literal"><span class="pre">spawn</span></tt> for easy thread pool usage.</li>
+</ul>
+
+<h2 id="tools-improvements">Tools improvements</h2><ul class="simple"><li>c2nim can deal with a subset of C++. Use the <tt class="docutils literal"><span class="pre">--cpp</span></tt> command line option to activate.</li>
+</ul>
+
+<h1 id="Z2014-02-11-nimrod-featured-in-dr-dobb-s-journal">2014-02-11 Nimrod Featured in Dr. Dobb's Journal</h1><p>Nimrod has been <a class="reference external" href="http://www.drdobbs.com/open-source/nimrod-a-new-systems-programming-languag/240165321">featured</a> as the cover story in the February 2014 issue of Dr. Dobb's Journal.</p>
+
+<h1 id="Z2014-01-15-andreas-rumpf-s-talk-on-nimrod-at-strange-loop-2013-is-now-online">2014-01-15 Andreas Rumpf's talk on Nimrod at Strange Loop 2013 is now online</h1><p>Andreas Rumpf presented <em>Nimrod: A New Approach to Metaprogramming</em> at <a class="reference external" href="https://thestrangeloop.com/sessions/nimrod-a-new-approach-to-meta-programming">Strange Loop 2013</a>. The <a class="reference external" href="http://www.infoq.com/presentations/nimrod">video and slides</a> of the talk are now available.</p>
+
+<h1 id="Z2013-05-20-new-website-design">2013-05-20 New website design!</h1><p>A brand new website is now live. All thanks go to Philip Witte and Dominik Picheta, Philip Witte for the design of the website (together with the logo) as well as the HTML and CSS code for his template, and Dominik Picheta for integrating Philip's design with the <tt class="docutils literal"><span class="pre">nimweb</span></tt> utility. We're sure you will agree that Philip's design is beautiful.</p>
+
+<h1 id="Z2013-05-20-version-0-9-2-released">2013-05-20 Version 0.9.2 released</h1><p>We are pleased to announce that version 0.9.2 of the Nimrod compiler has been released. This release has attracted by far the most contributions in comparison to any other release.</p>
+<p>This release can be downloaded from <a class="reference external" href="download.html">here</a>.</p>
+<p>This release brings with it many new features and bug fixes, a list of which can be seen later. One of the major new features is the effect system together with exception tracking which allows for checked exceptions and more, for further details check out the <a class="reference external" href="manual.html#effect-system">manual</a>. Another major new feature is the introduction of statement list expressions, more details on these can be found <a class="reference external" href="manual.html#statement-list-expression">here</a>. The ability to exclude symbols from modules has also been implemented, this feature can be used like so: <tt class="docutils literal"><span class="pre">import module except symbol</span></tt>.</p>
+<p>Thanks to all <a class="reference external" href="https://github.com/Araq/Nimrod/contributors">contributors</a>!</p>
+
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>The old GC never collected cycles correctly. Fixed but it can cause performance regressions. However you can deactivate the cycle collector with <tt class="docutils literal"><span class="pre">GC_disableMarkAndSweep</span></tt> and run it explicitly at an appropriate time or not at all. There is also a new GC you can activate with <tt class="docutils literal"><span class="pre">--gc:markAndSweep</span></tt> which does not have this problem but is slower in general and has no realtime guarantees.</li>
+<li><tt class="docutils literal"><span class="pre">cast</span></tt> for floating point types now does the bitcast as specified in the manual. This breaks code that erroneously uses <tt class="docutils literal"><span class="pre">cast</span></tt> to convert different floating point values.</li>
+<li>SCGI module's performance has been improved greatly, it will no longer block on many concurrent requests.</li>
+<li>In total fixed over 70 github issues and merged over 60 pull requests.</li>
+</ul>
+
+<h2 id="library-additions">Library Additions</h2><ul class="simple"><li>There is a new experimental mark&amp;sweep GC which can be faster (or much slower) than the default GC. Enable with <tt class="docutils literal"><span class="pre">--gc:markAndSweep</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.onRaise</span></tt> to support a condition system.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.locals</span></tt> that provides access to a proc's locals.</li>
+<li>Added <tt class="docutils literal"><span class="pre">macros.quote</span></tt> for AST quasi-quoting.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.unsafeNew</span></tt> to support hacky variable length objects.</li>
+<li><tt class="docutils literal"><span class="pre">system.fields</span></tt> and <tt class="docutils literal"><span class="pre">system.fieldPairs</span></tt> support <tt class="docutils literal"><span class="pre">object</span></tt> too; they used to only support tuples.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.CurrentSourcePath</span></tt> returning the full file-system path of the current source file.</li>
+<li>The <tt class="docutils literal"><span class="pre">macros</span></tt> module now contains lots of useful helpers for building up abstract syntax trees.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li><tt class="docutils literal"><span class="pre">shared</span></tt> is a keyword now.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">sockets.recvLine</span></tt> and <tt class="docutils literal"><span class="pre">asyncio.recvLine</span></tt>, added <tt class="docutils literal"><span class="pre">readLine</span></tt> instead.</li>
+<li>The way indentation is handled in the parser changed significantly. However, this affects very little (if any) real world code.</li>
+<li>The expression/statement unification has been implemented. Again this only affects edge cases and no known real world code.</li>
+<li>Changed the async interface of the <tt class="docutils literal"><span class="pre">scgi</span></tt> module.</li>
+<li>WideStrings are now garbage collected like other string types.</li>
+</ul>
+
+<h2 id="compiler-additions">Compiler Additions</h2><ul class="simple"><li>The <tt class="docutils literal"><span class="pre">doc2</span></tt> command does not generate output for the whole project anymore. Use the new <tt class="docutils literal"><span class="pre">--project</span></tt> switch to enable this behaviour.</li>
+<li>The compiler can now warn about shadowed local variables. However, this needs to be turned on explicitly via <tt class="docutils literal"><span class="pre">--warning[ShadowIdent]:on</span></tt>.</li>
+<li>The compiler now supports almost every pragma in a <tt class="docutils literal"><span class="pre">push</span></tt> pragma.</li>
+<li>Generic converters have been implemented.</li>
+<li>Added a <strong>highly experimental</strong> <tt class="docutils literal"><span class="pre">noforward</span></tt> pragma enabling a special compilation mode that largely eliminates the need for forward declarations.</li>
+</ul>
+
+<h2 id="language-additions">Language Additions</h2><ul class="simple"><li><tt class="docutils literal"><span class="pre">case expressions</span></tt> are now supported.</li>
+<li>Table constructors now mimic more closely the syntax of the <tt class="docutils literal"><span class="pre">case</span></tt> statement.</li>
+<li>Nimrod can now infer the return type of a proc from its body.</li>
+<li>Added a <tt class="docutils literal"><span class="pre">mixin</span></tt> declaration to affect symbol binding rules in generics.</li>
+<li>Exception tracking has been added and the <tt class="docutils literal"><span class="pre">doc2</span></tt> command annotates possible exceptions for you.</li>
+<li>User defined effects (&quot;tags&quot;) tracking has been added and the <tt class="docutils literal"><span class="pre">doc2</span></tt> command annotates possible tags for you.</li>
+<li>Types can be annotated with the new syntax <tt class="docutils literal"><span class="pre">not nil</span></tt> to explicitly state that <tt class="docutils literal"><span class="pre">nil</span></tt> is not allowed. However currently the compiler performs no advanced static checking for this; for now it's merely for documentation purposes.</li>
+<li>An <tt class="docutils literal"><span class="pre">export</span></tt> statement has been added to the language: It can be used for symbol forwarding so client modules don't have to import a module's dependencies explicitly.</li>
+<li>Overloading based on ASTs has been implemented.</li>
+<li>Generics are now supported for multi methods.</li>
+<li>Objects can be initialized via an <em>object constructor expression</em>.</li>
+<li>There is a new syntactic construct <tt class="docutils literal"><span class="pre">(;)</span></tt> unifying expressions and statements.</li>
+<li>You can now use <tt class="docutils literal"><span class="pre">from module import nil</span></tt> if you want to import the module but want to enforce fully qualified access to every symbol in <tt class="docutils literal"><span class="pre">module</span></tt>.</li>
+</ul>
+
+<h2 id="notes-for-the-future">Notes for the future</h2><ul class="simple"><li>The scope rules of <tt class="docutils literal"><span class="pre">if</span></tt> statements will change in 0.9.4. This affects the <tt class="docutils literal"><span class="pre">=~</span></tt> pegs/re templates.</li>
+<li>The <tt class="docutils literal"><span class="pre">sockets</span></tt> module will become a low-level wrapper of OS-specific socket functions. All the high-level features of the current <tt class="docutils literal"><span class="pre">sockets</span></tt> module will be moved to a <tt class="docutils literal"><span class="pre">network</span></tt> module.</li>
+</ul>
+
+<h1 id="Z2012-09-23-version-0-9-0-released">2012-09-23 Version 0.9.0 released</h1>
+<h2 id="summary">Summary</h2><ul class="simple"><li>Unsigned integers have been added.</li>
+<li>The integer type promotion rules changed.</li>
+<li>The template and macro system evolved.</li>
+<li>Closures have been implemented.</li>
+<li>Term rewriting macros have been implemented.</li>
+<li>First steps to unify expressions and statements have been taken.</li>
+<li>Symbol lookup rules in generics have become stricter to catch more errors.</li>
+</ul>
+
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>Fixed a bug where the compiler would &quot;optimize away&quot; valid constant parts of a string concatenation.</li>
+<li>Fixed a bug concerning implicit type conversions in <tt class="docutils literal"><span class="pre">case</span></tt> statements.</li>
+<li>Fixed a serious code generation bug that caused <tt class="docutils literal"><span class="pre">algorithm.sort</span></tt> to produce segmentation faults.</li>
+<li>Fixed ambiguity in recvLine which meant that receiving <tt class="docutils literal"><span class="pre">\r\L</span></tt> was indistinguishable from disconnections.</li>
+<li>Many more bugfixes, too many to list them all.</li>
+</ul>
+
+<h2 id="library-additions">Library Additions</h2><ul class="simple"><li>Added the (already existing) module <tt class="docutils literal"><span class="pre">htmlgen</span></tt> to the documentation.</li>
+<li>Added the (already existing) module <tt class="docutils literal"><span class="pre">cookies</span></tt> to the documentation.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.shallow</span></tt> that can be used to speed up string and sequence assignments.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.eval</span></tt> that can execute an anonymous block of code at compile time as if was a macro.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.staticExec</span></tt> and <tt class="docutils literal"><span class="pre">system.gorge</span></tt> for compile-time execution of external programs.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.staticRead</span></tt> as a synonym for <tt class="docutils literal"><span class="pre">system.slurp</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">macros.emit</span></tt> that can emit an arbitrary computed string as nimrod code during compilation.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.parseEnum</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">json.%</span></tt> constructor operator.</li>
+<li>The stdlib can now be avoided to a point where C code generation for 16bit micro controllers is feasible.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">oids</span></tt>.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">endians</span></tt>.</li>
+<li>Added a new OpenGL wrapper that supports OpenGL up to version 4.2.</li>
+<li>Added a wrapper for <tt class="docutils literal"><span class="pre">libsvm</span></tt>.</li>
+<li>Added a wrapper for <tt class="docutils literal"><span class="pre">mongodb</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">terminal.isatty</span></tt>.</li>
+<li>Added an overload for <tt class="docutils literal"><span class="pre">system.items</span></tt> that can be used to iterate over the values of an enum.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.TInteger</span></tt> and <tt class="docutils literal"><span class="pre">system.TNumber</span></tt> type classes matching any of the corresponding types available in Nimrod.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.clamp</span></tt> to limit a value within an interval <tt class="docutils literal"><span class="pre">[a, b]</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.continuesWith</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.getStackTrace</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.||</span></tt> for parallel <tt class="docutils literal"><span class="pre">for</span></tt> loop support.</li>
+<li>The GC supports (soft) realtime systems via <tt class="docutils literal"><span class="pre">GC_setMaxPause</span></tt> and <tt class="docutils literal"><span class="pre">GC_step</span></tt> procs.</li>
+<li>The sockets module now supports ssl through the OpenSSL library, <tt class="docutils literal"><span class="pre">recvLine</span></tt> is now much more efficient thanks to the newly implemented sockets buffering.</li>
+<li>The httpclient module now supports ssl/tls.</li>
+<li>Added <tt class="docutils literal"><span class="pre">times.format</span></tt> as well as many other utility functions for managing time.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.@</span></tt> for converting an <tt class="docutils literal"><span class="pre">openarray</span></tt> to a <tt class="docutils literal"><span class="pre">seq</span></tt> (it used to only support fixed length arrays).</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.compiles</span></tt> which can be used to check whether a type supports some operation.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.format</span></tt>, <tt class="docutils literal"><span class="pre">subexes.format</span></tt> which use the new <tt class="docutils literal"><span class="pre">varargs</span></tt> type.</li>
+<li>Added module <tt class="docutils literal"><span class="pre">fsmonitor</span></tt>.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>On Windows filenames and paths are supposed to be in UTF-8. The <tt class="docutils literal"><span class="pre">system</span></tt>, <tt class="docutils literal"><span class="pre">os</span></tt>, <tt class="docutils literal"><span class="pre">osproc</span></tt> and <tt class="docutils literal"><span class="pre">memfiles</span></tt> modules use the wide string versions of the WinAPI. Use the <tt class="docutils literal"><span class="pre">-d:useWinAnsi</span></tt> switch to revert back to the old behaviour which uses the Ansi string versions.</li>
+<li><tt class="docutils literal"><span class="pre">static</span></tt>, <tt class="docutils literal"><span class="pre">do</span></tt>, <tt class="docutils literal"><span class="pre">interface</span></tt> and <tt class="docutils literal"><span class="pre">mixin</span></tt> are now keywords.</li>
+<li>Templates now participate in overloading resolution which can break code that uses templates in subtle ways. Use the new <tt class="docutils literal"><span class="pre">immediate</span></tt> pragma for templates to get a template of old behaviour.</li>
+<li>There is now a proper distinction in the type system between <tt class="docutils literal"><span class="pre">expr</span></tt> and <tt class="docutils literal"><span class="pre">PNimrodNode</span></tt> which unfortunately breaks the old macro system.</li>
+<li><tt class="docutils literal"><span class="pre">pegs.@</span></tt> has been renamed to <tt class="docutils literal"><span class="pre">pegs.!*</span></tt> and <tt class="docutils literal"><span class="pre">pegs.@@</span></tt> has been renamed to <tt class="docutils literal"><span class="pre">pegs.!*\</span></tt> as <tt class="docutils literal"><span class="pre">@</span></tt> operators now have different precedence.</li>
+<li>The type <tt class="docutils literal"><span class="pre">proc</span></tt> (without any params or return type) is now considered a type class matching all proc types. Use <tt class="docutils literal"><span class="pre">proc ()</span></tt> to get the old meaning denoting a proc expecing no arguments and returing no value.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">system.GC_setStrategy</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">re.findAll</span></tt> and <tt class="docutils literal"><span class="pre">pegs.findAll</span></tt> don't return <em>captures</em> anymore but matching <em>substrings</em>.</li>
+<li>RTTI and thus the <tt class="docutils literal"><span class="pre">marshall</span></tt> module don't contain the proper field names of tuples anymore. This had to be changed as the old behaviour never produced consistent results.</li>
+<li>Deprecated the <tt class="docutils literal"><span class="pre">ssl</span></tt> module.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">nimrod pretty</span></tt> as it never worked good enough and has some inherent problems.</li>
+<li>The integer promotion rules changed; the compiler is now less picky in some situations and more picky in other situations: In particular implicit conversions from <tt class="docutils literal"><span class="pre">int</span></tt> to <tt class="docutils literal"><span class="pre">int32</span></tt> are now forbidden.</li>
+<li><tt class="docutils literal"><span class="pre">system.byte</span></tt> is now an alias for <tt class="docutils literal"><span class="pre">uint8</span></tt>; it used to be an alias to <tt class="docutils literal"><span class="pre">int8</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">bind</span></tt> expressions in templates are not properly supported anymore. Use the declarative <tt class="docutils literal"><span class="pre">bind</span></tt> statement instead.</li>
+<li>The default calling convention for a procedural <strong>type</strong> is now <tt class="docutils literal"><span class="pre">closure</span></tt>, for procs it remains <tt class="docutils literal"><span class="pre">nimcall</span></tt> (which is compatible to <tt class="docutils literal"><span class="pre">closure</span></tt>). Activate the warning <tt class="docutils literal"><span class="pre">ImplicitClosure</span></tt> to make the compiler list the occurances of proc types which are affected.</li>
+<li>The Nimrod type system now distinguishes <tt class="docutils literal"><span class="pre">openarray</span></tt> from <tt class="docutils literal"><span class="pre">varargs</span></tt>.</li>
+<li>Templates are now <tt class="docutils literal"><span class="pre">hygienic</span></tt>. Use the <tt class="docutils literal"><span class="pre">dirty</span></tt> pragma to get the old behaviour.</li>
+<li>Objects that have no ancestor are now implicitly <tt class="docutils literal"><span class="pre">final</span></tt>. Use the <tt class="docutils literal"><span class="pre">inheritable</span></tt> pragma to introduce new object roots apart from <tt class="docutils literal"><span class="pre">TObject</span></tt>.</li>
+<li>Macros now receive parameters like templates do; use the <tt class="docutils literal"><span class="pre">callsite</span></tt> builtin to gain access to the invocation AST.</li>
+<li>Symbol lookup rules in generics have become stricter to catch more errors.</li>
+</ul>
+
+<h2 id="compiler-additions">Compiler Additions</h2><ul class="simple"><li>Win64 is now an officially supported target.</li>
+<li>The Nimrod compiler works on BSD again, but has some issues as <tt class="docutils literal"><span class="pre">os.getAppFilename</span></tt> and <tt class="docutils literal"><span class="pre">os.getAppDir</span></tt> cannot work reliably on BSD.</li>
+<li>The compiler can detect and evaluate calls that can be evaluated at compile time for optimization purposes with the <tt class="docutils literal"><span class="pre">--implicitStatic</span></tt> command line option or pragma.</li>
+<li>The compiler now generates marker procs that the GC can use instead of RTTI. This speeds up the GC quite a bit.</li>
+<li>The compiler now includes a new advanced documentation generator via the <tt class="docutils literal"><span class="pre">doc2</span></tt> command. This new generator uses all of the semantic passes of the compiler and can thus generate documentation for symbols hiding in macros.</li>
+<li>The compiler now supports the <tt class="docutils literal"><span class="pre">dynlib</span></tt> pragma for variables.</li>
+<li>The compiler now supports <tt class="docutils literal"><span class="pre">bycopy</span></tt> and <tt class="docutils literal"><span class="pre">byref</span></tt> pragmas that affect how objects/tuples are passed.</li>
+<li>The embedded profiler became a stack trace profiler and has been documented.</li>
+</ul>
+
+<h2 id="language-additions">Language Additions</h2><ul class="simple"><li>Added explicit <tt class="docutils literal"><span class="pre">static</span></tt> sections for enforced compile time evaluation.</li>
+<li>Added an alternative notation for lambdas with <tt class="docutils literal"><span class="pre">do</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">addr</span></tt> is now treated like a prefix operator syntactically.</li>
+<li>Added <tt class="docutils literal"><span class="pre">global</span></tt> pragma that can be used to introduce new global variables from within procs.</li>
+<li><tt class="docutils literal"><span class="pre">when</span></tt> expressions are now allowed just like <tt class="docutils literal"><span class="pre">if</span></tt> expressions.</li>
+<li>The precedence for operators starting with <tt class="docutils literal"><span class="pre">@</span></tt> is different now allowing for <em>sigil-like</em> operators.</li>
+<li>Stand-alone <tt class="docutils literal"><span class="pre">finally</span></tt> and <tt class="docutils literal"><span class="pre">except</span></tt> blocks are now supported.</li>
+<li>Macros and templates can now be invoked as pragmas.</li>
+<li>The apostrophe in type suffixes for numerical literals is now optional.</li>
+<li>Unsigned integer types have been added.</li>
+<li>The integer promotion rules changed.</li>
+<li>Nimrod now tracks proper intervals for <tt class="docutils literal"><span class="pre">range</span></tt> over some built-in operators.</li>
+<li>In parameter lists a semicolon instead of a comma can be used to improve readability: <tt class="docutils literal"><span class="pre">proc divmod(a, b: int; resA, resB: var int)</span></tt>.</li>
+<li>A semicolon can now be used to have multiple simple statements on a single line: <tt class="docutils literal"><span class="pre">inc i; inc j</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">bind</span></tt> supports overloaded symbols and operators.</li>
+<li>A <tt class="docutils literal"><span class="pre">distinct</span></tt> type can now borrow from generic procs.</li>
+<li>Added the pragmas <tt class="docutils literal"><span class="pre">gensym</span></tt>, <tt class="docutils literal"><span class="pre">inject</span></tt> and <tt class="docutils literal"><span class="pre">dirty</span></tt> for hygiene in templates.</li>
+<li>Comments can be continued with a backslash continuation character so that comment pieces don't have to align on the same column.</li>
+<li>Enums can be annotated with <tt class="docutils literal"><span class="pre">pure</span></tt> so that their field names do not pollute the current scope.</li>
+<li>A proc body can consist of an expression that has a type. This is rewritten to <tt class="docutils literal"><span class="pre">result = expression</span></tt> then.</li>
+<li>Term rewriting macros (see <a class="reference external" href="http://nimrod-code.org/trmacros.html">trmacros</a>) have been implemented but are still in alpha.</li>
+</ul>
+
+<h1 id="Z2012-02-09-version-0-8-14-released">2012-02-09 Version 0.8.14 released</h1><p>Version 0.8.14 has been released!</p>
+
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>Fixed a serious memory corruption concerning message passing.</li>
+<li>Fixed a serious bug concerning different instantiations of a generic proc.</li>
+<li>Fixed a newly introduced bug where a wrong <tt class="docutils literal"><span class="pre">EIO</span></tt> exception was raised for the end of file for text files that do not end with a newline.</li>
+<li>Bugfix c2nim, c2pas: the <tt class="docutils literal"><span class="pre">--out</span></tt> option has never worked properly.</li>
+<li>Bugfix: forwarding of generic procs never worked.</li>
+<li>Some more bugfixes for macros and compile-time evaluation.</li>
+<li>The GC now takes into account interior pointers on the stack which may be introduced by aggressive C optimizers.</li>
+<li>Nimrod's native allocator/GC now works on PowerPC.</li>
+<li>Lots of other bugfixes: Too many to list them all.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>Removed deprecated <tt class="docutils literal"><span class="pre">os.AppendFileExt</span></tt>, <tt class="docutils literal"><span class="pre">os.executeShellCommand</span></tt>, <tt class="docutils literal"><span class="pre">os.iterOverEnvironment</span></tt>, <tt class="docutils literal"><span class="pre">os.pcDirectory</span></tt>, <tt class="docutils literal"><span class="pre">os.pcLinkToDirectory</span></tt>, <tt class="docutils literal"><span class="pre">os.SplitPath</span></tt>, <tt class="docutils literal"><span class="pre">os.extractDir</span></tt>, <tt class="docutils literal"><span class="pre">os.SplitFilename</span></tt>, <tt class="docutils literal"><span class="pre">os.extractFileTrunk</span></tt>, <tt class="docutils literal"><span class="pre">os.extractFileExt</span></tt>, <tt class="docutils literal"><span class="pre">osproc.executeProcess</span></tt>, <tt class="docutils literal"><span class="pre">osproc.executeCommand</span></tt>.</li>
+<li>Removed deprecated <tt class="docutils literal"><span class="pre">parseopt.init</span></tt>, <tt class="docutils literal"><span class="pre">parseopt.getRestOfCommandLine</span></tt>.</li>
+<li>Moved <tt class="docutils literal"><span class="pre">strutils.validEmailAddress</span></tt> to <tt class="docutils literal"><span class="pre">matchers.validEmailAddress</span></tt>.</li>
+<li>The pointer dereference operator <tt class="docutils literal"><span class="pre">^</span></tt> has been removed, so that <tt class="docutils literal"><span class="pre">^</span></tt> can now be a user-defined operator.</li>
+<li><tt class="docutils literal"><span class="pre">implies</span></tt> is no keyword anymore.</li>
+<li>The <tt class="docutils literal"><span class="pre">is</span></tt> operator is now the <tt class="docutils literal"><span class="pre">of</span></tt> operator.</li>
+<li>The <tt class="docutils literal"><span class="pre">is</span></tt> operator is now used to check type equivalence in generic code.</li>
+<li>The <tt class="docutils literal"><span class="pre">pure</span></tt> pragma for procs has been renamed to <tt class="docutils literal"><span class="pre">noStackFrame</span></tt>.</li>
+<li>The threading API has been completely redesigned.</li>
+<li>The <tt class="docutils literal"><span class="pre">unidecode</span></tt> module is now thread-safe and its interface has changed.</li>
+<li>The <tt class="docutils literal"><span class="pre">bind</span></tt> expression is deprecated, use a <tt class="docutils literal"><span class="pre">bind</span></tt> declaration instead.</li>
+<li><tt class="docutils literal"><span class="pre">system.raiseHook</span></tt> is now split into <tt class="docutils literal"><span class="pre">system.localRaiseHook</span></tt> and <tt class="docutils literal"><span class="pre">system.globalRaiseHook</span></tt> to distinguish between thread local and global raise hooks.</li>
+<li>Changed exception handling/error reporting for <tt class="docutils literal"><span class="pre">os.removeFile</span></tt> and <tt class="docutils literal"><span class="pre">os.removeDir</span></tt>.</li>
+<li>The algorithm for searching and loading configuration files has been changed.</li>
+<li>Operators now have diffent precedence rules: Assignment-like operators (like <tt class="docutils literal"><span class="pre">*=</span></tt>) are now special-cased.</li>
+<li>The fields in <tt class="docutils literal"><span class="pre">TStream</span></tt> have been renamed to have an <tt class="docutils literal"><span class="pre">Impl</span></tt> suffix because they should not be used directly anymore. Wrapper procs have been created that should be used instead.</li>
+<li><tt class="docutils literal"><span class="pre">export</span></tt> is now a keyword.</li>
+<li><tt class="docutils literal"><span class="pre">assert</span></tt> is now implemented in pure Nimrod as a template; it's easy to implement your own assertion templates with <tt class="docutils literal"><span class="pre">system.astToStr</span></tt>.</li>
+</ul>
+
+<h2 id="language-additions">Language Additions</h2><ul class="simple"><li>Added new <tt class="docutils literal"><span class="pre">is</span></tt> and <tt class="docutils literal"><span class="pre">of</span></tt> operators.</li>
+<li>The built-in type <tt class="docutils literal"><span class="pre">void</span></tt> can be used to denote the absense of any type. This is useful in generic code.</li>
+<li>Return types may be of the type <tt class="docutils literal"><span class="pre">var T</span></tt> to return an l-value.</li>
+<li>The error pragma can now be used to mark symbols whose <em>usage</em> should trigger a compile-time error.</li>
+<li>There is a new <tt class="docutils literal"><span class="pre">discardable</span></tt> pragma that can be used to mark a routine so that its result can be discarded implicitly.</li>
+<li>Added a new <tt class="docutils literal"><span class="pre">noinit</span></tt> pragma to prevent automatic initialization to zero of variables.</li>
+<li>Constants can now have the type <tt class="docutils literal"><span class="pre">seq</span></tt>.</li>
+<li>There is a new user-definable syntactic construct <tt class="docutils literal"><span class="pre">a{i, ...}</span></tt> that has no semantics yet for built-in types and so can be overloaded to your heart's content.</li>
+<li><tt class="docutils literal"><span class="pre">bind</span></tt> (used for symbol binding in templates and generics) is now a declarative statement.</li>
+<li>Nimrod now supports single assignment variables via the <tt class="docutils literal"><span class="pre">let</span></tt> statement.</li>
+<li>Iterators named <tt class="docutils literal"><span class="pre">items</span></tt> and <tt class="docutils literal"><span class="pre">pairs</span></tt> are implicitly invoked when an explicit iterator is missing.</li>
+<li>The slice assignment <tt class="docutils literal"><span class="pre">a[i..j] = b</span></tt> where <tt class="docutils literal"><span class="pre">a</span></tt> is a sequence or string now supports <em>splicing</em>.</li>
+</ul>
+
+<h2 id="compiler-additions">Compiler Additions</h2><ul class="simple"><li>The compiler can generate C++ code for easier interfacing with C++.</li>
+<li>The compiler can generate Objective C code for easier interfacing with Objective C.</li>
+<li>The new pragmas <tt class="docutils literal"><span class="pre">importcpp</span></tt> and <tt class="docutils literal"><span class="pre">importobjc</span></tt> make interfacing with C++ and Objective C somewhat easier.</li>
+<li>Added a new pragma <tt class="docutils literal"><span class="pre">incompleteStruct</span></tt> to deal with incomplete C struct definitions.</li>
+<li>Added a <tt class="docutils literal"><span class="pre">--nimcache:PATH</span></tt> configuration option for control over the output directory for generated code.</li>
+<li>The <tt class="docutils literal"><span class="pre">--genScript</span></tt> option now produces different compilation scripts which do not contain absolute paths.</li>
+<li>Added <tt class="docutils literal"><span class="pre">--cincludes:dir</span></tt>, <tt class="docutils literal"><span class="pre">--clibdir:lib</span></tt> configuration options for modifying the C compiler's header/library search path in cross-platform way.</li>
+<li>Added <tt class="docutils literal"><span class="pre">--clib:lib</span></tt> configuration option for specifying additional C libraries to be linked.</li>
+<li>Added <tt class="docutils literal"><span class="pre">--mainmodule:file</span></tt> configuration options for specifying the main project file. This is intended to be used in project configuration files to allow commands like <tt class="docutils literal"><span class="pre">nimrod c</span></tt> or <tt class="docutils literal"><span class="pre">nimrod check</span></tt> to be executed anywhere within the project's directory structure.</li>
+<li>Added a <tt class="docutils literal"><span class="pre">--app:staticlib</span></tt> option for creating static libraries.</li>
+<li>Added a <tt class="docutils literal"><span class="pre">--tlsEmulation:on|off</span></tt> switch for control over thread local storage emulation.</li>
+<li>The compiler and standard library now support a <em>taint mode</em>. Input strings are declared with the <tt class="docutils literal"><span class="pre">TaintedString</span></tt> string type. If the taint mode is turned on it is a distinct string type which helps to detect input validation errors.</li>
+<li>The compiler now supports the compilation cache via <tt class="docutils literal"><span class="pre">--symbolFiles:on</span></tt>. This potentially speeds up compilations by an order of magnitude, but is still highly experimental!</li>
+<li>Added <tt class="docutils literal"><span class="pre">--import:file</span></tt> and <tt class="docutils literal"><span class="pre">--include:file</span></tt> configuration options for specifying modules that will be automatically imported/incluced.</li>
+<li><tt class="docutils literal"><span class="pre">nimrod i</span></tt> can now optionally be given a module to execute.</li>
+<li>The compiler now performs a simple alias analysis to generate better code.</li>
+<li>The compiler and ENDB now support <em>watchpoints</em>.</li>
+<li>The compiler now supports proper compile time expressions of type <tt class="docutils literal"><span class="pre">bool</span></tt> for <tt class="docutils literal"><span class="pre">on|off</span></tt> switches in pragmas. In order to not break existing code, <tt class="docutils literal"><span class="pre">on</span></tt> and <tt class="docutils literal"><span class="pre">off</span></tt> are now aliases for <tt class="docutils literal"><span class="pre">true</span></tt> and <tt class="docutils literal"><span class="pre">false</span></tt> and declared in the system module.</li>
+<li>The compiler finally supports <strong>closures</strong>. This is a preliminary implementation, which does not yet support nestings deeper than 1 level and still has many known bugs.</li>
+</ul>
+
+<h2 id="library-additions">Library Additions</h2><ul class="simple"><li>Added <tt class="docutils literal"><span class="pre">system.allocShared</span></tt>, <tt class="docutils literal"><span class="pre">system.allocShared0</span></tt>, <tt class="docutils literal"><span class="pre">system.deallocShared</span></tt>, <tt class="docutils literal"><span class="pre">system.reallocShared</span></tt>.</li>
+<li>Slicing as implemented by the system module now supports <em>splicing</em>.</li>
+<li>Added explicit channels for thread communication.</li>
+<li>Added <tt class="docutils literal"><span class="pre">matchers</span></tt> module for email address etc. matching.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.unindent</span></tt>, <tt class="docutils literal"><span class="pre">strutils.countLines</span></tt>, <tt class="docutils literal"><span class="pre">strutils.replaceWord</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.slurp</span></tt> for easy resource embedding.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.running</span></tt> for threads.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.programResult</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">xmltree.innerText</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">os.isAbsolute</span></tt>, <tt class="docutils literal"><span class="pre">os.dynLibFormat</span></tt>, <tt class="docutils literal"><span class="pre">os.isRootDir</span></tt>, <tt class="docutils literal"><span class="pre">os.parentDirs</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">parseutils.interpolatedFragments</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">macros.treeRepr</span></tt>, <tt class="docutils literal"><span class="pre">macros.lispRepr</span></tt>, <tt class="docutils literal"><span class="pre">macros.dumpTree</span></tt>, <tt class="docutils literal"><span class="pre">macros.dumpLisp</span></tt>, <tt class="docutils literal"><span class="pre">macros.parseExpr</span></tt>, <tt class="docutils literal"><span class="pre">macros.parseStmt</span></tt>, <tt class="docutils literal"><span class="pre">macros.getAst</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">locks</span></tt> core module for more flexible locking support.</li>
+<li>Added <tt class="docutils literal"><span class="pre">irc</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">ftpclient</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">memfiles</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">subexes</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">critbits</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">asyncio</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">actors</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">algorithm</span></tt> module for generic <tt class="docutils literal"><span class="pre">sort</span></tt>, <tt class="docutils literal"><span class="pre">reverse</span></tt> etc. operations.</li>
+<li>Added <tt class="docutils literal"><span class="pre">osproc.startCmd</span></tt>, <tt class="docutils literal"><span class="pre">osproc.execCmdEx</span></tt>.</li>
+<li>The <tt class="docutils literal"><span class="pre">osproc</span></tt> module now uses <tt class="docutils literal"><span class="pre">posix_spawn</span></tt> instead of <tt class="docutils literal"><span class="pre">fork</span></tt> and <tt class="docutils literal"><span class="pre">exec</span></tt> on Posix systems. Define the symbol <tt class="docutils literal"><span class="pre">useFork</span></tt> to revert to the old implementation.</li>
+<li>Added <tt class="docutils literal"><span class="pre">intsets.assign</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.astToStr</span></tt> and <tt class="docutils literal"><span class="pre">system.rand</span></tt>, <tt class="docutils literal"><span class="pre">system.doAssert</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.pairs</span></tt> for built-in types like arrays and strings.</li>
+</ul>
+
+<h1 id="Z2011-07-10-version-0-8-12-released">2011-07-10 Version 0.8.12 released</h1>
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>Bugfix: <tt class="docutils literal"><span class="pre">httpclient</span></tt> correct passes the path starting with <tt class="docutils literal"><span class="pre">/</span></tt>.</li>
+<li>Bugfixes for the <tt class="docutils literal"><span class="pre">htmlparser</span></tt> module.</li>
+<li>Bugfix: <tt class="docutils literal"><span class="pre">pegs.find</span></tt> did not respect <tt class="docutils literal"><span class="pre">start</span></tt> parameter.</li>
+<li>Bugfix: <tt class="docutils literal"><span class="pre">dialogs.ChooseFilesToOpen</span></tt> did not work if only one file is selected.</li>
+<li>Bugfix: niminst: <tt class="docutils literal"><span class="pre">nimrod</span></tt> is not default dir for <em>every</em> project.</li>
+<li>Bugfix: Multiple yield statements in iterators did not cause local vars to be copied.</li>
+<li>Bugfix: The compiler does not emit very inaccurate floating point literals anymore.</li>
+<li>Bugfix: Subclasses are taken into account for <tt class="docutils literal"><span class="pre">try except</span></tt> matching.</li>
+<li>Bugfix: Generics and macros are more stable. There are still known bugs left though.</li>
+<li>Bugfix: Generated type information for tuples was sometimes wrong, causing random crashes.</li>
+<li>Lots of other bugfixes: Too many to list them all.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>Operators starting with <tt class="docutils literal"><span class="pre">^</span></tt> are now right-associative and have the highest priority.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">os.getApplicationFilename</span></tt>: Use <tt class="docutils literal"><span class="pre">os.getAppFilename</span></tt> instead.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">os.getApplicationDir</span></tt>: Use <tt class="docutils literal"><span class="pre">os.getAppDir</span></tt> instead.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">system.copy</span></tt>: Use <tt class="docutils literal"><span class="pre">substr</span></tt> or string slicing instead.</li>
+<li>Changed and documented how generalized string literals work: The syntax <tt class="docutils literal"><span class="pre">module.re&quot;abc&quot;</span></tt> is now supported.</li>
+<li>Changed the behaviour of <tt class="docutils literal"><span class="pre">strutils.%</span></tt>, <tt class="docutils literal"><span class="pre">ropes.%</span></tt> if both notations <tt class="docutils literal"><span class="pre">$#</span></tt> and <tt class="docutils literal"><span class="pre">$i</span></tt> are involved.</li>
+<li>The <tt class="docutils literal"><span class="pre">pegs</span></tt> and <tt class="docutils literal"><span class="pre">re</span></tt> modules distinguish between <tt class="docutils literal"><span class="pre">replace</span></tt> and <tt class="docutils literal"><span class="pre">replacef</span></tt> operations.</li>
+<li>The pointer dereference operation <tt class="docutils literal"><span class="pre">p^</span></tt> is deprecated and might become <tt class="docutils literal"><span class="pre">^p</span></tt> in later versions or be dropped entirely since it is rarely used. Use the new notation <tt class="docutils literal"><span class="pre">p[]</span></tt> in the rare cases where you need to dereference a pointer explicitly.</li>
+<li><tt class="docutils literal"><span class="pre">system.readFile</span></tt> does not return <tt class="docutils literal"><span class="pre">nil</span></tt> anymore but raises an <tt class="docutils literal"><span class="pre">EIO</span></tt> exception instead.</li>
+<li>Unsound co-/contravariance for procvars has been removed.</li>
+</ul>
+
+<h2 id="language-additions">Language Additions</h2><ul class="simple"><li>Source code filters are now documented.</li>
+<li>Added the <tt class="docutils literal"><span class="pre">linearScanEnd</span></tt>, <tt class="docutils literal"><span class="pre">unroll</span></tt>, <tt class="docutils literal"><span class="pre">shallow</span></tt> pragmas.</li>
+<li>Added <tt class="docutils literal"><span class="pre">emit</span></tt> pragma for direct code generator control.</li>
+<li>Case statement branches support constant sets for programming convenience.</li>
+<li>Tuple unpacking is not enforced in <tt class="docutils literal"><span class="pre">for</span></tt> loops anymore.</li>
+<li>The compiler now supports array, sequence and string slicing.</li>
+<li>A field in an <tt class="docutils literal"><span class="pre">enum</span></tt> may be given an explicit string representation. This yields more maintainable code than using a constant <tt class="docutils literal"><span class="pre">array[TMyEnum, string]</span></tt> mapping.</li>
+<li>Indices in array literals may be explicitly given, enhancing readability: <tt class="docutils literal"><span class="pre">[enumValueA: &quot;a&quot;, enumValueB: &quot;b&quot;]</span></tt>.</li>
+<li>Added thread support via the <tt class="docutils literal"><span class="pre">threads</span></tt> core module and the <tt class="docutils literal"><span class="pre">--threads:on</span></tt> command line switch.</li>
+<li>The built-in iterators <tt class="docutils literal"><span class="pre">system.fields</span></tt> and <tt class="docutils literal"><span class="pre">system.fieldPairs</span></tt> can be used to iterate over any field of a tuple. With this mechanism operations like <tt class="docutils literal"><span class="pre">==</span></tt> and <tt class="docutils literal"><span class="pre">hash</span></tt> are lifted to tuples.</li>
+<li>The slice <tt class="docutils literal"><span class="pre">..</span></tt> is now a first-class operator, allowing code like: <tt class="docutils literal"><span class="pre">x in 1000..100_000</span></tt>.</li>
+</ul>
+
+<h2 id="compiler-additions">Compiler Additions</h2><ul class="simple"><li>The compiler supports IDEs via the new group of <tt class="docutils literal"><span class="pre">idetools</span></tt> command line options.</li>
+<li>The <em>interactive mode</em> (REPL) has been improved and documented for the first time.</li>
+<li>The compiler now might use hashing for string case statements depending on the number of string literals in the case statement.</li>
+</ul>
+
+<h2 id="library-additions">Library Additions</h2><ul class="simple"><li>Added <tt class="docutils literal"><span class="pre">lists</span></tt> module which contains generic linked lists.</li>
+<li>Added <tt class="docutils literal"><span class="pre">sets</span></tt> module which contains generic hash sets.</li>
+<li>Added <tt class="docutils literal"><span class="pre">tables</span></tt> module which contains generic hash tables.</li>
+<li>Added <tt class="docutils literal"><span class="pre">queues</span></tt> module which contains generic sequence based queues.</li>
+<li>Added <tt class="docutils literal"><span class="pre">intsets</span></tt> module which contains a specialized int set data type.</li>
+<li>Added <tt class="docutils literal"><span class="pre">scgi</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">smtp</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">encodings</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">re.findAll</span></tt>, <tt class="docutils literal"><span class="pre">pegs.findAll</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">os.findExe</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">parseutils.parseUntil</span></tt> and <tt class="docutils literal"><span class="pre">parseutils.parseWhile</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.align</span></tt>, <tt class="docutils literal"><span class="pre">strutils.tokenize</span></tt>, <tt class="docutils literal"><span class="pre">strutils.wordWrap</span></tt>.</li>
+<li>Pegs support a <em>captured search loop operator</em> <tt class="docutils literal"><span class="pre">{@}</span></tt>.</li>
+<li>Pegs support new built-ins: <tt class="docutils literal"><span class="pre">\letter</span></tt>, <tt class="docutils literal"><span class="pre">\upper</span></tt>, <tt class="docutils literal"><span class="pre">\lower</span></tt>, <tt class="docutils literal"><span class="pre">\title</span></tt>, <tt class="docutils literal"><span class="pre">\white</span></tt>.</li>
+<li>Pegs support the new built-in <tt class="docutils literal"><span class="pre">\skip</span></tt> operation.</li>
+<li>Pegs support the <tt class="docutils literal"><span class="pre">$</span></tt> and <tt class="docutils literal"><span class="pre">^</span></tt> anchors.</li>
+<li>Additional operations were added to the <tt class="docutils literal"><span class="pre">complex</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.formatFloat</span></tt>,  <tt class="docutils literal"><span class="pre">strutils.formatBiggestFloat</span></tt>.</li>
+<li>Added unary <tt class="docutils literal"><span class="pre">&lt;</span></tt> for nice looking excluding upper bounds in ranges.</li>
+<li>Added <tt class="docutils literal"><span class="pre">math.floor</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.reset</span></tt> and a version of <tt class="docutils literal"><span class="pre">system.open</span></tt> that returns a <tt class="docutils literal"><span class="pre">TFile</span></tt> and raises an exception in case of an error.</li>
+<li>Added a wrapper for <tt class="docutils literal"><span class="pre">redis</span></tt>.</li>
+<li>Added a wrapper for <tt class="docutils literal"><span class="pre">0mq</span></tt> via the <tt class="docutils literal"><span class="pre">zmq</span></tt> module.</li>
+<li>Added a wrapper for <tt class="docutils literal"><span class="pre">sphinx</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.newStringOfCap</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.raiseHook</span></tt> and <tt class="docutils literal"><span class="pre">system.outOfMemHook</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.writeFile</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.shallowCopy</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">system.echo</span></tt> is guaranteed to be thread-safe.</li>
+<li>Added <tt class="docutils literal"><span class="pre">prelude</span></tt> include file for scripting convenience.</li>
+<li>Added <tt class="docutils literal"><span class="pre">typeinfo</span></tt> core module for access to runtime type information.</li>
+<li>Added <tt class="docutils literal"><span class="pre">marshal</span></tt> module for JSON serialization.</li>
+</ul>
+
+<h1 id="Z2010-10-20-version-0-8-10-released">2010-10-20 Version 0.8.10 released</h1>
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>Bugfix: Command line parsing on Windows and <tt class="docutils literal"><span class="pre">os.parseCmdLine</span></tt> now adheres to the same parsing rules as Microsoft's C/C++ startup code.</li>
+<li>Bugfix: Passing a <tt class="docutils literal"><span class="pre">ref</span></tt> pointer to the untyped <tt class="docutils literal"><span class="pre">pointer</span></tt> type is invalid.</li>
+<li>Bugfix: Updated <tt class="docutils literal"><span class="pre">keyval</span></tt> example.</li>
+<li>Bugfix: <tt class="docutils literal"><span class="pre">system.splitChunk</span></tt> still contained code for debug output.</li>
+<li>Bugfix: <tt class="docutils literal"><span class="pre">dialogs.ChooseFileToSave</span></tt> uses <tt class="docutils literal"><span class="pre">STOCK_SAVE</span></tt> instead of <tt class="docutils literal"><span class="pre">STOCK_OPEN</span></tt> for the GTK backend.</li>
+<li>Bugfix: Various bugs concerning exception handling fixed.</li>
+<li>Bugfix: <tt class="docutils literal"><span class="pre">low(somestring)</span></tt> crashed the compiler.</li>
+<li>Bugfix: <tt class="docutils literal"><span class="pre">strutils.endsWith</span></tt> lacked range checking.</li>
+<li>Bugfix: Better detection for AMD64 on Mac OS X.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>Reversed parameter order for <tt class="docutils literal"><span class="pre">os.copyFile</span></tt> and <tt class="docutils literal"><span class="pre">os.moveFile</span></tt>!!!</li>
+<li>Procs not marked as <tt class="docutils literal"><span class="pre">procvar</span></tt> cannot only be passed to a procvar anymore, unless they are used in the same module.</li>
+<li>Deprecated <tt class="docutils literal"><span class="pre">times.getStartMilsecs</span></tt>: Use <tt class="docutils literal"><span class="pre">epochTime</span></tt> or <tt class="docutils literal"><span class="pre">cpuTime</span></tt> instead.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">system.OpenFile</span></tt>.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">system.CloseFile</span></tt>.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">strutils.replaceStr</span></tt>.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">strutils.deleteStr</span></tt>.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">strutils.splitLinesSeq</span></tt>.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">strutils.splitSeq</span></tt>.</li>
+<li>Removed <tt class="docutils literal"><span class="pre">strutils.toString</span></tt>.</li>
+<li>If a DLL cannot be loaded (via the <tt class="docutils literal"><span class="pre">dynlib</span></tt> pragma) <tt class="docutils literal"><span class="pre">EInvalidLibrary</span></tt> is not raised anymore. Instead <tt class="docutils literal"><span class="pre">system.quit()</span></tt> is called. This is because raising an exception requires heap allocations. However the memory manager might be contained in the DLL that failed to load.</li>
+<li>The <tt class="docutils literal"><span class="pre">re</span></tt> module (and the <tt class="docutils literal"><span class="pre">pcre</span></tt> wrapper) now depend on the pcre dll.</li>
+</ul>
+
+<h2 id="additions">Additions</h2><ul class="simple"><li>The <tt class="docutils literal"><span class="pre">{.compile: &quot;file.c&quot;.}</span></tt> pragma uses a CRC check to see if the file needs to be recompiled.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.reopen</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.getCurrentException</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.appType</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.compileOption</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">times.epochTime</span></tt> and <tt class="docutils literal"><span class="pre">times.cpuTime</span></tt>.</li>
+<li>Implemented explicit type arguments for generics.</li>
+<li>Implemented <tt class="docutils literal"><span class="pre">{.size: sizeof(cint).}</span></tt> pragma for enum types. This is useful for interfacing with C.</li>
+<li>Implemented <tt class="docutils literal"><span class="pre">{.pragma.}</span></tt> pragma for user defined pragmas.</li>
+<li>Implemented <tt class="docutils literal"><span class="pre">{.extern.}</span></tt> pragma for better control of name mangling.</li>
+<li>The <tt class="docutils literal"><span class="pre">importc</span></tt> and <tt class="docutils literal"><span class="pre">exportc</span></tt> pragmas support format strings: <tt class="docutils literal"><span class="pre">proc p{.exportc: &quot;nim_$1&quot;.}</span></tt> exports <tt class="docutils literal"><span class="pre">p</span></tt> as <tt class="docutils literal"><span class="pre">nim_p</span></tt>. This is useful for user defined pragmas.</li>
+<li>The standard library can be built as a DLL. Generating DLLs has been improved.</li>
+<li>Added <tt class="docutils literal"><span class="pre">expat</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">json</span></tt> module.</li>
+<li>Added support for a <em>Tiny C</em> backend. Currently this only works on Linux. You need to bootstrap with <tt class="docutils literal"><span class="pre">-d:tinyc</span></tt> to enable Tiny C support. Nimrod can then execute code directly via <tt class="docutils literal"><span class="pre">nimrod run myfile</span></tt>.</li>
+</ul>
+
+<h1 id="Z2010-03-14-version-0-8-8-released">2010-03-14 Version 0.8.8 released</h1>
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>The Posix version of <tt class="docutils literal"><span class="pre">os.copyFile</span></tt> has better error handling.</li>
+<li>Fixed bug #502670 (underscores in identifiers).</li>
+<li>Fixed a bug in the <tt class="docutils literal"><span class="pre">parsexml</span></tt> module concerning the parsing of <tt class="docutils literal"><span class="pre">&lt;tag attr=&quot;value&quot; /&gt;</span></tt>.</li>
+<li>Fixed a bug in the <tt class="docutils literal"><span class="pre">parsexml</span></tt> module concerning the parsing of enities like <tt class="docutils literal"><span class="pre">&amp;ltXX</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">system.write(f: TFile, s: string)</span></tt> now works even if <tt class="docutils literal"><span class="pre">s</span></tt> contains binary zeros.</li>
+<li>Fixed a bug in <tt class="docutils literal"><span class="pre">os.setFilePermissions</span></tt> for Windows.</li>
+<li>An overloadable symbol can now have the same name as an imported module.</li>
+<li>Fixed a serious bug in <tt class="docutils literal"><span class="pre">strutils.cmpIgnoreCase</span></tt>.</li>
+<li>Fixed <tt class="docutils literal"><span class="pre">unicode.toUTF8</span></tt>.</li>
+<li>The compiler now rejects <tt class="docutils literal"><span class="pre">'\n'</span></tt> (use <tt class="docutils literal"><span class="pre">&quot;\n&quot;</span></tt> instead).</li>
+<li><tt class="docutils literal"><span class="pre">times.getStartMilsecs()</span></tt> now works on Mac OS X.</li>
+<li>Fixed a bug in <tt class="docutils literal"><span class="pre">pegs.match</span></tt> concerning start offsets.</li>
+<li>Lots of other little bugfixes.</li>
+</ul>
+
+<h2 id="additions">Additions</h2><ul class="simple"><li>Added <tt class="docutils literal"><span class="pre">system.cstringArrayToSeq</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.lines(f: TFile)</span></tt> iterator.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system.delete</span></tt>, <tt class="docutils literal"><span class="pre">system.del</span></tt> and <tt class="docutils literal"><span class="pre">system.insert</span></tt> for sequences.</li>
+<li>Added <tt class="docutils literal"><span class="pre">system./</span></tt> for int.</li>
+<li>Exported <tt class="docutils literal"><span class="pre">system.newException</span></tt> template.</li>
+<li>Added <tt class="docutils literal"><span class="pre">cgi.decodeData(data: string): tuple[key, value: string]</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">strutils.insertSep</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">math.trunc</span></tt>.</li>
+<li>Added <tt class="docutils literal"><span class="pre">ropes</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">sockets</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">browsers</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">httpserver</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">httpclient</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">parseutils</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">unidecode</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">xmldom</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">xmldomparser</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">xmltree</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">xmlparser</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">htmlparser</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">re</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">graphics</span></tt> module.</li>
+<li>Added <tt class="docutils literal"><span class="pre">colors</span></tt> module.</li>
+<li>Many wrappers now do not contain redundant name prefixes (like <tt class="docutils literal"><span class="pre">GTK_</span></tt>, <tt class="docutils literal"><span class="pre">lua</span></tt>). The old wrappers are still available in <tt class="docutils literal"><span class="pre">lib/oldwrappers</span></tt>. You can change your configuration file to use these.</li>
+<li>Triple quoted strings allow for <tt class="docutils literal"><span class="pre">&quot;</span></tt> in more contexts.</li>
+<li><tt class="docutils literal"><span class="pre">&quot;&quot;</span></tt> within raw string literals stands for a single quotation mark.</li>
+<li>Arguments to <tt class="docutils literal"><span class="pre">openArray</span></tt> parameters can be left out.</li>
+<li>More extensive subscript operator overloading. (To be documented.)</li>
+<li>The documentation generator supports the <tt class="docutils literal"><span class="pre">.. raw:: html</span></tt> directive.</li>
+<li>The Pegs module supports back references via the notation <tt class="docutils literal"><span class="pre">$capture_index</span></tt>.</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>Overloading of the subscript operator only works if the type does not provide a built-in one.</li>
+<li>The search order for libraries which is affected by the <tt class="docutils literal"><span class="pre">path</span></tt> option has been reversed, so that the project's path is searched before the standard library's path.</li>
+<li>The compiler does not include a Pascal parser for bootstrapping purposes any more. Instead there is a <tt class="docutils literal"><span class="pre">pas2nim</span></tt> tool that contains the old functionality.</li>
+<li>The procs <tt class="docutils literal"><span class="pre">os.copyFile</span></tt> and <tt class="docutils literal"><span class="pre">os.moveFile</span></tt> have been deprecated temporarily, so that the compiler warns about their usage. Use them with named arguments only, because the parameter order will change the next version!</li>
+<li><tt class="docutils literal"><span class="pre">atomic</span></tt> and <tt class="docutils literal"><span class="pre">let</span></tt> are now keywords.</li>
+<li>The <tt class="docutils literal"><span class="pre">\w</span></tt> character class for pegs now includes the digits <tt class="docutils literal"><span class="pre">'0'..'9'</span></tt>.</li>
+<li>Many wrappers now do not contain redundant name prefixes (like <tt class="docutils literal"><span class="pre">GTK_</span></tt>, <tt class="docutils literal"><span class="pre">lua</span></tt>) anymore.</li>
+<li>Arguments to <tt class="docutils literal"><span class="pre">openArray</span></tt> parameters can be left out.</li>
+</ul>
+
+<h1 id="Z2009-12-21-version-0-8-6-released">2009-12-21 Version 0.8.6 released</h1><p>The version jump from 0.8.2 to 0.8.6 acknowledges the fact that all development of the compiler is now done in Nimrod.</p>
+
+<h2 id="bugfixes">Bugfixes</h2><ul class="simple"><li>The pragmas <tt class="docutils literal"><span class="pre">hint[X]:off</span></tt> and <tt class="docutils literal"><span class="pre">warning[X]:off</span></tt> now work.</li>
+<li>Method call syntax for iterators works again (<tt class="docutils literal"><span class="pre">for x in lines.split()</span></tt>).</li>
+<li>Fixed a typo in <tt class="docutils literal"><span class="pre">removeDir</span></tt> for POSIX that lead to an infinite recursion.</li>
+<li>The compiler now checks that module filenames are valid identifiers.</li>
+<li>Empty patterns for the <tt class="docutils literal"><span class="pre">dynlib</span></tt> pragma are now possible.</li>
+<li><tt class="docutils literal"><span class="pre">os.parseCmdLine</span></tt> returned wrong results for trailing whitespace.</li>
+<li>Inconsequent tuple usage (using the same tuple with and without named fields) does not crash the code generator anymore.</li>
+<li>A better error message is provided when the loading of a proc within a dynamic lib fails.</li>
+</ul>
+
+<h2 id="additions">Additions</h2><ul class="simple"><li>Added <tt class="docutils literal"><span class="pre">system.contains</span></tt> for open arrays.</li>
+<li>The PEG module now supports the <em>search loop operator</em> <tt class="docutils literal"><span class="pre">@</span></tt>.</li>
+<li>Grammar/parser: <tt class="docutils literal"><span class="pre">SAD|IND</span></tt> is allowed before any kind of closing bracket. This allows for more flexible source code formating.</li>
+<li>The compiler now uses a <em>bind</em> table for symbol lookup within a <tt class="docutils literal"><span class="pre">bind</span></tt> context. (See <a class="reference external" href="manual.html#templates">manual.html#templates</a> for details.)</li>
+<li><tt class="docutils literal"><span class="pre">discard &quot;&quot;&quot;my long comment&quot;&quot;&quot;</span></tt> is now optimized away.</li>
+<li>New <tt class="docutils literal"><span class="pre">--floatChecks: on|off</span></tt> switches and pragmas for better debugging of floating point operations. (See <a class="reference external" href="manual.html#pre-defined-floating-point-types">manual.html#pre-defined-floating-point-types</a> for details.)</li>
+<li>The manual has been improved. (Many thanks to Philippe Lhoste!)</li>
+</ul>
+
+<h2 id="changes-affecting-backwards-compatibility">Changes affecting backwards compatibility</h2><ul class="simple"><li>The compiler does not skip the linking step anymore even if no file has changed.</li>
+<li><tt class="docutils literal"><span class="pre">os.splitFile(&quot;.xyz&quot;)</span></tt> now returns <tt class="docutils literal"><span class="pre">(&quot;&quot;, &quot;.xyz&quot;, &quot;&quot;)</span></tt> instead of <tt class="docutils literal"><span class="pre">(&quot;&quot;, &quot;&quot;, &quot;.xyz&quot;)</span></tt>. So filenames starting with a dot are handled differently.</li>
+<li><tt class="docutils literal"><span class="pre">strutils.split(s: string, seps: set[char])</span></tt> never yields the empty string anymore. This behaviour is probably more appropriate for whitespace splitting.</li>
+<li>The compiler now stops after the <tt class="docutils literal"><span class="pre">--version</span></tt> command line switch.</li>
+<li>Removed support for enum inheritance in the parser; enum inheritance has never been documented anyway.</li>
+<li>The <tt class="docutils literal"><span class="pre">msg</span></tt> field of <tt class="docutils literal"><span class="pre">system.E_base</span></tt> has now the type <tt class="docutils literal"><span class="pre">string</span></tt>, instead of <tt class="docutils literal"><span class="pre">cstring</span></tt>. This improves memory safety.</li>
+</ul>
+
+<h1 id="Z2009-10-21-version-0-8-2-released">2009-10-21 Version 0.8.2 released</h1>
+<h1 id="Z2009-09-12-version-0-8-0-released">2009-09-12 Version 0.8.0 released</h1>
+<h1 id="Z2009-06-08-version-0-7-10-released">2009-06-08 Version 0.7.10 released</h1>
+<h1 id="Z2009-05-08-version-0-7-8-released">2009-05-08 Version 0.7.8 released</h1>
+<h1 id="Z2009-04-22-version-0-7-6-released">2009-04-22 Version 0.7.6 released</h1>
+<h1 id="Z2008-11-16-version-0-7-0-released">2008-11-16 Version 0.7.0 released</h1>
+<h1 id="Z2008-08-22-version-0-6-0-released">2008-08-22 Version 0.6.0 released</h1><p>Nimrod version 0.6.0 has been released! <strong>This is the first version of the compiler that is able to compile itself!</strong> </p>
+
+
+
+      </div>
+    </div>
+    <!-- site_foot -->
+    <div id="site_foot">
+       <div id="legal">Copyright &copy; 2014 - Andreas Rumpf &amp; Contributors - All rights reserved - <a href="http://reign-studios.com/philipwitte/">Design by Philip Witte</a></div>
+    </div>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48159761-1', 'nimrod-lang.org');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,1442 @@
+status: 200
+content-length: 94046
+content-location: http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/
+x-nananana: Batcache
+vary: Cookie
+server: nginx
+last-modified: Tue, 22 Apr 2014 17:45:55 GMT
+connection: keep-alive
+-content-encoding: gzip
+link: <http://wp.me/peToi-M4>; rel=shortlink
+cache-control: max-age=63, must-revalidate
+date: Tue, 22 Apr 2014 17:49:52 GMT
+x-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
+content-type: text/html; charset=UTF-8
+x-pingback: http://bartoszmilewski.com/xmlrpc.php
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--
+	generated 237 seconds ago
+	generated in 0.898 seconds
+	served from batcache in 0.002 seconds
+	expires in 63 seconds
+-->
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Getting Lazy with C++ |   Bartosz Milewski&#039;s Programming Cafe</title>
+	<link rel="pingback" href="http://bartoszmilewski.com/xmlrpc.php" />
+
+	<!--[if IE 7]>
+	<style type="text/css">
+		#topnav li {
+			display: inline;
+		}
+	</style>
+	<![endif]-->
+
+			<script src='//r-login.wordpress.com/remote-login.php?action=js&amp;host=bartoszmilewski.com&amp;id=3549518&amp;t=1398188754&amp;back=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="  Bartosz Milewski&#039;s Programming Cafe &raquo; Feed" href="http://bartoszmilewski.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="  Bartosz Milewski&#039;s Programming Cafe &raquo; Comments Feed" href="http://bartoszmilewski.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="  Bartosz Milewski&#039;s Programming Cafe &raquo; Getting Lazy with&nbsp;C++ Comments Feed" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/_static/??-eJx9UdFOwzAM/CGCxdgYPCC+JU281J3jRImrqX+/dIC0jZGn3EV39tmGUzYuiaIoxNlkngNJhRqJccklTej0lj27Wp/gsY3piBUm1Gzd0VxYT16QraI3OVW9Yz0byYGEdAEdMbZ+eR6gyaSFoyRdq0sF23/MVldFRE8WuVWR7lwxv/26Vji26f62eZwGqi6M/S0MnEKDAZrqivZM65LMgS0VqKMtq/nn7bkCChZy6Qb+N8i4hcBpsNyreCIfsB1vTf6NTSjkjRXf7l+7W732hpR8Qesvab7i58vrx36z2b7vdtMZ/XH+uQ==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-0' href='http://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1387483371g' type='text/css' media='print' />
+<script type='text/javascript' src='http://s2.wp.com/_static/??-eJyFj0kOwjAMRS+Em6IuoAvEWdrGRA6ZiBMqOD0pFIlJdOXp2f9bjAEG7xK6JDQL63syCJkxdqr0gNzBV5pXonDkBpMl8gTqU8Z4mcMiAJZU7BJWltwTflENnpNF5iL5Y/ouRe5MOC5iGlPohiNEZLp+XbUZgsmKHIuIphiTMHn4qP5sjSQVpvujjxT6bAPM1vZ2t27aTb1t66bVN2wxhN8='></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://bartoszmilewski.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://bartoszmilewski.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='C++17: I See a Monad in Your&nbsp;Future!' href='http://bartoszmilewski.com/2014/02/26/c17-i-see-a-monad-in-your-future/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/' />
+<link rel='shortlink' href='http://wp.me/peToi-M4' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Getting Lazy with C++" />
+<meta property="og:url" content="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/" />
+<meta property="og:description" content="Lazy evaluation can be a powerful tool for structuring your code. For instance, it can let you turn your code inside out, inverting the flow of control. Many a Haskell program take advantage of laz..." />
+<meta property="article:published_time" content="2014-04-21T18:32:30+00:00" />
+<meta property="article:modified_time" content="2014-04-21T21:18:39+00:00" />
+<meta property="article:author" content="http://bartoszmilewski.com/author/bartoszmilewski/" />
+<meta property="og:site_name" content="  Bartosz Milewski&#039;s Programming Cafe" />
+<meta property="og:image" content="http://wordpress.com/i/blank.jpg?m=1383295312g" />
+<meta name="twitter:site" content="@BartoszMilewski" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@BartoszMilewski" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="http://s0.wp.com/i/webclip.png?m=1391188133g" />
+<link rel='openid.server' href='http://bartoszmilewski.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://bartoszmilewski.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://bartoszmilewski.com/osd.xml" title="  Bartosz Milewski&#039;s Programming Cafe" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="  Bartosz Milewski&#039;s Programming Cafe" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Concurrency, C++, Haskell" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://bartoszmilewski.com/feed/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Getting Lazy with&nbsp;C++ |   Bartosz Milewski&#039;s Programming Cafe on WordPress.com" />
+<meta name="description" content="Lazy evaluation can be a powerful tool for structuring your code. For instance, it can let you turn your code inside out, inverting the flow of control. Many a Haskell program take advantage of laziness to express algorithms in clear succinct terms, turning them from recipes to declarations. The question for today&#039;s blog post is:&hellip;" />
+<style type="text/css">
+#headimg {
+	background:#7d8b5a url(http://bartoszmilewski.files.wordpress.com/2008/08/cropped-bartosz-at-work.jpg) center repeat-y;
+}
+#headimg h1 a, #headimg h1 a:hover, #headimg #desc {
+	color: #FFFFFF;
+}
+</style>
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script><script type='text/javascript'>
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post_adsafe"); }
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 3549518, pt: 'permalink', wa: 0, as: 1, domain: 'bartoszmilewski.com', url: 'http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/', gid: '', };
+</script>
+
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=3549518&post=2980&lang=en&date=1398105150&ip=198.211.115.10&url=http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/';i.id='botd2';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://bartoszmilewski.com/?custom-css=1&#038;csblog=eToi&#038;cscache=6&#038;csrev=56" />
+		<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'none']);
+	_gaq.push(['_setAllowLinker', true]);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="single single-post postid-2980 single-format-standard mp6 typekit-enabled highlander-enabled highlander-light">
+<div id="rap">
+
+<div id="header">
+		<ul id="topnav">
+		<li><a href="http://bartoszmilewski.com" id="navHome" title="Posted Recently" accesskey="h">Home</a></li>
+		<li class="page_item page-item-2"><a href="http://bartoszmilewski.com/about/">About</a></li>
+	</ul>
+
+	<div id="headimg">
+	<h1><a href="http://bartoszmilewski.com" title="  Bartosz Milewski&#039;s Programming Cafe">  Bartosz Milewski&#039;s Programming Cafe</a></h1>
+	<div id="desc">Concurrency, C++, Haskell</div>
+	</div>
+</div>
+	<div id="main">
+	<div id="content">
+						<div class="post-2980 post type-post status-publish format-standard hentry category-atomics category-c category-concurrency category-functional-programming category-metaprogramming category-monads category-multithreading category-parallelism category-programming">
+				<p class="post-date">April 21, 2014</p>
+<div class="post-info">
+	<h2 class="post-title">
+			Getting Lazy with&nbsp;C++		</h2>
+
+	Posted by Bartosz Milewski under <a href="http://bartoszmilewski.com/category/atomics/" title="View all posts in Atomics" rel="category tag">Atomics</a>, <a href="http://bartoszmilewski.com/category/c/" title="View all posts in C++" rel="category tag">C++</a>, <a href="http://bartoszmilewski.com/category/concurrency/" title="View all posts in Concurrency" rel="category tag">Concurrency</a>, <a href="http://bartoszmilewski.com/category/functional-programming/" title="View all posts in Functional Programming" rel="category tag">Functional Programming</a>, <a href="http://bartoszmilewski.com/category/metaprogramming/" title="View all posts in Metaprogramming" rel="category tag">Metaprogramming</a>, <a href="http://bartoszmilewski.com/category/monads/" title="View all posts in Monads" rel="category tag">Monads</a>, <a href="http://bartoszmilewski.com/category/multithreading/" title="View all posts in Multithreading" rel="category tag">Multithreading</a>, <a href="http://bartoszmilewski.com/category/parallelism/" title="View all posts in Parallelism" rel="category tag">Parallelism</a>, <a href="http://bartoszmilewski.com/category/programming/" title="View all posts in Programming" rel="category tag">Programming</a> 	<br/>
+	<a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comments" title="Comment on Getting Lazy with&nbsp;C++">[9] Comments</a>&nbsp;</div>
+
+	<div class="post-content">
+		<div class="pd-rating" id="pd_rating_holder_2203687_post_2980"></div><br/><p>Lazy evaluation can be a powerful tool for structuring your code. For instance, it can let you turn your code inside out, inverting the flow of control. Many a Haskell program take advantage of laziness to express algorithms in clear succinct terms, turning them from recipes to declarations. </p>
+<p>The question for today&#8217;s blog post is: How can we tap the power of lazy evaluation in an inherently eager language like C++? I&#8217;ll lead you through a simple coding example and gradually introduce the building blocks of lazy programming: the suspension, the lazy stream, and a whole slew of functional algorithms that let you operate on them. In the process we&#8217;ll discover some fundamental functional patterns like functors, monads, and monoids. I have discussed them already in my post about <a href="http://bartoszmilewski.com/2014/02/26/c17-i-see-a-monad-in-your-future/" target="_blank">C++ futures</a>. It&#8217;s very edifying to see them emerge in a completely different context. </p>
+<h1>The Problem</h1>
+<p>Let&#8217;s write a program that prints the first n Pythagorean triples. A Pythagorean triple consists of three integers, x, y, and z, that satisfy the relation x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>. Let&#8217;s not be fancy and just go with the brute force approach. Here&#8217;s the program in C:</p>
+<pre>void printNTriples(int n)
+{
+    int i = 0;
+    for (int z = 1; ; ++z)
+        for (int x = 1; x &lt;= z; ++x)
+            for (int y = x; y &lt;= z; ++y)
+                if (x*x + y*y == z*z) {
+                    printf(&quot;%d, %d, %d\n&quot;, x, y, z);
+                    if (++i == n)
+                        return;
+                }
+}</pre>
+<p>Here, a single C function serves three distinct purposes: It</p>
+<ol>
+<li>Generates Pythagorean triples,</li>
+<li>Prints them,</li>
+<li>Counts them; and when the count reaches n, breaks.</li>
+</ol>
+<p>This is fine, as long as you don&#8217;t have to modify or reuse this code. But what if, for instance, instead of printing, you wanted to draw the triples as triangles? Or if you wanted to stop as soon as one of the numbers reached 100? The problem with this code is that it&#8217;s structured inside out: both the test and the sink for data are embedded in the innermost loop of the algorithm. A more natural and flexible approach would be to: </p>
+<ol>
+<li>Generate the list of Pythagorean triples,</li>
+<li>Take the first ten of them, and</li>
+<li>Print them.</li>
+</ol>
+<p>And that&#8217;s exactly how you&#8217;d write this program in Haskell:</p>
+<pre>main = print (take 10 triples)
+
+triples = [(x, y, z) | z &lt;- [1..]
+                     , x &lt;- [1..z]
+                     , y &lt;- [x..z]
+                     , x^2 + y^2 == z^2]</pre>
+<p>This program reads: take 10 triples and print them. It declares <code>triples</code> as a list (square brackets mean a list) of triples <code>(x, y, z)</code>, where (the vertical bar reads &#8220;where&#8221;) <code>z</code> is an element of the list of integers from 1 to infinity, <code>x</code> is from 1 to <code>z</code>, <code>y</code> is from <code>x</code> to <code>z</code>, and the sum of squares of <code>x</code> and <code>y</code> is equal to the square of <code>z</code>. This notation is called &#8220;list comprehension&#8221; and is characteristic of Haskell terseness. </p>
+<p>You see the difference? Haskell let&#8217;s you abstract the notion of the list of Pythagorean triples so you can operate on it as one entity, whereas in C (or, for that matter, in C++) we were not able to disentangle the different, orthogonal, aspects of the program.</p>
+<p>The key advantage of Haskell in this case is its ability to deal with infinite lists. And this ability comes from Haskell&#8217;s inherent laziness. Things are never evaluated in Haskell until they are absolutely needed. In the program above, it was the call to <code>print</code> that forced Haskell to actually do some work: take 10 elements from the list of triples. Since the triples weren&#8217;t there yet, it had to calculate them, but only as many as were requested and not a number more. </p>
+<h1>Suspension</h1>
+<p>We&#8217;ll start with the most basic building block of laziness: a suspended function. Here&#8217;s the first naive attempt:</p>
+<pre>template&lt;class T&gt;
+class Susp {
+public:
+    explicit Susp(std::function&lt;T()&gt; f)
+        : _f(f)
+    {}
+    T get() { return _f(); }
+private:
+    std::function&lt;T()&gt; _f;
+};</pre>
+<p>We often create suspensions using lambda functions, as in:</p>
+<pre>int x = 2;
+int y = 3;
+Susp&lt;int&gt; sum([x, y]() { return x + y; });
+...
+int z = sum.get();</pre>
+<p>Notice that the suspended lambda may capture variables from its environment: here <code>x</code> and <code>y</code>. A lambda, and therefore a suspension, is a <code>closure</code>. </p>
+<p>The trouble with this implementation is that the function is re-executed every time we call <code>get</code>. There are several problems with that: If the function is not pure, we may get different values each time; if the function has side effects, these may happen multiple times; and if the function is expensive, the performance will suffer. All these problems may be addressed by memoizing the value. </p>
+<p>Here&#8217;s the idea: The first time the client calls <code>get</code> we should execute the function and store the returned value in a member variable. Subsequent calls should go directly to that variable. We could implement this by setting a Boolean flag on the first call and then checking it on every subsequent call, but there&#8217;s a better implementation that uses thunks. </p>
+<p>A thunk is a pointer to a free function taking a suspension (the <code>this</code> pointer) and returning a value (by const reference). The <code>get</code> method simply calls this thunk, passing it the <code>this</code> pointer. </p>
+<p>Initially, the thunk is set to <code>thunkForce</code>, which calls the method <code>setMemo</code>. This method evaluates the function, stores the result in <code>_memo</code>, switches the thunk to <code>thunkGet</code>, and returns the memoized value. On subsequent calls <code>get</code> goes through the <code>getMemo</code> thunk which simply returns the memoized value. </p>
+<pre>template&lt;class T&gt;
+class Susp
+{
+    // thunk
+    static T const &amp; thunkForce(Susp * susp) {
+        return susp-&gt;setMemo();
+    }
+    // thunk
+    static T const &amp; thunkGet(Susp * susp) {
+        return susp-&gt;getMemo();
+    }
+    T const &amp; getMemo() {
+        return _memo;
+    }
+    T const &amp; setMemo() {
+        _memo = _f();
+        _thunk = &amp;thunkGet;
+        return getMemo();
+    }
+public:
+    explicit Susp(std::function&lt;T()&gt; f)
+        : _f(f), _thunk(&amp;thunkForce), _memo(T())
+    {}
+    T const &amp; get() {
+        return _thunk(this);
+    }
+private:
+    T const &amp; (*_thunk)(Susp *);
+    mutable T   _memo;
+
+    std::function&lt;T()&gt; _f;
+};</pre>
+<p>(By the way, the function pointer declaration of <code>_thunk</code> looks pretty scary in C++, doesn&#8217;t it?)</p>
+<p>But this is not the whole story. We have to make the suspension thread-safe or else we&#8217;ll have a data race when switching thunks. If we add a mutex to our data structure, we&#8217;ll pretty much turn it into an academic curiosity. So atomics to the rescue:</p>
+<pre>mutable std::atomic&lt;T const &amp; (*)(Susp *)&gt; _thunk;</pre>
+<p>Fortunately, this is just a simple case of publication safety: the switch from one thunk to another happens only once. We can make it thread safe by using <code>memory_order_release</code> when storing the pointer:</p>
+<pre>T const &amp; setMemo()
+{
+    _memo = _f();
+    _thunk.store(&amp;thunkGet, std::memory_order_release);
+    return getMemo();
+}</pre>
+<p>and <code>memory_order_acquire</code> when reading it (which turns into a regular load on the x86):</p>
+<pre>T const &amp; get() 
+{
+    auto th = _thunk.load(std::memory_order_acquire);
+    return th(this);
+}</pre>
+<p>The <i>release</i> of the thunk also guarantees that all changes to <code>_memo</code> (which is <i>not</i> declared <code>atomic</code>) become visible to the clients who <i>acquire</i> the new thunk, because of the &#8220;happens before&#8221; relationship they enforce.</p>
+<p>Unfortunately, this lock free solution cannot guarantee that the suspended function will always be called only once. There is a window of opportunity between the first call to the suspended function and the setting of the thunk during which another thread might start executing the function in parallel. As long as the function is pure, however, this is perfectly safe. But it is the duty of the client to ensure the purity of the function they suspend! </p>
+<p>You can find a lot more detail about the Haskell implementation of suspended functions in the paper by Tim Harris, Simon Marlow, and Simon Peyton Jones, <a href="http://research.microsoft.com/pubs/67424/2005-haskell.pdf" target="_blank">Haskell on a Shared-Memory Multiprocessor</a>.</p>
+<h1>Lazy Stream</h1>
+<p>The loop we used to produce Pythagorean triples in C worked on the push principle &#8212; data was pushed towards the sink. If we want to deal with infinite lists, we have to use the pull principle. It should be up to the client to control the flow of data. That&#8217;s the inversion of control I was talking about in the introduction. </p>
+<p>We&#8217;ll use a lazy list and call it a stream. In C++ a similar idea is sometimes expressed in terms of input and forward iterators, although it is understood that an iterator itself is not the source or the owner of data &#8212; just an interface to one. So we&#8217;ll stick with the idea of a stream. </p>
+<p>We&#8217;ll implement the stream in the functional style as a persistent data structure fashioned after persistent lists (see my series of blog post on <a href="http://bartoszmilewski.com/2013/11/13/functional-data-structures-in-c-lists/" target="_blank">persistent data structures</a>). It means that a stream, once constructed, is never modified. To &#8220;advance&#8221; the stream, we&#8217;ll have to create a new one by calling the <code>const</code> method <code>pop_front</code>. </p>
+<p>Let&#8217;s start with the definition: A stream is either empty or it contains a suspended cell. This immediately suggests the implementation as a (possibly null) pointer to a cell. Since the whole stream is immutable, the cell will be immutable too, so it&#8217;s perfectly safe to share it between copies of the stream, including inter-thread sharing. We can therefore use a shared pointer:</p>
+<pre>template&lt;class T&gt;
+class Stream
+{
+private:
+    std::shared_ptr &lt;Susp&lt;Cell&lt;T&gt;&gt;&gt; _lazyCell;
+};</pre>
+<p>Of course, because of reference counting and memoization, the stream is only conceptually immutable; but we (and the implementers of <code>shared_ptr</code>) have made sure that the hidden mutation is thread safe.</p>
+<p>So what&#8217;s in the <code>Cell</code>? Remember, we want to be able to generate infinite sequences, so <code>Stream</code> must contain the DNA for not only producing the value of type <code>T</code> but also for producing the offspring &#8212; another (lazy) <code>Stream</code> of values. The <code>Cell</code> is just that: A value and a stream.</p>
+<pre>template&lt;class T&gt;
+class Cell
+{
+public:
+    Cell() {} // need default constructor for memoization
+    Cell(T v, Stream&lt;T&gt; const &amp; tail)
+        : _v(v), _tail(tail)
+    {}
+    explicit Cell(T v) : _v(v) {}
+    T val() const {
+        return _v;
+    }
+    Stream&lt;T&gt; pop_front() const {
+        return _tail;
+    }
+private:
+    T _v;
+    Stream&lt;T&gt; _tail;
+};</pre>
+<p>This mutually recursive pair of data structures works together amazingly well. </p>
+<pre>template&lt;class T&gt;
+class Stream
+{
+private:
+    std::shared_ptr &lt;Susp&lt;Cell&lt;T&gt;&gt;&gt; _lazyCell;
+public:
+    Stream() {}
+    Stream(std::function&lt;Cell&lt;T&gt;()&gt; f)
+        : _lazyCell(std::make_shared&lt;Susp&lt;Cell&lt;T&gt;&gt;&gt;(f))
+    {}
+    Stream(Stream &amp;&amp; stm)
+        : _lazyCell(std::move(stm._lazyCell))
+    {}
+    Stream &amp; operator=(Stream &amp;&amp; stm)
+    {
+        _lazyCell = std::move(stm._lazyCell);
+        return *this;
+    }
+    bool isEmpty() const
+    {
+        return !_lazyCell;
+    }
+    T get() const
+    {
+        return _lazyCell-&gt;get().val();
+    }
+    Stream&lt;T&gt; pop_front() const
+    {
+        return _lazyCell-&gt;get().pop_front();
+    }
+};</pre>
+<p>There are several things worth pointing out. The two constructors follow our formal definition of the <code>Stream</code>: one constructs an empty stream, the other constructs a suspended <code>Cell</code>. A suspension is created from a function returning <code>Cell</code>.</p>
+<p>I also added a move constructor and a move assignment operator for efficiency. We&#8217;ll see it used in the implementation of <code>forEach</code>.</p>
+<p>The magic happens when we call <code>get</code> for the first time. That&#8217;s when the suspended <code>Cell</code> comes to life. The value and the new stream are produced and memoized for later use. Or, this may happen if the first call is to <code>pop_front</code>. Notice that <code>pop_front</code> is a <code>const</code> method &#8212; the <code>Stream</code> itself is immutable. The method returns a new stream that encapsulates the rest of the sequence. </p>
+<p>Let&#8217;s get our feet wet by constructing a stream of integers from <code>n</code> to infinity. The constructor of a <code>Stream</code> takes a function that returns a <code>Cell</code>. We&#8217;ll use a lambda that captures the value of <code>n</code>. It creates a <code>Cell</code> with that value and a tail, which it obtains by calling <code>intsFrom</code> with <code>n+1</code>:</p>
+<pre>Stream&lt;int&gt; intsFrom(int n)
+{
+    return Stream&lt;int&gt;([n]()
+    {
+        return Cell&lt;int&gt;(n, intsFrom(n + 1)); 
+    });
+}</pre>
+<p>It&#8217;s a recursive definition, but without the usual recursive function calls that eat up the stack. The call to the inner <code>intsFrom</code> is not made from the outer <code>intsFrom</code>. Instead it&#8217;s made the first time <code>get</code> is called on the emerging <code>Stream</code>. </p>
+<p>Of course, we can also create finite streams, like this one, which produces integers from <code>n</code> to <code>m</code>:</p>
+<pre>Stream&lt;int&gt; ints(int n, int m)
+{
+    if (n &gt; m)
+        return Stream&lt;int&gt;();
+    return Stream&lt;int&gt;([n, m]()
+    {
+        return Cell&lt;int&gt;(n, ints(n + 1, m));
+    });
+}</pre>
+<p>The trick is to capture the limit <code>m</code> as well as the recursion variable <code>n</code>. When the limit is reached, we simply return an empty <code>Stream</code>.</p>
+<p>We&#8217;ll also need the method <code>take</code>, which creates a <code>Stream</code> containing the first <code>n</code> elements of the original stream:</p>
+<pre>Stream take(int n) const {
+    if (n == 0 || isEmpty())
+        return Stream();
+    auto cell = _lazyCell;
+    return Stream([cell, n]()
+    {
+        auto v = cell-&gt;get().val();
+        auto t = cell-&gt;get().pop_front();
+        return Cell&lt;T&gt;(v, t.take(n - 1));
+    });
+}</pre>
+<p>Here we are capturing the suspended cell and use it to lazily generate the elements of the new, truncated, <code>Stream</code>. Again, the key to understanding why this works is to keep in mind that <code>Stream</code>s and <code>Cell</code>s are conceptually immutable, and therefore can be shared by the implementation. This has some interesting side effects, which don&#8217;t influence the results, but change the performance. For instance, if the caller of <code>take</code> forces the evaluation of the first n elements &#8212; e.g., by passing them through the consuming <code>forEach</code> below &#8212; these elements will appear miraculously memoized in the original <code>Stream</code>. </p>
+<p>Finally, we&#8217;ll need some way to iterate through streams. Here&#8217;s an implementation of <code>forEach</code> that consumes the stream while enumerating it and feeding its elements to a function.</p>
+<pre>template&lt;class T, class F&gt;
+void forEach(Stream&lt;T&gt; strm, F f)
+{
+    while (!strm.isEmpty())
+    {
+        f(strm.get());
+        strm = strm.pop_front();
+    }
+}</pre>
+<p>It&#8217;s the assignment:</p>
+<pre>strm = strm.pop_front();</pre>
+<p>which consumes the stream by decreasing the reference count of the head of the <code>Stream</code>. In particular, if you pass an rvalue <code>Stream</code> to <code>forEach</code>, its elements will be generated and deleted in lockstep. The algorithm will use constant memory, independent of the virtual length of the <code>Stream</code>. What Haskell accomplishes with garbage collection, we approximate in C++ with reference counting and <code>shared_ptr</code>.</p>
+<h1>Working with Streams</h1>
+<p>It&#8217;s not immediately obvious how to translate our Pythagorean triple program from nested loops to lazy streams, so we&#8217;ll have to take inspiration from the corresponding Haskell program. Let me first rewrite it using a slightly different notation:</p>
+<pre>triples = do
+    z &lt;- [1..]
+    x &lt;- [1..z]
+    y &lt;- [x..z]
+    guard (x^2 + y^2 == z^2)
+    return (x, y, z)</pre>
+<p>The general idea is this: Start with the stream of integers from 1 to infinity. For every such integer &#8212; call it <code>z</code> &#8212; create a stream from 1 to <code>z</code>. For each of those &#8212; call them <code>x</code> &#8212; create a stream from <code>x</code> to <code>z</code>. Filter out those which don&#8217;t satisfy the Pythagorean constraint. Finally, output a stream of tuples <code>(x, y, z)</code>.</p>
+<p>So far we&#8217;ve learned how to create a stream of integers &#8212; we have the function <code>intsFrom</code>. But now we&#8217;ll have to do something for each of these integers. We can&#8217;t just enumerate those integers and apply a function to each, because that would take us eternity. So we need a way to act on each element of a stream lazily. </p>
+<p>In functional programming this is called mapping a function over a list. In general, a parameterized data structure that can be mapped over is called a functor. I&#8217;m going to show you that our <code>Stream</code> is a functor.</p>
+<h1>Stream as a Functor</h1>
+<p>The idea is simple: we want to apply a function to each element of a stream to get a new transformed stream (it&#8217;s very similar to the <code>std::transform</code> algorithm from STL). The catch is: We want to do it generically and lazily. </p>
+<p>To make the algorithm &#8212; we&#8217;ll call it <code>fmap</code> &#8212; generic, we have to parameterize it over types. The algorithm starts with a <code>Stream</code> of elements of type <code>T</code> and a function from <code>T</code> to some other type <code>U</code>. The result should be a stream of <code>U</code>. </p>
+<p>We don&#8217;t want to make <code>U</code> the template argument, because then the client would have to specify it explicitly. We want the compiler to deduce this type from the type of the function. We want, therefore, the function type <code>F</code> to be the parameter of our template (this will also allow us to call it uniformly with function pointers, function objects, and lambdas):</p>
+<pre>template&lt;class T, class F&gt;
+auto fmap(Stream&lt;T&gt; stm, F f)</pre>
+<p>Without the use of concepts, we have no way of enforcing, or even specifying, that <code>F</code> be a type of a function from <code>T</code> to <code>U</code>. The best we can do is to statically assert it inside the function:</p>
+<pre>static_assert(std::is_convertible&lt;F, std::function&lt;U(T)&gt;&gt;::value,
+        "fmap requires a function type U(T)");</pre>
+<p>But what is <code>U</code>? We can get at it using <code>decltype</code>:</p>
+<pre>decltype(f(stm.get()));</pre>
+<p>Notice that <code>decltype</code> takes, as an argument, an expression that can be statically typed. Here, the expression is a function call of <code>f</code>. We also need a dummy argument for this function: we use the result of <code>stm.get()</code>. The argument to <code>decltype</code> is never evaluated, but it is type-checked at compile time.</p>
+<p>One final problem is how to specify the return type of <code>fmap</code>. It&#8217;s supposed to be <code>Stream&lt;U&gt;</code>, but we don&#8217;t know <code>U</code> until we apply <code>decltype</code> to the arguments of <code>fmap</code>. We have to use the new <code>auto</code> function declaration syntax of C++11. So here are all the type-related preliminaries:</p>
+<pre>template&lt;class T, class F&gt;
+auto fmap(Stream&lt;T&gt; stm, F f)-&gt;Stream&lt;decltype(f(stm.get()))&gt;
+{
+    using U = decltype(f(stm.get()));
+    static_assert(std::is_convertible&lt;F, std::function&lt;U(T)&gt;&gt;::value,
+        "fmap requires a function type U(T)");
+    ...
+}</pre>
+<p>Compared to that, the actual implementation of <code>fmap</code> seems rather straightforward:</p>
+<pre>    if (stm.isEmpty()) return Stream&lt;U&gt;();
+    return Stream&lt;U&gt;([stm, f]()
+    {
+        return Cell&lt;U&gt;(f(stm.get()), fmap(stm.pop_front(), f));
+    });
+</pre>
+<p>In words: If the stream is empty, we&#8217;re done &#8212; return an empty stream. Otherwise, create a new stream by suspending a lambda function. That function captures the original stream (by value) and the function <code>f</code>, and returns a <code>Cell</code>. That cell contains the value of <code>f</code> acting on the first element of the original stream, and a tail. The tail is created with <code>fmap</code> acting on the rest of the original stream.</p>
+<p>Equipped with <code>fmap</code>, we can now attempt to take the first step towards generating our triples: apply the function <code>ints(1, z)</code> to each element of the stream <code>intsFrom(1)</code>:</p>
+<pre>fmap(intsFrom(1), [](int z)
+{
+    return ints(1, z);
+});</pre>
+<p>The result is a <code>Stream</code> of <code>Stream</code>s of integers of the shape:</p>
+<pre>1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+...</pre>
+<p>But now we are stuck. We&#8217;d like to apply <code>ints(x, z)</code> to each element of that sequence, but we don&#8217;t know how to get through two levels of <code>Stream</code>. Our <code>fmap</code> can only get through one layer. We need a way to flatten a <code>Stream</code> of <code>Stream</code>s. That functionality is part of what functional programmers call a monad. So let me show you that <code>Stream</code> is indeed a monad.</p>
+<h1>Stream as a Monad</h1>
+<p>If you think of a <code>Stream</code> as a list, the flattening of a list of lists is just concatenation. Suppose for a moment that we know how to lazily concatenate two <code>Stream</code>s (we&#8217;ll get to it later) and let&#8217;s implement a function <code>mjoin</code> that concatenates a whole <code>Stream</code> of <code>Stream</code>s. </p>
+<p>You might have noticed a pattern in the implementation of lazy functions on streams. We use some kind of recursion, which starts with &#8220;Are we done yet?&#8221; If not, we do an operation that involves one element of the stream and the result of a recursive call to the function itself. </p>
+<p>The &#8220;Are we done yet?&#8221; question usually involves testing for an empty stream. But here we are dealing with a <code>Stream</code> of <code>Stream</code>s, so we have to test two levels deep. This way we&#8217;ll ensure that the concatenation of a <code>Stream</code> of empty <code>Stream</code>s immediately returns an empty <code>Stream</code>.</p>
+<p>The recursive step in <code>mjoin</code> creates a <code>Cell</code> whose element is the head of the first stream, and whose tail is the concatenation of the tail of the first stream and the result of <code>mjoin</code> of the rest of the streams:</p>
+<pre>template&lt;class T&gt;
+Stream&lt;T&gt; mjoin(Stream&lt;Stream&lt;T&gt;&gt; stm)
+{
+    while (!stm.isEmpty() &amp;&amp; stm.get().isEmpty())
+    {
+        stm = stm.pop_front();
+    }
+    if (stm.isEmpty()) return Stream&lt;T&gt;();
+    return Stream&lt;T&gt;([stm]()
+    {
+        Stream&lt;T&gt; hd = stm.get();
+        return Cell&lt;T&gt;( hd.get()
+                      , concat(hd.pop_front(), mjoin(stm.pop_front())));
+    });
+}</pre>
+<p>The combination of <code>fmap</code> and <code>mjoin</code> lets us compose function like <code>intsFrom</code> or <code>ints</code> that return <code>Stream</code>s. In fact, this combination is so common that it deserves its own function, which we&#8217;ll call <code>mbind</code>:</p>
+<pre>template&lt;class T, class F&gt;
+auto mbind(Stream&lt;T&gt; stm, F f) -&gt; decltype(f(stm.get()))
+{
+    return mjoin(fmap(stm, f));
+}</pre>
+<p>If we use <code>mbind</code> in place of <code>fmap</code>:</p>
+<pre>mbind(intsFrom(1), [](int z)
+{
+    return ints(1, z);
+});</pre>
+<p>we can produce a flattened list:</p>
+<pre>1 1 2 1 2 3 1 2 3 4...</pre>
+<p>But it&#8217;s not just the list: Each element of the list comes with variables that are defined in its environment &#8212; here the variable <code>z</code>. We can keep chaining calls to <code>mbind</code> and capture more variables in the process:</p>
+<pre>mbind(intsFrom(1), [](int z)
+{
+    return mbind(ints(1, z), [z](int x)
+    {
+        return mbind(ints(x, z), [x, z](int y)
+        {
+            ...
+        }
+    }
+}</pre>
+<p>At this point we have captured the triples <code>x</code>, <code>y</code>, <code>z</code>, and are ready for the Pythagorean testing. But before we do it, let&#8217;s define two additional functions that we&#8217;ll use later. </p>
+<p>The first one is <code>mthen</code> which is a version of <code>mbind</code> that takes a function of no arguments. The idea is that such a function will be executed for each element of the stream, but it won&#8217;t use the value of that element. The important thing is that the function will <i>not</i> be executed when the input stream is empty. In that case, <code>mthen</code> will return an empty stream. </p>
+<p>We implement <code>mthen</code> using a slightly modified version of <code>fmap</code> that takes a function <code>f</code> of no arguments:</p>
+<pre>template&lt;class T, class F&gt;
+auto fmapv(Stream&lt;T&gt; stm, F f)-&gt;Stream&lt;decltype(f())&gt;
+{
+    using U = decltype(f());
+    static_assert(std::is_convertible&lt;F, std::function&lt;U()&gt;&gt;::value,
+        "fmapv requires a function type U()");
+
+    if (stm.isEmpty()) return Stream&lt;U&gt;();
+    return Stream&lt;U&gt;([stm, f]()
+    {
+        return Cell&lt;U&gt;(f(), fmapv(stm.pop_front(), f));
+    });
+}</pre>
+<p>We plug it into the definition of <code>mthen</code> the same way <code>fmap</code> was used in <code>mbind</code>:</p>
+<pre>template&lt;class T, class F&gt;
+auto mthen(Stream&lt;T&gt; stm, F f) -&gt; decltype(f())
+{
+    return mjoin(fmapv(stm, f));
+}</pre>
+<p>The second useful function is <code>mreturn</code>, which simply turns a value of any type into a one-element <code>Stream</code>:</p>
+<pre>template&lt;class T&gt;
+Stream&lt;T&gt; mreturn(T v)
+{
+    return Stream&lt;T&gt;([v]() {
+        return Cell&lt;T&gt;(v);
+    });
+}</pre>
+<p>We&#8217;ll need <code>mreturn</code> to turn our triples into <code>Stream</code>s. </p>
+<p>It so happens that a parameterized type equipped with <code>mbind</code> and <code>mreturn</code> is called a monad (it must also satisfy some additional monadic laws, which I won&#8217;t talk about here). Our lazy <code>Stream</code> is indeed a monad.</p>
+<h1>Stream as a Monoid and a Monad Plus</h1>
+<p>When implementing <code>mjoin</code> we used the function <code>concat</code> to lazily concatenate two <code>Stream</code>s. Its implementation follows the same recursive pattern we&#8217;ve seen so many times:</p>
+<pre>template&lt;class T&gt;
+Stream&lt;T&gt; concat( Stream&lt;T&gt; lft
+                , Stream&lt;T&gt; rgt)
+{
+    if (lft.isEmpty())
+        return rgt;
+    return Stream&lt;T&gt;([=]()
+    {
+        return Cell&lt;T&gt;(lft.get(), concat&lt;T&gt;(lft.pop_front(), rgt));
+    });
+}</pre>
+<p>What&#8217;s interesting is that the concatenation of streams puts them under yet another well known functional pattern: a monoid. A monoid is equipped with a binary operation, just like <code>concat</code>, which must be associative and possess a unit element. It&#8217;s easy to convince yourself that concatenation of <code>Stream</code>s is indeed associative, and that the neutral element is an empty <code>Stream</code>. Concatenating an empty <code>Stream</code>, whether in front or in the back of any other <code>Stream</code>, doesn&#8217;t change the original <code>Stream</code>. </p>
+<p>What&#8217;s even more interesting is that being a combination of a monoid and a monad makes <code>Stream</code> into a <i>monad plus</i>, and every monad plus defines a <code>guard</code> function &#8212; exactly what we need for the filtering of our triples. This function takes a Boolean argument and outputs a <code>Stream</code>. If the Boolean is false, the <code>Stream</code> is empty (the unit element of monad plus!), otherwise it&#8217;s a singleton <code>Stream</code>. We really don&#8217;t care what value sits in this <code>Stream</code> &#8212; we never use the result of <code>guard</code> for anything but the flow of control. In Haskell, there is a special &#8220;unit&#8221; value <code>()</code> &#8212; here I use a <code>nullptr</code> as its closest C++ analog.</p>
+<pre>Stream&lt;void*&gt; guard(bool b)
+{
+    if (b) return Stream&lt;void*&gt;(nullptr);
+    else return Stream&lt;void*&gt;();
+}</pre>
+<p>We can now pipe the result of <code>guard</code> into <code>mthen</code>, which will ignore the content of the <code>Stream</code> but won&#8217;t fire when the <code>Stream</code> is empty. When the <code>Stream</code> is not empty, we will call <code>mreturn</code> to output a singleton <code>Stream</code> with the result tuple:</p>
+<pre>Stream&lt;std::tuple&lt;int, int, int&gt;&gt; triples()
+{
+    return mbind(<span class="red">intsFrom(1)</span>, [](int <span class="red">z</span>)
+    {
+        return mbind(<span class="red">ints(1, z)</span>, [z](int <span class="red">x</span>)
+        {
+            return mbind(<span class="red">ints(x, z)</span>, [x, z](int <span class="red">y</span>)
+            {
+                return mthen(<span class="red">guard(x*x + y*y == z*z)</span>, [x, y, z]()
+                {
+                    return mreturn(<span class="red">std::make_tuple(x, y, z)</span>);
+                });
+            });
+        });
+    });
+}</pre>
+<p>These singletons will then be concatenated by the three levels of <code>mbind</code> to create one continuous lazy <code>Stream</code> of Pythagorean triples. </p>
+<p>Compare this function with its Haskell counterpart:</p>
+<pre>triples = do
+    z &lt;- [1..]
+    x &lt;- [1..z]
+    y &lt;- [x..z]
+    guard (x^2 + y^2 == z^2)
+    return (x, y, z)</pre>
+<p>Now, the client can <code>take</code> 10 of those triples from the <code>Stream</code> &#8212; and the triples still won&#8217;t be evaluated!. It&#8217;s the consuming <code>forEach</code> that finally forces the evaluation:</p>
+<pre>void test()
+{
+    auto strm = triples().take(10);
+    forEach(std::move(strm), [](std::tuple&lt;int, int, int&gt; const &amp; t)
+    {
+        std::cout &lt;&lt; std::get&lt;0&gt;(t) &lt;&lt; ", " 
+                  &lt;&lt; std::get&lt;1&gt;(t) &lt;&lt; ", " 
+                  &lt;&lt; std::get&lt;2&gt;(t) &lt;&lt; std::endl;
+    });
+}</pre>
+<h1>Conclusion</h1>
+<p>The generation of Pythagorean triples is a toy example, but it shows how lazy evaluation can be used to restructure code in order to make it more reusable. You can use the same function <code>triples</code> to print the values in one part of your program and draw triangles in another. You can filter the triples or impose different termination conditions. You can use the same trick to generate an infinite set of approximation to the solution of a numerical problem, and then use different strategies to truncate it. Or you can create an infinite set of animation frames, and so on.</p>
+<p>The building blocks of laziness are also reusable. I have used them to implement the solution to the eight-queen problem and a conference scheduling program. They are by construction thread safe and the combinators that bind them are thread safe too. This is, in general, the property of persistent data structures.</p>
+<p>You might be concerned about the performance of lazy data structures, and rightly so. They use the heap heavily, so memory allocation and deallocation is a serious performance bottleneck. There are many situation, though, where code structure, reusability, maintenance, and correctness (especially in multithreaded code) are more important than performance. And there are some problems that might be extremely hard to express without the additional flexibility gained from laziness.</p>
+<p>I made the sources to all code in this post available on <a href="https://github.com/BartoszMilewski/Okasaki" target="_blank">GitHub</a>.</p>
+
+<div class="wpa" style="position: relative; width:300px; text-align: center; padding: 0; margin: 10px auto; overflow: hidden; clear: both;">
+<a style="position: absolute; text-align: left; display: block; font: 9px/1 sans-serif; text-decoration: underline;" href="http://en.wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Connections";
+		var wpcom_adclk_slot = "wpcom_below_post_adsafe";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "bartoszmilewski.com");
+GA_googleAddAttr("BlogId", "3549518");
+GA_googleAddAttr("PageURL", "http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/");
+GA_googleAddAttr("AdSafe", "1");
+GA_googleAddAttr("Autotag", "technology");
+GA_googleAddAttr("Autotag", "science");
+GA_googleAddAttr("Tag", "atomics");
+GA_googleAddAttr("Tag", "c");
+GA_googleAddAttr("Tag", "concurrency");
+GA_googleAddAttr("Tag", "functional-programming");
+GA_googleAddAttr("Tag", "metaprogramming");
+GA_googleAddAttr("Tag", "monads");
+GA_googleAddAttr("Tag", "multithreading");
+GA_googleAddAttr("Tag", "parallelism");
+GA_googleAddAttr("Tag", "programming");
+GA_googleAddAttr("Partner", "AOL");
+GA_googleAddAttr("theme_bg", "ffffff");
+GA_googleAddAttr("theme_text", "29303b");
+GA_googleAddAttr("theme_link", "909d73");
+GA_googleAddAttr("theme_border", "F3F6ED");
+GA_googleAddAttr("theme_url", "676E04");
+GA_googleAddAdSensePageAttr("google_page_url", "http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/");
+GA_googleFillSlot("wpcom_below_post_adsafe");
+}
+</script>
+</div>
+<style type="text/css">
+div.wpa>div { margin-top: 1em; } #google_ads_div_wpcom_below_post_adsafe_ad_container { display: block !important; }
+</style>
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='virool.com']").length > 0 || jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-2980"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=linkedin" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-2980"><span>LinkedIn</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=google-plus-1" target="_blank" title="Click to share on Google+" id="sharing-google-2980"><span>Google</span></a></li><li class="share-end"></li><li class="share-pocket"><a rel="nofollow" class="share-pocket sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=pocket" target="_blank" title="Click to share on Pocket"><span>Pocket</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-2980"><span>Facebook</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=digg" target="_blank" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=stumbleupon" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3549518-2980-5356aad32250d' data-src='//widgets.wp.com/likes/#blog_id=3549518&amp;post_id=2980&amp;origin=bartoszmilewski.wordpress.com&amp;obj_id=3549518-2980-5356aad32250d' data-name='like-post-frame-3549518-2980-5356aad32250d'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>	<div class="post-info">
+			</div>
+	<div class="post-footer">&nbsp;</div>
+</div>
+					<h3 id="comments">9 Responses to &#8220;Getting Lazy with&nbsp;C++&#8221;</h3>
+
+	<ol class="commentlist">
+	<li class="comment even thread-even depth-1 highlander-comment" id="comment-15123">
+	<div id="div-comment-15123">
+	<div class="comment-author vcard">
+		<img alt='' src='http://2.gravatar.com/avatar/24c2be49df871c55ffa0d09ae54f10fa?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">Mathias Gaunard</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15123" title="">
+	April 21, 2014 at 11:52 am</a> </small>
+
+	<p>The type erasure involved with std::function makes it too slow for any serious use.<br />
+You have at least a function call for each element you iterate.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-trofimovich odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15129">
+	<div id="div-comment-15129">
+	<div class="comment-author vcard">
+		<img alt='' src='http://2.gravatar.com/avatar/b1d1edfe19c0fda8d24e1a969cc4e750?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">Sergei Trofimovich</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15129" title="">
+	April 21, 2014 at 1:54 pm</a> </small>
+
+	<p>Really nice post <span class='wp-smiley emoji emoji-smile' title=':)'>:)</span></p>
+<p>A minor typo:</p>
+<blockquote><p>
+  Susp sum(<a href="">x, y</a> { return x + y; };<br />
+  looks like the closing &#8216;)&#8217; is mising.
+</p></blockquote>
+<p>Thanks!</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-bartoszmilewski bypostauthor even thread-even depth-1 highlander-comment" id="comment-15130">
+	<div id="div-comment-15130">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c018f213204496b4bbf481e7c8e6c15c?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn"><a href='http://BartoszMilewski.com' rel='external nofollow' class='url'>Bartosz Milewski</a></cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15130" title="">
+	April 21, 2014 at 2:31 pm</a> </small>
+
+	<p>@Mathias: Yes, type erasure is not cheap and I try to avoid it as much as possible. Unfortunately, I couldn&#8217;t figure out how to avoid it in this case. If the suspension were paremeterized by the full type of the lambda (the way mbind is), that type would leak to Stream and I wouldn&#8217;t be able to concatenate streams from different sources. Having said that, I don&#8217;t think this is the main bottleneck &#8212; memory management is. The cost of a function call per item creation fades in comparison with the cost of memory allocation and deallocation. I wouldn&#8217;t recommend using lazy streams in the innermost loop of your program. Anywhere else, though, I&#8217;d rather go with safe, maintainable, and reusable way of coding.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-bartoszmilewski bypostauthor odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15131">
+	<div id="div-comment-15131">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c018f213204496b4bbf481e7c8e6c15c?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn"><a href='http://BartoszMilewski.com' rel='external nofollow' class='url'>Bartosz Milewski</a></cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15131" title="">
+	April 21, 2014 at 2:32 pm</a> </small>
+
+	<p>@Sergei: Thank you, fixed!</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1 highlander-comment" id="comment-15132">
+	<div id="div-comment-15132">
+	<div class="comment-author vcard">
+		<img alt='' src='http://2.gravatar.com/avatar/24c2be49df871c55ffa0d09ae54f10fa?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">Mathias Gaunard</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15132" title="">
+	April 21, 2014 at 2:55 pm</a> </small>
+
+	<p>There is no hard requirement for type erasure here, you could just keep the original types as-is. This is similar to expression templates.<br />
+Concat could also be implemented this way. You would just return a more complex type than Stream.that would contain the two types of the inputs.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-anelless odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15143">
+	<div id="div-comment-15143">
+	<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/d6aa191a764bd8a1dcbeca7326eb98bd?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">notlost</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15143" title="">
+	April 21, 2014 at 7:11 pm</a> </small>
+
+	<p>Why would you do any of this when an iterator already provides a lazy abstraction and is an order of magnitude more efficient?</p>
+<p><a href="https://gist.github.com/anonymous/11163040" rel="nofollow">https://gist.github.com/anonymous/11163040</a></p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1 highlander-comment" id="comment-15147">
+	<div id="div-comment-15147">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/9bdbac7aaa0032f9cab6bfb694ffafe6?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">Laurent Giroud</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15147" title="">
+	April 21, 2014 at 9:01 pm</a> </small>
+
+	<p>I admit that I only carefully analyzed the first examples then skimmed through the rest of your article but looking at the final result in c++ suggests to me that Haskell is a much better lazy language than c++ can ever dream of being. I feel like I would rather abandon c++ entirely in favour of Haskell rather than jump through these hoops.</p>
+<p>C++ looks like it would require an enormous dose of syntactic sugar or maybe lisp like macros to make this declarative style more appealing. As of now the signal to noise ratio of such code is pretty low, at least for the triples function. I do not think the standards committee has ever seriously considered reducing the language verbosity a priority so I doubt this aspect can be improved.</p>
+<p>I wonder if it would be feasible and viable to use an Haskell DSL to write triple in a way similar to the Haskell code and generate the c++ code from it?</p>
+<p>Also, did you do any performance comparisons between the Haskell and c++ versions?</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15155">
+	<div id="div-comment-15155">
+	<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1b853bbad1633dc6c8d1bdfd8c16cc53?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">Robert Obryk</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15155" title="">
+	April 21, 2014 at 10:34 pm</a> </small>
+
+	<p>There seems to be a problem with double evaluation in Susp: If we have two threads running setMemo concurrently and one of them has already written to _memo and _thunk, then the other one can make a write to _memo that races with a completely new thread executing getMemo.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-bartoszmilewski bypostauthor even thread-even depth-1 highlander-comment" id="comment-15207">
+	<div id="div-comment-15207">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c018f213204496b4bbf481e7c8e6c15c?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn"><a href='http://BartoszMilewski.com' rel='external nofollow' class='url'>Bartosz Milewski</a></cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15207" title="">
+	April 22, 2014 at 10:34 am</a> </small>
+
+	<p>@notlost: In the reddit discussion jzwinck posted <a href="http://ideone.com/T1xVLz" rel="nofollow">an iterator implementation</a> that actually produces Pythagorean triples.</p>
+<p>But this is not the point. You can come up with a handcrafted solution to every particular problem without ever noticing a pattern. My goal was to demonstrate this pattern &#8212; actually several patterns.</p>
+<p>If you look at my github repository you&#8217;ll see lazy streams used in the implementation of a parallel solution to the 8 queen problem (LazyQueen project). A more advanced example is the <a href="https://github.com/BartoszMilewski/Timetable" rel="nofollow">conference timetable</a> problem. The initial effort in understanding how lazy streams work pays back in producing simple elegant solutions to many diverse problems. And, most importantly, they are easy to parallelize, which you can&#8217;t say about any of the handcrafted solutions.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+	</ol>
+
+	<div class="navigation">
+	<div class="alignleft"></div>
+	<div class="alignright"></div>
+	</div>
+
+	
+
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/04/21/getting-lazy-with-c/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://bartoszmilewski.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="a732b8a1aa" /><input type="hidden" name="_wp_http_referer" value="/2014/04/21/getting-lazy-with-c/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://s0.wp.com/i/mu.gif?m=1196125237g" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1391188133g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s0.wp.com/i/mu.gif?m=1196125237g" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s0.wp.com/i/mu.gif?m=1196125237g" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s0.wp.com/i/mu.gif?m=1196125237g" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='2980' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4a669907f5" /></p>
+<input type="hidden" name="genseq" value="1398188755" />
+<script type='text/javascript' src='http://s0.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1395714917g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="182"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+			</div>
+					<p align="center"></p>
+	</div>
+	<div id="sidebar">
+			<h2>Archived Entry</h2>
+	<ul>
+	<li><strong>Post Date :</strong></li>
+	<li>April 21, 2014 at 11:32 am</li>
+		<li><strong>Category :</strong></li>
+	<li><a href="http://bartoszmilewski.com/category/atomics/" title="View all posts in Atomics" rel="category tag">Atomics</a>, <a href="http://bartoszmilewski.com/category/c/" title="View all posts in C++" rel="category tag">C++</a>, <a href="http://bartoszmilewski.com/category/concurrency/" title="View all posts in Concurrency" rel="category tag">Concurrency</a>, <a href="http://bartoszmilewski.com/category/functional-programming/" title="View all posts in Functional Programming" rel="category tag">Functional Programming</a>, <a href="http://bartoszmilewski.com/category/metaprogramming/" title="View all posts in Metaprogramming" rel="category tag">Metaprogramming</a>, <a href="http://bartoszmilewski.com/category/monads/" title="View all posts in Monads" rel="category tag">Monads</a>, <a href="http://bartoszmilewski.com/category/multithreading/" title="View all posts in Multithreading" rel="category tag">Multithreading</a>, <a href="http://bartoszmilewski.com/category/parallelism/" title="View all posts in Parallelism" rel="category tag">Parallelism</a>, <a href="http://bartoszmilewski.com/category/programming/" title="View all posts in Programming" rel="category tag">Programming</a></li>
+			<li><strong>Do More :</strong></li>
+	<li>							You can <a href="#respond">leave a response</a>, or <a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/trackback/" rel="trackback">trackback</a> from your own site.
+						</li>
+	</ul>
+		</div>
+<p id="footer"><a href="http://wordpress.com/?ref=footer_blog">Blog at WordPress.com</a>. &#8212; <a href="http://theme.wordpress.com/credits/bartoszmilewski.com/" title="Learn about customizing this theme with the Custom Design upgrade">Customized Connections Theme</a>.</p>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201417x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-24c2be49df871c55ffa0d09ae54f10fa">
+	</div>
+	<div class="grofile-hash-map-b1d1edfe19c0fda8d24e1a969cc4e750">
+	</div>
+	<div class="grofile-hash-map-c018f213204496b4bbf481e7c8e6c15c">
+	</div>
+	<div class="grofile-hash-map-d6aa191a764bd8a1dcbeca7326eb98bd">
+	</div>
+	<div class="grofile-hash-map-9bdbac7aaa0032f9cab6bfb694ffafe6">
+	</div>
+	<div class="grofile-hash-map-1b853bbad1633dc6c8d1bdfd8c16cc53">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/bartoszmilewski.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/bartoszmilewski.wordpress.com\/wp-login.php?action=logout&_wpnonce=54c801c71f","homeURL":"http:\/\/bartoszmilewski.com\/","postID":"2980","gravDefault":"blank","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1395185286j'></script>
+	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "bartoszmilewski.wordpress.com";
+	</script>
+	<script type="text/javascript" src="http://s.skimresources.com/js/725X1342.skimlinks.js"></script><script type='text/javascript' charset='UTF-8' id='polldaddyRatings'><!--//--><![CDATA[//><!--
+PDRTJS_settings_2203687_post_2980={"id":2203687,"unique_id":"wp-post-2980","title":"Getting%20Lazy%20with%26nbsp%3BC%2B%2B","permalink":"http:\/\/bartoszmilewski.com\/2014\/04\/21\/getting-lazy-with-c\/","item_id":"_post_2980"}; if ( typeof PDRTJS_RATING !== 'undefined' ){if ( typeof PDRTJS_2203687_post_2980 == 'undefined' ){PDRTJS_2203687_post_2980 = new PDRTJS_RATING( PDRTJS_settings_2203687_post_2980 );}}
+//--><!]]></script><script type='text/javascript' charset='UTF-8' src='http://i0.poll.fm/js/rating/rating.js'></script>
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/bartoszmilewski.com\/2014\/04\/21\/getting-lazy-with-c\/":2980}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-pocket' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcompocket', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="/2014/04/21/getting-lazy-with-c/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+			
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" />
+			<img style="float: right; display: none" class="loading" src="http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif?m=1315610318g" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<iframe src='http://widgets.wp.com/likes/master.html?ver=20140227#ver=20140227&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1394096990j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'3549518','v':'wpcom','tz':'-7','user_id':'0','post':'2980','subd':'bartoszmilewski'});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3AlSGN8YmRCSmtFZXNzUH4uQy8xSDg9RXptZCZTLi4weVklLm9LTTEtMlhVd1ZLcjBLYVRHS21zbV0sMmc3Wi9SXXJwNC0sQW9lNy96LEFHU3BOUDddcnZJb3dBLnVsPTBLV21uNjluX21mLzRCb0UsP3l4RmFDNGFmNy5FQ3A/WGFSRERINUo0X21rZV1OK2M4UEgtPWdnSGg4fC9vRS5sdVBXQ2QyNmxqMTQ0bzVhMC84aHxOXVh6SDJrWnNKJThTaUElTj1zU3dvfGNMWSVIcXAlaDdLPUxnZHF2TC9MbUp+JVJ2fEJkTEwwNi5md3E2VGU0b0tYPV1HLVFRSg=='});
+addLoadEvent(function(){linktracker_init('3549518',2980);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></div>
+</div>
+</body>
+</html>

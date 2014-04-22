@@ -1,14 +1,9 @@
 <data>
     <sites>
-        <site>a</site>
-        <site>b</site>
-        <site>c</site>
-        <site>d</site>
-        <site>e</site>
+        <site>http://www.reddit.com/r/programming/</site>
     </sites>
     <params>
-        <search_param>hae 1</search_param>
-        <search_param>hae 2</search_param>
+        <search_param>c++</search_param>
     </params>
     <pages>1</pages>
     <mixml>results/master_inspection.xml</mixml>

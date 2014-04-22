@@ -38,7 +38,7 @@ class ListTool():
 
 	def getNonUniques(self, list1, list2):
 		if list2 == None or len(list2) == 0:
-			return None
+			return []
 		li = []
 		for i in list1:
 			if i in list2:

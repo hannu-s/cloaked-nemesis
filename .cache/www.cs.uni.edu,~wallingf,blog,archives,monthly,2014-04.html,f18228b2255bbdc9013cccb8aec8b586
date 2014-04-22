@@ -1,0 +1,581 @@
+status: 200
+content-length: 32341
+via: 1.1 www.cs.uni.edu
+content-location: http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-17T15_30_11.htm
+accept-ranges: bytes
+server: Apache
+last-modified: Mon, 21 Apr 2014 22:32:37 GMT
+etag: "3e401e-7e55-4f795138c6b40"
+date: Tue, 22 Apr 2014 17:49:59 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="NanoBlogger 2.8" />
+  <meta name="robots" content="all" />
+  <meta name="revisit-after" content="31 days" />
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <script language="JavaScript" src="http://www.gvisit.com/record.php?sid=3cfaeb3ce0a804e7b9fa563904b60a93" type="text/javascript">
+</script>
+
+  <title>Knowing and Doing: April 2014 Archives</title>
+  <link rel="stylesheet" href="http://www.cs.uni.edu/~wallingf/blog/styles/nb_blue.css" type="text/css" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.cs.uni.edu/~wallingf/blog/index.xml" />
+</head>
+
+<body>
+  <div id="banner">
+    <h1><a href="http://www.cs.uni.edu/~wallingf/blog/index.html" accesskey="1">Knowing and Doing</a></h1><span class=
+    "description">Reflections of an Academic and Computer Scientist</span>
+  </div>
+
+  <div id="container">
+    <div id="links">
+      <div class="side">
+        <table border="0" cellspacing="4" cellpadding="0">
+          <caption>
+            April 2014
+          </caption>
+
+          <tr>
+            <th align="center"><span class="calendar">Su</span></th>
+
+            <th align="center"><span class="calendar">Mo</span></th>
+
+            <th align="center"><span class="calendar">Tu</span></th>
+
+            <th align="center"><span class="calendar">We</span></th>
+
+            <th align="center"><span class="calendar">Th</span></th>
+
+            <th align="center"><span class="calendar">Fr</span></th>
+
+            <th align="center"><span class="calendar">Sa</span></th>
+          </tr>
+
+          <tr>
+            <td align="center"></td>
+
+            <td align="center"></td>
+
+            <td align="center"><span>1</span></td>
+
+            <td align="center"><span>2</span></td>
+
+            <td align="center"><span>3</span></td>
+
+            <td align="center"><span><a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-04T12_43_25.htm">4</a></span></td>
+
+            <td align="center"><span>5</span></td>
+          </tr>
+
+          <tr>
+            <td align="center"><span>6</span></td>
+
+            <td align="center"><span>7</span></td>
+
+            <td align="center"><span>8</span></td>
+
+            <td align="center"><span><a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-09T15_26_51.htm">9</a></span></td>
+
+            <td align="center"><span>10</span></td>
+
+            <td align="center"><span><a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-11T10_29_44.htm">11</a></span></td>
+
+            <td align="center"><span>12</span></td>
+          </tr>
+
+          <tr>
+            <td align="center"><span>13</span></td>
+
+            <td align="center"><span>14</span></td>
+
+            <td align="center"><span>15</span></td>
+
+            <td align="center"><span>16</span></td>
+
+            <td align="center"><span><a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-17T15_30_11.htm">17</a></span></td>
+
+            <td align="center"><span>18</span></td>
+
+            <td align="center"><span>19</span></td>
+          </tr>
+
+          <tr>
+            <td align="center"><span>20</span></td>
+
+            <td align="center"><span><a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-21T14_45_03.htm">21</a></span></td>
+
+            <td align="center"><span>22</span></td>
+
+            <td align="center"><span>23</span></td>
+
+            <td align="center"><span>24</span></td>
+
+            <td align="center"><span>25</span></td>
+
+            <td align="center"><span>26</span></td>
+          </tr>
+
+          <tr>
+            <td align="center"><span>27</span></td>
+
+            <td align="center"><span>28</span></td>
+
+            <td align="center"><span>29</span></td>
+
+            <td align="center"><span>30</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blog">
+      <div id="menu">
+        <a href="http://www.cs.uni.edu/~wallingf/blog/index.html">Main</a>
+      </div>
+
+      <div class="blog">
+        <div class="item">
+          <a id="e2014-04-21T14_45_03.htm" name="e2014-04-21T14_45_03.htm"></a>
+
+          <h2 class="date">April 21, 2014 2:45 PM</h2>
+
+          <div class="blogbody">
+            <h3 class="title">The Special Case Object Pattern in "Confident Ruby"</h3>
+
+            <div class="item-description">
+              <p>I haven't had a chance to pick up a copy of <a href="http://about.avdi.org/">Avdi Grimm</a>'s new book, <a href=
+              "http://www.confidentruby.com/">Confident Ruby</a>, yet. I did buzz by the book's <a href=
+              "http://pragprog.com/book/agcr/confident-ruby">Pragmatic Programmers page</a>, where I was able to pick up a sample
+              chapter or two for elliptical reading.</p>
+
+              <p>The chapter "Represent special cases as objects" was my first look. This chapter and the "Represent do-nothing cases
+              as null objects" chapter that follows deal with situations in which our program is missing a kind of object. The result
+              is code that has too many responsibilities because there is no object charged with handling them.</p>
+
+              <p>The chapter on do-nothing cases is @avdi's re-telling of the Null Object pattern. Bobby Woolf workshopped <a href=
+              "http://www.cs.uni.edu/~wallingf/patterns/elementary/papers/null-object.pdf">his seminal write-up</a> of this pattern at
+              <a href="http://www.cs.wustl.edu/~schmidt/PLoP-96/workshops.html">PLoP 1996</a> (the first patterns conference I
+              attended) and later published an improved version in <a href=
+              "http://www.amazon.com/Pattern-Languages-Program-Software-Patterns/dp/0201433044">the fourth Pattern Languages of Program
+              Design book</a>. I had the great pleasure to correspond with Bobby as he wrote his original paper and to share a few
+              ideas about the pattern.</p>
+
+              <p>@avdi's special cases chapter is a great addition to the literature. It shows several different ways in which our code
+              can call out for a special case object in place of a <tt>null</tt> reference. It then shows how creating a new kind of
+              object can make our code better in each case, giving concrete examples written in Ruby, in the context of processing
+              input to a web app.</p>
+
+              <p>I was discussing the pattern and the chapter with a student, who asked a question about this example:</p>
+              <pre>
+    <font color="#00FF00">if</font> current_user
+      render_logout_button
+    <font color="#00FF00">else</font>
+      render_login_button
+    <font color="#00FF00">end</font>
+</pre>
+
+              <p>This is the only example in which the <b><tt>if</tt></b> check is not eliminated after introducing the special case
+              object, an instance of the new class, <tt>GuestUser</tt>. Instead, @avdi adds an <tt>authenticated?</tt> to the
+              <tt>User</tt> and <tt>GuestUser</tt> classes, has them return <tt>true</tt> and <tt>false</tt> respectively, and then
+              changes the original expression to:</p>
+              <pre>
+    <font color="#00FF00">if</font> current_user.authenticated?
+      render_logout_button
+    <font color="#00FF00">else</font>
+      render_login_button
+    <font color="#00FF00">end</font>
+</pre>
+
+              <p>As the chapter tells us, using the <tt>authenticated?</tt> predicate makes the conditional statement express the
+              programmer's intent more clearly. But it also says that "we can't get rid of the conditional". My student asked, "Why
+              not?"</p>
+
+              <p>Of course we can. The question is whether we want to. (I have a hard time using words like "cannot", "never", and
+              "always", because I can usually imagine an exception to the absolute...)</p>
+
+              <p>In this case, there is a lingering smell in the code that uses the special case object: <tt>authenticated?</tt> is a
+              surrogate for type check. Indeed, it behaves just like a query to find the object's class so that we can tailor our
+              behavior to receiver's type. That's just the sort of thing we don't have to do in an OO program.</p>
+
+              <p>The standard remedy for this code smell is to push the behavior into the classes and send the object, whatever its
+              type, a message. Rather ask a user if it is authenticated so that we can render the correct button, we might ask it to
+              render the correct button itself:</p>
+              <pre>
+    current_user.render_button
+<br />
+    ...
+<br />
+    <font color="#00FF00">class</font> User
+      <font color="#00FF00">def</font> render_button
+        render_logout_button
+      <font color="#00FF00">end</font>
+    <font color="#00FF00">end</font>
+<br />
+    <font color="#00FF00">class</font> GuestUser
+      <font color="#00FF00">def</font> render_button
+        render_login_button
+      <font color="#00FF00">end</font>
+    <font color="#00FF00">end</font>
+</pre>
+
+              <p>Unfortunately, it's not quite this simple. The <tt>render_logXXX_button</tt> methods don't live in the user classes,
+              so the <tt>render_button</tt> methods need to send those messages to some other object. If the user object already knows
+              to whom to send it, great. If not, then the send of the <tt>render_button</tt> message will need to send itself as an
+              argument along with the message, so that the receiver can send the appropriate message back.</p>
+
+              <p>Either of these approaches requires us to let some knowledge from the original context leak into our <tt>User</tt> and
+              <tt>GuestUser</tt> classes, and that creates a new form of coupling. Ideally, there will be a way to mitigate this
+              coupling in the form of some other shared association. Ruby web developers know the answer to this better than I.</p>
+
+              <p>In any case, this may be what @avdi means when he says that we <em>can't</em> get rid of the <b><tt>if</tt></b> check.
+              Doing so may create more downside than upside.</p>
+
+              <p>This turned into a great opportunity to discuss design with my student. Design is about trade-offs. Things never seem
+              quite as simple in the trenches as they do when we learn the rules and heuristics of design. There is no perfect
+              solution. Our goal as programmers should be to develop the ability to make informed decisions in these situations, taking
+              into account the context in which we are working.</p>
+
+              <p>Patterns document design solutions and so must be used with care. One of the thing I love about the pattern form is
+              that it encourages the writer to make as explicit as possible the context in which the solution applies and the forces
+              that make its use more or less applicable. This helps the reader to face the possible trade-offs with his or her eyes
+              wide open.</p>
+
+              <p>So, one minor improvement @avdi might make in this chapter is to elaborate on the reason underlying the assertion that
+              we can't eliminate this particular <b><tt>if</tt></b> check. Otherwise, students of OOP are likely to ask the same
+              question my student asked.</p>
+
+              <p>Of course, the answer may be obvious to Ruby web developers. In the end, working with patterns is like all other
+              design: the more experience we have, the better.</p>
+
+              <p>This is a relatively minor issue, though. From what I've seen, "Confident Ruby" will be a valuable addition to most
+              Ruby programmers' bookshelves.</p>
+            </div>
+          </div>
+
+          <div class="posted">
+            <br />
+            Posted by <span class="item-creator">Eugene Wallingford</span> | <a class="link" href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-21T14_45_03.htm">Permalink</a> | Categories:
+            <a href="http://www.cs.uni.edu/~wallingf/blog/archives/cat_3.html">Patterns</a>, <a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/cat_4.html">Software Development</a> 
+            <!-- <br /><a href="http://www.cs.uni.edu/~wallingf/blog/1/#comments">Comments</a> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <a id="e2014-04-17T15_30_11.htm" name="e2014-04-17T15_30_11.htm"></a>
+
+          <h2 class="date">April 17, 2014 3:30 PM</h2>
+
+          <div class="blogbody">
+            <h3 class="title">The "Subclass as Client" Pattern</h3>
+
+            <div class="item-description">
+              <p>A few weeks ago, Reginald Braithwaite wrote <a href=
+              "http://raganwald.com/2014/03/31/class-hierarchies-dont-do-that.html">a short piece</a> discouraging us from creating
+              class hierarchies. His article uses Javascript examples, but I think he intends his advice to apply everywhere:</p>
+
+              <blockquote>
+                <em>So if someone asks you to explain how to write a class hierarchy? Go ahead and tell them: "Don't do that!"</em>
+              </blockquote>
+
+              <p>If you have done much object-oriented programming in a class-based language, you will recognize his concern with class
+              hierarchies: A change to the implementation of a class high up in the hierarchy could break every class beneath it. This
+              is often called the "fragile base class" problem. Fragile code can't be changed without a lot of pain, fixing all the
+              code broken by the change.</p>
+
+              <p>I'm going to violate the premise of Braithwaite's advice and suggest a way that you can make your base classes less
+              fragile and thus make small class hierarchies more attractive. If you would like to follow his advice, feel free to tell
+              me "Don't do that!" and stop reading now.</p>
+
+              <p>The technique I suggest follows directly from a practice that OO programmers use to create good objects, one that
+              Braithwaite advocates in his article: encapsulating data tightly within an object.</p>
+
+              <blockquote>
+                <em>JavaScript does not enforce private state, but it's easy to write well-encapsulated programs: simply avoid having
+                one object directly manipulate another object's properties. Forty years after Smalltalk was invented, this is a
+                well-understood principle.</em>
+              </blockquote>
+
+              <p>The article then shows a standard example of a bank account object written in this style, in which client code uses
+              the object without depending on its implementation. So far, so good.</p>
+
+              <p>What about classes?</p>
+
+              <blockquote>
+                <em>It turns out, the relationship between classes in a hierarchy is <b>not</b> encapsulated. This is because classes
+                do not relate to each other through a well-defined interface of methods while "hiding" their internal state from each
+                other.</em>
+              </blockquote>
+
+              <p>Braithwaite then shows an example of a subclass method that illustrates the problem:</p>
+              <pre>
+    ChequingAccount.prototype.process = function (cheque) {
+      this._currentBalance = this._currentBalance - cheque.amount();
+      return this;
+    }
+</pre>
+
+              <p>The <tt>ChequingAccount</tt> directly accesses its <tt>_currentBalance</tt> member, which it inherits from the
+              <tt>Account</tt> prototype. If we now change the internal implementation of <tt>Account</tt> so that it does not provide
+              a <tt>_currentBalance</tt> member, we will break <tt>ChequingAccount</tt>.</p>
+
+              <p>The problem, we are told, is that objects are encapsulated, but classes are not.</p>
+
+              <blockquote>
+                <em>... this dependency is not limited in scope to a carefully curated interface of methods and behaviour. We have no
+                encapsulation.</em>
+              </blockquote>
+
+              <p>However, as the article pointed out earlier, JavaScript does not enforce private state for objects! Even so, it's easy
+              to write well-encapsulated programs -- by not letting one object directly manipulate another object's properties. This is
+              a design pattern that makes it possible to write OO programs even when the language does not enforce encapsulation.</p>
+
+              <p>The problem isn't that objects are encapsulated and classes are not. It's that we tend treat superclasses differently
+              than we treat other classes.</p>
+
+              <p>When we write code for two independent objects, we think of their classes as black boxes, sealed off from external
+              inspection. The data and methods defined in the one class belong to it and its objects. Objects of one class must
+              interact with objects of another via a <em>carefully curated interface of methods and behavior</em>.</p>
+
+              <p>But when we write code for a subclass, we tend to think of the data and methods defined in the superclass as somehow
+              "belonging to" instances of the subclass. We take the notion of inheritance too literally.</p>
+
+              <p>My suggestion is that you treat your classes like you treat objects: Don't let one class look into another class and
+              access its state directly. Adopt this practice even when the other class is a superclass, and the state is an inherited
+              member.</p>
+
+              <p>Many OO programs have this pattern. I usually call it the "Subclass as Client" pattern. Instances of a subclass act as
+              clients of their superclass, treating it -- as much as possible -- as an independent object providing a set of
+              well-defined behaviors.</p>
+
+              <p>When code follows this pattern, it takes Braithwaite's advice for designing objects up a level and follows it more
+              faithfully. Even instance variables inherited from the superclass are encapsulated, accessible only through the behaviors
+              of the superclass.</p>
+
+              <p>I don't program in Javascript, but I've written a lot of Java over the years, and I think the lessons are compatible.
+              Here's my story.</p>
+
+              <center>
+                ~~~~~
+              </center>
+
+              <p>When I teach OOP, one of the first things my students learn about creating objects is this:</p>
+
+              <blockquote>
+                <b>All instance variables are <tt>private</tt>.</b>
+              </blockquote>
+
+              <p>Like Javascript, Java doesn't require this. We can tell the compiler to enforce it, though, through use of the
+              <b><tt>private</tt></b> modifier. Now, only methods defined in the same class can access the variable.</p>
+
+              <p>For the most part, students are fine with this idea -- until we learn about subclasses. If one class
+              <b><tt>extends</tt></b> another, it cannot access the inherited data members. The natural thing to do is what they see in
+              too many Java examples in their texts and on the web: change <b><tt>private</tt></b> variables in the superclass to
+              <b><tt>protected</tt></b>. Now, all is right with the world again.</p>
+
+              <p>Except that they have stepped directly into the path of the fragile base class problem. Almost any change to the
+              superclass risks breaking all of its subclasses. Even in a sophomore OO course, we quickly encounter the problem of
+              fragile base classes in our programs. But other choice do we have?</p>
+
+              <p>Make each class a server to its subclasses. Keep the instance variables <b><tt>private</tt></b>, and (in Braithwaite's
+              words) carefully curate an interface of methods for subclasses to use. The class may be willing to expose more of its
+              identity to its subclasses than to arbitrary objects, so define <b><tt>protected</tt></b> methods that are accessible
+              only to its subclasses.</p>
+
+              <p>This is an intentional extension of the class's interface for explicit interaction with subclasses. (Yes, I know that
+              <b><tt>protected</tt></b> members in Java are accessible to every class in the package. Grrr.)</p>
+
+              <p>This is the same discipline we follow when we write well-behaved objects in any language: encapsulate data and define
+              an interface for interaction. When applied to the class-subclass relationship, it helps us to avoid the dangers of
+              fragile base classes.</p>
+
+              <p>Forty years after Smalltalk was invented, this principle should be better understood by more programmers. In
+              Smalltalk, variables are encapsulated within their classes, which forces subclasses to access them through methods
+              defined in the superclass. This language feature encourages the writer of the class to think explicitly about how
+              instances of a subclass will interact with the class. (Unfortunately, those methods are public to the world, so
+              programmers have to enforce their scope by convention.)</p>
+
+              <p>Of course, a lazy programmer can throw away this advantage. When I first learned OO in Smalltalk, I quickly figured
+              out that I could simply define accessors with the same names as the instance variables. Hurray! My elation did not last
+              long, though. Like my Java students, I quickly found myself with a maze of class-subclass entanglements that made
+              programming unbearable. I had re-invented the Fragile Base Class problem.</p>
+
+              <p>Fortunately, I had the Smalltalk class library to study, as well as programs written by better programmers than I.
+              Those programs taught me the Subclass as Client pattern, I learned that it was possible to use subclasses well, when
+              classes were designed carefully. This is just one of the many ways that <a href=
+              "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2011-09.html#e2011-09-08T20_19_25.htm">Smalltalk taught me
+              OOP</a>.</p>
+
+              <center>
+                ~~~~~
+              </center>
+
+              <p>Yes, you should prefer composition to inheritance, and, yes, you should strive to keep your class hierarchies as small
+              and shallow as possible. But if you apply basic principles of object design to your superclasses, you don't need to live
+              in absolute fear of fragile base classes. You can "do that" if you are willing to carefully curate an interface of
+              methods that define the behavior of a class as a superclass.</p>
+
+              <p>This advice works well only for the class hierarchies you build for yourself. If you need to work with a class from an
+              external package you don't control, then you can't be control the quality of those class's interfaces. Think carefully
+              before you subclass an external class and depend on its implementation.</p>
+
+              <p>One technique I find helpful in this regard is to build a wrapper class around the external class, carefully define an
+              interface for subclasses, and then extend the wrapper class. This at least isolates the risk of changes in the library
+              class to a single class in my program.</p>
+
+              <p>Of course, if you are programming in Javascript, you might want to look to the Self community for more suitable OO
+              advice than to Smalltalk!</p>
+            </div>
+          </div>
+
+          <div class="posted">
+            <br />
+            Posted by <span class="item-creator">Eugene Wallingford</span> | <a class="link" href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-17T15_30_11.htm">Permalink</a> | Categories:
+            <a href="http://www.cs.uni.edu/~wallingf/blog/archives/cat_3.html">Patterns</a>, <a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/cat_4.html">Software Development</a> 
+            <!-- <br /><a href="http://www.cs.uni.edu/~wallingf/blog/1/2014-04-21T14_45_03.html#comments">Comments</a> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <a id="e2014-04-11T10_29_44.htm" name="e2014-04-11T10_29_44.htm"></a>
+
+          <h2 class="date">April 11, 2014 10:29 AM</h2>
+
+          <div class="blogbody">
+            <h3 class="title">Famous Last Words</h3>
+
+            <div class="item-description">
+              <p>With respect for Rands, I've adapted a paragraph from <a href=
+              "http://randsinrepose.com/archives/what-to-do-when-youre-screwed/">one of his engineering management pieces</a> to my
+              experience:</p>
+
+              <blockquote>
+                <em>You're a department chair now. Congratulations. Either you sucked at teaching and research and wanted to try a
+                different avenue of influence, or you're fed up with every other chair you've worked for and now you're going to REALLY
+                GOING TO SHOW US how it's done.</em>
+              </blockquote>
+
+              <p>It's much easier to be fed up than to show people how it's really done. Trust me.</p>
+
+              <p>This week has been a challenge. I have faced several things that need to be done well. Most of them are, in ways,
+              peripheral to the core mission of the department and university, but they are important to students, faculty, and
+              external stakeholders. If they are handled poorly, the experience people have will undercut everything else we do
+              well.</p>
+
+              <p>So these are the things that a department head must do well, in the trenches and with not much fanfare. They consume a
+              lot of emotional energy an introvert like me, and they don't offer a lot of immediate, tangible rewards. But they are
+              worth my attention.</p>
+
+              <p>After a number of years in this position, I have found that it's a lot easier for me to imagine knocking the ball out
+              of the park than to make contact. I keep working at it.</p>
+
+              <p>In this regard, I have begun to learn to combine empathy with the proper application of a scientific mindset to how
+              people behave. This idea is echoed in a passage from <a href=
+              "https://blogs.swarthmore.edu/burke/blog/2012/10/12/on-swarthmores-sorority/">Timothy Burke</a>:</p>
+
+              <blockquote>
+                <em>Anything that real people do in the world is by definition interesting. By "interesting", I mean worthy of the kind
+                of investigation that puts curiosity and honesty well before judgment.</em>
+              </blockquote>
+
+              <p>Curiosity about individual people and honest communication are generally my best tools in the trenches. Forgetting to
+              turn off the judgment centers in my brain never works well.</p>
+            </div>
+          </div>
+
+          <div class="posted">
+            <br />
+            Posted by <span class="item-creator">Eugene Wallingford</span> | <a class="link" href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-11T10_29_44.htm">Permalink</a> | Categories:
+            <a href="http://www.cs.uni.edu/~wallingf/blog/archives/cat_7.html">Managing and Leading</a> 
+            <!-- <br /><a href="http://www.cs.uni.edu/~wallingf/blog/1/2014-04-17T15_30_11.html#comments">Comments</a> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <a id="e2014-04-09T15_26_51.htm" name="e2014-04-09T15_26_51.htm"></a>
+
+          <h2 class="date">April 09, 2014 3:26 PM</h2>
+
+          <div class="blogbody">
+            <h3 class="title">Programming Everywhere, Vox Edition</h3>
+
+            <div class="item-description">
+              <p>In a report on <a href=
+              "http://www.nytimes.com/2014/04/07/business/media/voxcom-takes-melding-of-journalism-and-technology-to-next-level.html">the
+              launch of Vox Media</a>, we learn that line between software developers and journalists at Vox is blurred, as writers and
+              reporters work together "to build the tools they require".</p>
+
+              <blockquote>
+                <em>"It is thrilling as a journalist being able to envision a tool and having it become a real thing," Mr. Topolsky
+                said. "And it is rare."</em>
+              </blockquote>
+
+              <p>It will be less rare in the future. Programming will become a natural part of more and more people's toolboxes.</p>
+            </div>
+          </div>
+
+          <div class="posted">
+            <br />
+            Posted by <span class="item-creator">Eugene Wallingford</span> | <a class="link" href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-09T15_26_51.htm">Permalink</a> | Categories:
+            <a href="http://www.cs.uni.edu/~wallingf/blog/archives/cat_1.html">Computing</a>, <a href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/cat_6.html">General</a> 
+            <!-- <br /><a href="http://www.cs.uni.edu/~wallingf/blog/1/2014-04-11T10_29_44.html#comments">Comments</a> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <a id="e2014-04-04T12_43_25.htm" name="e2014-04-04T12_43_25.htm"></a>
+
+          <h2 class="date">April 04, 2014 12:43 PM</h2>
+
+          <div class="blogbody">
+            <h3 class="title">Creative Recombination of Existing Ideas</h3>
+
+            <div class="item-description">
+              <p>In a post on <a href="http://blog.jonudell.net/2014/04/02/shiny-old-things/">his move to California</a>, Jon Udell
+              notes that he may be out of step with the dominant view of the tech industry there:</p>
+
+              <blockquote>
+                <em>And I think differently about innovation than Silicon Valley does. I don't think we lack new ideas. I think we lack
+                creative recombination of proven tech, and the execution and follow-through required to surface its latent value.</em>
+              </blockquote>
+
+              <p>As he found with <a href="http://elmcity.cloudapp.net/">the Elm City project</a>, sometimes a good idea doesn't get
+              traction quickly, even with sustained effort. Calendar aggregation seems like such a win even for a university the size
+              of mine, yet a lot of folks don't get it. It's hard to know whether the slowness results from the idea, the technology,
+              or the general resistance of communities to change how they operate.</p>
+
+              <p>In any case, Udell is right: there is a lot of latent value in the "creative recombination" of existing ideas. Ours is
+              a remix culture, too. That's why it's so important to study widely in and out of computing, to build the base of tools
+              needed to have a great idea and execute on it.</p>
+            </div>
+          </div>
+
+          <div class="posted">
+            <br />
+            Posted by <span class="item-creator">Eugene Wallingford</span> | <a class="link" href=
+            "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-04.html#e2014-04-04T12_43_25.htm">Permalink</a> | Categories:
+            <a href="http://www.cs.uni.edu/~wallingf/blog/archives/cat_1.html">Computing</a> 
+            <!-- <br /><a href="http://www.cs.uni.edu/~wallingf/blog/1/2014-04-09T15_26_51.html#comments">Comments</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br clear="all" />
+</body>
+</html>

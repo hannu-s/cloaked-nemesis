@@ -1,0 +1,241 @@
+status: 200
+content-length: 23971
+content-location: https://www.google-melange.com/gsoc/projects/list/google/gsoc2014
+expires: Tue, 22 Apr 2014 17:24:05 GMT
+x-page-speed: 116_1_yn
+server: Google Frontend
+-content-encoding: gzip
+cache-control: max-age=0, no-cache
+date: Tue, 22 Apr 2014 17:24:05 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  
+
+  <title>Accepted projects - Google Summer of Code 2014</title>
+
+  
+  
+  <script type='text/javascript'>window.mod_pagespeed_start = Number(new Date());</script><style media="screen">html,body,div,span,h4,p,a,img,ul,li,table,tbody,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ul{list-style:none}:focus{outline:0}table{border-collapse:collapse;border-spacing:0}</style>
+  <style media="screen">body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_3,.grid_9,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.container_12 .grid_3{width:220px}.container_12 .grid_9{width:700px}.container_12 .grid_12{width:940px}</style>
+  <style media="screen">body{background:url(https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/images/gsoc/xbody-bg.png.pagespeed.ic.H4GGWxA8fa.png) repeat;color:#000;font:13px/1.5em Arial,'Helvetica Neue',Helvetica,sans-serif}::selection{background:#efac4c;color:#fff}::-moz-selection{background:#efac4c;color:#fff}</style>
+  <style media="screen">a,a:link{color:#00538b;text-decoration:underline}h4,p,ul{line-height:1.5em;margin:0 0 1.5em 0}h4{color:#238bd2;font-weight:bold}p{font-size:12px}</style>
+  <style media="screen">#page-header{background:#fff url(https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/images/gsoc/xheader-bg.png.pagespeed.ic.qDKyJ7Cap2.png) bottom left repeat-x;height:181px;width:100%}#page-header .grid_12{height:158px}#page-header .grid_12 .top{height:15px;padding-bottom:5px;padding-top:5px}#page-header .grid_12 .top a{color:#238bd2;font-size:12px;font-weight:normal;text-decoration:none}#page-header .grid_12 #gci{margin-left:510px;padding-right:20px;text-align:right}#main{}#main .grid_9{background:#f6f6f6;margin-left:0}#main .content{overflow:hidden;padding:19px}#main .block{background:#fff;margin-bottom:20px;-webkit-box-shadow:0 0 6px rgba(0,0,0,.3);-moz-box-shadow:0 0 6px rgba(0,0,0,.3);box-shadow:0 0 6px rgba(0,0,0,.3)}#main .block h4{background:#6eb5e5;color:#fff;font-size:15px;line-height:30px;margin:0;padding:0 0 0 7px;text-transform:uppercase}#main .block .block-content{overflow:hidden;padding:12px}#main .block .block-content p{color:#000;font-size:12px;line-height:1.5em}#main .block-text p{margin:0}#footer{}#footer .grid_3{margin-right:0}#footer .grid_9{font-size:14px;font-weight:bold;margin:0;padding:20px 0 25px 0;text-align:center;text-transform:uppercase}#footer .footer-meta{color:#4496ce}#footer .footer-meta a{color:#4496ce;text-decoration:none}#footer .footer-meta .powered{padding-right:15px}#footer .footer-meta img{vertical-align:bottom}#footer .footer-meta .version{font-size:10px}#footer .footer-menu{float:left;margin:0 0 12px 0;overflow:hidden;position:relative;width:100%}#footer .footer-menu ul{clear:left;float:left;left:50%;list-style:none;margin:0;padding:0;position:relative;text-align:center}#footer .footer-menu ul li{display:block;float:left;list-style:none;margin:0;padding:0 20px 0 0;position:relative;right:50%}#footer .footer-menu ul li a{display:block;text-decoration:none}#footer .footer-menu ul li.last{padding-right:0}#footer .footer-menu .social{padding:3px 0 0 0}#footer .footer-menu .social a{background-image:url(https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/images/gsoc/xsocial-icons.png.pagespeed.ic.ubXlS4yK3p.png);background-position:0 -34px;background-repeat:no-repeat;height:14px;display:block;font-size:0;line-height:0;text-indent:-9999em}#footer .footer-menu .social .gp{background-position:-100px -34px;width:22px}#footer .footer-menu .social .bl{background-position:-36px -34px;width:20px}#footer .footer-menu .social .em{background-position:-56px -34px;width:24px}#footer .footer-menu .social .irc{background-position:-80px -34px;margin-right:20px;width:22px}</style>
+  <style media="screen">#menu-container{margin-right:0}#main-menu{background-color:#eeab4c;float:left;margin-right:0;width:220px}#main-menu ul{margin:13px 0}#main-menu ul li{font-size:15px;font-weight:bold;margin:0 0 3px 0;padding:0}#main-menu ul li a{color:#fff;display:block;margin:0;padding:4px 0 4px 20px;text-decoration:none}#main-menu ul li a:hover{background:#e67a25}#main-menu ul#main-menu-list{margin-top:0;padding-bottom:13px;padding-top:13px}</style>
+  
+
+  
+
+</head>
+<body>
+
+  
+  
+
+  <!-- TODO: Header should get logo, link and program name from context
+  extra (google) logo will be removed after update.-->
+  <div id="bg">
+  
+    <div id="page-header">
+  <div class="container_12">
+    <div class="grid_12">
+      
+      <div id="gci" class="top">
+        <a href="/gci/homepage/google/gci2013">Looking for Google Code-in? Click here!</a>
+      </div>
+      <a href="/gsoc/homepage/google/gsoc2014"><img src="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/images/gsoc/logo/920x156xbanner-gsoc2014.png.pagespeed.ic.gdr4t3Igca.png" width="920" height="156" alt="Google Summer of Code"/></a>
+    </div>
+  </div>
+</div>
+<!-- .page-header -->
+
+  
+
+  
+    <div id="main">
+      <div class="container_12">
+        <div id="menu-container" class="grid_3">
+          <div id="main-menu">
+  
+    <ul id="main-menu-list">
+      
+      <li id="menu-home"><a href="/gsoc/homepage/google/gsoc2014">Home</a></li>
+      
+      
+      <li id="menu-login"><a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://www.google-melange.com/gsoc/projects/list/google/gsoc2014&amp;ltmpl=">Login</a></li>
+      
+      
+      
+      
+      
+      <li id="menu-about"><a href="/gsoc/document/show/gsoc_program/google/gsoc2014/about_page">About</a></li>
+      
+      
+      
+      <li id="menu-projects"><a href="/gsoc/projects/list/google/gsoc2014">Accepted Projects</a></li>
+      
+      
+      <li id="menu-events"><a href="/gsoc/events/google/gsoc2014">Events &amp; Timeline</a></li>
+      
+      
+      <li id="menu-connect"><a href="/gsoc/document/show/gsoc_program/google/gsoc2014/about_page">Connect With Us</a></li>
+      
+      
+      <li id="menu-search"><a href="/gsoc/search/google/gsoc2014">Search</a></li>
+      
+      
+      <li id="menu-help"><a href="/gsoc/document/show/gsoc_program/google/gsoc2014/help_page">FAQ</a></li>
+      
+      
+    </ul>
+  
+</div>
+
+
+          
+            
+          
+        </div>
+        <!-- #menu-container.grid_3 -->
+
+        <div class="grid_9">
+          
+          <div class="content">
+               
+            
+
+
+
+<div id="list-component-id" class="block block-text">
+  <h4 id="title-section-list-component-id">List of projects accepted into Google Summer of Code 2014</h4>
+  <div class="block-content">
+    
+<script type="text/javascript">if(melange_list_queue===undefined){var melange_list_queue=[];}</script>
+
+
+<p>
+
+
+<p>
+  Accepted Projects
+</p>
+<br/>
+
+<script type="text/javascript">melange_list_queue.push(function(){melange.list.loadList("melangeList0",'{\u0022operations\u0022: {\u0022buttons\u0022: {}, \u0022row\u0022: {\u0022type\u0022: \u0022redirect_custom\u0022, \u0022parameters\u0022: {\u0022new_window\u0022: true}}}, \u0022templates\u0022: {}, \u0022configuration\u0022: {\u0022multiboxonly\u0022: false, \u0022rowList\u0022: [], \u0022colModel\u0022: [{\u0022index\u0022: \u0022key\u0022, \u0022name\u0022: \u0022key\u0022, \u0022column_type\u0022: \u0022plain_text\u0022, \u0022resizable\u0022: true, \u0022hidden\u0022: true, \u0022searchoptions\u0022: {\u0022searchhidden\u0022: true}}, {\u0022index\u0022: \u0022title\u0022, \u0022name\u0022: \u0022title\u0022, \u0022column_type\u0022: \u0022plain_text\u0022, \u0022resizable\u0022: true, \u0022hidden\u0022: false, \u0022searchoptions\u0022: {\u0022searchhidden\u0022: true}}, {\u0022index\u0022: \u0022student\u0022, \u0022name\u0022: \u0022student\u0022, \u0022column_type\u0022: \u0022html\u0022, \u0022resizable\u0022: true, \u0022hidden\u0022: false, \u0022searchoptions\u0022: {\u0022searchhidden\u0022: true}}, {\u0022index\u0022: \u0022organization\u0022, \u0022name\u0022: \u0022organization\u0022, \u0022column_type\u0022: \u0022html\u0022, \u0022resizable\u0022: true, \u0022hidden\u0022: false, \u0022searchoptions\u0022: {\u0022searchhidden\u0022: true}}, {\u0022index\u0022: \u0022mentors\u0022, \u0022name\u0022: \u0022mentors\u0022, \u0022column_type\u0022: \u0022html\u0022, \u0022resizable\u0022: true, \u0022hidden\u0022: false, \u0022searchoptions\u0022: {\u0022searchhidden\u0022: true}}], \u0022autowidth\u0022: true, \u0022height\u0022: \u0022auto\u0022, \u0022sortorder\u0022: \u0022asc\u0022, \u0022rowNum\u0022: \u002D1, \u0022toolbar\u0022: [true, \u0022top\u0022], \u0022sortname\u0022: \u0022student\u0022, \u0022multiselect\u0022: false, \u0022colNames\u0022: [\u0022Key\u0022, \u0022Title\u0022, \u0022Student\u0022, \u0022Organization\u0022, \u0022Mentors\u0022]}, \u0022features\u0022: {\u0022global_search\u0022: {\u0022enabled\u0022: false, \u0022element_path\u0022: \u0022\u0022}, \u0022search_dialog\u0022: {\u0022enabled\u0022: true}, \u0022csv_export\u0022: {\u0022enabled\u0022: true}, \u0022cookie_service\u0022: {\u0022enabled\u0022: true}, \u0022global_sort\u0022: {\u0022element_paths\u0022: \u0022\u0022, \u0022enabled\u0022: false}, \u0022column_search\u0022: {\u0022regexp\u0022: true, \u0022enabled\u0022: true}, \u0022hide_headers\u0022: {\u0022enabled\u0022: false}, \u0022columns_show_hide\u0022: {\u0022enabled\u0022: true}}}',0,true);});</script>
+<div id="melangeList0" class="melange-list-container">
+  <noscript>
+    <p class="error">To see the contents of this list you should enable Javascript.</p>
+  </noscript>
+</div>
+
+</p>
+
+
+  </div>
+</div>
+
+
+
+          </div>
+          <!-- .content -->
+        </div>
+        <!-- .grid_9 -->
+      </div>
+    <!-- .container_12 -->
+    </div>
+    <!-- .main -->
+  
+
+    
+      <!-- footer -->
+<div id="footer">
+  <div class="container_12">
+    <div class="grid_3">&nbsp;</div>
+    <!-- .grid_3 -->
+    <div class="grid_9">
+        <div class="footer-menu">
+          <ul id="footer-menu-list">
+            
+              <li id="footer-menu-about"><a href="/gsoc/document/show/gsoc_program/google/gsoc2014/about_page">About</a></li>
+            
+            
+              <li id="footer-menu-contact"><a href="/gsoc/document/show/gsoc_program/google/gsoc2014/about_page">Contact</a></li>
+            
+            
+            
+              <li id="footer-menu-googlePlus" class="social"><a href="https://plus.google.com/102168248469649733567/posts" class="gp">Google+</a></li>
+            
+            
+            
+              <li id="footer-menu-blogger" class="social"><a href="http://google-opensource.blogspot.com/" class="bl">Blogger</a></li>
+            
+            
+              <li id="footer-menu-email" class="social"><a href="mailto:google-summer-of-code-discuss@googlegroups.com" class="em">Email</a></li>
+            
+            
+              <li id="footer-menu-irc" class="social"><a href="irc://irc.freenode.net/gsoc" class="irc">IRC</a></li>
+            
+            
+              <li id="footer-menu-privacy" class="last"><a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-meta">
+          <span class="powered">Powered by <a href="http://code.google.com/p/soc/wiki/MelangeIntro" target="_blank">
+            <script type="text/javascript" pagespeed_no_defer="">(function(){var e=window,g=document,h="documentElement",k="CriticalImages",l="scrollTop",n="prototype",p="body",q="getAttribute",r=function(a,b,c){if(a.addEventListener)a.addEventListener(b,c,!1);else if(a.attachEvent)a.attachEvent("on"+b,c);else{var d=a["on"+b];a["on"+b]=function(){c.call(this);d&&d.call(this)}}};e.pagespeed=e.pagespeed||{};
+var s=e.pagespeed,t=function(a){this.d=[];this.e=0;this.c=!1;this.h=a;this.f=null;this.i=0;this.b=!1;this.a=0},u=function(a,b){var c=b[q]("pagespeed_lazy_position");if(c)return parseInt(c,0);var c=b.offsetTop,d=b.offsetParent;d&&(c+=u(a,d));c=Math.max(c,0);b.setAttribute("pagespeed_lazy_position",c);return c},v=function(a,b){var c,d,f;if(!a.b&&(0==b.offsetHeight||0==b.offsetWidth))return!1;e:if(b.currentStyle)d=b.currentStyle.position;else{if(g.defaultView&&g.defaultView.getComputedStyle&&(d=g.defaultView.getComputedStyle(b,
+null))){d=d.getPropertyValue("position");break e}d=b.style&&b.style.position?b.style.position:""}if("relative"==d)return!0;f=0;"number"==typeof e.pageYOffset?f=e.pageYOffset:g[p]&&g[p][l]?f=g[p][l]:g[h]&&g[h][l]&&(f=g[h][l]);c=e.innerHeight||g[h].clientHeight||g[p].clientHeight;d=f;f=f+c;var m=b.getBoundingClientRect();m?(f=m.top-c,d=m.bottom):(m=u(a,b),c=m+b.offsetHeight,f=m-f,d=c-d);return f<=a.e&&0<=d+a.e};
+t[n].j=function(a){x(a);var b=this;e.setTimeout(function(){var c=a[q]("pagespeed_lazy_src");if(null!=c)if((b.c||v(b,a))&&-1!=a.src.indexOf(b.h)){var d=a.parentNode,f=a.nextSibling;d&&d.removeChild(a);a.g&&(a.getAttribute=a.g);a.removeAttribute("onload");a.tagName&&"IMG"==a.tagName&&s[k]&&r(a,"load",function(){s[k].checkImageForCriticality(this);b.b&&(b.a--,0==b.a&&s[k].checkCriticalImages())});a.removeAttribute("pagespeed_lazy_src");a.removeAttribute("pagespeed_lazy_replaced_functions");d&&d.insertBefore(a,
+f);a.src=c}else b.d.push(a)},0)};t[n].loadIfVisibleAndMaybeBeacon=t[n].j;t[n].k=function(){this.c=!0;y(this)};t[n].loadAllImages=t[n].k;var y=function(a){var b=a.d,c=b.length;a.d=[];for(var d=0;d<c;++d)a.j(b[d])},A=function(a,b){return a.a?null!=a.a(b):null!=a[q](b)};t[n].l=function(){for(var a=g.getElementsByTagName("img"),b=0,c;c=a[b];b++)A(c,"pagespeed_lazy_src")&&x(c)};t[n].overrideAttributeFunctions=t[n].l;
+var x=function(a){A(a,"pagespeed_lazy_replaced_functions")||(a.g=a[q],a.getAttribute=function(a){"src"==a.toLowerCase()&&A(this,"pagespeed_lazy_src")&&(a="pagespeed_lazy_src");return this.g(a)},a.setAttribute("pagespeed_lazy_replaced_functions","1"))};
+s.m=function(a,b){var c=new t(b);s.lazyLoadImages=c;r(e,"load",function(){c.b=!0;c.c=a;c.e=200;if(s[k]){for(var b=0,d=g.getElementsByTagName("img"),z=0,w;w=d[z];z++)-1!=w.src.indexOf(c.h)&&A(w,"pagespeed_lazy_src")&&b++;c.a=b;0==c.a&&s[k].checkCriticalImages()}y(c)});0!=b.indexOf("data")&&((new Image).src=b);var d=function(){if(!(c.b&&a||c.f)){var b=200;200<(new Date).getTime()-c.i&&(b=0);c.f=e.setTimeout(function(){c.i=(new Date).getTime();y(c);c.f=null},b)}};r(e,"scroll",d);r(e,"resize",d)};
+s.lazyLoadInit=s.m;})();
+
+pagespeed.lazyLoadInit(true, "//1-ps.googleusercontent.com/h/www.gstatic.com/psa/static/1.gif");
+</script><img pagespeed_lazy_src="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/images/gsoc/75x19xmelange.png.pagespeed.ic.fNxPQc5rb7.png" height="19" width="75" alt="Melange" src="//1-ps.googleusercontent.com/h/www.gstatic.com/psa/static/1.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+          </a></span>
+          Empowered by <a href="http://www.echoditto.com/" target="_blank">
+            <img pagespeed_lazy_src="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/images/gsoc/70x21xechoditto.png.pagespeed.ic.zbuzlhxzHs.png" height="21" width="70" alt="EchoDitto" src="//1-ps.googleusercontent.com/h/www.gstatic.com/psa/static/1.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+          </a>
+          <div class="version">Version 2-1-20140420-daniel</div>
+        </div>
+    </div>
+    <!-- .grid_9 -->
+  </div>
+  <!-- .container_12 -->
+</div>
+<!-- .footer -->
+
+    
+  </div>
+  <!-- #bg -->
+
+
+
+  
+  <script type="text/javascript" pagespeed_no_defer="">pagespeed.lazyLoadImages.overrideAttributeFunctions();</script><script type="text/javascript">var xsrf_token='pHFKKbPIJn4OiZ5hbIyyVjoxMzk4MTg3NDQ1';</script>
+  <script type='text/javascript' src="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/js/2-1-20140420-daniel/LABjs/LAB.js.pagespeed.jm.B19eZPl8Pn.js"></script>
+  
+  <script type="text/javascript">$LAB.script("/js/2-1-20140420-daniel/json/json2.js").script("https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js").wait(function(){jQuery(function(){jQuery(document).delegate("form","submit",function(e){var form=jQuery(this);if(form.hasClass("form_disabled")){e.preventDefault();return false;}
+else{form.addClass("form_disabled").find(":submit").addClass("disabled");}
+setTimeout(function(){form.removeClass("form_disabled").find(":submit").removeClass("disabled");},3000);});});}).script("/js/2-1-20140420-daniel/jquery/jquery-cookie.js").wait().script("/soc/content/2-1-20140420-daniel/js/melange.js").wait(function(){melange.init({app_version:"2-1-20140420-daniel",css_path:"soc/content/2-1-20140420-daniel/css/gsoc",google_api_key:"AIzaSyAKLqiqqMsr0-WhX_AWemELKnCosf8NMiY",is_local:false,});}).script("/soc/content/2-1-20140420-daniel/js/melange.dependency.js").wait(function(){var dep=melange.dependency.s;var tc=function(script,context){return new melange.dependency.templateWithContext(script,context);};var css=function(css_path){return new melange.dependency.cssFile(css_path);};melange.dependency.loadScripts([[dep.melange.analytics,null,function(){melange.analytics.initAnalytics('UA-4291635-4');}],[dep.uniform,dep.melange.list,css("/soc/content/2-1-20140420-daniel/css/gsoc/user-messages.css"),null]]);});</script>
+
+</body>
+</html>
+<script pagespeed_no_defer="" type="text/javascript">(function(){var e=window,f=Math,g="round",h="performance";e.pagespeed=e.pagespeed||{};var q=e.pagespeed;
+q.getResourceTimingData=function(){if(e[h]&&(e[h].getEntries||e[h].webkitGetEntries)){for(var r=0,s=0,k=0,t=0,l=0,u=0,m=0,v=0,n=0,w=0,p=0,c={},d=e[h].getEntries?e[h].getEntries():e[h].webkitGetEntries(),b=0;b<d.length;b++){var a=d[b].duration;0<a&&(r+=a,++k,s=f.max(s,a));a=d[b].connectEnd-d[b].connectStart;0<a&&(u+=a,++m);a=d[b].domainLookupEnd-d[b].domainLookupStart;0<a&&(t+=a,++l);a=d[b].initiatorType;c[a]?++c[a]:c[a]=1;a=d[b].requestStart-d[b].fetchStart;0<a&&(w+=a,++p);a=d[b].responseStart-d[b].requestStart;
+0<a&&(v+=a,++n)}return"&afd="+(k?f[g](r/k):0)+"&nfd="+k+"&mfd="+f[g](s)+"&act="+(m?f[g](u/m):0)+"&nct="+m+"&adt="+(l?f[g](t/l):0)+"&ndt="+l+"&abt="+(p?f[g](w/p):0)+"&nbt="+p+"&attfb="+(n?f[g](v/n):0)+"&nttfb="+n+(c.css?"&rit_css="+c.css:"")+(c.link?"&rit_link="+c.link:"")+(c.script?"&rit_script="+c.script:"")+(c.img?"&rit_img="+c.img:"")}return""};q.getResourceTimingData=q.getResourceTimingData;})();
+(function(){var c=encodeURIComponent,g=window,h="performance";g.pagespeed=g.pagespeed||{};var l=g.pagespeed,m=function(f,a,d,b){this.c=f;this.a=a;this.b=d;this.d=b};l.beaconUrl="";
+var n=function(f){var a=f.c,d=g.mod_pagespeed_start,b=Number(new Date)-d,a=a+(-1==a.indexOf("?")?"?":"&"),a=a+"ets="+("load"==f.a?"load:":"unload:"),a=a+b;if("beforeunload"!=f.a||!g.mod_pagespeed_loaded){a+="&r"+f.a+"=";if(g[h]){var b=g[h].timing,e=b.navigationStart,k=b.requestStart,a=a+(b[f.a+"EventStart"]-e),a=a+("&nav="+(b.fetchStart-e)),a=a+("&dns="+(b.domainLookupEnd-b.domainLookupStart)),a=a+("&connect="+(b.connectEnd-b.connectStart)),a=a+("&req_start="+(k-e)),a=a+("&ttfb="+(b.responseStart-
+k)),a=a+("&dwld="+(b.responseEnd-b.responseStart)),a=a+("&dom_c="+(b.domContentLoadedEventStart-e));g[h].navigation&&(a+="&nt="+g[h].navigation.type);e=-1;b.msFirstPaint?e=b.msFirstPaint:g.chrome&&g.chrome.loadTimes&&(e=Math.floor(1E3*g.chrome.loadTimes().firstPaintTime));e=e-k;0<=e&&(a+="&fp="+e)}else a+=b;l.getResourceTimingData&&g.parent==g&&(a+=l.getResourceTimingData());a+=g.parent!=g?"&ifr=1":"&ifr=0";"load"==f.a&&(g.mod_pagespeed_loaded=!0,(b=g.mod_pagespeed_num_resources_prefetched)&&(a+=
+"&nrp="+b),(b=g.mod_pagespeed_prefetch_start)&&(a+="&htmlAt="+(d-b)));l.panelLoader&&(d=l.panelLoader.getCsiTimingsString(),""!=d&&(a+="&b_csi="+d));l.criticalCss&&(d=l.criticalCss,a+="&ccis="+d.total_critical_inlined_size+"&cces="+d.total_original_external_size+"&ccos="+d.total_overhead_size+"&ccrl="+d.num_replaced_links+"&ccul="+d.num_unreplaced_links);""!=f.b&&(a+=f.b);document.referrer&&(a+="&ref="+c(document.referrer));a+="&url="+c(f.d);l.beaconUrl=a;(new Image).src=a}};
+l.e=function(f,a,d,b){var e=new m(f,a,d,b);g.addEventListener?g.addEventListener(a,function(){n(e)},!1):g.attachEvent("on"+a,function(){n(e)})};l.addInstrumentationInit=l.e;})();
+
+pagespeed.addInstrumentationInit('https://1-ps.googleusercontent.com/beacon?org=116_1_yn', 'load', '&s_ttfb=225&id=1398187445022316', 'https://www.google-melange.com/gsoc/projects/list/google/gsoc2014');</script><noscript class="psa_add_styles"><link rel="stylesheet" type="text/css" media="screen" href="/soc/content/2-1-20140420-daniel/css/gsoc/reset.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.960.css.pagespeed.cf.f3gFvCoRTN.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.global.css.pagespeed.cf.Gz6XHRZLEr.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.typography.css.pagespeed.cf.y61jUfbnXO.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.structure.css.pagespeed.cf.QyGzuBTUJD.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.menu.css.pagespeed.cf.Sqn6_9AjPN.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.user-messages.css.pagespeed.cf.KUp7sazgXl.css"/><link rel="stylesheet" type="text/css" media="screen" href="https://1-ps.googleusercontent.com/sx/s.google-melange.appspot.com/www.google-melange.com/soc/content/2-1-20140420-daniel/css/gsoc/A.uniform.default.css.pagespeed.cf.LliaauSkqJ.css"/></noscript><script pagespeed_no_defer="" type="text/javascript">(function(){var e=window,g=document,h=this,k=function(a,d){var b=a.split("."),c=h;b[0]in c||!c.execScript||c.execScript("var "+b[0]);for(var f;b.length&&(f=b.shift());)b.length||void 0===d?c[f]?c=c[f]:c=c[f]={}:c[f]=d};var m=function(){var a=e,d=l;if(a.addEventListener)a.addEventListener("load",d,!1);else if(a.attachEvent)a.attachEvent("onload",d);else{var b=a.onload;a.onload=function(){d.call(this);b&&b.call(this)}}};var n=!1,l=function(){if(!n){n=!0;for(var a=g.getElementsByClassName("psa_add_styles"),d=0,b;b=a[d];++d)if("NOSCRIPT"==b.nodeName){var c=g.createElement("div");c.innerHTML=b.textContent;g.body.appendChild(c)}}};k("pagespeed.CriticalCssLoader.addAllStyles",l);k("pagespeed.CriticalCssLoader.Run",function(){var a=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||null;a?a(function(){e.setTimeout(l,0)}):m()});})();
+pagespeed.CriticalCssLoader.Run();</script>

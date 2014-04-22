@@ -1,0 +1,5 @@
+http://nimrod-lang.org/news.html#Z2014-04-21-version-0-9-4-released
+NimrodProgrammingLanguage
+Mar14,2010
+
+Nimrodversion0.6.0hasbeenreleased!Thisisthefirstofcompilerthatabletocompileitself!

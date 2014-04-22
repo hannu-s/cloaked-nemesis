@@ -12,7 +12,7 @@ class ConnectionManager():
 		targets = len(targetUrls)
 
 		for i in range(targets):
-			oc = OwnConnection()
+			oc = OwnConnection(i)
 			oc.setParams(keywords,avoids,sites,targetUrls[i],pagesToSearch, searchParams)
 			oc.initializeConnection()
 			oc.freeMemory()
@@ -104,8 +104,10 @@ class OwnConnection():
 	hadMessage = None
 	endResult = None
 	searchParams = None
+	childID = None
 
-	def __init__(self):
+	def __init__(self, cID):
+		self.childID = cID
 		self.parent_conn, self.child_conn = Pipe()
 		self.isRunning = False
 		self.hasMessage = False
@@ -121,7 +123,7 @@ class OwnConnection():
 
 	def initializeConnection(self):
 		c = Child()
-		self.proc = Process(target=c.BLChild, args=(self.child_conn, self.keywords, self.avoids, self.sites, self.targetUrl,self.pagesToSearch, self.searchParams,))
+		self.proc = Process(target=c.BLChild, args=(self.childID, self.child_conn, self.keywords, self.avoids, self.sites, self.targetUrl,self.pagesToSearch, self.searchParams,))
 
 	def startConnection(self):
 		self.isRunning = True

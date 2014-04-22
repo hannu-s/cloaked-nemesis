@@ -1,0 +1,2202 @@
+status: 200
+x-ua-device: desktop
+content-location: http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer
+x-tumblr-pixel: 2
+vary: X-UA-Device
+accept-ranges: bytes
+x-tumblr-user: peternixey
+content-length: 121804
+connection: close
+-content-encoding: gzip
+link: <http://24.media.tumblr.com/avatar_042209bcb0e6_128.png>; rel=icon
+x-ua-compatible: IE=Edge,chrome=1
+date: Tue, 22 Apr 2014 17:49:54 GMT
+p3p: CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+content-type: text/html; charset=utf-8
+x-tumblr-pixel-1: ZGV2ZWxvcGVyIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiODM1MTA1OTc1ODAiLCJibG9naWQiOiIzMzE4NjE4MCIsInNvdXJjZSI6MzN9XX0=&U=GFCFBCHMGC&K=fa9385d8556f35a2893801d7995287e9595283f3702bf92b06bef9d683837721
+x-tumblr-pixel-0: http://www.tumblr.com/impixu?T=1398188950&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcGV0ZXJuaXhleS5jb21cL3Bvc3RcLzgzNTEwNTk3NTgwXC9ob3ctdG8tYmUtYS1ncmVhdC1zb2Z0d2FyZS1kZXZlbG9wZXIiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=HIDGNDMODG&K=06132a1b51bf9209f84f2e591847a6b3ba9e18c77d74d72d61898f0aca083265--http://www.tumblr.com/impixu?T=1398188950&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3BldGVybml4ZXkuY29tXC9wb3N0XC84MzUxMDU5NzU4MFwvaG93LXRvLWJlLWEtZ3JlYXQtc29mdHdhcmUt
+
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=c9a24c93905a6db0265be4f39f27f15e"></script>
+<!DOCTYPE html>
+
+<!-- CHANGE LOG -->
+    <!-- Revised 16 August, 2011 -->
+
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <meta charset="UTF-8">
+    <meta property="twitter:account_id" content="2864051" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Peter Nixey - How to be a great software developer</title>
+      
+        <meta name="description" content="How to be a great software developer Disclaimer: This is a very long piece, much longer than I would normally write on any subject. I have edited it back but on sending it to friends to read they...">
+        <meta property="fb:admins" content="500439045" />
+      
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="if:Advanced text post styles" content="0">
+    <meta name="text:Dribbble username" content="">
+    <meta name="text:Disqus shortname" content="">
+    <meta name="text:Facebook username" content="">
+    <meta name="text:Flickr username" content="">
+    <meta name="text:Foursquare username" content="">
+    <meta name="text:Gowalla username" content="">
+    <meta name="text:Google Analytics ID" content="">
+    <meta name="text:LinkedIn account URL" content="">
+    <meta name="google-site-verification"     content="5vwJt76Ld2n0xVXNzdP2byYdZrRKBPNYvG2BvtvGicU" />
+    <meta name="keywords" content="Peter Nixey">
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/PeterNixey">
+    <link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_042209bcb0e6_128.png">
+    <link rel="apple-touch-icon" href="http://24.media.tumblr.com/avatar_042209bcb0e6_128.png">
+    <link rel="stylesheet" href="http://static.tumblr.com/arbn4az/bVVllx04j/max-fontface.css">
+    <style type="text/css" media="screen">
+      /*
+      Reset
+      */
+
+      * {
+          margin: 0;
+          padding: 0;
+          font-size: 1em;
+        text-decoration: none;
+        border: none;
+        outline: none;
+      }
+
+      section, header, article, nav, footer { display: block; }
+
+      /*
+      Core
+      */
+
+      html {
+        background: #333 url(http://static.tumblr.com/arbn4az/uVullv92x/body.png) repeat center center fixed;
+        height: 100%;
+/*        overflow-y: auto;
+*/      }
+
+      body {
+        background: #333 url(http://static.tumblr.com/arbn4az/uVullv92x/body.png) repeat center center fixed;
+        color: #333;
+        font: 13px/20px "Helvetica Neue", Arial, sans-serif;
+        height: 100%;
+        overflow-x: hidden;
+      }
+
+      a {
+        color: #333;
+        text-decoration: underline;
+      }
+
+      a:active {
+        position: relative;
+        top: 1px;
+        color: #000;
+      }
+
+      strong {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      del {
+        text-decoration: line-through;
+        color: #999;
+      }
+
+      img {
+        vertical-align: bottom;
+        line-height: 0px;
+      }
+
+      ul, ol {
+        font-family: "Helvetica Neue", arial, sans-serif;
+      }
+
+      blockquote {
+        padding-left: 19px;
+        margin-left: 20px;
+        border-left: 1px solid #ccc;
+      }
+
+      q:before {
+        content: "“";
+      }
+
+      q:after {
+        content: "”";
+      }
+
+      .caps {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+
+      img {
+        max-width: 100%;
+      }
+      
+      /*------------ Peter -------------*/
+      #top-email-subscription-button{
+        display: inline-block;
+        margin-top: 2px;
+      }
+      #bottom-subscribe-button-container{
+        border: 1px solid silver;
+        padding: 10px 5px;
+      }
+      #bottom-subscribe-button{
+        float: right;
+        margin-top: -3px;
+      }
+      article.text.advanced div > p:first-child{
+        font-family: "PTSerif",Georgia, serif !important;
+        line-height: 16px !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #333333 !important;
+        line-height: 25px !important;
+      }
+      
+      article.text.advanced div > p:nth-child(1):first-letter {
+        -moz-transition: font-size 0.25s linear 0s, margin-top 0.25s linear 0s;
+        float: left;
+        font-size: 52px;
+        line-height: 40px;
+        margin-right: 5px;
+        margin-top: 8px;
+      }
+      article.text.advanced div > p:nth-child(2):first-letter{
+        -moz-transition: none;
+        line-height: 16px !important;
+        font-weight: 400 !important;
+        font-style: normal !important;  
+        float: none !important;
+        line-height: 25px !important;
+        font-size: 16px !important;
+        margin-right: 0px !important;
+        margin-top: 0px !important;
+      }
+      div[role="main"] header  {
+        margin-bottom: 20px !important;
+      }
+      .description {
+        margin-bottom: 20px !important;
+        padding-bottom: 20px !important;
+      }
+      article.text h2 {
+        margin-bottom: 15px !important; 
+      }
+      #disqus_thread{
+        color: #333 !important;
+      }
+      strike{
+        text-decoration: line-through;
+      }
+      /* Mailchimp form styling*/
+      #subscriptions_container{
+        position: relative;
+        clear:left; 
+        font:14px Helvetica,
+        Arial,sans-serif; 
+        width: 115%;
+        margin-left: -15px;
+      }
+      #subscriptions_container p{
+        margin: 10px 0;
+      }
+      #subscriptions_container h4{
+        color: white;
+        font-weight: normal;
+      }
+      #subscriptions_container input{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        box-shadow: 0;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        background: white;
+        box-shadow: 0;
+        -moz-box-shadow: 0;
+        -webkit-box-shadow: 0;
+        border-width: 0;
+        padding: 2px;
+      }
+      #mce-EMAIL{
+        width: 100%;
+      }
+      #mc-embedded-subscribe{
+        width: 75px;
+        border: 1px solid silver !important;
+        box-shadow: 0 0 0 !important;
+        -webkit-box-shadow: 0 0 0 !important;
+        -moz-box-shadow: 0 0 0 !important;
+        cursor: pointer !important;
+      }
+      #mc-embedded-subscribe:hover{
+
+      }
+      /* end Peter */
+
+      /*
+      Structure
+      */
+
+      div[role=main] {
+        background-color: #eee;
+        background: #eee url(http://static.tumblr.com/arbn4az/UFGllv97b/content.png) repeat center top;
+        background: url(http://static.tumblr.com/arbn4az/qPVllv968/content-inner-left.png) repeat-y left top, url(http://static.tumblr.com/arbn4az/36Ollv96r/content-inner-right.png) repeat-y right top, #eee url(http://static.tumblr.com/arbn4az/UFGllv97b/content.png) repeat center top;
+        margin: 0 190px;
+        padding: 0px 50px 0px;
+        position: relative;
+        z-index: 50;
+        -webkit-transition: margin 0.25s linear;
+        -moz-transition: margin 0.25s linear;
+        transition: margin 0.25s linear;
+        -webkit-backface-visibility: hidden;
+        min-height: 100%;
+      }
+
+      div[role=main]:after,
+      div[role=main]:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        content: "";
+        width: 10px;
+        background-repeat: repeat-y;
+      }
+
+      div[role=main]:after {
+        right: -10px;
+        background: url(http://static.tumblr.com/arbn4az/MPfllv98y/content-outer-right.png);
+      }
+
+      div[role=main]:before {
+        left: -10px;
+        background: url(http://static.tumblr.com/arbn4az/jg9llv98b/content-outer-left.png);
+      }
+
+      .fullscreen div[role=main] {
+        margin: 0;
+      }
+
+      div[role=main] header,
+      div[role=main] article,
+      div[role=main] footer,
+      .description {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        -webkit-transition: width 0.25s linear;
+        -moz-transition: width 0.25s linear;
+        transition: width 0.25s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+      div[role=main] header {
+        padding-top: 35px;
+      }
+
+      div[role=main] footer {
+        padding-bottom: 30px;
+        height: 32px;
+      }
+
+      .fullscreen div[role=main] header,
+      .fullscreen div[role=main] article,
+      .fullscreen div[role=main] #search-results,
+      .fullscreen div[role=main] footer,
+      .fullscreen .description {
+        width: 600px;
+      }
+
+      footer[role=contentinfo],
+      header[role=banner],
+      aside[role=complementary],
+      footer#engage {
+        color: #ccc;
+        position: fixed;
+        width: 190px;
+        z-index: 25;
+        -webkit-text-shadow: 0px -1px 0px #222;
+        -moz-text-shadow: 0px -1px 0px #222 ;
+        text-shadow: 0px -1px 0px #222 ;
+
+      }
+
+      header[role=banner] {
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+      }
+
+      footer[role=contentinfo] {
+        bottom: 0;
+        right: 20px;
+        width: 140px;
+        padding: 0 0 30px 30px;
+        color: #888;
+      }
+
+      footer#engage {
+        bottom: 0;
+        left: 0;
+        padding: 30px;
+        width: 130px;
+        text-align: center;
+      }
+
+      footer#engage a {
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: bold;
+        color: #ccc;
+        text-transform: uppercase;
+        margin-top: 10px;
+        display: block;
+        background: #555;
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#444));
+        background: -moz-linear-gradient(top, #555, #444);
+        background: -o-linear-gradient(top, #555, #444);
+        background: linear-gradient(top, #555, #444);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: #222 0 1px 2px;
+        -moz-box-shadow: #222 0 1px 2px;
+        -o-box-shadow: #222 0 1px 2px;
+        box-shadow: #222 0 1px 2px;
+      }
+
+      footer#engage a:hover,
+      footer#engage a:focus {
+        color: #fff;
+        text-shadow: #999 0 0 5px;
+      }
+
+      footer#engage a:active {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+      }
+
+      footer[role=contentinfo] p {
+        margin-top: 5px;
+      }
+
+      footer[role=contentinfo] a {
+        color: #999;
+        white-space: nowrap;
+      }
+
+      footer[role=contentinfo] a:hover,
+      footer[role=contentinfo] a:focus {
+        color: #ccc;
+      }
+
+      footer[role=contentinfo] a:active {
+        color: #fff;
+      }
+
+      header[role=banner] h1 a {
+        text-indent: -999em;
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 20px 30px 20px 112px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 1px 3px #000;
+        -moz-box-shadow: 0px 1px 3px #000;
+        box-shadow: 0px 1px 3px #000;
+        overflow: hidden;
+      }
+
+      div[role=main] footer ul {
+        list-style-type: none;
+      }
+
+      /* Sidebar */
+
+      aside[role=complementary] {
+        top: 0px;
+        right: 0px;
+        width: 130px;
+        padding: 85px 30px 0px 30px;
+      }
+
+      aside[role=complementary] ul {
+        list-style: none;
+      }
+
+      aside[role=complementary] ul li {
+        margin-bottom: 10px;
+        height: 36px;
+      }
+
+      aside[role=complementary] ul li a {
+        position: relative;
+        opacity: 0.67;
+        filter: alpha(opacity=67);
+        font-size: 11px;
+        height: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: #ccc;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 12px 0px 13px 42px;
+        -webkit-transition: opacity 0.1s linear;
+        -moz-transition: opacity 0.1s linear;
+        transition: opacity 0.1s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+      aside[role=complementary] ul li a:hover, aside[role=complementary] ul li a:focus {
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+
+      aside[role=complementary] ul li a img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      /* Navigation */
+
+      nav[role=navigation] {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 48px;
+        text-align: right;
+        border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      nav[role=navigation] ul {
+        list-style: none;
+      }
+
+      nav[role=navigation] a {
+        color: #ccc;
+        text-decoration: none;
+        display: block;
+        padding: 1px 30px 1px 0;
+        border-top: 1px solid rgba(34, 34, 34, .5);
+        text-transform: lowercase;
+      }
+
+      nav[role=navigation] a:hover,
+      nav[role=navigation] a:focus {
+        color: #fff;
+        background: rgba(34, 34, 34, .25);
+        text-shadow: rgba(255, 255, 255, .35) 0 0 7px;
+      }
+
+      nav[role=navigation] a:active {
+        background: #222;
+        border-top-color: #111;
+        top: 0;
+        padding: 2px 30px 0 0;
+        text-shadow: none;
+        -webkit-box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+        -moz-box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+        -o-box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+        box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+      }
+
+      nav[role=navigation] li.active a {
+        color: #fff;
+        text-shadow: #06c 0 -1px 0;
+        border-top-color: #62c3ff;
+        background: #09f;
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2cafff), to(#0083d9), color-stop(.5, #1b9ded), color-stop(.501, #1395ec));
+        background: -moz-linear-gradient(top, #2cafff, #1b9ded 50%, #1395ec 50.1%, #0083d9);
+        background: linear-gradient(top, #2cafff, #1b9ded 50%, #1395ec 50.1%, #0083d9);
+      }
+
+      /* @end */
+
+      div[role=main] header {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        height: 40px;
+        line-height: 30px;
+        position: relative;
+      }
+
+      div[role=main] header form {
+        position: absolute;
+        top: 35px;
+        right: 0;
+      }
+
+      div[role=main] header p {
+        float: left;
+        font-weight: bold;
+      }
+
+      div[role=main] header p a {
+        font-size: 24px;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+        text-shadow: #fff 0 1px 0;
+        float: left;
+      }
+
+      div[role=main] header p a.back {
+        font-size: 13px;
+        color: #666;
+        background: transparent url(http://static.tumblr.com/arbn4az/MoDlm47s4/back-left.png) no-repeat left center;
+        height: 32px;
+        margin-top: -1px;
+        margin-left: -11px;
+        -webkit-font-smoothing: subpixel-antialiased;
+      }
+
+      div[role=main] header p a.back span {
+        background: transparent url(http://static.tumblr.com/arbn4az/4h4lm4qpr/back-right.png) no-repeat right center;
+        margin-left: 14px;
+        line-height: 30px;
+        height: 30px;
+        padding: 0 8px 2px 2px;
+        display: inline-block;
+      }
+
+      div[role=main] header p a.back:hover,
+      div[role=main] header p a.back:focus {
+        text-decoration: none;
+        color: #333;
+      }
+
+      div[role=main] header p a.back:active {
+        color: #000;
+        background-image: url(http://static.tumblr.com/arbn4az/Vzvlm4861/back-left-active.png);
+      }
+
+      div[role=main] header p a.back:active span {
+        background-image: url(http://static.tumblr.com/arbn4az/5Qflm4qrr/back-right-active.png);
+      }
+
+      div[role=main] header p a:hover,
+      div[role=main] header p a:focus {
+        text-decoration: underline;
+      }
+
+      .description {
+        padding: 0 0 40px 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        line-height: 22px;
+      }
+
+      /*
+      Forms
+      */
+
+      form input {
+        display: block;
+        font: 13px "Helvetica Neue";
+        height: 22px;
+        padding: 5px 1px 5px 30px;
+        width: 75px;
+        color: #333;
+        background: #fff url(http://static.tumblr.com/arbn4az/y4tlm6bfk/search.png) no-repeat left center;
+        margin-top: -1px;
+        -webkit-transition: width 0.25s linear;
+        -moz-transition: width 0.25s linear;
+        transition: width 0.25s linear;
+        -webkit-backface-visibility: hidden;
+        -webkit-appearance: none;
+        border: 1px solid #cbcbcb;
+        -webkit-box-shadow: 0px 1px 0px #fff;
+        -moz-box-shadow: 0px 1px 0px #fff;
+        box-shadow:  0px 1px 0px #fff;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        border-radius:  16px;
+      }
+
+      form input:focus,
+      .fullscreen form input {
+        width: 155px;
+      }
+
+      /*
+      Fullscreen
+      */
+
+      a.full {
+        position: absolute;
+        right: 0px;
+        top: 7px;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+        text-indent: 150%;
+        white-space: nowrap;
+        background: url(http://static.tumblr.com/arbn4az/YQnllvaaq/fullscreen.png);
+        margin: 0px -1px 0 10px;
+      }
+
+      a.full:hover,
+      a.full:focus {
+        background-position: 0 -32px;
+      }
+
+      a.full:active {
+        background-position: 0 -64px;
+      }
+
+      .fullscreen a.full {
+        background-position: -32px 0;
+      }
+
+      .fullscreen a.full:hover,
+      .fullscreen a.full:focus {
+        background-position: -32px -32px;
+      }
+
+      .fullscreen a.full:active {
+        background-position: -32px -64px;
+      }
+
+      header[role=banner],
+      #fusion,
+      footer[role=contentinfo],
+      #engage {
+        -webkit-transition: opacity 0.15s linear;
+        -moz-transition: opacity 0.15s linear;
+        transition: opacity 0.15s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .fullscreen header[role=banner],
+      .fullscreen aside[role=complementary],
+      .fullscreen footer[role=contentinfo],
+      .fullscreen #engage {
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+
+      /*
+      Posts
+      */
+
+      article, #search-results {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+      }
+
+      .article-content, #search-results div {
+        font-family: "PTSerif", Georgia, serif;
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 20px;
+        -webkit-transition: font-size 0.25s linear, line-height 0.25s linear;
+        -moz-transition: font-size 0.25s linear, line-height 0.25s linear;
+        -transition: font-size 0.25s linear, line-height 0.25s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .fullscreen .article-content, .fullscreen #search-results div {
+        line-height: 30px;
+        font-size: 18px;
+      }
+
+      article.text .article-content, article.photo .article-content, article.photoset .article-content, article.video .article-content {
+        padding-left: 0;
+      }
+
+      .article-content a,
+      .description a:hover,
+      .description a:focus,
+      #disqus_thread a:hover,
+      #disqus_thread a:focus {
+        color: #06d;
+      }
+
+      .article-content a:hover,
+      .article-content a:focus,
+      .description a:active,
+      #disqus_thread a:active {
+        color: #036;
+      }
+
+      .article-content a:active {
+        color: #000;
+      }
+
+      .article-content p, .article-content blockquote, .article-content ul, .article-content ol {
+        margin-bottom: 15px;
+      }
+
+      div[role=main] article footer {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #999;
+        font-size: 11px;
+        overflow: hidden;
+        min-height: 25px;
+        height: auto;
+        line-height: 15px;
+        clear: left;
+        padding-bottom: 0px;
+      }
+
+      article footer a {
+        text-decoration: none;
+        color: #999;
+        height: 17px;
+      }
+
+      article footer a:hover,
+      article footer a:focus {
+        color: #666;
+        text-decoration: underline;
+      }
+
+      article footer a:active {
+        color: #333;
+      }
+
+      article footer .meta {
+        margin-bottom: 25px;
+        float: left;
+        position: relative;
+        width: 100%;
+      }
+
+      article footer .meta li,
+      article footer .meta li ul {
+        list-style: none;
+        float: left;
+        margin-right: 10px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        padding: 4px 0px 4px 25px;
+      }
+
+      article footer .meta li li {
+        margin: 0px 5px 0px 0px;
+        padding: 0px;
+        background: none !important;
+      }
+
+      article footer li.day {
+        background-image: url(http://static.tumblr.com/arbn4az/2JMllva8h/glyph-posted.png);
+        margin-left: -5px;
+        width: 44px;
+      }
+
+      article footer li.tags {
+        background-image: url(http://static.tumblr.com/arbn4az/7pQllva8w/glyph-tags.png);
+      }
+
+      article footer li.tweet {
+        background-image: url(http://static.tumblr.com/arbn4az/gbcllva9c/glyph-tweet.png);
+        padding-left: 30px;
+        margin-right: 0;
+        width: 70px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+
+      article footer li.notes {
+        background-image: url(http://static.tumblr.com/arbn4az/84olm4eui/glyph-notes.png);
+        padding-left: 30px;
+        margin-right: 0;
+        width: 50px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+
+      article footer li.tags ul {
+        width: 306px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .single-post article footer li.tags ul {
+        width: 286px;
+      }
+
+      article footer li.tweet {
+        float: right;
+      }
+
+      .article-content img {
+        border: 5px solid #fff;
+        -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        max-width: 490px;
+      }
+
+      .fullscreen .article-content img {
+        max-width: 590px;
+      }
+
+      article h2, #search-results h2 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      article h2 a, #search-results h2 a {
+        text-decoration: none;
+      }
+
+      article h2 a:hover,
+      article h2 a:focus, #search-results h2 a:hover, #search-results h2 a:focus {
+        text-decoration: underline;
+      }
+
+      /* Text posts */
+
+      article.text {
+        position: relative;
+      }
+
+      article.text h2 {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: normal;
+        margin-bottom: 5px;
+        font-family: "PTSerif", Georgia, serif;
+        padding-right: 32px;
+      }
+
+      .single-post article.text h2 {
+        margin-bottom: 25px;
+        margin-top: -15px;
+      }
+      .article-content h2{
+        font-size: 1.3em !important;
+        line-height: 1.5em !important;
+        border-bottom: 1px solid silver !important;
+        margin-top: 20px !important;
+      }
+
+      article.text h2 a {
+        text-decoration: none;
+      }
+
+      article.text h2 a:hover,
+      article.text h2 a:focus {
+        text-decoration: underline;
+        color: #333;
+      }
+
+      article.text.advanced div > p:first-child {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: 700;
+        line-height: 27px;
+      }
+
+      .fullscreen article.text.advanced div > p:first-child {
+        line-height: 30px;
+      }
+
+      article.text.advanced div > p:nth-child(2):first-letter {
+        float: left;
+        line-height: 40px;
+        margin-right: 5px;
+        font-size: 52px;
+        margin-top: 8px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-transition: font-size 0.25s linear, margin-top 0.25s linear;
+        -moz-transition: font-size 0.25s linear, margin-top 0.25s linear;
+        transition: font-size 0.25s linear, margin-top 0.25s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .fullscreen article.text.advanced div > p:nth-child(2):first-letter {
+        float: left;
+        line-height: 40px;
+        margin-right: 5px;
+        font-size: 52px;
+        margin-top: 8px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-transition: font-size 0.25s linear, margin-top 0.25s linear;
+        -moz-transition: font-size 0.25s linear, margin-top 0.25s linear;
+        transition: font-size 0.25s linear, margin-top 0.25s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+      /*
+      Link posts
+      */
+
+      article.link h2 a {
+        padding-right: 18px;
+        background: transparent url(http://static.tumblr.com/arbn4az/a8Vllva7l/link.png) no-repeat right 5px;
+      }
+
+      /*
+      Chat posts
+      */
+
+      article.chat h2 a {
+        padding-right: 18px;
+        background: transparent url(http://static.tumblr.com/arbn4az/OVmlm497x/chat-post.png) no-repeat right 5px;
+      }
+
+      .chat-content {
+        list-style-type: none;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .chat-content li {
+        padding: 5px 10px;
+        margin: 0px;
+      }
+
+      .chat-content .even {
+        background-color: #e3e3e5;
+      }
+
+      .chat-content .label {
+        font-weight: 700;
+      }
+
+      /* Photo posts */
+
+      article.photo div > a:first-child, article.photo div > img:first-child {
+        margin-bottom: 15px;
+        float: left;
+      }
+
+      article.photo div.caption {
+        clear: left;
+      }
+
+      article.photo .html_photoset embed {
+        border: 5px solid #fff;
+        -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        margin-bottom: 10px;
+        width: 490px;
+        line-height: 0px;
+      }
+
+      /*
+      Answer posts
+      */
+
+      article.answer h2 a {
+        padding-right: 18px;
+        background: transparent url(http://static.tumblr.com/arbn4az/0kWlm4935/answer-icon.png) no-repeat right 5px;
+      }
+
+      /*
+      Video posts
+      */
+
+      article.video .video-wrapper {
+        border: 5px solid #fff;
+        -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        margin-bottom: 15px;
+        width: 490px;
+        line-height: 0px;
+      }
+
+      article.video .video-wrapper embed, article.video .video-wrapper object, article.video .video-wrapper iframe {
+        width: 490px;
+      }
+
+      .fullscreen article.video .video-wrapper, .fullscreen article.video .video-wrapper embed, .fullscreen article.video .video-wrapper object, .fullscreen article.video .video-wrapper iframe {
+        width: 590px;
+      }
+
+
+      /* Audio posts */
+
+      article.audio {
+        text-shadow: rgba(0, 0, 0, .75) 0 1px 3px;
+      }
+
+      article.audio .article-content img {
+        padding: 0;
+        background: transparent;
+        float: left;
+        margin: 0 20px 15px 0;
+        width: 100px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      article.audio .article-content {
+        background: #333 url(http://static.tumblr.com/arbn4az/i7dllvado/body.png) 0 0;
+        color: #ccc;
+        padding: 20px 20px 57px 140px;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+        -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+        -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+        box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+        -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+        -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+        -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+        box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+        margin-bottom: 15px;
+      }
+
+      article.audio footer {
+        text-shadow: none;
+      }
+
+      article.audio .audio-info a {
+        color: #09f;
+        text-decoration: none;
+      }
+
+      article.audio .audio-info a:hover,
+      article.audio .audio-info a:focus {
+        text-decoration: underline;
+      }
+
+      article.audio .audio-info a:active {
+        color: #fff;
+      }
+
+      article.audio .article-content ul {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        line-height: 38px;
+        text-shadow: #fff 0 1px 0;
+        font-family: Helvetica Neue, Arial, sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        -webkit-border-bottom-left-radius: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        -moz-border-radius-bottomright: 4px;
+        -o-border-bottom-left-radius: 4px;
+        -o-border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        overflow: hidden;
+        background: #fff;
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f2f2f2));
+        background: -moz-linear-gradient(top, #fff, #f2f2f2);
+        background: linear-gradient(top, #fff, #f2f2f2);
+        margin-bottom: 0px;
+      }
+
+      article.audio .article-content ul li {
+        float: left;
+        color: #333;
+        padding: 1px 12px 1px 20px;
+      }
+
+      article.audio h2 {
+        font-family: Helvetica Neue, Arial, sans-serif;
+        margin-bottom: 4px;
+        margin-top: -1px;
+      }
+
+      article.audio h2 a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      article.audio h2 a:hover,
+      article.audio h2 a:focus {
+        text-decoration: underline;
+        color: #fff;
+      }
+
+      article.audio div.audio_player {
+        padding-left: 0px;
+      }
+
+      /*
+      Pagination
+      */
+
+      .pagination-link {
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-size: 13px;
+        color: #666;
+        height: 32px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .pagination-link:hover,
+      .pagination-link:focus {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .pagination-link:active {
+        color: #000;
+      }
+
+      .pagination-link span {
+        line-height: 30px;
+        height: 30px;
+        display: inline-block;
+      }
+
+      .pagination-link.older {
+        float: right;
+        background: transparent url(http://static.tumblr.com/arbn4az/qajlm4snt/forward-right.png) no-repeat right center;
+      }
+      .pagination-link.older span {
+        background: transparent url(http://static.tumblr.com/arbn4az/mQblm4skp/forward-left.png) no-repeat left center;
+        margin-right: 14px;
+        padding: 0 2px 2px 8px;
+      }
+      .pagination-link.older:active {
+        background-image: url(http://static.tumblr.com/arbn4az/WOFlm4smw/forward-right-active.png);
+      }
+      .pagination-link.older:active span {
+        background-image: url(http://static.tumblr.com/arbn4az/hcjlm4sjd/forward-left-active.png);
+      }
+
+      .pagination-link.newer {
+        float: left;
+        background: transparent url(http://static.tumblr.com/arbn4az/MoDlm47s4/back-left.png) no-repeat left center;
+      }
+
+      .pagination-link.newer span {
+        background: transparent url(http://static.tumblr.com/arbn4az/4h4lm4qpr/back-right.png) no-repeat right center;
+        margin-left: 14px;
+        padding: 0 8px 2px 2px;
+      }
+
+      .pagination-link-newer:active {
+        background-image: url(http://static.tumblr.com/arbn4az/Vzvlm4861/back-left-active.png);
+      }
+
+      .pagination-link.newer:active span {
+        background-image: url(http://static.tumblr.com/arbn4az/5Qflm4qrr/back-right-active.png);
+      }
+
+
+
+
+      /*
+      disqus
+      */
+
+      #disqus_thread,
+      #post-notes {
+        clear: left;
+        font-family: "Helvetica Neue", arial, sans-serif;
+        border-top: 1px solid #ccc;
+        padding: 15px 0px 0px 0px;
+        font-size: 13px;
+        line-height: 20px;
+        text-shadow: none;
+        width: 500px;
+        text-transform: none;
+      }
+
+      .fullscreen #disqus_thread, .fullscreen #post-notes {
+        width: 600px;
+      }
+
+
+      div[role=main] #disqus_thread h3 {
+        font-family: "Helvetica Neue", arial, sans-serif;
+        font-size: 13px;
+      }
+
+      #disqus_thread a {
+        font-family: "Helvetica Neue", arial, sans-serif;
+        color: #333;
+      }
+
+      #dsq-subscribe, #dsq-account-dropdown, #dsq-sort-by {
+        font-size: 13px;
+      }
+
+      #post-notes h3 {
+        margin-bottom: 5px;
+      }
+
+      .notes {
+        list-style-type: none;
+        font-size: 12px;
+        margin-bottom: 0px;
+      }
+
+      .notes li {
+        overflow: hidden;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px 0px 10px 35px;
+        margin-bottom: 5px;
+        position: relative;
+      }
+
+      .notes a img {
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        height: 26px;
+        width: 26px;
+        padding: 2px;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+      }
+
+      .notes li .action {
+        margin-left: 5px;
+      }
+
+
+      /*
+      Oldies
+      */
+
+      .oldie * {
+        filter:none;
+      }
+
+      .oldie div[role=main] {
+        min-width: 500px;
+      }
+
+      .oldie.fullscreen div[role=main] {
+        min-width: 600px;
+      }
+
+      .oldie .full {
+        top: -5px;
+      }
+
+      body.oldie {
+        min-width: 980px;
+        position: relative;
+        overflow-x: scroll;
+      }
+
+      .oldie aside[role=complementary] {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+
+      .oldie footer[role=contentinfo] {
+        display: none;
+      }
+
+
+
+      /*
+      Media queries
+      */
+
+      @media screen and (max-width: 1024px) and (min-width: 981px) {
+
+        .fullscreen div[role=main]:after {
+          display: none;
+        }
+
+      }
+
+      @media screen and (max-width: 980px) {
+
+
+        div[role=main]:after {
+          display: none;
+        }
+
+        div[role=main] {
+          margin-right: 0;
+          -webkit-transition: margin-left 0.25s linear;
+          -moz-transition: margin-left 0.25s linear;
+          -transition: margin-left 0.25s linear;
+        }
+
+        footer[role=contentinfo], aside[role=complementary] {
+          display: none;
+        }
+
+      }
+
+      @media screen and (max-height: 710px) and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 0) {
+
+        #engage {
+          display: none;
+        }
+
+      }
+
+
+      
+    </style>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript" language="javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/lang-css.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+      prettyPrint();
+    })
+    </script>
+    <style type="text/css">
+    /* Pretty printing styles. Used with prettify.js. */
+
+    .str { color: #080; }
+    .kwd { color: #008; }
+    .com { color: #800; }
+    .typ { color: #606; }
+    .lit { color: #066; }
+    .pun { color: #660; }
+    .pln { color: #000; }
+    .tag { color: #008; }
+    .atn { color: #606; }
+    .atv { color: #080; }
+    .dec { color: #606; }
+    pre.prettyprint { padding: 2px; border: 1px solid #888; }
+
+    @media print {
+      .str { color: #060; }
+      .kwd { color: #006; font-weight: bold; }
+      .com { color: #600; font-style: italic; }
+      .typ { color: #404; font-weight: bold; }
+      .lit { color: #044; }
+      .pun { color: #440; }
+      .pln { color: #000; }
+      .tag { color: #006; font-weight: bold; }
+      .atn { color: #404; }
+      .atv { color: #060; }
+    }
+    </style>
+    
+      <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26710742-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+
+        // ----------------------------
+        var timingInterval = 10;
+        var activeReadingTime = 0;
+        var dormancyThreshold = 90;
+        var docLoadTimestamp = getTimeInSeconds();
+        updateLastActionTime();
+        window.setInterval(function(){
+          // determine whether scroll suggests document is dormant
+          if (window.isActive && (getTimeInSeconds() - window.lastActionTime) > dormancyThreshold) {
+            setStatusToInactive();
+            var dormancyTime = getTimeInSeconds() - docLoadTimestamp;
+            _gaq.push(['_trackEvent','Document became dormant', dormancyTime + ' seconds', pageTitle, dormancyTime, true]);
+            console.log('Recorded dormancy after '+ dormancyTime + ' seconds')
+          }
+
+          if (window.isActive) {
+            activeReadingTime += timingInterval;
+            nonInteraction = activeReadingTime < 30 ? true : false
+
+            var pageTitle = $('#title-container').html() || "Home"
+            _gaq.push(['_trackEvent','Reading time', activeReadingTime + ' seconds', pageTitle, $(window).scrollTop(), nonInteraction]);
+            console.log('Tracked reading time of ' + activeReadingTime + ' seconds');
+          }
+
+        }, timingInterval * 1000)
+        // ----------------------------
+        // bind listeners
+        $(window).bind('focus', handleFocus);
+        $(window).bind('blur', handleBlur);
+        $(document).bind('mouseover', logAction);
+        $(document).bind('scroll', logAction);
+        
+
+        // Setup a function to make sure we only time active page engagement
+        window.isActive = false;
+        function getTimeInSeconds(){
+          return Math.round( (new Date()).getTime() / 1000 );
+        }
+        function updateLastActionTime(){
+          window.lastActionTime = getTimeInSeconds();
+          console.log('last action time updated to: ' + window.lastActionTime)
+        }
+        function handleFocus(){
+          console.log('Window focussed');
+          logAction();
+        }
+        function handleBlur() {
+          setStatusToInactive();
+          console.log('Window blurred');
+        };
+        function setStatusToInactive(){
+          window.isActive = false;
+          console.log('Window has become inactive')
+        }
+        function logAction(){
+          updateLastActionTime();
+          window.isActive = true;
+        };
+        // ----------------------------
+
+      </script>
+    <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=peternixey&postID=83510597580" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="How to be a great software developer" /><meta property="og:url" content="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer" /><meta property="og:description" content="Disclaimer: This is a very long piece, much longer than I would normally write on any subject. I have edited it back but on sending it to friends to read they agreed that there was no one bit that..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="https://31.media.tumblr.com/f3c699eb5642b3133ae630c59d2edd46/tumblr_inline_n4fo8r3Ucs1qznw8n.png" /><meta property="og:image" content="https://31.media.tumblr.com/cfe26f52aa5d47ee68a03206ff177686/tumblr_inline_n4fo9ccH9O1qznw8n.png" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="Disclaimer: This is a very long piece, much longer than I would normally write on any subject. I have edited it back but on sending it to friends to read they agreed that there was no one bit that should be cut. I hope that you feel the same.
+
+ If there&rsquo;s one thing that software developers care about, it&rsquo;s becoming even better software developers. Where do you start though? Should you accumulate the bells and whistles: deepen your knowledge of Node and no-sequel? Should you rote-learn the answers to the profession&rsquo;s gateway questions and be able to produce bubble sort or link shortener algorithms on demand? Or are there perhaps more fundamental roots that you can put down?
+
+ I believe that your seniority and value as a programmer is measured not in what you know, it&rsquo;s measured in what you put out. The two are related but definitely not the same. Your value is in how you move your project forward and how you empower your team to do the same. In fifteen years of programming I&rsquo;ve never had to implement a bubble sort or a link shortener. However I have had to spend thousands and thousands of hours writing and refactoring account management tools, editing suites, caching logic, mailing interfaces, test suites, deployment scripts, javascript layers, analytics architecture and documentation. These were the things that mattered, the completion of these were what moved us forward.
+
+ Those humble components are the bricks and mortar of projects and take hundreds or thousands of hours of hard work to assemble. And even though they combine to form complex systems, they themselves should not be complicated. You should aim for simplicity and over the years I have learned that simplicity is far more easily attained by time spent working and refactoring than hours of pure thought and &ldquo;brilliance&rdquo;. 
+
+ Simplicity and excellence are most reliably attained by starting with something, anything, that gets the job done and reworking back from that point. We know this is true of companies and the concept of the MVP is burned deep into our consciousness. So too with software. Start with something ugly but functional and then apply and reapply yourself to that ugly and misshapen solution and refactor it back into its simplest form. Simplicity comes far more reliably from work than from brilliance. It comes more predictably from code written, than from thought expended. It comes from effort.
+
+ &quot;Your value as a developer is measured not in the height of your peaks, but the area under your line&quot; http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ It is all too easy for smart lazy people to flash spikes of brilliance and wow their contemporaries but companies are not built on those people and product does not sit well on spikes. Companies are built on people and teams who day in, day out, commit good code that enables others do the same. Great product is built by work horses, not dressage horses.
+
+ Years after Joel coined the term &ldquo;Rockstar Programmer&rdquo;, it lives on along with the misapprehension that companies need such geeky micro-celebrities in order to do anything. While those characters do exist there aren&rsquo;t many of them. When you do find them they&rsquo;re often erratically brilliant - astonishing at the things that interest them but hopeless at working consistently or smoothly with their team. 
+
+ Not only is their output erratic but their superiority is aspirational and infectious. Their arrogance bleeds toxically into the rest of the team. It signals loud and clear that if you&rsquo;re smart enough you choose when you work and what you work on. You become a &ldquo;Developer in Residence&rdquo;. And you not only soak up a salary but you distort the values of those who work around you.
+
+ So the reality is that in all likelihood you and your team will depend, should depend not on those who think they are &ldquo;Rockstars&rdquo; or &ldquo;Ninjas&rdquo; but on reliable people who work in reliable ways.
+
+ Great developers are not people who can produce bubble sorts or link shorteners on demand. They are the people who when you harness them up to a project, never stop moving and inspire everyone around them to do the same. Fuck Rockstars. Hire workhorses. Here&rsquo;s some ways to become one:
+
+Name your functions and variables well (write Ronseal Code)
+
+ Such an incredibly simple place to start and yet I think it is one of THE most important skills in programming. Function naming is the manifestation of problem definition which is frankly the hardest part of programming. 
+
+ Names are the boundary conditions on your code. Names are what you should be solving for. 
+
+ If you name correctly and then solve for that boundary conditions that that name creates you will almost inevitably be left with highly functional code. 
+
+ Consider the function:
+
+ It tells someone almost nothing about what it&rsquo;s going to do or how it&rsquo;s been implemented in the code. However:
+
+ tells someone exactly what&rsquo;s going to happen. It&rsquo;s also a good indicator as to what&rsquo;s not going to happen. It tells you both what you can expect the method to do but also how far you can overload that method. 
+
+ A developer might happily refactor &ldquo;process_text&rdquo; to not only convert text to HTML but to auto-embed videos. However that may be resolutely not what was expected in some of the places that function was used. Change it and you&rsquo;ve created bugs. A good clear name is a commitment to not just what a function does but also what it won&rsquo;t do.
+
+ Function names create contracts between functions and the code that calls them. Good naming defines good architecture http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ A good function promises what it will deliver and then delivers it. Good function and variable naming makes code more readable and tightens the thousands of contracts which criss-cross your codebase. Sloppy naming means sloppy contracts, bugs, and even sloppier contracts built on top of them.
+
+ It&rsquo;s not just functions that you can leverage to describe your code. Your variable names should also be strong. Sometimes it can even be worth creating a variable simply in order document the logic itself. 
+
+ Consider the line:
+
+ It&rsquo;s pretty hard to figure out what the hell is happening there and even once you have done so, it&rsquo;s not 100% clear what the original author was trying to achieve with it. The variable names are horrible and tell you nothing. 
+
+ The &ldquo;and not&rdquo; statement is always confusing to read (please never write &ldquo;and not&rdquo; clauses which end with a noun) and if your job was to refactor this code you&rsquo;d have to do some acrobatics to guess exactly what the original intent was.
+
+ However, if we change the variables names into something more meaningful then things immediately start to become clearer:
+
+ We can go further still and forcibly document the intent of each part of the if statement by separating and naming the components:
+
+ It takes some courage to write a line like &ldquo;user_is_recently_created&rdquo; because it&rsquo;s such fuzzy logic but we all do it at times and owning up to that helps inform the reader about the assumptions you&rsquo;ve made. 
+
+ Notice also how much stronger this approach is than using comments. If you change the logic there is immediate pressure on you to change the variable names. Not so with comments. I agree with DHH, comments are dangerous and tend to rot - much better to write self-documenting code. 
+
+ The better code describes itself, the more likely someone will implement it the way it was intended and the better their code will be. Remember, there are only two hard problems in computer science: cache invalidation, naming, and off-by-one errors. 
+
+
+ &quot;If you want to be a great developer, make sure you write Ronseal Code that does exactly what it says on the tin&quot; http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ Go deep before you go wide - learn your chosen stack inside out
+
+ Very few programming problems are genuinely new. Very few companies are doing technical work that hasn&rsquo;t already been done by 50 teams before them. Very few problems attract Stack Overflow eyeballs that haven&rsquo;t already seen them somewhere else before. 
+
+ For that exact reason, the majority of the things you are trying to do have already been solved by the very stack you&rsquo;re already using. I once refactored 60 lines of someone else&rsquo;s Rails code to a one line using the delightfully simple and powerful methods that Rails ships with.
+
+ &quot;Most programmers waste huge amounts of time by lazily re-creating implementations of pre-existing functionality.&quot; http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ Not only do they waste time but they create verbosity and errors. Their code requires new documentation to describe it, new tests to monitor it and it makes the page noisier and harder to read. Like any new code, it&rsquo;s also buggy. War-tested (and actually-tested) stack code is very seldom buggy.
+
+ If you are a Ruby developer take time to learn Ruby, especially the incredible range of array methods. If you are a Node developer take time to understand the architecture, the methods and the mindset of Node, if you are an Angular developer go right up to the rock-face and understand the logic behind of the incredible architecture the core team is forging there right now. Ask before you invent. You are walking in the shadows of giants. Take time to find their tracks and then marvel at how beautifully they have been built. Because if you don&rsquo;t, you simply punt the problem downstream and someone will just have to figure out why the hell you chose the sub-standard path you did.
+
+Learn to detect the smell of bad code
+
+ Something I&rsquo;ve noticed in programmers who are good but who have plateaued is that they simply don&rsquo;t realise that their code could be better. That is one of the worst things that can happen to your personal development. You need to know what has to improve before you can figure out how to improve it. Learn both what good code looks like and what bad code looks like. It is said that grand chessmasters spend proportionally much more time studying previous other good chess player&amp;#8217;s games than the average players. I&rsquo;m quite certain that the same is true for top developers.
+
+ An important part of your improvement arsenal is your ability to detect bad code - even when it&rsquo;s only slightly bad or perhaps &ldquo;a bit smelly&rdquo;. Smelly code is code which, while you can&rsquo;t quite articulate why, just doesn&rsquo;t feel right.
+
+ It may be that you&rsquo;ve used  60 lines of code for something which feels fundamentally simpler, it might be something which feels like it should be handled by the language but has been manually implemented instead, it might just be code that is as complicated as hell to read. These are your code smells. 
+
+ It&rsquo;s not an easy thing to do but over the years you should learn what bad code smells like and also what beautiful code looks like. You should develop an aesthetic appreciation for code. Physicists and mathematicians understand this. They feel very uneasy about an ugly theory based on its ugliness. Simplicity is beautiful and simplicity is what we want. 
+
+ The truth is that the truth is sometimes ugly but you should always strive for beauty and when ugly is the only way, know how to present it well. If you can&rsquo;t create beautiful code, at least create Shrek code but before you do either you need to develop your sense of smell. If you don&rsquo;t know what good code looks like and know what bad code smells like then why would you ever improve it?
+
+Write code to be read
+
+ I once heard Joel Spolsky say that Stack Exchange optimises not for the person asking questions but for the person reading the answers. Why? Because there are far more of them than the single person who asks the question - utility is maximised by optimising for readers, not questioners. 
+
+ I think you can view code in a similar way. It will be written just once by you and you alone. However it will be read and edited many many times, by many others. Your code has two functions: the first is its immediate job. The second is to get out of the way of everyone who comes after you and it should therefore always be optimised for readability and resilience.
+
+ &quot;Write your code through the eyes of someone who is coming at it fresh in a year&rsquo;s time.&quot; http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ What assumptions have you made, what do your methods actually return, what on earth does that quadruple nested if / else / and not / unless, statement actually select for? Sometimes you&rsquo;ll need more than just good variable naming and you should ring fence it with tests but do what it takes (and only just what it takes) to make it durable. Great code is code that does its job and that continues to do its job even when git blame returns a who&rsquo;s who of your company payroll. 
+
+ Write every line to be read through the eyes of a disinterested and time-pressured team mate needing to extend it in a year&rsquo;s time. Remember that that disinterested and pressured team mate may be you. 
+
+Weigh features on their lifetime cost, not their implementation cost
+
+ New developers want to explore and to play. They love the latest shiniest things and whether they&rsquo;re no-sequel databases or high concurrency mobile servers and they want to unwrap all the toys as fast as possible, run out of the room to play with them and leave the mess for the next dev to clear up.
+
+ Dogs aren&rsquo;t just for Christmas and features aren&rsquo;t just for the next release http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ Features and architecture choices have maintenance costs that affect everything you ever build on top of them. Abstractions leak and the deeper you bury badly insulated abstractions the more things will get stained or poisoned when they leak through. 
+
+ Experimental architecture and shiny features should be embarked on very carefully and only for very good reasons. Build the features you need before the features you want and be VERY careful about architecture. Save toys for side projects. Every component you invent, every piece of bleeding edge, fast changing software you incorporate will bleed and break directly into your project. If you don&rsquo;t want to spend the latter stages of the project doing nothing but mopping up blood then don&rsquo;t use it in the first place. 
+
+ Or, as a friend once tweeted
+
+ Just use Postgres.
+
+Stop being a hipster, and just use Postgres.&mdash; Tony Million (@tonymillion) December 29, 2013
+ Understand  the liability AND the leverage of Technical Debt
+
+ Technical debt is the code you write which, while sub-optimal, gets you to where you need to go. It&rsquo;s the errors which, while annoying, are still sub-critical. It&rsquo;s the complexity of a single-app architecture when you know that the future lies in service-orientation, it&rsquo;s the twenty-minute cron job which could be  refactored to twenty seconds.
+
+ The cost of these these not only adds up but it compounds. Einstein once said that &ldquo;there is no force so powerful in the universe as compound interest&rdquo;. Equally there is no force more destructive in a large software project as compounding technical debt. Most of us have seen (or built) these projects. Codebases where even the smallest change takes months of time. Codebases where people have lost the will to write good code and hope only to get in and get back out without bringing the site down.
+
+ Technical debt is an awful burden on a project. 
+
+ Except when it&rsquo;s not. 
+
+ Like all debt, when used correctly, technical debt can give you tremendous leverage http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ Not only that but technical debt is the best type of debt in the world because you don&rsquo;t always have to pay it back. When you build out a feature that turns out to be wrong, when you build out a product which turns out not to work, you will drop it and move on. You will also drop every optimisation, every test and every refactoring you ever you wrote for that feature. So if you don&rsquo;t absolutely need them; don&rsquo;t write them. This is the time to maximise your leverage, leave gaps, ignore errors, test only what you need to test. 
+
+
+ In the early stages of a product or a feature, the likelihood is that what you are building is wrong. You are in an exploratory phase. You will pivot both on product and on technical implementation. This is the time to borrow heavily on technical debt. This is not the time to fix those sporadic errors or to do massive refactorings. This is the time to run through with guns blazing and keep firing till you burst out the other side. 
+
+ When that happens though; when you&rsquo;re sure that you&rsquo;re in the right place and out the other side then it&rsquo;s time to tidy up and to strengthen your position. Get things in good enough shape to keep on rolling, repay enough of the debt to get you on to the next stage. 
+
+ Technical debt is like so many other things in a startup, a game of leapfrog. Your initial code is scouting code. It should move you forward fast, illuminate the problem and the solution and give you just enough space to build camp. The longer you stay, the more of the system that camp has to support the bigger and stronger you build it. If you&rsquo;re only ever staying for a week though, don&rsquo;t burn time laying down infrastructure to support a decade. 
+
+Check and re-check your code. Your problems are yours to fix
+
+ Engineers who &ldquo;throw code over the fence&rdquo; are awful engineers. You should make sure your code works. It&rsquo;s not the testers&rsquo; job and it&rsquo;s not your team-mates&rsquo; job. It&rsquo;s your job. Lazily written code slows you down, increases cycle times, releases bugs and pisses everyone off. 
+
+ If you constantly commit code that breaks things then you are a constant tax on the rest of your team http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ Don&rsquo;t kid yourself that you&rsquo;re anything less than a burden and get it fixed.
+
+ Do actual work for at least (only) four hours every day
+For all the talk about self optimisation, focus and life hacking that goes on amongst developers, the simple truth is that you don&rsquo;t need to do that much work to be effective. What really matters is that you do it consistently. Do proper work for at least four solid hours each day, every day and you will be one the best contributing members of your team. 
+
+ However, doing four hours of work every day is harder than it seems. 
+
+ Proper work is work that includes no email, no hacker news, no meetings, no dicking around. It means staying focussed for at least 45 minutes at a time. Four hours of work a day means that one day lost in meetings or on long lunches and foosball breaks means you have do eight hours the next one. Believe you me, eight hours of solid work is almost impossible. Four hours a day on average also means you should be aiming for five or six in order to prep for the day when you only get four. 
+
+ However it also means you can be a huge contributor to your team while having a fully rounded life. It means that you don&rsquo;t need to post that self-indulgent &ldquo;I&rsquo;m burning out, please help me&rdquo; post on HN. It means that simply by being consistent you can be valued and respected. 
+
+ Software teams don&rsquo;t slow down because people work four pure hours a day rather than seven (which is insanely hard to do consistently by the way). They slow down because people spend weeks with no direction, or because the louder and emptier vessels dedicate their paid time to discussing Google v. Facebook&rsquo;s acquisition strategies over endless extended coffee breaks.
+
+ Just work. Doesn&rsquo;t matter how incremental or banal your progress seems&amp;#8230; 
+
+ Do four pure hours of work each day, every day and you&rsquo;ll be one of the best people on your team http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ Write up the things you&rsquo;ve done and share them with the team
+
+ However you document things, whether it&rsquo;s through a mailing list like Copyin, a wiki or even just inline documentation in the code, you should take the time to explain your architectural approach and learnings to the rest of the team. 
+
+ Have a tough time getting a fresh install of Postgres or ImageMagik to work? If you found it hard, the rest of your team will probably also find it hard so take a moment to throw down a few paragraphs telling them what you did and saving them the time next time. 
+
+ One of the worst parts of programming is losing whole days to battling bugs or installation issues. If you take the time to document and distribute the way you found through that you could buy five times your wasted time back by forearming your colleagues. 
+
+Understand and appreciate the exquisite balance between too much testing and too little
+
+ Testing is a powerful tool. It allows you to set a baseline for the reliability of your releases and makes you less fearful to make them. The less fearful you are to release, the more you do so and the faster you improve. 
+
+ However it&rsquo;s also an overhead. Tests take time to write, time to run and even more time to maintain. 
+
+ Think of testing like armour. The more of it you wear the harder it is to hurt you but the harder it is to fight too http://t.co/6JMyGvGuzl&mdash; Peter Nixey (@peternixey) April 22, 2014
+ You become too heavy to move, too encumbered to flex your limbs, immobile. Too little of it and the first skid across a concrete floor is going to cut you open and leave you bleeding.
+
+ There is no intuitive answer to what the right amount of testing is. Some projects require more testing than others and testing is a whole new piece of expertise you need to learn in itself. 
+
+ Take the time to understand what really needs tests and how to write good tests. Take the time to see when tests add value and what the least you need from them really is. Don&rsquo;t be afraid to test but don&rsquo;t be afraid not to test either. The right point is a balance; take time to explore where the equilibrium lies. 
+
+
+Make your team better
+
+ This is different to the other points in that it&rsquo;s not something you can action so much as an indicator of whether your other actions are working. 
+
+ Does your presence make your team better or worse? Does the quality of your code, your documentation and your technical skills help and improve those around you? Do you inspire and encourage your team-mates to become better developers? Or are you the one that causes the bugs, argues during stand-ups and who wastes hours of time discussing irrelevant architectural nuances because it helps cover the fact that you&rsquo;ve done no actual work?
+
+ You should make your team better. There should always be at least one or two ways in which you make those people around you better and through which the osmosis of your quality helps strengthen them. However, be aware that being &ldquo;smart&rdquo; alone is probably the least valuable and arguably most destructive dimension you can choose. In fact, if your chosen dimension doesn&rsquo;t actually make you tired it&rsquo;s probably not a valid one. 
+
+It&rsquo;s not who you are on the inside that defines you
+
+ There is one humbly brilliant, line in Batman Begins which has always stayed with me. At some point in the film where he&rsquo;s fooling around and acting up as a billionaire playboy, Christian Bale implores Katie Holmes to believe that he&rsquo;s still a great guy on the inside. She answers simply: &ldquo;it&rsquo;s not who you are underneath, it&rsquo;s what you do that defines you&rdquo;. 
+
+ Your contribution as a developer is defined not by the abstraction of how smart you are or how much you know. It&rsquo;s not defined by the technology acronyms on your resume, the companies you&rsquo;ve worked at or which college you went to. They hint at what you&rsquo;re capable of but who you are is defined by what you do and how that changes the project and the people around you. 
+
+
+ If you want to be good, apply yourself. 
+
+  Comments on Hacker News" /><meta name="twitter:title" content="How to be a great software developer" /><meta name="twitter:url" content="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="peternixey" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=peternixey&amp;postID=83510597580&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=peternixey&amp;postID=83510597580&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=peternixey&amp;postID=83510597580&amp;referrer=twitter-cards" />
+
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=c5febf8fb0ca90d929036d9212393c57"></script>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+</head>
+    <div id="title-container" style="display: none">How to be a great software developer</div>
+    <!--[if lte IE 8 ]> <body id="default" class="oldie single-post"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!--><body id="default" class="single-post"> <!--<![endif]-->
+    
+    <!-- PETER -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=302754116422118";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- End Peter -->
+    
+    <header role="banner">
+    <h1><a href="/" style="background-image:url(http://24.media.tumblr.com/avatar_042209bcb0e6_48.png)">Peter Nixey</a></h1>
+      <nav role="navigation">
+        <ul>
+          <li  id="homepage"><a href="/">Homepage</a></li>
+          <li class="active"><a href="/archive">Archive</a></li>
+          
+            
+            <li><a href="/about" title="About me">About me</a></li>
+            
+          
+        </ul>
+      </nav><!--! end of navigation -->
+    </header><!--! end of banner -->
+  <div role="main">
+    <header>
+        <p>
+          
+          
+            <!-- Need to put twitter follow here -->
+            <div style="margin: 5px 0">
+              <a href="https://twitter.com/peternixey" style="font-size: 12px; font-weight: normal !important;" class="twitter-follow-button" data-show-count="true" >Follow @peternixey</a>
+            </div>
+            <!-- end twitter follow -->
+          
+        </p>
+    </header>
+    
+    
+    
+      <article class="text">
+        
+        
+        
+        
+        
+        
+          
+            <a class="full" href="#">Read Fullscreen</a>
+          
+          <h2><a rel="bookmark" href="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer">How to be a great software developer</a></h2>
+          
+          
+            <!-- AddThis Button BEGIN -->
+
+              <div class="addthis_toolbox addthis_default_style " addthis:title="How to be a great software developer - by @peternixey" addthis:url="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer/" style="padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid silver;">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+              </div>
+              <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4edde3650c3d7f27"></script>
+            <!-- AddThis Button END -->  
+          
+
+          
+            <p class="description">
+              I'm Peter, a Rails developer and entrepreneur. I'm an ex-computer vision researcher, the former CEO of Clickpass and a YC alum. I have built and sold a lot of different software and am now the CTO of <a href="http://brojure.com">Brojure.com</a> - which lets you quickly <a href="http://brojure.com">create stunning sales pitches</a>
+            </p><!--! end of .description -->
+          
+          
+          <div class="article-content">
+            <p><i><b>Disclaimer</b>: This is a very long piece, much longer than I would normally write on any subject. I have edited it back but on sending it to friends to read they agreed that there was no one bit that should be cut. I hope that you feel the same.</i></p>
+
+<p>If there’s one thing that software developers care about, it’s becoming even better software developers. Where do you start though? Should you accumulate the bells and whistles: deepen your knowledge of Node and no-sequel? Should you rote-learn the answers to the profession’s gateway questions and be able to produce bubble sort or link shortener algorithms on demand? Or are there perhaps more fundamental roots that you can put down?</p>
+
+<p>I believe that your seniority and value as a programmer is measured not in what you know, it’s measured in what you put out. The two are related but definitely not the same. Your value is in how you move your project forward and how you empower your team to do the same. In fifteen years of programming I’ve never had to implement a bubble sort or a link shortener. However I have had to spend thousands and thousands of hours writing and refactoring account management tools, editing suites, caching logic, mailing interfaces, test suites, deployment scripts, javascript layers, analytics architecture and documentation. These were the things that mattered, the completion of these were what moved us forward.</p>
+
+<p>Those humble components are the bricks and mortar of projects and take hundreds or thousands of hours of hard work to assemble. And even though they combine to form complex systems, they themselves should not be complicated. You should aim for simplicity and over the years I have learned that simplicity is far more easily attained by time spent working and refactoring than hours of pure thought and “brilliance”. </p>
+
+<p>Simplicity and excellence are most reliably attained by starting with something, anything, that gets the job done and reworking back from that point. We know this is true of companies and the concept of the MVP is burned deep into our consciousness. So too with software. Start with something ugly but functional and then apply and reapply yourself to that ugly and misshapen solution and refactor it back into its simplest form. Simplicity comes far more reliably from work than from brilliance. It comes more predictably from code written, than from thought expended. It comes from effort.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>"Your value as a developer is measured not in the height of your peaks, but the area under your line" <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458594994954469376">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>It is all too easy for smart lazy people to flash spikes of brilliance and wow their contemporaries but companies are not built on those people and product does not sit well on spikes. Companies are built on people and teams who day in, day out, commit good code that enables others do the same. Great product is built by work horses, not dressage horses.</p>
+
+<p>Years after Joel coined the term “Rockstar Programmer”, it lives on along with the misapprehension that companies need such geeky micro-celebrities in order to do anything. While those characters do exist there aren’t many of them. When you do find them they’re often erratically brilliant - astonishing at the things that interest them but hopeless at working consistently or smoothly with their team. </p>
+
+<p>Not only is their output erratic but their superiority is aspirational and infectious. Their arrogance bleeds toxically into the rest of the team. It signals loud and clear that if you’re smart enough you choose when you work and what you work on. You become a “Developer in Residence”. And you not only soak up a salary but you distort the values of those who work around you.</p>
+
+<p>So the reality is that in all likelihood you and your team will depend, should depend not on those who think they are “Rockstars” or “Ninjas” but on reliable people who work in reliable ways.</p>
+
+<p>Great developers are not people who can produce bubble sorts or link shorteners on demand. They are the people who when you harness them up to a project, never stop moving and inspire everyone around them to do the same. Fuck Rockstars. Hire workhorses. Here’s some ways to become one:</p>
+
+<h2>Name your functions and variables well (write Ronseal Code)</h2>
+
+<p>Such an incredibly simple place to start and yet I think it is one of THE most important skills in programming. Function naming is the manifestation of problem definition which is frankly the hardest part of programming. </p>
+
+<p>Names are the boundary conditions on your code. Names are what you should be solving for.</p> 
+
+<p>If you name correctly and then solve for that boundary conditions that that name creates you will almost inevitably be left with highly functional code. </p>
+
+<p>Consider the function:</p>
+
+<script src="https://gist.github.com/peternixey/11176173.js"></script><p>It tells someone almost nothing abo</p>ut what it’s going to do or how it’s been implemented in the code. However:
+
+<script src="https://gist.github.com/peternixey/11176209.js"></script><p>tells someone exactly what’s going to happen. It’s also a good indicator as to what’s not going to happen. It tells you both what you can expect the method to do but also how far you can overload that method. </p>
+
+<p>A developer might happily refactor “process_text” to not only convert text to HTML but to auto-embed videos. However that may be resolutely not what was expected in some of the places that function was used. Change it and you’ve created bugs. A good clear name is a commitment to not just what a function does but also what it won’t do.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Function names create contracts between functions and the code that calls them. Good naming defines good architecture <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458595617233989632">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>A good function promises what it will deliver and then delivers it. Good function and variable naming makes code more readable and tightens the thousands of contracts which criss-cross your codebase. Sloppy naming means sloppy contracts, bugs, and even sloppier contracts built on top of them.</p>
+
+<p>It’s not just functions that you can leverage to describe your code. Your variable names should also be strong. Sometimes it can even be worth creating a variable simply in order document the logic itself. </p>
+
+<p>Consider the line:</p>
+
+<script src="https://gist.github.com/peternixey/11176243.js"></script><p>It’s pretty hard to figure out what the hell is happening there and even once you have done so, it’s not 100% clear what the original author was trying to achieve with it. The variable names are horrible and tell you nothing. </p>
+
+<p>The “and not” statement is always confusing to read (please never write “and not” clauses which end with a noun) and if your job was to refactor this code you’d have to do some acrobatics to guess exactly what the original intent was.</p>
+
+<p>However, if we change the variables names into something more meaningful then things immediately start to become clearer:</p>
+
+<script src="https://gist.github.com/peternixey/11176274.js"></script><p>We can go further still and forcibly document the intent of each part of the if statement by separating and naming the components:</p>
+
+<script src="https://gist.github.com/peternixey/11176324.js"></script><p>It takes some courage to write a line like “user_is_recently_created” because it’s such fuzzy logic but we all do it at times and owning up to that helps inform the reader about the assumptions you’ve made. </p>
+
+<p>Notice also how much stronger this approach is than using comments. If you change the logic there is immediate pressure on you to change the variable names. Not so with comments. I agree with DHH, comments are dangerous and tend to rot - much better to write self-documenting code. </p>
+
+<p>The better code describes itself, the more likely someone will implement it the way it was intended and the better their code will be. Remember, there are only two hard problems in computer science: cache invalidation, naming, and off-by-one errors. </p>
+
+
+<blockquote class="twitter-tweet" lang="en"><p>"If you want to be a great developer, make sure you write Ronseal Code that does exactly what it says on the tin" <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458596274322046976">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><h2>Go deep before you go wide - learn your chosen stack inside out</h2>
+
+<p>Very few programming problems are genuinely new. Very few companies are doing technical work that hasn’t already been done by 50 teams before them. Very few problems attract Stack Overflow eyeballs that haven’t already seen them somewhere else before. </p>
+
+<p>For that exact reason, the majority of the things you are trying to do have already been solved by the very stack you’re already using. I once refactored 60 lines of someone else’s Rails code to a one line using the delightfully simple and powerful methods that Rails ships with.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>"Most programmers waste huge amounts of time by lazily re-creating implementations of pre-existing functionality." <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458596571962441729">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>Not only do they waste time but they create verbosity and errors. Their code requires new documentation to describe it, new tests to monitor it and it makes the page noisier and harder to read. Like any new code, it’s also buggy. War-tested (and actually-tested) stack code is very seldom buggy.</p>
+
+<p>If you are a Ruby developer take time to learn Ruby, especially the incredible range of array methods. If you are a Node developer take time to understand the architecture, the methods and the mindset of Node, if you are an Angular developer go right up to the rock-face and understand the logic behind of the incredible architecture the core team is forging there right now. Ask before you invent. You are walking in the shadows of giants. Take time to find their tracks and then marvel at how beautifully they have been built. Because if you don’t, you simply punt the problem downstream and someone will just have to figure out why the hell you chose the sub-standard path you did.</p>
+
+<h2>Learn to detect the smell of bad code</h2>
+
+<p>Something I’ve noticed in programmers who are good but who have plateaued is that they simply don’t realise that their code could be better. That is one of the worst things that can happen to your personal development. You need to know what has to improve before you can figure out how to improve it. Learn both what good code looks like and what bad code looks like. It is said that grand chessmasters spend proportionally much more time studying previous other good chess player&#8217;s games than the average players. I’m quite certain that the same is true for top developers.</p>
+
+<p>An important part of your improvement arsenal is your ability to detect bad code - even when it’s only slightly bad or perhaps “a bit smelly”. Smelly code is code which, while you can’t quite articulate why, just doesn’t feel right.</p>
+
+<p>It may be that you’ve used  60 lines of code for something which feels fundamentally simpler, it might be something which feels like it should be handled by the language but has been manually implemented instead, it might just be code that is as complicated as hell to read. These are your code smells.</p> 
+
+<p>It’s not an easy thing to do but over the years you should learn what bad code smells like and also what beautiful code looks like. You should develop an aesthetic appreciation for code. Physicists and mathematicians understand this. They feel very uneasy about an ugly theory based on its ugliness. Simplicity is beautiful and simplicity is what we want. </p>
+
+<p>The truth is that the truth is sometimes ugly but you should always <a href="http://robertheaton.com/2013/03/27/take-pride-or-f----it/">strive for beauty</a> and when ugly is the only way, know how to present it well. If you can’t create beautiful code, at least create Shrek code but before you do either you need to develop your sense of smell. If you don’t know what good code looks like and know what bad code smells like then why would you ever improve it?</p>
+
+<h2>Write code to be read</h2>
+
+<p>I once heard Joel Spolsky say that Stack Exchange optimises not for the person asking questions but for the person reading the answers. Why? Because there are far more of them than the single person who asks the question - utility is maximised by optimising for readers, not questioners. </p>
+
+<p>I think you can view code in a similar way. It will be written just once by you and you alone. However it will be read and edited many many times, by many others. Your code has two functions: the first is its immediate job. The second is to get out of the way of everyone who comes after you and it should therefore always be optimised for readability and resilience.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>"Write your code through the eyes of someone who is coming at it fresh in a year’s time." <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458596758466351104">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>What assumptions have you made, what do your methods actually return, what on earth does that quadruple nested if / else / and not / unless, statement actually select for? Sometimes you’ll need more than just good variable naming and you should ring fence it with tests but do what it takes (and only just what it takes) to make it durable. Great code is code that does its job and that continues to do its job even when git blame returns a who’s who of your company payroll. </p>
+
+<p>Write every line to be read through the eyes of a disinterested and time-pressured team mate needing to extend it in a year’s time. Remember that that disinterested and pressured team mate may be you. </p>
+
+<h2>Weigh features on their lifetime cost, not their implementation cost</h2>
+
+<p>New developers want to explore and to play. They love the latest shiniest things and whether they’re no-sequel databases or high concurrency mobile servers and they want to unwrap all the toys as fast as possible, run out of the room to play with them and leave the mess for the next dev to clear up.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Dogs aren’t just for Christmas and features aren’t just for the next release <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458597372357246976">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>Features and architecture choices have maintenance costs that affect everything you ever build on top of them. Abstractions leak and the deeper you bury badly insulated abstractions the more things will get stained or poisoned when they leak through. </p>
+
+<p>Experimental architecture and shiny features should be embarked on very carefully and only for very good reasons. Build the features you need before the features you want and be VERY careful about architecture. Save toys for side projects. Every component you invent, every piece of bleeding edge, fast changing software you incorporate will bleed and break directly into your project. If you don’t want to spend the latter stages of the project doing nothing but mopping up blood then don’t use it in the first place. </p>
+
+<p>Or, as a friend once tweeted</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Just use Postgres.
+
+Stop being a hipster, and just use Postgres.</p>— Tony Million (@tonymillion) <a href="https://twitter.com/tonymillion/statuses/417213069572714496">December 29, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><h2>Understand  the liability AND the leverage of Technical Debt</h2>
+
+<p>Technical debt is the code you write which, while sub-optimal, gets you to where you need to go. It’s the errors which, while annoying, are still sub-critical. It’s the complexity of a single-app architecture when you know that the future lies in service-orientation, it’s the twenty-minute cron job which could be  refactored to twenty seconds.</p>
+
+<p>The cost of these these not only adds up but it compounds. Einstein once said that “there is no force so powerful in the universe as compound interest”. Equally there is no force more destructive in a large software project as compounding technical debt. Most of us have seen (or built) these projects. Codebases where even the smallest change takes months of time. Codebases where people have lost the will to write good code and hope only to get in and get back out without bringing the site down.</p>
+
+<p>Technical debt is an awful burden on a project. </p>
+
+<p>Except when it’s not. </p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Like all debt, when used correctly, technical debt can give you tremendous leverage <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458597500640067585">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>Not only that but technical debt is the best type of debt in the world because you don’t always have to pay it back. When you build out a feature that turns out to be wrong, when you build out a product which turns out not to work, you will drop it and move on. You will also drop every optimisation, every test and every refactoring you ever you wrote for that feature. So if you don’t absolutely need them; don’t write them. This is the time to maximise your leverage, leave gaps, ignore errors, test only what you need to test. </p>
+
+
+<p>In the early stages of a product or a feature, the likelihood is that what you are building is wrong. You are in an exploratory phase. You will pivot both on product and on technical implementation. This is the time to borrow heavily on technical debt. This is not the time to fix those sporadic errors or to do massive refactorings. This is the time to run through with guns blazing and keep firing till you burst out the other side. </p>
+
+<p>When that happens though; when you’re sure that you’re in the right place and out the other side then it’s time to tidy up and to strengthen your position. Get things in good enough shape to keep on rolling, repay enough of the debt to get you on to the next stage. </p>
+
+<p>Technical debt is like so many other things in a startup, a game of leapfrog. Your initial code is scouting code. It should move you forward fast, illuminate the problem and the solution and give you just enough space to build camp. The longer you stay, the more of the system that camp has to support the bigger and stronger you build it. If you’re only ever staying for a week though, don’t burn time laying down infrastructure to support a decade. </p>
+
+<img src="https://31.media.tumblr.com/f3c699eb5642b3133ae630c59d2edd46/tumblr_inline_n4fo8r3Ucs1qznw8n.png"/><h2>Check and re-check your code. Your problems are yours to fix</h2>
+
+<p>Engineers who “throw code over the fence” are awful engineers. You should make sure your code works. It’s not the testers’ job and it’s not your team-mates’ job. It’s your job. Lazily written code slows you down, increases cycle times, releases bugs and pisses everyone off. </p>
+
+<blockquote class="twitter-tweet" lang="en"><p>If you constantly commit code that breaks things then you are a constant tax on the rest of your team <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458597632248930304">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>Don’t kid yourself that you’re anything less than a burden and get it fixed.</p>
+
+<p>Do actual work for at least (only) four hours every day
+For all the talk about self optimisation, focus and life hacking that goes on amongst developers, the simple truth is that you don’t need to do that much work to be effective. What really matters is that you do it consistently. Do proper work for at least four solid hours each day, every day and you will be one the best contributing members of your team. </p>
+
+<p>However, doing four hours of work every day is harder than it seems. </p>
+
+<p>Proper work is work that includes no email, no hacker news, no meetings, no dicking around. It means staying focussed for at least 45 minutes at a time. Four hours of work a day means that one day lost in meetings or on long lunches and foosball breaks means you have do eight hours the next one. Believe you me, eight hours of solid work is almost impossible. Four hours a day on average also means you should be aiming for five or six in order to prep for the day when you only get four. </p>
+
+<p>However it also means you can be a huge contributor to your team while having a fully rounded life. It means that you don’t need to post that self-indulgent “I’m burning out, please help me” post on HN. It means that simply by being consistent you can be valued and respected. </p>
+
+<p>Software teams don’t slow down because people work four pure hours a day rather than seven (which is insanely hard to do consistently by the way). They slow down because people spend weeks with no direction, or because the louder and emptier vessels dedicate their paid time to discussing Google v. Facebook’s acquisition strategies over endless extended coffee breaks.</p>
+
+<p>Just work. Doesn’t matter how incremental or banal your progress seems&#8230; </p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Do four pure hours of work each day, every day and you’ll be one of the best people on your team <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458597797278007296">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><h2>Write up the things you’ve done and share them with the team</h2>
+
+<p>However you document things, whether it’s through a mailing list like Copyin, a wiki or even just inline documentation in the code, you should take the time to explain your architectural approach and learnings to the rest of the team. </p>
+
+<p>Have a tough time getting a fresh install of Postgres or ImageMagik to work? If you found it hard, the rest of your team will probably also find it hard so take a moment to throw down a few paragraphs telling them what you did and saving them the time next time. </p>
+
+<p>One of the worst parts of programming is losing whole days to battling bugs or installation issues. If you take the time to document and distribute the way you found through that you could buy five times your wasted time back by forearming your colleagues. </p>
+
+<h2>Understand and appreciate the exquisite balance between too much testing and too little</h2>
+
+<p>Testing is a powerful tool. It allows you to set a baseline for the reliability of your releases and makes you less fearful to make them. The less fearful you are to release, the more you do so and the faster you improve. </p>
+
+<p>However it’s also an overhead. <a href="http://peternixey.com/post/26074087096/the-multiplicative-slowdown-effect-of-testing">Tests take time to write, time to run and even more time to maintain.</a> </p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Think of testing like armour. The more of it you wear the harder it is to hurt you but the harder it is to fight too <a href="http://t.co/6JMyGvGuzl">http://t.co/6JMyGvGuzl</a></p>— Peter Nixey (@peternixey) <a href="https://twitter.com/peternixey/statuses/458597921211293696">April 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br/><p>You become too heavy to move, too encumbered to flex your limbs, immobile. Too little of it and the first skid across a concrete floor is going to cut you open and leave you bleeding.</p>
+
+<img src="https://31.media.tumblr.com/cfe26f52aa5d47ee68a03206ff177686/tumblr_inline_n4fo9ccH9O1qznw8n.png"/><p>There is no intuitive answer to what the right amount of testing is. Some projects require more testing than others and testing is a whole new piece of expertise you need to learn in itself. </p>
+
+<p>Take the time to understand what really needs tests and how to write good tests. Take the time to see when tests add value and what the least you need from them really is. Don’t be afraid to test but don’t be afraid not to test either. The right point is a balance; take time to explore where the equilibrium lies. </p>
+
+
+<h2>Make your team better</h2>
+
+<p>This is different to the other points in that it’s not something you can action so much as an indicator of whether your other actions are working. </p>
+
+<p>Does your presence make your team better or worse? Does the quality of your code, your documentation and your technical skills help and improve those around you? Do you inspire and encourage your team-mates to become better developers? Or are you the one that causes the bugs, argues during stand-ups and who wastes hours of time discussing irrelevant architectural nuances because it helps cover the fact that you’ve done no actual work?</p>
+
+<p>You should make your team better. There should always be at least one or two ways in which you make those people around you better and through which the osmosis of your quality helps strengthen them. However, be aware that being “smart” alone is probably the least valuable and arguably most destructive dimension you can choose. In fact, if your chosen dimension doesn’t actually make you tired it’s probably not a valid one. </p>
+
+<h2>It’s not who you are on the inside that defines you</h2>
+
+<p>There is one humbly brilliant, line in Batman Begins which has always stayed with me. At some point in the film where he’s fooling around and acting up as a billionaire playboy, Christian Bale implores Katie Holmes to believe that he’s still a great guy on the inside. She answers simply: “it’s not who you are underneath, it’s what you do that defines you”. </p>
+
+<p>Your contribution as a developer is defined not by the abstraction of how smart you are or how much you know. It’s not defined by the technology acronyms on your resume, the companies you’ve worked at or which college you went to. They hint at what you’re capable of but who you are is defined by what you do and how that changes the project and the people around you. </p>
+
+
+<p>If you want to be good, apply yourself. </p>
+
+<p><a href="https://news.ycombinator.com/item?id=7627540"> Comments on Hacker News</a></p>
+          </div>
+        
+        
+        
+
+        <!-- email and copyin signup -->
+        
+          <!-- begin twitter signup -->
+          <div style="padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid silver;" > 
+
+            <div style="float:right">
+              <a href="https://twitter.com/peternixey" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @peternixey</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+            <!-- begin email signup -->
+            <div class="createsend-button" style="height:27px;display:inline-block;float:right;margin-top:-3px" data-listid="i/39/6A8/832/57A8ACEA879E70D5">
+  
+  <script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=2'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+            </div>
+            <!-- end email signup -->
+
+          </div>
+          <!-- end twitter -->
+
+          
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style " addthis:title="" addthis:url="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer/">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+            </div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4edde3650c3d7f27"></script>
+            <!-- AddThis Button END -->
+          
+          <br/>
+
+
+
+          <!-- copyin -->
+          <!-- <iframe src="http://copyin.com/invite_requests/embed?uid=5948858504" style="width:100%; height: 500px;"></iframe>     -->
+          <!-- Brojure advert -->
+          <div style="text-align: center">
+          <a href="http://brojure.com" title="Stunning, easily customizable e-brochures">
+            <img src="http://i.imgur.com/BsUCQN0.jpg?1" title = "Brojure" style= "max-width: 400px;"/>
+          </a>
+          </div>
+
+
+          
+            <div id="post-notes">
+              <h3>13 Notes</h3>
+              <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_adrizzlingrain without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://adrizzlingrain.tumblr.com/" title="Journey of a Drizzling Rain " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_07bbed96fe17_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://adrizzlingrain.tumblr.com/" title="Journey of a Drizzling Rain" rel="nofollow">adrizzlingrain</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_mikelyons without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://michaelrobertlyons.com/" title="The Master Vengeancer " rel="nofollow"><img src="http://24.media.tumblr.com/avatar_4ebbbeb6dda9_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://michaelrobertlyons.com/" title="The Master Vengeancer" rel="nofollow">mikelyons</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_bulletproofjockstrap without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://bulletproofjockstrap.tumblr.com/" title="The Coven of Crotch Mounted Protection " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_6c8745a8348b_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://bulletproofjockstrap.tumblr.com/" title="The Coven of Crotch Mounted Protection" rel="nofollow">bulletproofjockstrap</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_whileyouweregone without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://tumblr.whileyouweregone.co.uk/" title="While You Were Gone " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_83a466a6a173_16.gif" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://tumblr.whileyouweregone.co.uk/" title="While You Were Gone" rel="nofollow">whileyouweregone</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_kenrick95 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kenrick95.tumblr.com/" title="Untitled"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://kenrick95.tumblr.com/post/83526030119"><a rel="nofollow" href="http://kenrick95.tumblr.com/" class="tumblelog" title="Untitled">kenrick95</a> reblogged this from <a rel="nofollow" href="http://peternixey.com/" class="source_tumblelog" title="Peter Nixey">peternixey</a></span><div class="clear"></div></li><li class="note like tumblelog_kenrick95 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kenrick95.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://kenrick95.tumblr.com/" title="Untitled" rel="nofollow">kenrick95</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_dshack without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dshack.tumblr.com/" title="Shck Atck"><img src="http://assets.tumblr.com/images/default_avatar/octahedron_closed_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://dshack.tumblr.com/post/83525864854"><a rel="nofollow" href="http://dshack.tumblr.com/" class="tumblelog" title="Shck Atck">dshack</a> reblogged this from <a rel="nofollow" href="http://peternixey.com/" class="source_tumblelog" title="Peter Nixey">peternixey</a></span><div class="clear"></div></li><li class="note like tumblelog_swiftx without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://swiftx.tumblr.com/" title="Thoughts of swift " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://swiftx.tumblr.com/" title="Thoughts of swift" rel="nofollow">swiftx</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_mattlehrer without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://blog.mattlehrer.com/" title="Matt Lehrer " rel="nofollow"><img src="http://37.media.tumblr.com/avatar_8f0da7c989b7_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://blog.mattlehrer.com/" title="Matt Lehrer" rel="nofollow">mattlehrer</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sibukixxx without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sibukixxx.tumblr.com/" title="sibukixxx Tumblr " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_07a26dbe5868_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sibukixxx.tumblr.com/" title="sibukixxx Tumblr" rel="nofollow">sibukixxx</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_mikeadeleke without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://mikeadeleke.tumblr.com/" title="Untitled"><img src="http://37.media.tumblr.com/avatar_c25d51ec3f83_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://mikeadeleke.tumblr.com/post/83521887243"><a rel="nofollow" href="http://mikeadeleke.tumblr.com/" class="tumblelog" title="Untitled">mikeadeleke</a> reblogged this from <a rel="nofollow" href="http://peternixey.com/" class="source_tumblelog" title="Peter Nixey">peternixey</a></span><div class="clear"></div></li><li class="note reblog tumblelog_adisetiawan without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://adisetiawan.tumblr.com/" title="fuzzy mind"><img src="http://24.media.tumblr.com/avatar_d3a43a9512f8_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://adisetiawan.tumblr.com/post/83520408232"><a rel="nofollow" href="http://adisetiawan.tumblr.com/" class="tumblelog" title="fuzzy mind">adisetiawan</a> reblogged this from <a rel="nofollow" href="http://peternixey.com/" class="source_tumblelog" title="Peter Nixey">peternixey</a></span><div class="clear"></div></li><li class="note reblog tumblelog_howardsellers without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://howardsellers.tumblr.com/" title="Untitled"><img src="http://31.media.tumblr.com/avatar_3f6c8bc6cebd_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://howardsellers.tumblr.com/post/83518076688"><a rel="nofollow" href="http://howardsellers.tumblr.com/" class="tumblelog" title="Untitled">howardsellers</a> reblogged this from <a rel="nofollow" href="http://peternixey.com/" class="source_tumblelog" title="Peter Nixey">peternixey</a></span><div class="clear"></div></li><li class="note reblog tumblelog_peternixey original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://peternixey.com/" title="Peter Nixey"><img src="http://24.media.tumblr.com/avatar_042209bcb0e6_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://peternixey.com/post/83510597580"><a rel="nofollow" href="http://peternixey.com/" class="tumblelog" title="Peter Nixey">peternixey</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+            </div><!--! end of .notes -->
+          
+
+        
+        
+
+        
+
+
+        <footer>
+        
+        
+          <ul class="meta">
+            
+              <li class="day"><a href="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer">22/04/14</a></li>
+            
+            
+            
+          </ul>
+          
+            
+            <div id="disqus_thread"></div><!--! end of #disqus-thread -->
+            <script type="text/javascript">
+              var disqus_shortname = 'peternixey';
+                var disqus_identifier = 'post-83510597580';
+                var disqus_url = 'http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer';
+                (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+                  dsq.async = true;
+                  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            
+          
+         
+
+        </footer>
+      </article><!--! end of text article -->
+    
+    <footer>
+      <div id="pagination">
+        
+        
+            
+              <a href="http://peternixey.com/post/74933869565" class="pagination-link older"><span>Older Post</span></a>
+            
+            
+        
+        </div><!--! end of #pagination -->
+    </footer>
+  </div><!--! end of main -->
+  <aside role="complementary">
+    <ul>
+      <li><a href="http://feeds.feedburner.com/PeterNixey" onclick="_gaq.push(['_trackEvent','Subscription', 'RSS click']);"><img src="http://static.tumblr.com/arbn4az/jqXlm2t9d/rss-icon.png" alt="RSS Icon" />RSS Feed</a></li>
+      
+      
+      
+        <li><a href="http://facebook.com/nixey" onclick="_gaq.push(['_trackEvent','Profile view', 'Facebook click']);"><img src="http://static.tumblr.com/arbn4az/Mbelm2ra2/facebook-icon.png" alt="Facebook icon" />Facebook</a></li>
+       
+      
+      
+      
+        <li><a href="http://uk.linkedin.com/in/peternixey" onclick="_gaq.push(['_trackEvent','Profile view', 'LinkedIn click']);"><img src="http://static.tumblr.com/arbn4az/RLvlm2sbi/linkedin-icon.png" alt="LinkedIn icon" />LinkedIn</a></li>
+      
+      
+      <li><a href="http://twitter.com/peternixey" onclick="_gaq.push(['_trackEvent', 'Subscription', 'Twitter click side']);"><img src="http://static.tumblr.com/arbn4az/WkOlm2rfk/twitter-icon.png" alt="Twitter icon" />Twitter</a></li>
+      
+    </ul>
+
+    
+    
+  </aside><!--! end of complementary -->
+  <footer role="contentinfo">
+    
+
+    <!-- influads -->
+    <div id="carbonads-container"><div class="carbonad" style="border-width: 0px;"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/58286/azcarbon_2_1_0_VERTDARK"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+    <!-- / influads -->
+  </footer><!--! end of contentinfo -->
+  <footer id="engage">
+    
+  </footer>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="http://static.tumblr.com/arbn4az/yyillayf8/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>
+  <script>
+  $(document).ready(function(){
+    // Toggle full screen
+    $("a.full").click(toggleFull);
+    function toggleFull() {
+      $("body").toggleClass("fullscreen");
+      return false;
+    }
+    // Implement active class on nav
+    var url = window.location.pathname;
+    var navitems = $('nav ul li a');
+    var pathArray = url.split('/').pop();
+    $.each(navitems, function(i, e) {
+      if($(this).attr('href') == url) {
+        if($(this).parent().attr('id') !== 'homepage') {
+          $("article").removeClass('advanced');
+        }
+        $('nav ul li').removeClass('active');
+        $(this).parent().addClass('active');
+      }
+    });
+    // White Youtube player
+    $('embed[src^="http://www.youtube.com"]', this).each(function(){
+      var parent = $(this).closest('.video-wrapper');
+      // parent.html( parent.html().replace(/rel=0/gmi, 'rel=0&amp;color1=0xFFFFFF&amp;color2=0xFFFFFF&amp;hd=1') );
+    });
+  });
+  </script>
+  
+
+  
+  <!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "http://assets.tumblr.com/analytics.html?dc636e9b34dfd27b194aed14513506cb#http://peternixey.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/83510597580/how-to-be-a-great-software-developer?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script>
+            var _qevents = _qevents || [];
+            (function() {
+                var s = document.createElement('script');
+                var el = document.getElementsByTagName('script')[0];
+                s.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+                el.parentNode.insertBefore(s, el);
+            })();
+        </script><script type="text/javascript">
+            _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
+        </script><noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1398188950&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcGV0ZXJuaXhleS5jb21cL3Bvc3RcLzgzNTEwNTk3NTgwXC9ob3ctdG8tYmUtYS1ncmVhdC1zb2Z0d2FyZS1kZXZlbG9wZXIiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=DGHNNFMFPJ&K=01630a77b91da4564b435761ec57ed052f3ab1f1b512d16db4d83a43a1204e76&R=http%3A%2F%2Fthetechblock.com%2F'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1398188950&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcGV0ZXJuaXhleS5jb21cL3Bvc3RcLzgzNTEwNTk3NTgwXC9ob3ctdG8tYmUtYS1ncmVhdC1zb2Z0d2FyZS1kZXZlbG9wZXIiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=DGHNNFMFPJ&K=71476e6db80ad6e90305129d05400de6dde09e1f2b674025a844faadbbd4dac1&R=http%3A%2F%2Fthetechblock.com%2F"></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1398188950&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3BldGVybml4ZXkuY29tXC9wb3N0XC84MzUxMDU5NzU4MFwvaG93LXRvLWJlLWEtZ3JlYXQtc29mdHdhcmUtZGV2ZWxvcGVyIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiODM1MTA1OTc1ODAiLCJibG9naWQiOiIzMzE4NjE4MCIsInNvdXJjZSI6MzN9XX0=&U=JPJMFEBNCA&K=57cb35d1a6aa0468181f4393e581feabe9d9146c7935cbd0e16d41b93704a6f3&R=http%3A%2F%2Fthetechblock.com%2F'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1398188950&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3BldGVybml4ZXkuY29tXC9wb3N0XC84MzUxMDU5NzU4MFwvaG93LXRvLWJlLWEtZ3JlYXQtc29mdHdhcmUtZGV2ZWxvcGVyIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiODM1MTA1OTc1ODAiLCJibG9naWQiOiIzMzE4NjE4MCIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=JPJMFEBNCA&K=1cb8ef6279d620877f42d76b8cde4966f8b1a87dd7f262d77365f334a7fbb1b5&R=http%3A%2F%2Fthetechblock.com%2F"></noscript><script>
+                (function() {
+                    var s = document.createElement('script');
+                    var el = document.getElementsByTagName('script')[0];
+                    s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://l') + '.yimg.com/ss/rapid-3.14.js';
+                    s.onload = function(){
+                        var YAHOO = window.YAHOO;
+                        if (YAHOO) {
+                            YAHOO.i13n.beacon_server = 'nol.yahoo.com';
+                            var keys = { pd:'/post/:id/:summary', _li:0, i_rad:0, i_strm:0, b_id:33186180 };
+                            var conf = {
+                                                                spaceid:1197719230,
+                                client_only:1,
+                                yql_enabled:false,
+                                keys:keys
+                            }
+                            YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                        }
+                    }
+                    el.parentNode.insertBefore(s, el);
+                })();
+            </script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=44989c11a759367f3ed3eaef99e427cd#src=http%3A%2F%2Fpeternixey.com%2Fpost%2F83510597580%2Fhow-to-be-a-great-software-developer&amp;pid=83510597580&amp;rk=7zDLAWL3&amp;lang=en_US&amp;name=peternixey&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_042209bcb0e6_64.png&amp;title=Peter+Nixey&amp;url=http%3A%2F%2Fpeternixey.com%2F&amp;page_slide=slide"></iframe><div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://www.tumblr.com/assets/html/iframe/teaser.html?_v=cdae7710c0634398938e9c8f9fb32ad6#src=http%3A%2F%2Fpeternixey.com%2Fpost%2F83510597580%2Fhow-to-be-a-great-software-developer&amp;pid=83510597580&amp;rk=7zDLAWL3&amp;lang=en_US&amp;name=peternixey&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_042209bcb0e6_64.png&amp;title=Peter+Nixey&amp;url=http%3A%2F%2Fpeternixey.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=98cbe34b55e041c172fb5c894227a2f5");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>
