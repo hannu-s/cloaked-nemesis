@@ -62,7 +62,7 @@ Each 'avoids' substract link specific score for
 Structure & Process
 -------------------
 
-###Parent (amount: 1) (99%)
+###Parent (amount: 1)
 
 1. XML Query for 'keywords', 'avoids', 'urls', linksToSearch
 2. Starts child processes each child searches different subreddit. 
@@ -77,7 +77,7 @@ Structure & Process
 7. Store MasterInspection.XML
 8. Notify readiness for manual inspection of MasterInspection.XML
 
-###Child (amount: n)  (the very basics)
+###Child (amount: n)  
 
 1. Search subreddit
 2. Inspect set amount newest links, skip visited
@@ -95,7 +95,7 @@ Structure & Process
 6. Calls PageToXML class
 7. Notify parent for findings ready for inspection
 
-###Server & Index.html  (100% - Only polish remains)
+###Server & Index.html  
 
 Currently expects to find server in localhost:80/tracker/. 
 
@@ -105,7 +105,7 @@ Currently expects to find server in localhost:80/tracker/.
 2. Server waits for Updater to finish
 3. Triggers page refresh with new master_inspection.xml
 
-###Updater  (100%)
+###Updater  
 
 1. Starts with id and user vote of the master_inspector node as its parameters.
 2. If voted useful or useless
@@ -115,7 +115,7 @@ Currently expects to find server in localhost:80/tracker/.
 5. Writes master_inspection.xml
 6. Notifies that task is finished
 
-###Main_Updater  (100%)
+###Main_Updater  
 
 1. Class starts with id and useful/useless vote
 2. Load page data corresponding the id
@@ -127,14 +127,14 @@ Currently expects to find server in localhost:80/tracker/.
 8. Calculate all scores from existing page data files
 9. Return xmlInspections list to Updater
 
-###PageToXML (100%?) (drop?)
+###PageToXML 
 
 1. Starts with name of the wanted xml and a list containing inspection elements
 2. Calculate all scores from existing page data files
 3. Order calculated data with descending score
 4. Write data to XML
 
-###Sorter  (100%)
+###Sorter  
 
 Class starts with list of links and scores. Sorts them in descending order. Returns sorted list.
 
