@@ -1,15 +1,15 @@
 status: 200
-content-length: 95687
+content-length: 95582
 content-location: http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/
 x-nananana: Batcache
 vary: Cookie
 server: nginx
-last-modified: Tue, 22 Apr 2014 18:36:05 GMT
+last-modified: Tue, 22 Apr 2014 18:47:37 GMT
 connection: keep-alive
 -content-encoding: gzip
 link: <http://wp.me/peToi-M4>; rel=shortlink
-cache-control: max-age=83, must-revalidate
-date: Tue, 22 Apr 2014 18:39:42 GMT
+cache-control: max-age=189, must-revalidate
+date: Tue, 22 Apr 2014 18:49:28 GMT
 x-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
 content-type: text/html; charset=UTF-8
 x-pingback: http://bartoszmilewski.com/xmlrpc.php
@@ -17,10 +17,10 @@ x-pingback: http://bartoszmilewski.com/xmlrpc.php
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <!--
-	generated 217 seconds ago
-	generated in 0.989 seconds
+	generated 111 seconds ago
+	generated in 0.655 seconds
 	served from batcache in 0.003 seconds
-	expires in 83 seconds
+	expires in 189 seconds
 -->
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -35,7 +35,7 @@ x-pingback: http://bartoszmilewski.com/xmlrpc.php
 	</style>
 	<![endif]-->
 
-			<script src='//r-login.wordpress.com/remote-login.php?action=js&amp;host=bartoszmilewski.com&amp;id=3549518&amp;t=1398191764&amp;back=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F' type="text/javascript"></script>
+			<script src='//r-login.wordpress.com/remote-login.php?action=js&amp;host=bartoszmilewski.com&amp;id=3549518&amp;t=1398192456&amp;back=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F%3Futm_content%3Dbuffer10163%26utm_medium%3Dsocial%26utm_source%3Dtwitter.com%26utm_campaign%3Dbuffer' type="text/javascript"></script>
 		<script type="text/javascript">
 		/* <![CDATA[ */
 			if ( 'function' === typeof WPRemoteLogin ) {
@@ -116,9 +116,7 @@ if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
 var wpcom_ads = { bid: 3549518, pt: 'permalink', wa: 0, as: 1, domain: 'bartoszmilewski.com', url: 'http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/', gid: '', };
 </script>
 
-<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd.wordpress.com/botd.gif?blogid=3549518&postid=2980&lang=1&date=1398105150&ip=93.19.154.154&url=http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/&loc='+document.location;i.id='botd';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
-
-<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=3549518&post=2980&lang=en&date=1398105150&ip=93.19.154.154&url=http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/';i.id='botd2';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=3549518&post=2980&lang=en&date=1398105150&ip=202.161.50.115&url=http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/';i.id='botd2';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
 <style type="text/css" id="syntaxhighlighteranchor"></style>
 		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://bartoszmilewski.com/?custom-css=1&#038;csblog=eToi&#038;cscache=6&#038;csrev=56" />
 		<script type="text/javascript">
@@ -670,7 +668,7 @@ jQuery( window ).load( function() {
 setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
 } );
 </script>
-<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-2980"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=linkedin" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-2980"><span>LinkedIn</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=google-plus-1" target="_blank" title="Click to share on Google+" id="sharing-google-2980"><span>Google</span></a></li><li class="share-end"></li><li class="share-pocket"><a rel="nofollow" class="share-pocket sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=pocket" target="_blank" title="Click to share on Pocket"><span>Pocket</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-2980"><span>Facebook</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=digg" target="_blank" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=stumbleupon" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3549518-2980-5356b6952f960' data-src='//widgets.wp.com/likes/#blog_id=3549518&amp;post_id=2980&amp;origin=bartoszmilewski.wordpress.com&amp;obj_id=3549518-2980-5356b6952f960' data-name='like-post-frame-3549518-2980-5356b6952f960'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-2980"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=linkedin" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-2980"><span>LinkedIn</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=google-plus-1" target="_blank" title="Click to share on Google+" id="sharing-google-2980"><span>Google</span></a></li><li class="share-end"></li><li class="share-pocket"><a rel="nofollow" class="share-pocket sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=pocket" target="_blank" title="Click to share on Pocket"><span>Pocket</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-2980"><span>Facebook</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=digg" target="_blank" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=stumbleupon" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3549518-2980-5356b9491276c' data-src='//widgets.wp.com/likes/#blog_id=3549518&amp;post_id=2980&amp;origin=bartoszmilewski.wordpress.com&amp;obj_id=3549518-2980-5356b9491276c' data-name='like-post-frame-3549518-2980-5356b9491276c'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
 <div id='jp-relatedposts' class='jp-relatedposts' >
 	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
 </div></div>	<div class="post-info">
@@ -854,12 +852,12 @@ Concat could also be implemented this way. You would just return a more complex 
 	
 
 									<div id="respond" class="comment-respond">
-				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/04/21/getting-lazy-with-c/#respond" style="display:none;">Cancel reply</a></small></h3>
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/04/21/getting-lazy-with-c/?utm_content=buffer10163&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#respond" style="display:none;">Cancel reply</a></small></h3>
 									<form action="http://bartoszmilewski.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
 																										
 
 
-												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="a732b8a1aa" /><input type="hidden" name="_wp_http_referer" value="/2014/04/21/getting-lazy-with-c/" />
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="a732b8a1aa" /><input type="hidden" name="_wp_http_referer" value="/2014/04/21/getting-lazy-with-c/?utm_content=buffer10163&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer" />
 <input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
 
 <div class="comment-form-field comment-textarea">
@@ -1027,9 +1025,9 @@ jQuery(document).ready( highlander_expando_javascript );
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 						</p>
 						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4a669907f5" /></p>
-<input type="hidden" name="genseq" value="1398191765" />
+<input type="hidden" name="genseq" value="1398192457" />
 <script type='text/javascript' src='http://s0.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1395714917g'></script>
-<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="96"/></p>					</form>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="187"/></p>					</form>
 							</div><!-- #respond -->
 			<div style="clear: both"></div>
 			</div>
@@ -1047,7 +1045,7 @@ jQuery(document).ready( highlander_expando_javascript );
 						</li>
 	</ul>
 		</div>
-<p id="footer"><a href="http://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com</a>. &#8212; <a href="http://theme.wordpress.com/credits/bartoszmilewski.com/" title="Learn about customizing this theme with the Custom Design upgrade">Customized Connections Theme</a>.</p>
+<p id="footer"><a href="http://wordpress.com/?ref=footer_blog">Blog at WordPress.com</a>. &#8212; <a href="http://theme.wordpress.com/credits/bartoszmilewski.com/" title="Learn about customizing this theme with the Custom Design upgrade">Customized Connections Theme</a>.</p>
 
 <script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201417x'></script>
 <script type='text/javascript'>
@@ -1138,7 +1136,7 @@ PDRTJS_settings_2203687_post_2980={"id":2203687,"unique_id":"wp-post-2980","titl
 		});
 		</script>
 			<div id="sharing_email" style="display: none;">
-		<form action="/2014/04/21/getting-lazy-with-c/" method="post">
+		<form action="/2014/04/21/getting-lazy-with-c/?utm_content=buffer10163&#038;utm_medium=social&#038;utm_source=twitter.com&#038;utm_campaign=buffer" method="post">
 			<label for="target_email">Send to Email Address</label>
 			<input type="email" name="target_email" id="target_email" value="" />
 
@@ -1429,7 +1427,7 @@ try{
 </script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
 <script type="text/javascript">
 st_go({'blog':'3549518','v':'wpcom','tz':'-7','user_id':'0','post':'2980','subd':'bartoszmilewski'});
-ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3BYdHJlenxESDRhV11NV2tuP29VdUElLjFdcTFtcGd4UkZmak1fOV8rOD95W21kQXdJajlseVZvP3NvYlVCTVNiTWhQaGl4d1QsK0dERXMzRltEZ3hIRy8saW5rc1pxVTJzdFMuNHhjU35kZ2VVPUlSejBBWzNLNFtIakZJUTNCWzd5X0M1W3U9Nks5cUVJUV1BSmNyM3dzcXFbdDh2eFsufHc0S182WjhQX1kuS0NyRCZ8MUNGSVZ5eGNSTzZWJkd1Lys3LytYR2ZnTFdCeXhTP2MsOF9ZYmFdT3lSL189dmIsdnxROSsvfk92bC9rV0hST1JlL3x8V1NsMmswNDFY'});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3BUWGdOR05vUHd0Y29aakFjVUJJNTB4NWxNeUtRT1AlP2doRm1sb1haMCZfJU15NjhHZV1kcV1RMVEveVg5Nyt8LTJ1MFZ3MlBzUTlMaGlWLFk/NVZUWytDdiwsYWd6Wz0mNUJ1d1NXQ1FyXWtWN1lmYmRodHV6W3AsdmVnP3ROVWUxWlZjRld4ZC1mSFp6QlklRUYrW0hFVzMwTnYrZWUmY3VqYno0ZlJuSSV4VkpGa2k9ZDZ3PWJ8Q1FZQTRqVFk5TDFZV1lsV19xb1M5S003TnZiV1M3ZEtsZ35BT0hBUlF1Jk10fG52NH5JR2tGdWVMVnB2VXhmbE0zNH5ZcTNEWQ=='});
 addLoadEvent(function(){linktracker_init('3549518',2980);});
 	</script>
 <noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>

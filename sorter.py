@@ -12,7 +12,7 @@ class Sorter():
 		newList = []
 		done = False
 		while not done:
-			currHS = -1
+			currHS = -1000000
 			currIN = -1
 			done = True
 			for ind, obj in enumerate(li):

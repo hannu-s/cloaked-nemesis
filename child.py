@@ -50,7 +50,6 @@ class Child():
 		for ind, url in enumerate(urls):
 			if url[4] == 's':
 				continue
-			#print('Searching:', links[ind])
 			p = Page(url, links[ind])
 			p.followLink()
 			p.parseResults()
@@ -61,6 +60,7 @@ class Child():
 			p.releaseMemory()
 			pages.append(p)
 			insp.append(Inspection(links[ind], p.score, url, p.fileName))
+			print(ind, 'Searching:', links[ind], '\n\t\t\tScore:', p.score)
 
 		writer = XMLWriter()
 		writer.writeMIXML(insp, 'results/' + self.ownID + '.xml')
@@ -197,7 +197,6 @@ class Page():
 		score -= len(hWords) * self.hMulti
 		score -= len(sWords) * self.sMulti
 		score -= len(nWords) * self.nMulti
-		print(score)
 		self.score = score
 
 	def releaseMemory(self):

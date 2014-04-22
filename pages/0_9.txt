@@ -1,5 +1,5 @@
-http://nimrod-lang.org/news.html#Z2014-04-21-version-0-9-4-released
-# Nimrod Programming Language 
-# Mar 14, 2010 
-# 
-# Nimrod version 0.6.0 has been released! This is the first of compiler that able to compile itself!  
+http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html
+# Honza Blog: Linktime optimization in GCC, part 1 - brief history 
+# Unit-at-a-time 3.4) 
+#  
+#  

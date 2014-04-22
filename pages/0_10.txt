@@ -1,5 +1,5 @@
-http://hnhistory.net
-# Hacker News History 
+http://nimrod-lang.org/news.html#Z2014-04-21-version-0-9-4-released
+# Nimrod Programming Language 
+# Mar 14, 2010 
 # 
-# Hacker News History 
-# 
+# Nimrod version 0.6.0 has been released! This is the first of compiler that able to compile itself!  
