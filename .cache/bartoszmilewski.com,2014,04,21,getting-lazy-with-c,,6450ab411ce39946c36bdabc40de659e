@@ -1,15 +1,15 @@
 status: 200
-content-length: 95582
+content-length: 101897
 content-location: http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/
 x-nananana: Batcache
 vary: Cookie
 server: nginx
-last-modified: Tue, 22 Apr 2014 18:47:37 GMT
+last-modified: Wed, 23 Apr 2014 12:12:28 GMT
 connection: keep-alive
 -content-encoding: gzip
 link: <http://wp.me/peToi-M4>; rel=shortlink
-cache-control: max-age=189, must-revalidate
-date: Tue, 22 Apr 2014 18:49:28 GMT
+cache-control: max-age=93, must-revalidate
+date: Wed, 23 Apr 2014 12:15:55 GMT
 x-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
 content-type: text/html; charset=UTF-8
 x-pingback: http://bartoszmilewski.com/xmlrpc.php
@@ -17,10 +17,10 @@ x-pingback: http://bartoszmilewski.com/xmlrpc.php
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <!--
-	generated 111 seconds ago
-	generated in 0.655 seconds
+	generated 207 seconds ago
+	generated in 0.814 seconds
 	served from batcache in 0.003 seconds
-	expires in 189 seconds
+	expires in 93 seconds
 -->
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -35,7 +35,7 @@ x-pingback: http://bartoszmilewski.com/xmlrpc.php
 	</style>
 	<![endif]-->
 
-			<script src='//r-login.wordpress.com/remote-login.php?action=js&amp;host=bartoszmilewski.com&amp;id=3549518&amp;t=1398192456&amp;back=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F%3Futm_content%3Dbuffer10163%26utm_medium%3Dsocial%26utm_source%3Dtwitter.com%26utm_campaign%3Dbuffer' type="text/javascript"></script>
+			<script src='//r-login.wordpress.com/remote-login.php?action=js&amp;host=bartoszmilewski.com&amp;id=3549518&amp;t=1398255148&amp;back=http%3A%2F%2Fbartoszmilewski.com%2F2014%2F04%2F21%2Fgetting-lazy-with-c%2F' type="text/javascript"></script>
 		<script type="text/javascript">
 		/* <![CDATA[ */
 			if ( 'function' === typeof WPRemoteLogin ) {
@@ -54,7 +54,7 @@ x-pingback: http://bartoszmilewski.com/xmlrpc.php
 function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
 /* ]]> */
 </script>
-<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/_static/??-eJx9UdFOwzAM/CGCxdgYPCC+JU281J3jRImrqX+/dIC0jZGn3EV39tmGUzYuiaIoxNlkngNJhRqJccklTej0lj27Wp/gsY3piBUm1Gzd0VxYT16QraI3OVW9Yz0byYGEdAEdMbZ+eR6gyaSFoyRdq0sF23/MVldFRE8WuVWR7lwxv/26Vji26f62eZwGqi6M/S0MnEKDAZrqivZM65LMgS0VqKMtq/nn7bkCChZy6Qb+N8i4hcBpsNyreCIfsB1vTf6NTSjkjRXf7l+7W732hpR8Qesvab7i58vrx36z2b7vdtMZ/XH+uQ==' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/_static/??-eJx9UdFuwyAM/KExq11UbQ/TvoWAS5yCjcBRlb8f6Vqp3TqeuEN39tmGczZOWJEV0mJyXAJxhZoo4pqLzOj0kb26Wl/guS3SCSvMqNm6k7mwnrxgtIreZKn6i/VsxEdi0hV0wtT65WWEJuMWjoS7VicF23/KVjdFQk8WY6vC3blSPtxcG5zadH/bPE8DVdeI/S2MUUKDAZrqjvZM25LMMVoqUCdbNvP17bkCMhZy8gD/G2QaIEQZbexVPJMP2I63Jf/BJhTyxrJv96/drd57g4gvaP0lzVf63L19vO+HYb87zN/9Y/6z' type='text/css' media='all' />
 <link rel='stylesheet' id='print-css-0' href='http://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1387483371g' type='text/css' media='print' />
 <script type='text/javascript' src='http://s2.wp.com/_static/??-eJyFj0kOwjAMRS+Em6IuoAvEWdrGRA6ZiBMqOD0pFIlJdOXp2f9bjAEG7xK6JDQL63syCJkxdqr0gNzBV5pXonDkBpMl8gTqU8Z4mcMiAJZU7BJWltwTflENnpNF5iL5Y/ouRe5MOC5iGlPohiNEZLp+XbUZgsmKHIuIphiTMHn4qP5sjSQVpvujjxT6bAPM1vZ2t27aTb1t66bVN2wxhN8='></script>
 <link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
@@ -116,7 +116,7 @@ if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
 var wpcom_ads = { bid: 3549518, pt: 'permalink', wa: 0, as: 1, domain: 'bartoszmilewski.com', url: 'http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/', gid: '', };
 </script>
 
-<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=3549518&post=2980&lang=en&date=1398105150&ip=202.161.50.115&url=http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/';i.id='botd2';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=3549518&post=2980&lang=en&date=1398105150&ip=88.80.182.81&url=http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/';i.id='botd2';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
 <style type="text/css" id="syntaxhighlighteranchor"></style>
 		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://bartoszmilewski.com/?custom-css=1&#038;csblog=eToi&#038;cscache=6&#038;csrev=56" />
 		<script type="text/javascript">
@@ -162,7 +162,7 @@ var wpcom_ads = { bid: 3549518, pt: 'permalink', wa: 0, as: 1, domain: 'bartoszm
 			Getting Lazy with&nbsp;C++		</h2>
 
 	Posted by Bartosz Milewski under <a href="http://bartoszmilewski.com/category/atomics/" title="View all posts in Atomics" rel="category tag">Atomics</a>, <a href="http://bartoszmilewski.com/category/c/" title="View all posts in C++" rel="category tag">C++</a>, <a href="http://bartoszmilewski.com/category/concurrency/" title="View all posts in Concurrency" rel="category tag">Concurrency</a>, <a href="http://bartoszmilewski.com/category/functional-programming/" title="View all posts in Functional Programming" rel="category tag">Functional Programming</a>, <a href="http://bartoszmilewski.com/category/metaprogramming/" title="View all posts in Metaprogramming" rel="category tag">Metaprogramming</a>, <a href="http://bartoszmilewski.com/category/monads/" title="View all posts in Monads" rel="category tag">Monads</a>, <a href="http://bartoszmilewski.com/category/multithreading/" title="View all posts in Multithreading" rel="category tag">Multithreading</a>, <a href="http://bartoszmilewski.com/category/parallelism/" title="View all posts in Parallelism" rel="category tag">Parallelism</a>, <a href="http://bartoszmilewski.com/category/programming/" title="View all posts in Programming" rel="category tag">Programming</a> 	<br/>
-	<a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comments" title="Comment on Getting Lazy with&nbsp;C++">[10] Comments</a>&nbsp;</div>
+	<a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comments" title="Comment on Getting Lazy with&nbsp;C++">[15] Comments</a>&nbsp;</div>
 
 	<div class="post-content">
 		<div class="pd-rating" id="pd_rating_holder_2203687_post_2980"></div><br/><p>Lazy evaluation can be a powerful tool for structuring your code. For instance, it can let you turn your code inside out, inverting the flow of control. Many a Haskell program take advantage of laziness to express algorithms in clear succinct terms, turning them from recipes to declarations. </p>
@@ -668,14 +668,14 @@ jQuery( window ).load( function() {
 setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
 } );
 </script>
-<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-2980"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=linkedin" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-2980"><span>LinkedIn</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=google-plus-1" target="_blank" title="Click to share on Google+" id="sharing-google-2980"><span>Google</span></a></li><li class="share-end"></li><li class="share-pocket"><a rel="nofollow" class="share-pocket sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=pocket" target="_blank" title="Click to share on Pocket"><span>Pocket</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-2980"><span>Facebook</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=digg" target="_blank" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=stumbleupon" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3549518-2980-5356b9491276c' data-src='//widgets.wp.com/likes/#blog_id=3549518&amp;post_id=2980&amp;origin=bartoszmilewski.wordpress.com&amp;obj_id=3549518-2980-5356b9491276c' data-name='like-post-frame-3549518-2980-5356b9491276c'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-2980"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=linkedin" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-2980"><span>LinkedIn</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=google-plus-1" target="_blank" title="Click to share on Google+" id="sharing-google-2980"><span>Google</span></a></li><li class="share-end"></li><li class="share-pocket"><a rel="nofollow" class="share-pocket sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=pocket" target="_blank" title="Click to share on Pocket"><span>Pocket</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-2980"><span>Facebook</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=digg" target="_blank" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=stumbleupon" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3549518-2980-5357ae2ca1e07' data-src='//widgets.wp.com/likes/#blog_id=3549518&amp;post_id=2980&amp;origin=bartoszmilewski.wordpress.com&amp;obj_id=3549518-2980-5357ae2ca1e07' data-name='like-post-frame-3549518-2980-5357ae2ca1e07'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
 <div id='jp-relatedposts' class='jp-relatedposts' >
 	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
 </div></div>	<div class="post-info">
 			</div>
 	<div class="post-footer">&nbsp;</div>
 </div>
-					<h3 id="comments">10 Responses to &#8220;Getting Lazy with&nbsp;C++&#8221;</h3>
+					<h3 id="comments">15 Responses to &#8220;Getting Lazy with&nbsp;C++&#8221;</h3>
 
 	<ol class="commentlist">
 	<li class="comment even thread-even depth-1 highlander-comment" id="comment-15123">
@@ -842,6 +842,90 @@ Concat could also be implemented this way. You would just return a more complex 
 			</div>
 	</div>
 </li><!-- #comment-## -->
+<li class="comment even thread-even depth-1 highlander-comment" id="comment-15218">
+	<div id="div-comment-15218">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/62981c276f4fef3c8da9743f49177a55?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn"><a href='http://gravatar.com/monkeybuddha' rel='external nofollow' class='url'>monkeybuddhaSean</a></cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15218" title="">
+	April 22, 2014 at 1:49 pm</a> </small>
+
+	<p>You might be interested in a port of Python&#8217;s itertools library to C++11</p>
+<p><a href="https://github.com/ryanhaining/cppitertools" rel="nofollow">https://github.com/ryanhaining/cppitertools</a></p>
+<p>It provides, zip, takewhile, dropwhile, map, filter, etc.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15221">
+	<div id="div-comment-15221">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/9f2d495ce0478cea67619ff1e507c6ee?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">pekh</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15221" title="">
+	April 22, 2014 at 3:12 pm</a> </small>
+
+	<p>Writing the same value in two threads to the same memory location is a data race. According to the standard we have undefined behavior in this case.</p>
+<p>1.10.4<br />
+Two expression evaluations conﬂict if one of them modiﬁes a memory location (1.7) and the other one accesses or modiﬁes the same memory location.</p>
+<p>1.10.21</p>
+<p>The execution of a program contains a data race if it contains two conﬂicting actions in diﬀerent threads, at least one of which is not atomic, and neither happens before the other. Any such data race results in undeﬁned behavior.</p>
+<p>It might work for very simple cases (T = int, …) on architectures playing nice but I would not count on it. The compiler will assume the code is race free and might do funny things that break the code.</p>
+<p>Another issue is that _memo = f() transfers the control to user code (move/copy-assignment operator) which might contain data race. Consider T = std::string in your example: f() have no side-effects and return “example string” and both threads will try to move-assign into _memo causing problems. Another type that will fail here is std::shared_ptr, you can write to different shared_ptr instances even thought they are copies and share their reference count object. You are however not allowed to write to the same shared_ptr instance in multiple threads.</p>
+<p>There is another race problem regarding _memo pointed out by Robert. Thread 1 stalls inside f(). Thread 2 executes f() and write to _memo and _thunk. Thread 2 or 3 now execute and tries to read from _memo and finds itself in a race with Thread 1 writing to _memo. This is however basically the same issue pointed out above.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1 highlander-comment" id="comment-15223">
+	<div id="div-comment-15223">
+	<div class="comment-author vcard">
+		<img alt='' src='http://2.gravatar.com/avatar/2491362258e5acc5a1969a3078ffe412?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn">Anon Coward</cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15223" title="">
+	April 22, 2014 at 3:16 pm</a> </small>
+
+	<p>Won&#8217;t you run into trouble in the Cell(T v, Stream const &amp; tail) constructor since the move constructor for Stream prevents the `tail&#8217; parameter from being copyable by implicitly deleting the Stream copy constructor?</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-bartoszmilewski bypostauthor odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15228">
+	<div id="div-comment-15228">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c018f213204496b4bbf481e7c8e6c15c?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn"><a href='http://BartoszMilewski.com' rel='external nofollow' class='url'>Bartosz Milewski</a></cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15228" title="">
+	April 22, 2014 at 4:33 pm</a> </small>
+
+	<p>@Anon Coward: I haven&#8217;t run into this trouble, but you&#8217;re right. In fact, I believe now that the default move constructor should do the right thing anyway, so I didn&#8217;t have to define it explicitly. I&#8217;ll have to check that.</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-bartoszmilewski bypostauthor even thread-even depth-1 highlander-comment" id="comment-15231">
+	<div id="div-comment-15231">
+	<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c018f213204496b4bbf481e7c8e6c15c?s=48&#038;d=http%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-48' height='48' width='48' />		<cite class="fn"><a href='http://BartoszMilewski.com' rel='external nofollow' class='url'>Bartosz Milewski</a></cite> <span class="says">Says:</span>	</div>
+		<br />
+
+	<small class="comment-meta commentmetadata"><a href="http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/#comment-15231" title="">
+	April 22, 2014 at 5:04 pm</a> </small>
+
+	<p>@pekh: Damn C++ memory model and processor architectures! You might be right. Even though it will work on the x86, it&#8217;s not portable C++. I&#8217;ll have to think about it some more. This is work in progress. (Of course, there&#8217;s always the version with the lock to fall back to.)</p>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
 	</ol>
 
 	<div class="navigation">
@@ -852,12 +936,12 @@ Concat could also be implemented this way. You would just return a more complex 
 	
 
 									<div id="respond" class="comment-respond">
-				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/04/21/getting-lazy-with-c/?utm_content=buffer10163&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#respond" style="display:none;">Cancel reply</a></small></h3>
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/04/21/getting-lazy-with-c/#respond" style="display:none;">Cancel reply</a></small></h3>
 									<form action="http://bartoszmilewski.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
 																										
 
 
-												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="a732b8a1aa" /><input type="hidden" name="_wp_http_referer" value="/2014/04/21/getting-lazy-with-c/?utm_content=buffer10163&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer" />
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="4f82235740" /><input type="hidden" name="_wp_http_referer" value="/2014/04/21/getting-lazy-with-c/" />
 <input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
 
 <div class="comment-form-field comment-textarea">
@@ -1024,10 +1108,10 @@ jQuery(document).ready( highlander_expando_javascript );
 							<input type='hidden' name='comment_post_ID' value='2980' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 						</p>
-						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4a669907f5" /></p>
-<input type="hidden" name="genseq" value="1398192457" />
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e46ca422c6" /></p>
+<input type="hidden" name="genseq" value="1398255148" />
 <script type='text/javascript' src='http://s0.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1395714917g'></script>
-<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="187"/></p>					</form>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="181"/></p>					</form>
 							</div><!-- #respond -->
 			<div style="clear: both"></div>
 			</div>
@@ -1079,10 +1163,16 @@ var WPGroHo = {"my_hash":""};
 	</div>
 	<div class="grofile-hash-map-1b853bbad1633dc6c8d1bdfd8c16cc53">
 	</div>
+	<div class="grofile-hash-map-62981c276f4fef3c8da9743f49177a55">
+	</div>
+	<div class="grofile-hash-map-9f2d495ce0478cea67619ff1e507c6ee">
+	</div>
+	<div class="grofile-hash-map-2491362258e5acc5a1969a3078ffe412">
+	</div>
 	</div>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/bartoszmilewski.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/bartoszmilewski.wordpress.com\/wp-login.php?action=logout&_wpnonce=54c801c71f","homeURL":"http:\/\/bartoszmilewski.com\/","postID":"2980","gravDefault":"blank","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/bartoszmilewski.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/bartoszmilewski.wordpress.com\/wp-login.php?action=logout&_wpnonce=4ba5f8fef4","homeURL":"http:\/\/bartoszmilewski.com\/","postID":"2980","gravDefault":"blank","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1395185286j'></script>
@@ -1136,7 +1226,7 @@ PDRTJS_settings_2203687_post_2980={"id":2203687,"unique_id":"wp-post-2980","titl
 		});
 		</script>
 			<div id="sharing_email" style="display: none;">
-		<form action="/2014/04/21/getting-lazy-with-c/?utm_content=buffer10163&#038;utm_medium=social&#038;utm_source=twitter.com&#038;utm_campaign=buffer" method="post">
+		<form action="/2014/04/21/getting-lazy-with-c/" method="post">
 			<label for="target_email">Send to Email Address</label>
 			<input type="email" name="target_email" id="target_email" value="" />
 
@@ -1427,7 +1517,7 @@ try{
 </script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
 <script type="text/javascript">
 st_go({'blog':'3549518','v':'wpcom','tz':'-7','user_id':'0','post':'2980','subd':'bartoszmilewski'});
-ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3BUWGdOR05vUHd0Y29aakFjVUJJNTB4NWxNeUtRT1AlP2doRm1sb1haMCZfJU15NjhHZV1kcV1RMVEveVg5Nyt8LTJ1MFZ3MlBzUTlMaGlWLFk/NVZUWytDdiwsYWd6Wz0mNUJ1d1NXQ1FyXWtWN1lmYmRodHV6W3AsdmVnP3ROVWUxWlZjRld4ZC1mSFp6QlklRUYrW0hFVzMwTnYrZWUmY3VqYno0ZlJuSSV4VkpGa2k9ZDZ3PWJ8Q1FZQTRqVFk5TDFZV1lsV19xb1M5S003TnZiV1M3ZEtsZ35BT0hBUlF1Jk10fG52NH5JR2tGdWVMVnB2VXhmbE0zNH5ZcTNEWQ=='});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3BUdFV5ST9WY3J1RTlUZyw1R3ZSbnIsdHFTX0lCY0ZyS2M4cGlJUXppTGJkNjdSMj0mY2lfVS1NfnIsa0ZWOTlsbTR0PXZbPUJqRUVLUXJ5XU9YdS1CeFFSUWswSE98THh6T29wM1FKeWl4LTArL2EyeTFmLko/a0V+VHQuVWpDeVBib2lualk2SVNBTy0mdld3T3RaTFk1Z3gsek03WXRJanQ1cVUlPWJ0ekE2TS5XMlY2JmZMOF9HeitFfnd1c24tW2R1bldSdVh6c1RTSVFTek0xak1UJjFSRXhmSFk4S0JwS2k1cUovOD15PzZFT1dBL1ArTn5BWDNFTGlmcnxENQ=='});
 addLoadEvent(function(){linktracker_init('3549518',2980);});
 	</script>
 <noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>

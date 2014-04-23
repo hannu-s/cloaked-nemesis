@@ -1,5 +1,5 @@
-http://gamemechanicexplorer.com
-# Game Mechanic Explorer 
-# Source 
-# Questions, corrections, want to hire 
-#  This site requires a modern web browser that supports HTML5. I recommend Chrome and Firefox. 
+http://andrewkelley.me/post/quest-build-ultimate-music-player.html
+# My Quest to Build the Ultimate Music Player - Andrew Kelley 
+# We want more control over the HTTP audio stream 
+# 
+# Feel free to star or watch theGroove Basin GitHub repositoryif you want keep track of progress. 

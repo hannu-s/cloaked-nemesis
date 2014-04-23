@@ -1,5 +1,5 @@
-http://hnhistory.net
-# Hacker News History 
+http://awardwinningfjords.com/2014/04/21/functional-programming-in-javascript-equals-garbage.html
+# Functional Programming in Javascript Garbage Thomas Reynolds 
+# Conclusion 
 # 
-# Hacker News History 
-# 
+# Twitter  Email Github RSS 

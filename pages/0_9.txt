@@ -1,5 +1,6 @@
-http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html
-# Honza Blog: Linktime optimization in GCC, part 1 - brief history 
-# Unit-at-a-time 3.4) 
-#  
-#  
+http://www.tedunangst.com/flak/post/origins-of-libressl
+# of libressl
+ 
+# tags 
+# 
+# I might also mention that was away, without Internet, the whole weekend before Hearbleed. returned home Monday night and wanted nothing more than to take a shower, but my bathroom flooded with water from broken heater an apartment above. had better do while waiting for maintenance poke around malloc.conf. If it been that, probably never would have bothered. So there you it, is true cause of libressl fork. 

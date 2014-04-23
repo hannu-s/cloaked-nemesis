@@ -1,0 +1,160 @@
+status: 200
+content-length: 11762
+content-location: http://www.serpentine.com/wreq/
+accept-ranges: bytes
+server: Apache/2.4.7 (Fedora) OpenSSL/1.0.1e-fips PHP/5.5.11 mod_perl/2.0.8-dev Perl/v5.16.3
+last-modified: Wed, 23 Apr 2014 01:06:07 GMT
+etag: "2df2-4f7ab565a11d2"
+date: Wed, 23 Apr 2014 12:15:54 GMT
+content-type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="HTTP made easy for Haskell." />
+  <meta name="author" content="Tutorial" />
+  <link href="http://fonts.googleapis.com/css?family=Roboto:700" rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel='stylesheet' type='text/css'>
+  <title>wreq: a Haskell web client library</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="bootstrap-custom.css" type="text/css" />
+</head>
+<body>
+    <div class="jumboback">
+    <div class="navbar" role="navigation">
+      <a class="navbar-brand" href="/wreq">wreq</a>
+      <ul class="nav navbar-nav">
+        <li><a href="tutorial.html">tutorial</a></li>
+        <!-- <li><a href="http://hackage.haskell.org/package/wreq" target="_blank">docs</a></li> -->
+        <li><a href="doc/wreq-0.1.0.0/html/" target="_blank">docs</a></li>
+        <li><a href="https://github.com/bos/wreq/tree/master/examples" target="_blank">examples</a></li>
+        <li><a href="https://github.com/bos/wreq/issues" target="_blank">issues</a></li>
+        <li><a href="https://github.com/bos/wreq" target="_blank">code</a></li>
+      </ul>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+	<h1>wreq: a Haskell web client library</h1>
+		<p class="lead">HTTP made easy for Haskell.</p>
+		<p class="lead"><a href="tutorial.html" class="btn btn-primary btn-lg" role="button">Tutorial</a></p>
+	      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-9" role="main">
+            <p><code>wreq</code> is a library that makes HTTP client programming in Haskell easy.</p>
+<h1 id="features">Features</h1>
+<ul>
+<li><p>Simple but powerful <code>lens</code>-based API</p></li>
+<li><p>Over 100 tests, and built on reliable libraries like <a href="http://hackage.haskell.org/package/http-client/"><code>http-client</code></a> and <a href="https://lens.github.io/"><code>lens</code></a></p></li>
+<li><p>Session handling includes connection keep-alive and pooling, and cookie persistence</p></li>
+<li><p>Automatic decompression</p></li>
+<li><p>Powerful multipart form and file upload handling</p></li>
+<li><p>Support for JSON requests and responses, including navigation of schema-less responses</p></li>
+<li><p>Basic and OAuth2 bearer authentication</p></li>
+</ul>
+<h1 id="whirlwind-tour">Whirlwind tour</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">ghci<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Network.Wreq</span>
+ghci<span class="fu">&gt;</span> r <span class="ot">&lt;-</span> get <span class="st">&quot;http://httpbin.org/get&quot;</span></code></pre>
+<p>Its <code>lens</code>-based API is easy to learn (the tutorial walks you through the <a href="tutorial.html#a-quick-lens-backgrounder">basics of lenses</a> and powerful to work with.</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">ghci<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Control.Lens</span>
+ghci<span class="fu">&gt;</span> r <span class="fu">^.</span> responseHeader <span class="st">&quot;Content-Type&quot;</span>
+<span class="st">&quot;application/json&quot;</span></code></pre>
+<p>Safely and sanely add query parameters to URLs. Let’s find the most popular implementations of Tetris in Haskell.</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">ghci<span class="fu">&gt;</span> <span class="kw">let</span> opts <span class="fu">=</span> defaults <span class="fu">&amp;</span> param <span class="st">&quot;q&quot;</span> <span class="fu">.~</span> [<span class="st">&quot;tetris&quot;</span>]
+                          <span class="fu">&amp;</span> param <span class="st">&quot;language&quot;</span> <span class="fu">.~</span> [<span class="st">&quot;haskell&quot;</span>]
+ghci<span class="fu">&gt;</span> r <span class="ot">&lt;-</span> getWith opts <span class="st">&quot;https://api.github.com/search/code&quot;</span></code></pre>
+<p>Haskell-to-JSON interoperation is seamless.</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">ghci<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">GHC.Generics</span>
+ghci<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Data.Aeson</span>
+ghci<span class="fu">&gt;</span> <span class="fu">:</span>set <span class="fu">-</span><span class="dt">XDeriveGeneric</span>
+
+ghci<span class="fu">&gt;</span> <span class="kw">data</span> <span class="dt">Addr</span> <span class="fu">=</span> <span class="dt">Addr</span> <span class="dt">Int</span> <span class="dt">String</span> <span class="kw">deriving</span> (<span class="dt">Generic</span>)
+ghci<span class="fu">&gt;</span> <span class="kw">instance</span> <span class="dt">ToJSON</span> <span class="dt">Addr</span>
+
+ghci<span class="fu">&gt;</span> <span class="kw">let</span> addr <span class="fu">=</span> <span class="dt">Addr</span> <span class="dv">1600</span> <span class="st">&quot;Pennsylvania&quot;</span>
+ghci<span class="fu">&gt;</span> post <span class="st">&quot;http://httpbin.org/post&quot;</span> (toJSON addr)</code></pre>
+<p>Work easily with schemaless JSON APIs. This traverses the complex JSON search result we just received from GitHub above, and pulls out the authors of our popular Tetris clones.</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">ghci<span class="fu">&gt;</span> r <span class="fu">^..</span> responseBody <span class="fu">.</span> key <span class="st">&quot;items&quot;</span> <span class="fu">.</span> values <span class="fu">.</span>
+            key <span class="st">&quot;owner&quot;</span> <span class="fu">.</span> key <span class="st">&quot;login&quot;</span> <span class="fu">.</span> _<span class="dt">String</span>
+[<span class="st">&quot;steffi2392&quot;</span>,<span class="st">&quot;rmies&quot;</span>,<span class="st">&quot;Spacejoker&quot;</span>,<span class="st">&quot;walpen&quot;</span>,<span class="co">{-...-}</span></code></pre>
+<p>Easily write <a href="http://hackage.haskell.org/package/attoparsec"><code>attoparsec</code></a> parsers on the spot, to safely and reliably deal with complicated headers and bodies.</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">ghci<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Data.Attoparsec.ByteString.Char8</span> <span class="kw">as</span> <span class="dt">A</span>
+ghci<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Data.List</span> (sort)
+
+ghci<span class="fu">&gt;</span> <span class="kw">let</span> comma <span class="fu">=</span> skipSpace <span class="fu">&gt;&gt;</span> <span class="st">&quot;,&quot;</span> <span class="fu">&gt;&gt;</span> skipSpace
+ghci<span class="fu">&gt;</span> <span class="kw">let</span> verbs <span class="fu">=</span> A.takeWhile isAlpha_ascii <span class="ot">`sepBy`</span> comma
+
+ghci<span class="fu">&gt;</span> r <span class="ot">&lt;-</span> options <span class="st">&quot;http://httpbin.org/get&quot;</span>
+ghci<span class="fu">&gt;</span> r <span class="fu">^.</span> responseHeader <span class="st">&quot;Allow&quot;</span> <span class="fu">.</span> atto verbs <span class="fu">.</span> to sort
+ghci<span class="fu">&gt;</span> [<span class="st">&quot;GET&quot;</span>,<span class="st">&quot;HEAD&quot;</span>,<span class="st">&quot;OPTIONS&quot;</span>]</code></pre>
+<p>There’s a lot more, but why not jump in and start coding. In fact, if you’d like to add new features, that would be great! We love pull requests.</p>
+<div class="jumbotron" style="margin-top: 40px;">
+<h2 style="margin-top: 20px;">
+Ready to jump in?
+</h2>
+
+<p>We’ve worked hard to make <code>wreq</code> quick to learn.</p>
+<p><a href="tutorial.html" class="btn btn-success btn-lg" role="button">Tutorial</a></p>
+<p>We’re proud of the example-filled docs.</p>
+<p><a href="http://hackage.haskell.org/package/wreq" class="btn btn-info btn-lg" role="button">Documentation</a></p>
+<p>If you run into problems, let us know.</p>
+<p><a href="https://github.com/bos/wreq" class="btn btn-warning btn-lg" role="button">Issues</a></p>
+</div>
+<h1 id="acknowledgments">Acknowledgments</h1>
+<p>I’d like to thank Edward Kmett and Shachaf Ben-Kiki for tirelessly answering my never-ending stream of <a href="https://lens.github.io/">lens</a>-related questions in <code>#haskell-lens#</code>.</p>
+<p>I also want to thank Michael Snoyman for being so quick with helpful responses to bug reports and pull requests against his excellent <a href="http://hackage.haskell.org/package/http-client">http-client</a> package.</p>
+<p>Finally, thanks to Kenneth Reitz for building the indispensable <a href="http://httpbin.org/">httpbin.org</a> HTTP testing service, and of course for his <a href="http://docs.python-requests.org/en/latest/">requests library</a>.</p>
+            </div>
+            <div id="TOC" class="col-md-3">
+        <div class="bs-docs-sidebar hidden-print affix" role="complementary">
+	  <div class="nav bs-docs-sidenav">
+	                <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#whirlwind-tour">Whirlwind tour</a></li>
+            <li><a href="#acknowledgments">Acknowledgments</a></li>
+            </ul>
+	    	  </div>
+        </div>
+      </div>
+          </div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <p class="pull-right text-muted" style="clear: right"><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=bos&repo=wreq&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></p>
+      <p class="text-muted">&copy;
+      2014 <a href="http://www.serpentine.com/" target="_blank">Bryan
+      O'Sullivan</a>.</p>
+      <p class="pull-right text-muted" style="clear: right"><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=bos&repo=wreq&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></p>
+      <p class="text-muted"><a href="https://github.com/bos/wreq/blob/master/LICENSE.md">BSD licensed</a>.</p>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

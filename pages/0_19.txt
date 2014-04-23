@@ -1,5 +1,5 @@
-http://andrewkelley.me/post/quest-build-ultimate-music-player.html
-# My Quest to Build the Ultimate Music Player - Andrew Kelley 
-# We want more control over the HTTP audio stream 
+http://chessboardjs.com/
+# chessboard.js Home 
+# The easiest way to embed a chess board on your site. 
 # 
-# Feel free to star or watch theGroove Basin GitHub repositoryif you want keep track of progress. 
+# the code can be found on GitHub 

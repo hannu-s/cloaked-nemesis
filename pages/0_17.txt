@@ -1,5 +1,5 @@
-http://www.scala-lang.org/news/2014/04/21/release-notes-2.11.0.html
-# Scala 2.11.0 is now available! The Programming Language 
-# License clarification 
+http://codelab.wordpress.com/2014/04/22/fixing-my-old-bugs-without-the-source/
+# Fixing old bugs, without the source Code Laboratorium 
+# Follow Laboratorium” 
 # 
-# Copyright 2002- Polytechnique de Lausanne  Lausanne, Switzerland 
+#  

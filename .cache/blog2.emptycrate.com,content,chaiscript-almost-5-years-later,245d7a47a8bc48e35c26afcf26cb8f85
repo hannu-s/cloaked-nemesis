@@ -1,0 +1,378 @@
+status: 200
+content-length: 25398
+x-drupal-cache: HIT
+content-location: http://blog2.emptycrate.com/content/chaiscript-almost-5-years-later
+content-language: en
+set-cookie: __cfduid=db9dfa191df051bfc8a799e5c2188f0351398255357134; expires=Mon, 23-Dec-2019 23:50:00 GMT; path=/; domain=.emptycrate.com; HttpOnly
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Cookie,Accept-Encoding
+server: cloudflare-nginx
+last-modified: Wed, 23 Apr 2014 09:55:34 GMT
+connection: keep-alive
+-content-encoding: gzip
+link: </content/chaiscript-almost-5-years-later>; rel="canonical",</node/4599>; rel="shortlink"
+cache-control: public, max-age=0
+date: Wed, 23 Apr 2014 12:15:57 GMT
+cf-ray: 11f9fd4e1a2f08bd-FRA
+content-type: text/html; charset=utf-8
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta about="/content/chaiscript-almost-5-years-later" property="sioc:num_replies" content="0" datatype="xsd:integer" />
+<link rel="shortcut icon" href="http://blog2.emptycrate.com/sites/all/themes/mybootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta content="ChaiScript (almost) 5 Years Later" about="/content/chaiscript-almost-5-years-later" property="dc:title" />
+<link rel="canonical" href="/content/chaiscript-almost-5-years-later" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<script type="text/x-mathjax-config">MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'], ['[math]', '[/math]' ],
+    processEscapes: true
+  }
+});</script><link rel="shortlink" href="/node/4599" />
+  <title>ChaiScript (almost) 5 Years Later | EmptyCrate</title>
+  <link type="text/css" rel="stylesheet" href="http://blog2.emptycrate.com/sites/default/files/css/css_ogjvJnfni1_P_WxvXAHlUOgCs860b3ip9DNMapcIGeM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://blog2.emptycrate.com/sites/default/files/css/css_kvaqtp5WyrrHbRp04EMjxDRU1slGUfavu9v2bsvcoDU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://blog2.emptycrate.com/sites/default/files/css/css_wiNcVx9JUTkfANCNEdcJ7EOFoMsaYv9bcK6fJZaFKb4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://blog2.emptycrate.com/sites/default/files/css/css_ML5fTFdHzk9eRY-CDEaXk7ZXWNVXvfUWn3dCqQJ4xVc.css" media="all" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script>window.google_analytics_uacct = "UA-384017-6";</script>
+<script src="http://blog2.emptycrate.com/sites/default/files/js/js_-z-2lAhufzBeVjYseT6cTzSICUy9vnoLBpu1sF_zZrs.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="http://blog2.emptycrate.com/sites/default/files/js/js_As4o7bPLV2irdpL834EHUhJkg8T-UxzW4bY9IILQMO0.js"></script>
+<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>(function ($) {
+Drupal.behaviors.adSenseUnblock = {
+  attach: function (context) {
+    if ($('.adsense ins').height() === null) {
+      $('.adsense').html(Drupal.t("Please, enable ads on this site. By using ad-blocking software, you're depriving this site of revenue that is needed to keep it free and current. Thank you."));
+      $('.adsense').css({'overflow': 'hidden', 'font-size': 'x-small'});
+    }
+  }
+};
+
+})(jQuery);
+</script>
+<script src="http://blog2.emptycrate.com/sites/default/files/js/js_rv_BKYv7yieH0IgHddhWHDC-bWGan8yiJbusyOpr0mw.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-384017-6"]);_gaq.push(["_gat._anonymizeIp"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"mybootstrap", "theme_token":"ZIZTLiXnZAjL1jl3zn8ft4Ou5BDVmKtHb4kzqtTzzds", "js":{"modules\u002Fstatistics\u002Fstatistics.js":1, "sites\u002Fall\u002Fthemes\u002Fbootstrap\u002Fjs\u002Fbootstrap.js":1, "0":1, "sites\u002Fall\u002Fmodules\u002Fjquery_update\u002Freplace\u002Fjquery\u002F1.8\u002Fjquery.min.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "\u002F\u002Fnetdna.bootstrapcdn.com\u002Fbootstrap\u002F3.0.2\u002Fjs\u002Fbootstrap.min.js":1, "sites\u002Fall\u002Fmodules\u002Fadsense\u002Fcontrib\u002Fadsense_click\u002Fadsense_click.js":1, "https:\u002F\u002Fc328740.ssl.cf1.rackcdn.com\u002Fmathjax\u002Flatest\u002FMathJax.js?config=TeX-AMS-MML_HTMLorMML":1, "1":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "2":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fcodefilter\u002Fcodefilter.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fgeshifilter\u002Fgeshifilter.css":1, "sites\u002Fall\u002Fmodules\u002Ftagclouds\u002Ftagclouds.css":1, "\u002F\u002Fnetdna.bootstrapcdn.com\u002Fbootstrap\u002F3.0.2\u002Fcss\u002Fbootstrap.min.css":1, "sites\u002Fall\u002Fthemes\u002Fbootstrap\u002Fcss\u002Foverrides.css":1, "sites\u002Fall\u002Fthemes\u002Fmybootstrap\u002Fcss\u002Fstyle.css":1}}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}, "statistics":{"data":{"nid":"4599"}, "url":"\u002Fmodules\u002Fstatistics\u002Fstatistics.php"}, "bootstrap":{"anchorsFix":1, "anchorsSmoothScrolling":1, "popoverEnabled":1, "popoverOptions":{"animation":1, "html":0, "placement":"right", "selector":"", "trigger":"click", "title":"", "content":"", "delay":0, "container":"body"}, "tooltipEnabled":1, "tooltipOptions":{"animation":1, "html":0, "placement":"auto left", "selector":"", "trigger":"hover focus", "delay":0, "container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-4599 node-type-blog" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+            <a class="logo navbar-btn pull-left" href="/" title="Home">
+        <img src="http://blog2.emptycrate.com/sites/default/files/emptycrate.png" alt="Home" />
+      </a>
+      
+            <a class="name navbar-brand" href="/" title="Home">EmptyCrate</a>
+      
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+          <div class="navbar-collapse collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/">Home</a></li>
+<li class="leaf"><a href="http://chaiscript.com" title="">ChaiScript: Easy C++ Scripting</a></li>
+<li class="leaf"><a href="/content/so-you-want-embed-scripting-language-your-application">Embedded C++ Scripting</a></li>
+<li class="last leaf"><a href="https://code.google.com/p/swigstarterkit/" title="">SWIG Starter Kit</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+          <aside class="col-sm-3" role="complementary">
+          <div class="region region-sidebar-first well">
+    <section id="block-tagclouds-1" class="block block-tagclouds clearfix">
+
+      
+  <span class='tagclouds-term'><a href="/tags/articles" class="tagclouds level3" title="">Articles</a></span>
+<span class='tagclouds-term'><a href="/tags/boost" class="tagclouds level2" title="">Boost</a></span>
+<span class='tagclouds-term'><a href="/tags/cpp" class="tagclouds level6" title="">C++</a></span>
+<span class='tagclouds-term'><a href="/tags/changelog" class="tagclouds level2" title="">Changelog</a></span>
+<span class='tagclouds-term'><a href="/tags/emptycrate-game-engine" class="tagclouds level1" title="">EmptyCrate Game Engine</a></span>
+<span class='tagclouds-term'><a href="/tags/ex-astris" class="tagclouds level1" title="">Ex Astris</a></span>
+<span class='tagclouds-term'><a href="/tags/haskell" class="tagclouds level1" title="">Haskell</a></span>
+<span class='tagclouds-term'><a href="/tags/nobody-understands" class="tagclouds level2" title="">Nobody Understands</a></span>
+<span class='tagclouds-term'><a href="/tags/optimization" class="tagclouds level1" title="">Optimization</a></span>
+<span class='tagclouds-term'><a href="/tags/programming" class="tagclouds level6" title="">Programming</a></span>
+<span class='tagclouds-term'><a href="/tags/templates" class="tagclouds level2" title="">Templates</a></span>
+<span class='tagclouds-term'><a href="/tags/threads" class="tagclouds level2" title="">Threads</a></span>
+<div class="more-link"><a href="/tagclouds/chunk/1" title="more tags">More</a></div>
+</section> <!-- /.block -->
+<section id="block-system-navigation" class="block block-system block-menu clearfix">
+
+        <h2 class="block-title">Navigation</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="/contact">Contact</a></li>
+<li class="last leaf"><a href="/tracker">Recent content</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-views-similarterms-block" class="block block-views clearfix">
+
+        <h2 class="block-title">Related</h2>
+    
+  <div class="view view-similarterms view-id-similarterms view-display-id-block view-dom-id-22c50e78a88d07596f43408d9c64c47e">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/chaiscript-easy-c-scripting">ChaiScript: Easy C++ Scripting</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/chaidraw-programming-toy-and-chaiscript-use-case">ChaiDraw: Programming Toy and Chaiscript Use Case</a></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/understanding-chaiscript-clone-function">Understanding the ChaiScript clone Function</a></span>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/simple-c-string-conversions">Simple C++ String Conversions</a></span>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/what-c-virtual-inheritance">What is C++ Virtual Inheritance?</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section> <!-- /.block -->
+  </div>
+      </aside>  <!-- /#sidebar-first -->
+    
+    <section class="col-sm-9">
+            <ol class="breadcrumb"><li class="first"><a href="/blog">Blogs</a></li>
+<li><a href="/blogs/jason">jason&#039;s blog</a></li>
+<li class="active last">ChaiScript (almost) 5 Years Later</li>
+</ol>      <a id="main-content"></a>
+                    <h1 class="page-header">ChaiScript (almost) 5 Years Later</h1>
+                                                          <div class="region region-content">
+    <div id="block--managed-0" class="block block--managed">
+
+    
+  <div class="content">
+    <div style='text-align:center'><div class='adsense adsense_managed_' style='display:inline-block;width:728px;height:90px;'>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1595128002130008";
+/* 728x90 */
+google_ad_slot = "5302735515";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div></div>  </div>
+</div>
+<section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div id="node-4599" class="node node-blog node-promoted clearfix" about="/content/chaiscript-almost-5-years-later" typeof="sioc:Post sioct:BlogPost">
+
+  
+      
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2014-04-22T14:36:32-06:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jason" typeof="sioc:UserAccount" property="foaf:name" datatype="">jason</span> on Tue, 04/22/2014 - 14:36</span>    </div>
+  
+  <div class="content">
+    <!-- google_ad_section_start --><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>July 13, 2009 Reddit covered Release 1.0 of ChaiScript. Many things changed in the last 5 years. Features added, dependencies removed, and performance increased. With all of the changes, we decided it was time to provide a 5 year retrospective and give the world a second first-look at ChaiScript.</p>
+
+<p>To start with, we've celebrated 5 years with a brand new website with organized examples (in progress) and documentation links: <a href="http://chaiscript.com">http://chaiscript.com</a></p>
+
+<p>And a continuous integration system: <a href="https://travis-ci.org/ChaiScript/ChaiScript"><img src="https://travis-ci.org/ChaiScript/ChaiScript.png?branch=master" alt="Build Status" /></a> <a href="https://coveralls.io/r/ChaiScript/ChaiScript?branch=master"><img src="https://coveralls.io/repos/ChaiScript/ChaiScript/badge.png?branch=master" alt="Coverage Status" /></a></p>
+
+<h2>Features Added</h2>
+
+<h3>Function Objects</h3>
+
+<p>It is now trivially easy to create a function in ChaiScript and call that function from C++.</p>
+
+<div class="geshifilter"><div class="cpp geshifilter-cpp" style="font-family:monospace;">chaiscript<span style="color: #008080;">::</span><span style="color: #007788;">ChaiScript</span> chai<span style="color: #008080;">;</span><br />
+<br />
+chai.<span style="color: #007788;">eval</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;def func() { print(<span style="color: #000099; font-weight: bold;">\&quot;</span>Hello World<span style="color: #000099; font-weight: bold;">\&quot;</span>); } &quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span><br />
+<br />
+std<span style="color: #008080;">::</span><span style="color: #007788;">function</span><span style="color: #000080;">&lt;</span><span style="color: #0000ff;">void</span> <span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #000080;">&gt;</span> f <span style="color: #000080;">=</span> chai.<span style="color: #007788;">eval</span><span style="color: #000080;">&lt;</span>std<span style="color: #008080;">::</span><span style="color: #007788;">function</span><span style="color: #000080;">&lt;</span><span style="color: #0000ff;">void</span> <span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #000080;">&gt;</span> <span style="color: #000080;">&gt;</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;func&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span><br />
+f<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span> <span style="color: #666666;">// prints &quot;Hello World&quot; via the func() method defined in ChaiSript</span></div></div>
+
+<p>See Also:</p>
+
+<ul>
+<li><a href="http://chaiscript.com/docs/5/index.html#functionobjects">docs</a></li>
+<li><a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/functor_cast_test.cpp">functor_cast_test.cpp</a></li>
+<li><a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/functor_creation_test.cpp">functor_creation_test.cpp</a></li>
+</ul>
+
+<h3>Exceptions</h3>
+
+<p>ChaiScript can throw exceptions which can be caught in C++ and C++ can throw exceptions which can be caught in ChaiScript.</p>
+
+<div class="geshifilter"><div class="cpp geshifilter-cpp" style="font-family:monospace;"><span style="color: #666666;">// From C++ Example</span><br />
+chaiscript<span style="color: #008080;">::</span><span style="color: #007788;">ChaiScript</span> chai<span style="color: #008080;">;</span><br />
+&nbsp; <br />
+<span style="color: #0000ff;">try</span> <span style="color: #008000;">&#123;</span><br />
+&nbsp; chai.<span style="color: #007788;">eval</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;throw(1.0)&quot;</span>, chaiscript<span style="color: #008080;">::</span><span style="color: #007788;">exception_specification</span><span style="color: #000080;">&lt;</span><span style="color: #0000ff;">int</span>, <span style="color: #0000ff;">double</span><span style="color: #000080;">&gt;</span><span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span><br />
+<span style="color: #008000;">&#125;</span> <span style="color: #0000ff;">catch</span> <span style="color: #008000;">&#40;</span><span style="color: #0000ff;">const</span> <span style="color: #0000ff;">double</span> e<span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span><br />
+&nbsp; <span style="color: #0000ff;">if</span> <span style="color: #008000;">&#40;</span>e <span style="color: #000080;">==</span> <span style="color:#800080;">1.0</span><span style="color: #008000;">&#41;</span><br />
+&nbsp; <span style="color: #008000;">&#123;</span><br />
+&nbsp; &nbsp; <span style="color: #666666;">// success</span><br />
+&nbsp; <span style="color: #008000;">&#125;</span><br />
+<span style="color: #008000;">&#125;</span><br />
+<span style="color: #666666;">//</span></div></div>
+
+<div class="geshifilter"><div class="cpp geshifilter-cpp" style="font-family:monospace;"><span style="color: #666666;">// From ChaiScript Example</span><br />
+<span style="color: #666666;">// multiple catches with guards on the values</span><br />
+<span style="color: #0000ff;">try</span> <span style="color: #008000;">&#123;</span><br />
+&nbsp; <span style="color: #0000ff;">throw</span><span style="color: #008000;">&#40;</span><span style="color: #0000dd;">3</span><span style="color: #008000;">&#41;</span><br />
+<span style="color: #008000;">&#125;</span><br />
+<span style="color: #0000ff;">catch</span><span style="color: #008000;">&#40;</span>e<span style="color: #008000;">&#41;</span> <span style="color: #008080;">:</span> e <span style="color: #000080;">&lt;</span> <span style="color: #0000dd;">3</span> <br />
+<span style="color: #008000;">&#123;</span><br />
+&nbsp; <span style="color: #666666;">// Should never get called</span><br />
+<span style="color: #008000;">&#125;</span><br />
+<span style="color: #0000ff;">catch</span> <span style="color: #008000;">&#123;</span><br />
+&nbsp; <span style="color: #666666;">// what does get called</span><br />
+<span style="color: #008000;">&#125;</span></div></div>
+
+<p>See Also:</p>
+
+<ul>
+<li><a href="http://chaiscript.com/docs/5/index.html#exceptions">docs</a></li>
+<li><a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/eval_catch_exception_test.cpp">eval_catch_exception_test.cpp</a></li>
+<li><a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/exception.chai">exception.chai</a></li>
+<li><a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/exception_guards.chai">exception_guards.chai</a></li>
+</ul>
+
+<h3>Thread Safety</h3>
+
+<p>ChaiScript can be used safely from multiple threads simultaneously, by default. It is possible to disable thread safety for enhanced performance.</p>
+
+<p>See Also:</p>
+
+<ul>
+<li><a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/multithreaded_test.cpp">multithreaded_test.cpp</a></li>
+</ul>
+
+<h3>Loadable Modules</h3>
+
+<p>C++ libraries can be compiled as loadable modules and loaded dynamically with ChaiScript at runtime. The default behavior is for the ChaiScript standard library to now be compiled and loaded this way, reducing on re-compile times.</p>
+
+<h2>Reduced Dependencies</h2>
+
+<p>ChaiScript now requires only a C++11 compliant compiler, the previous boost requirement has been completely removed. It is header only (with the option of precompiling the standard library into a loadable module for reduced compile times).</p>
+
+<p>Tested and supported compilers: clang 3.4+, g++4.6+, MSVC 2013+.</p>
+
+<h2>Enhanced Performance</h2>
+
+<p>Depending on the test run, ChaiScript 5.3 is between 10 and 20 times faster than ChaiScript 1.0.</p>
+
+<h2>Language Enhancements</h2>
+
+<ul>
+<li><code>elseif</code>  was split into <code>else if</code> like a C++ programmer would expect it to be</li>
+<li><code>&lt;&lt;</code> operator support added and implemented for numerics</li>
+<li><code>continue</code> statement <a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/continue_for.chai">support</a> <a href="https://github.com/ChaiScript/ChaiScript/blob/master/unittests/continue_while.chai">added</a>.</li>
+<li><code>break</code> statement support added</li>
+<li><code>switch</code> statement support added</li>
+<li><code>?:</code> ternary operator support added</li>
+<li>function introspection upport. Functions can be queried for arity, parameter types, etc.</li>
+<li>arithmetic types now perfectly match the target system. Conversions during arthmetic operations are the same, also.</li>
+<li>arithmetic type suffixes <code>f</code>, <code>ul</code>, <code>u</code>, etc added</li>
+<li>inheritance of methods tracked and handled</li>
+<li>object lifetime and scoping rules now match C++</li>
+<li>countless bug fixes and improvements</li>
+</ul>
+
+<h2>Automated Testing</h2>
+
+<p>ChaiScript currently has 322 unit tests. ChaiScript 1.0 had only 72 tests. The new testing framework is integrated with the build system and run with every check-in via <a href="https://travis-ci.org/ChaiScript/ChaiScript">Travis-CI</a>.</p>
+
+<p>Be sure to check the <a href="https://github.com/ChaiScript/ChaiScript/tree/master/unittests">unit tests</a> to verify any details about how to use ChaiScript.</p>
+</div></div></div><!-- google_ad_section_end --><div class="field field-name-field-tag field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tag:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="/tags/cpp" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">C++</a></div><div class="field-item odd"><a href="/tags/chaiscript" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">ChaiScript</a></div></div></div>  </div>
+
+  <ul class="links well well-sm list-inline"><li class="blog_usernames_blog first"><a href="/blogs/jason" title="Read jason&#039;s latest blog entries.">jason&#039;s blog</a></li>
+<li class="comment_forbidden last"><span><a href="/user/login?destination=node/4599%23comment-form">Log in</a> to post comments</span></li>
+</ul>
+  
+</div>
+
+</section> <!-- /.block -->
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+<footer class="footer container">
+    <div class="region region-footer">
+    <div id="block--managed-1" class="block block--managed">
+
+    
+  <div class="content">
+    <div style='text-align:center'><div class='adsense adsense_managed_' style='display:inline-block;width:728px;height:90px;'>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1595128002130008";
+/* 728x90 */
+google_ad_slot = "5302735515";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div></div>  </div>
+</div>
+<section id="block-system-powered-by" class="block block-system clearfix">
+
+      
+  <span>Powered by <a href="http://drupal.org">Drupal</a></span>
+</section> <!-- /.block -->
+  </div>
+</footer>
+  <script src="http://blog2.emptycrate.com/sites/default/files/js/js_VU7P4CTgUZdF2SyFko5LLAg9ZK0OSVjXVaAFnTLgVt0.js"></script>
+<script src="http://blog2.emptycrate.com/sites/default/files/js/js_B2uv6dkjoYobfQVyuXdchgrpnnx4oM0TkP_bDVf8Qrg.js"></script>
+</body>
+</html>

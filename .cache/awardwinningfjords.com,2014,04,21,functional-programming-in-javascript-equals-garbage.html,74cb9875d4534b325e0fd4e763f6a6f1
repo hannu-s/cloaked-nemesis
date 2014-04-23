@@ -1,0 +1,252 @@
+status: 200
+content-length: 11594
+via: 1.1 d7c4be162bf4bf651ce9c42aded33e87.cloudfront.net (CloudFront)
+content-location: http://awardwinningfjords.com/2014/04/21/functional-programming-in-javascript-equals-garbage.html
+x-cache: RefreshHit from cloudfront
+server: AmazonS3
+last-modified: Tue, 22 Apr 2014 15:43:36 GMT
+connection: keep-alive
+etag: "f08074889c4580f6858b8a18296cea45"
+x-amz-cf-id: iqdyPfWQR1Uqh-fQKzlGay9mjeo6FrNMB3JSmmE8XzL2n-OpVIZZhw==
+cache-control: public, max-age=3600
+date: Tue, 22 Apr 2014 16:24:32 GMT
+content-type: text/html
+-content-encoding: gzip
+
+<!doctype html>
+<html>
+  <head>
+    <!--
+      SLARTIBARTFAST: Oh, yes. Did you ever go to a place - I think it was called Norway?
+      ARTHUR DENT: No. No, I didn't.
+      SLARTIBARTFAST: Pity. That was one of mine. Won an award, you know. Lovely crinkly edges.
+    -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1'>
+    <meta charset="utf-8">
+    <meta name="author" content="Thomas Reynolds">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,target-densitydpi=160,minimal-ui" name="viewport">
+    
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- Google Setup -->
+    <meta content='VbyiHsqFIT6NSIBRNw/TAnm+9zy0TAmFRiC68lYCoSw=' name='verify-v1'>
+
+      <title>Functional Programming in Javascript === Garbage &laquo; Thomas Reynolds</title>
+    
+    <!-- Stylesheet -->
+    <link href="/stylesheets/new.css" rel="stylesheet" type="text/css" />
+    
+    <!-- RSS -->
+    <link href='/feed.xml' rel='alternate' title='Award Winning Fjords' type='application/rss+xml'>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">Award-Winning Fjords</a>
+        <span class="sub">Thomas Reynolds</span>
+      </header>
+    </header>
+    
+    <div id="frame">
+        <article>
+          <h2>Functional Programming in Javascript === Garbage</h2>
+          <time>Apr 21 2014</time>
+          <p>Functional Programming is great. It allows for simpler programs which are easy to test and reason about. Unfortunately, not all languages are created equal. I&#39;ve been writing a bit of Clojure and really enjoying myself. As I&#39;ve ported my learnings and approaches to Javascript, I&#39;ve encountered a handful of issues which I&#39;d like to talk about.</p>
+
+<h2>Strong Preference for Immutable Data</h2>
+
+<p>A core design goal for any Functional system is to avoid global mutable state. That is, global variables which any piece of code may change at any time. With the values of these globals outside of your function&#39;s control, it makes it hard to return consistent values and reason about your program.</p>
+
+<p>The solution is to not allow state to mutate (and to avoid global variables if possible). What this means is that pushing an item into an array doesn&#39;t overwrite the original array, but instead copies it and appends a new item. Javascript is not very good at deep copying its data structures and doing so will create a ton of intermediate variables which are only used once and then garbage collected.</p>
+
+<p>Clojure uses Persistent Data Structures, which avoids deep copying the whole structure and instead builds upon the previous data by creating a new structure that is the new data, plus the previous value. Since these pieces of data are immutable, we can be assured these references will always be correct. Now, when a change is made, no copy needs to happen. Garbage is avoided and memory usage optimized.</p>
+
+<p>ClojureScript, a version of Clojure which compiles to Javascript, includes Persistent Data Structures if you&#39;d like to experiment. There is also the <a href="https://github.com/swannodette/mori">Mori</a> project which takes the ClojureScript structures, compiles to a single-file library and gives them a nice Javascript API.</p>
+
+<p>Without Immutable Data, writing Functional programs in Javascript requires lots of attention in avoiding functions which overwrite values or being comfortable with a lot of expensive copying and garbage generation.</p>
+
+<h2>Recursion &amp; Tail Call Elimination</h2>
+
+<p>Once you begin working with functions, you&#39;ll begin passing references of them to other functions. These are called Higher Order Functions and you may already be familiar with them. Take, for example, <code>jQuery.fn.each</code>:</p>
+
+<pre><code>function logElem() {
+  console.log(this);
+}
+
+jQuery(&quot;elem&quot;).each(logElem);
+</code></pre>
+
+<p>This is not very functional, since it relies on setting the <code>this</code> value, but you get the idea. For a more functional version, take a look at Underscore&#39;s <code>_.each</code>.</p>
+
+<p>If I were getting FP-happy, I might start writing an <code>accumulator</code> or <code>reducer</code> which are both names for a function which takes a list of items and returns a value by iterating over the list.</p>
+
+<p>A <code>map</code> will return an updated value for each item:</p>
+
+<pre><code>function plus1(a) { return a + 1; }
+
+map(plus1, [1,2,3]); // =&gt; [2,3,4]
+</code></pre>
+
+<p>A <code>filter</code> will return a subset of the list, depending on the truthiness of the function.</p>
+
+<pre><code>function even(a) { return a % 2 === 0; }
+
+filter(even, [1,2,3]); // =&gt; [2]
+</code></pre>
+
+<p>These can both be written as a reducer.</p>
+
+<pre><code>function map(f, list) {
+  return reduce(function(val, sum) {
+    sum.push(f(val));
+    return sum;
+  }, list, []);
+}
+</code></pre>
+
+<p>The reducer takes a function which can update a value <code>sum</code> which starts at <code>[]</code> and is updated once for each item in the list.</p>
+
+<p>Okay, that was a long lead in. Here&#39;s how you could naively implement a reducer:</p>
+
+<pre><code>function reduce(f, list, sum) {
+  if (list.length &lt; 1) {
+    return sum;
+  } else {
+    var val = list.shift();
+    return reduce(f, list, f(val, list));
+  }
+}
+</code></pre>
+
+<p>Nice and clean (other than the mutating of the list). However, by using recursion in Javascript, we&#39;ve introduce a time bomb into our code. Each time JS steps deeper into <code>reduce</code>, it retains the old stack of calls. Depending on the browser, the version and the amount of available memory, the browser may decide your stack is too deep and throw an unexpected exception. This may not show up in tests and is really scary to consider.</p>
+
+<p>Languages with Tail Call Elimination will recognize this situation and basically rewrite the function into a <code>while</code> loop. Since this is a low-level function, we should do the same, but sometimes it&#39;s hard to know when you&#39;re recurring dangerously.</p>
+
+<p>Another way to avoid the issue is to use an approach called <code>Trampolining</code>. Writing a reducer in this way means each iteration does not return a value, instead it returns a function which calls the next iteration. It would look like this:</p>
+
+<pre><code>function trampoline(f) {
+  return function() {
+    var result = f.apply(this, arguments);
+
+    while (result instanceof Function) {
+      result = result();
+    }
+
+    return result;
+  };
+}
+
+var reduce = trampoline(function myself(f, list, sum) {
+  if (list.length &lt; 1) {
+    return sum;
+  } else {
+    return function() {
+      var val = list.shift();
+      return myself(f, list, f(val, list));
+    };
+  }
+});
+</code></pre>
+
+<p>At this point in time, we&#39;re feeling pretty damn proud of ourselves. Our recursive functions won&#39;t randomly explode. We&#39;ve got a core iteration method we can build <code>map</code>, <code>filter</code> and more upon. But we&#39;ve introduced a critical flaw: more garbage.</p>
+
+<p>Now, every single time we iterate over a list, we create 1 temporary function for each item in the list. If you do something like the following, you&#39;re going to generate a ton of garbage and drop frames:</p>
+
+<pre><code>requestAnimationFrame(function() {
+  each(tickPhysics, worldEntities);
+});
+</code></pre>
+
+<p>Therefore, to avoid garbage generation, we need to remember to avoid recursion in our low-level iterators and use a simple, but not very functional, <code>while</code> loop. For a much more in-depth discussion of Trampolines in JS, read <a href="http://raganwald.com/2013/03/28/trampolines-in-javascript.html">Reginald Braithwaite&#39;s article</a>.</p>
+
+<h2>Function Composition &amp; Partial Application</h2>
+
+<p>Instead of passing anonymous functions to iterators, many Functional programmers use Composition and Partial Application to generate new functions instead. Above we had the example of <code>plus</code>, this could be written like so:</p>
+
+<pre><code>function plus(a, b) { return a + b; }
+
+var plus1 = partial(plus, 1);
+
+map(plus1, [1,2,3]); // =&gt; [2,3,4]
+</code></pre>
+
+<p>Now, we have a <code>plus1</code> function which is simply the <code>plus</code> function with the first argument already filled in. An implementation of <code>partial</code> would look like this:</p>
+
+<pre><code>function partial() {
+  var args = Array.prototype.slice.call(arguments, 0);
+  var f = args.shift();
+
+  return function partialExecute_() {
+    var args2 = Array.prototype.slice.call(arguments, 0);
+    return f.apply(this, args.concat(args2));
+  };
+}
+</code></pre>
+
+<p>Notice that we create an Array and a Function every time we call partial and an additional array each time the <code>partial</code>ed function is called. This isn&#39;t a critical problem, but it is something to be careful of.</p>
+
+<p>Function composition is similar, it allows you to take two functions and create a new function which calls both of them.</p>
+
+<pre><code>function plus1(a) { return a + 1; };
+function mult2(a) { return a * 2; };
+
+var addThenMult = compose(mult2, plus1);
+
+map(addThenMult, [1,2,3]); // =&gt; [4,6,8]
+</code></pre>
+
+<p>A simple implementation would be:</p>
+
+<pre><code>function compose() {
+  var fns = Array.prototype.slice.call(arguments, 0);
+
+  return function composedExecute_(value) {
+    for (var i = fns.length - 1; i &gt;= 0; --i) {
+      value = fns[i](value);
+    }
+    return value;
+  };
+}
+</code></pre>
+
+<p>More Arrays and more Functions. Again, not a big deal, but if you are doing a lot of <a href="http://en.wikipedia.org/wiki/Tacit_programming">Point-free Programming</a>, then your loops have the possibility of generating a ton of garbage.</p>
+
+<h2>Conclusion</h2>
+
+<p><strong>Never forget that Javascript hates you.</strong> Functional programming can be a nice way to write a system, but always remember the language you are running on. Most of these issues can be overcome with a little attention.</p>
+
+<p>Finally, I&#39;ll use this opportunity to plug Reginald Braithwaite&#39;s wonderful book on Functional Programming: <a href="https://leanpub.com/javascript-allonge/read">Javascript Allongé</a>. It&#39;s free to read, so you should probably do that.</p>
+
+        </article>
+    
+      <footer>
+        <p class="descr">My name is Thomas Reynolds. I'm a Technical Director at <a href="http://weareinstrument.com">Instrument</a>, lucky denizen of Portland, active Crossfitter, a foodie, a cocktail enthusiast and all-around nerd.</p>
+    
+        <p>
+          <a href="http://twitter.com/tdreyno">Twitter</a> &bull;
+          <a href="mailto:me@tdreyno.com">Email</a> &bull;
+          <a href="https://github.com/tdreyno">Github</a> &bull;
+          <a href="/feed.xml">RSS</a>
+        </p>
+      </footer>
+    </div>
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_light.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4d770721192b0c4ab6000002');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+  </body>
+</html>

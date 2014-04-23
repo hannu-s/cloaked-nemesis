@@ -1,5 +1,5 @@
-http://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/
-# Getting Lazy with C++   Bartosz Milewski's Programming Cafe 
-# Leave a Reply Cancel reply 
-# 
-# Blog at WordPress.com. Customized Connections Theme. 
+http://projectnaptha.com/
+# Project Naptha 
+# highlight, copy, and translate text from any image. 
+# rather fun little easter egg 
+# its current name, is drawn from an even more tenuous association. See, it comes the fact that "highlighter" kind of sounds like "lighter", and naptha a type fuel often used for lighters. It was in one earliest codenames project, brought rise to rather fun little easter egg which you can play with by quickly clicking about dozen times over some block text inside picture. 

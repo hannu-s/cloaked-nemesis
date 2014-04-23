@@ -1,5 +1,5 @@
-http://blog.chromium.org/2014/04/testing-chromium-threadsanitizer-v2.html?m=1
-# Chromium Blog: Testing Chromium: ThreadSanitizer v2, a next-gen data race detector 
-# Testing Chromium: ThreadSanitizer v2, a next-gen data race detector 
-# 
-#  
+http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer
+# Peter Nixey - How to be a great software developer 
+# 33 Notes 
+# Disclaimer 
+#  Comments on Hacker News 

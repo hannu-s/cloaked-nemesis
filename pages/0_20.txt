@@ -1,5 +1,5 @@
-http://www.fastcolabs.com/3029364/this-is-your-brain-on-code-according-to-functional-mri-imaging
-# This Is Your Brain On Code, According To Functional MRI Imaging Co.Labs code + community 
-# Why Google Is Investing In Deep Learning 
+http://www.serpentine.com/wreq/
+# wreq: a Haskell web client library 
+# Ready to jump 
 # 
-#  
+# BSD licensed. 

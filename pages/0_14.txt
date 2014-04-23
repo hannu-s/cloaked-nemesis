@@ -1,5 +1,5 @@
-http://hubicka.blogspot.co.uk/2014/04/linktime-optimization-in-gcc-1-brief.html
-# Honza Blog: Linktime optimization in GCC, part 1 - brief history 
-# Unit-at-a-time 3.4) 
-#  
-#  
+http://bl.ocks.org/mbostock/11189414
+# Maze Solver II 
+# Maze Solver II 
+# 
+# Open in a new window.var gist {"history":[{"version":"b1a6658cbfa6070686c197a540056efeb8b1e6d3"}],"files":{"README.md":{"language":"Markdown","type":"text/plain","filename":"README.md","size":25,"sha":"bd8f4cb82f36c2bb2feb6c484e0aedd4407a8fed"},"index.html":{"language":"HTML","type":"text/html","filename":"index.html","size":4987,"sha":"84853267ad9449bd4b50a741687e9f37cd902bd0"},"thumbnail.png":{"language":null,"type":"image/png","filename":"thumbnail.png","size":48279,"sha":"32d0ec2ec5b56dd862a96656c2b5dcee12d2dc57"}},"created_at":"2014-04-22T18:25:02.000Z","updated_at":"2014-04-23T09:39:33.000Z","description":"Maze Solver files d3.values(gist.files)  b) return === - || });var readme d3.selectAll(".gist-readme") { && d.language "Markdown"; var d3.select(this); + d.filename, content) Showdown.converter().makeHtml(content)); }); source d3.select(".gist-sources").selectAll(".gist-source") d.size 50000 text(d.type); "gist-source");source.append("h2") d.filename; function(d) (d.language "JSON" "javascript" : }) code "index.html" "" function(error, text(type) block 22, 2014GoogleAnalyticsObject "ga", ga function() ga.q.push(arguments); ga.q [], ga.l +new "UA-48272912-1", "pageview"); 

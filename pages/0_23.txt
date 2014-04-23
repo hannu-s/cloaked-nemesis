@@ -1,5 +1,5 @@
-http://codecondo.com/top-10-task-tracking-tools/
-# Top 10 Task Tracking Tools for Small Development Teams CodeCondo 
-# Find us on Facebook 
+http://blog2.emptycrate.com/content/chaiscript-almost-5-years-later
+# ChaiScript 5 Years Later EmptyCrate 
+# Loadable Modules 
 # 
-# Copyright 2014 CodeCondo, WordPress, DigitalOcean, Carino, All Rights Reserved. 
+# Be sure to check the unit tests verify any details about how use ChaiScript. 

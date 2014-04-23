@@ -1,0 +1,1129 @@
+status: 200
+content-length: 52548
+content-location: http://www.pmstudy.com/
+x-powered-by: ASP.NET
+set-cookie: ASPSESSIONIDSAARRSCR=AHFIJCLDDDLEEFAOOGELCONB; path=/
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+cache-control: private
+date: Wed, 23 Apr 2014 12:20:02 GMT
+content-type: text/html
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="/images/buttons/favicon.ico">
+<title>PMP Training - PMP certification and PMP Exam Prep Classes</title>
+<meta name="language" content="English">
+<META content="PMP, PMP training, PMP certification, PMP boot camp, PMP classes, PMP courses, PMP certification training, online PMP courses, PMP exam prep" name="keywords">
+<META content="PMP Certification and PMP Exam Prep with PMstudy - The Global Leader in PMP Training offering the best PMP Exam Prep classes and online PMP Training for PMP Certification with Best Faculty and 99% pass rate" name="description">
+
+<link rel="stylesheet" type="text/css" href="/css/styleBanner.css">
+
+<link rel="stylesheet" type="text/css" href="/css/chromestyle.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/chrome.js"></script>
+<style type="text/css">
+/*Inner page PMP and PRINCE Buttons*/	
+	
+.pmp-button1 {
+	background-image: url(/PMP-Training/PMP-Certification/buttons/PMP-Small-Select.jpg);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 46px;
+	display: inline-block;
+}
+.prince2-button1 {
+	background-image: url(/PMP-Training/PMP-Certification/buttons/PRINCE2-Small-Select.jpg);
+	background-repeat: no-repeat;
+	height: 25px;
+	width:76px;
+	display: inline-block;
+}
+.pmp-button1.selected {
+	background-image: url(/PMP-Training/PMP-Certification/buttons/PMP-Small-N.jpg);
+}
+.prince2-button1.selected {
+	background-image: url(/PMP-Training/PMP-Certification/buttons/PRINCE2-Small-N.jpg);
+}
+.pmp-button1.selected:hover {
+	background-image: url(/PMP-Training/PMP-Certification/buttons/PMP-Small-H.jpg);
+	color: #CCC;
+	cursor: pointer;
+}
+.prince2-button1.selected:hover {
+	background-image: url(/PMP-Training/PMP-Certification/buttons/PRINCE2-Small-H.jpg);
+	color: #CCC;
+	cursor: pointer;
+}
+/*Other course strip css */
+
+#CoursesPanel {
+	width:871px;
+	height:24px;
+	/*font-weight:bold;*/
+	font-family:Arial, Helvetica, sans-serif;
+	background-repeat:repeat-x;
+	padding:3px 0px 0px 10px;
+	background-image: url(/PMP-Training/PMP-Certification/banners/OtherCourses-BG.png);
+	background-position: left top;
+	border:#0C0C0C 1px solid;
+}
+#CoursesPanel-Left {
+	width:auto;
+	height:20px;
+	color:#FFF;
+	font-size:14px;
+	float:left;
+	/*margin-right:20px;*/
+	margin-top: 3px;
+}
+#CoursesPanel-Right {
+	width:auto;
+	height:19px;
+	float:right;
+	margin-right:5px;
+	background-repeat:repeat-x;
+	border-radius: 5px 5px 5px 5px;
+	border:#FFF 1px solid;
+	background-image: url(/PMP-Training/PMP-Certification/banners/OtherCourses-BG.png);
+	background-position: left bottom;
+}
+a.courses {
+	color:#000000;
+	font-size:14px;
+	border-left:#fff 1px solid;
+	border-right:#bfbfbf 1px solid;
+	padding:1px 33px;
+	text-decoration:none;
+	height:17px;
+	display:inline-block;
+	background-image: url(/PMP-Training/PMP-Certification/banners/arro.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	float:left;
+}
+a.courses:first-child {
+	background:none;
+	border-right:#bfbfbf 1px solid;
+	border-left:none;
+}
+a.courses:hover {
+	background-color: #E4E4E4;
+}
+a.courses:last-child {
+	border-right:none;
+}
+
+/* Enroll button*/
+#PM-Enrolmentbutton-Container
+{
+	width:212px;
+	height:47px;
+	margin-top:253px;
+	position:absolute;
+}
+
+.PM-Enrolmentbutton-Button-Background
+{  
+    width:104px;
+	height:45px;
+	float:left;
+	border:#003366 1px solid;
+	background:url(/PMP-Training/PMP-Certification/banners/Enrol-Button-Bg.png);
+	background-repeat:repeat-x;
+}
+.PM-Enrolmentbutton-Button-Background:hover
+{  
+    background:url(/PMP-Training/PMP-Certification/banners/Enrol-Button-Bg-Hover.png);
+	background-repeat:repeat-x;
+}
+	
+.PM-Enrolmentbutton
+{
+	
+	padding-left:6px;
+	padding-top:5px;
+	background:url(/PMP-Training/PMP-Certification/banners/En_ButtonArrow.png) no-repeat;
+	background-position:95% 53%;
+}
+.EM-Classroom
+{
+	color:#01518a;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-shadow: 0px 1px 1px #fff;
+	text-decoration:none;
+}
+a.PM-Enroll-text
+{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#000000;
+   text-decoration:none;
+   display:block;
+   text-align:left;
+   
+}
+
+.PM-Enrolmentbutton a:hover 
+{
+	background:none;
+color:#000000;
+	}
+/* phone number for india in the top */
+.contactInTopLogo {
+
+    right: 250px;
+    top: 20px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    font-family: calibri, arial;
+    padding-top: 5px;
+}
+.contactInTopLogo #callUsAt{
+font-size: 20px;;
+color:#666;
+font-weight:bold;
+vertical-align:middle;
+display:block;
+line-height:20px;
+margin-top:-10px;
+
+}
+.contactInTopLogo #emailUs{
+font-size: 18px;
+color:#666;
+font-weight:bold;
+display:block;
+  line-height:24px;
+}
+.contactInTopLogo #emailUs a:hover{
+background-color:#FFF;
+}
+
+
+
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+function getCountry() {
+
+    document.forms["myform"].submit();
+
+}
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<style>
+#link1, #link1:visited {
+	color:#06C;
+}
+#link1:hover {
+	color:#09C;
+	cursor:pointer;
+}
+#link1:active {
+	color:#0CC;
+}
+</style>
+<script language="javascript">
+function GetHidden1()
+{
+	document.getElementById("form1").submit();
+}
+function youtube(param, url){
+	if(param=="close"){
+		
+		document.getElementById('youtubeFrame').src=url;
+		document.getElementById('youtubePopup').style.display="none";
+	}
+	else{
+		document.getElementById('youtubePopup').style.display="block";
+		document.getElementById('youtubeFrame').src=url;
+		}
+}
+</script>
+</head><body bgcolor="#CCCCCC" vlink="#0099CC" leftmargin="0" topmargin="0" onLoad="MM_preloadImages('/PMP-Training/PMP-Certification/buttons/PMP-H.jpg','/PMP-Training/PMP-Certification/buttons/PMP-N.jpg','/PMP-Training/PMP-Certification/buttons/PMP-S.jpg','/PMP-Training/PMP-Certification/buttons/PRINCE2-H.jpg','/PMP-Training/PMP-Certification/buttons/PRINCE2-N.jpg','/PMP-Training/PMP-Certification/buttons/PRINCE2-S.jpg','/PMP-Training/PMP-Certification/back/link_01_why_us_green.jpg','/PMP-Training/PMP-Certification/back/link_02_courses_enroll_green.jpg','/PMP-Training/PMP-Certification/back/link_03_free_resources_green.jpg','/PMP-Training/PMP-Certification/back/link_04_methodology_green.jpg','/PMP-Training/PMP-Certification/back/link_05_about_us_green.jpg','/PMP-Training/PMP-Certification/back/link_06_login_green.jpg','/PMP-Training/PMP-Certification/back/link_07_corporate_green.jpg','/PMP-Training/PMP-Certification/back/US_about_us_green.jpg')">
+
+<div id="youtubePopup" style="position:fixed; width:100%; height:1000px; background:#000; z-index:10000; display:none; background:url(http://www.pmstudy.com/PMI/Images/sendEmail_background.png) repeat;">
+<div id="close" style="margin:150px auto 0 auto; width:560px; background-color:#FFF; text-align:right; padding:5px 10px 0 10px; cursor:pointer;" onClick="youtube('close', '')">close</div>
+<div id="youtubeHolder" style="margin:auto; width:560px; border:10px solid #FFF"><iframe width="560" height="315" src="" frameborder="0" allowfullscreen id="youtubeFrame"></iframe></div>
+</div>
+
+
+
+<div align="center" class="MainTableBack" style="width:100%;">
+<!-- Header Start -->
+<div align="center" style="margin-top:-12px;" >
+<div style="width:930px;" align="center">
+  <table width="930" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><div align="right">
+        <table width="930" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <form name="myform" method="post">
+              <td><span class="country"><br>
+                
+                <select name="changecountry" id="changecountry" onChange="getCountry();">
+                  <option value="">-Select Country-</option>
+                  <option  value="Australia">Australia/NZ</option>
+                  <option  value="Colombia">Colombia</option>
+                  <option  value="Germany">Germany</option>
+                  <option  value="Hong Kong">Hong Kong</option>
+                  <option  value="India">India</option>
+                  <option  value="Netherlands">Netherlands</option>
+                  <option  value="Nigeria">Nigeria</option>
+                  <option  value="Saudi Arabia">Saudi Arabia</option>
+                  <option  value="Singapore">Singapore</option>
+                  <option  value="UAE">UAE</option>
+                  <option  value="United Kingdom">UK</option>
+                  <option  value="US">US/Canada</option>
+                  <option value="Other">Other</option>
+                </select>
+                </span>
+                </td>
+            </form>
+            <td width="240px"><br>
+              <div align="middle" style="position:absolute;">
+                <form action="/pmstudy-searchresults.asp" id="cse-search-box">
+                  <input type="hidden" name="cx" value="007305129127013740814:hstkrp-n6yo" />
+                  <input type="hidden" name="cof" value="FORID:10" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  
+                  
+                  <input type="text" name="q" id="mainSearch_AllPages" id="mainSearch_AllPages" style="color: rgb(161, 161, 161);width:200px;" size="80"  class="TeXtField" value="Search PMstudy" onfocus='myObj = document.getElementById("mainSearch_AllPages");if(this.value=="Search PMstudy") myObj.value="";myObj.style.color = "#A1A1A1";' onblur='myObj = document.getElementById("mainSearch_AllPages");if(myObj.value == "") myObj.value="Search PMstudy";myObj.style.color = "#a1a1a1";if(myObj.value!="Search PMstudy") myObj.style.color="#A1A1A1";' size="50" />
+                  <input type="image" name="sa2" src="/PMP-Training/PMP-Certification/buttons/search-psmtudy.png" />
+                </form>
+              </div></td>
+            <td width="200px"><br>
+              <span class="hLinks"><a href="/index.asp">Home</a> | <a href="/contactus.asp">Contact</a> | <a href="/sitemap.asp">Sitemap</a>
+             
+              | <a href="/memberlogin.asp">Sign In</a>
+              
+              </span></td>
+          </tr>
+        </table>
+        <div></td>
+    </tr>
+    <tr>
+      <td id="imageHover">
+      
+      
+      
+	  <div style="position:relative">
+        
+        <img src="/PMP-Training/PMP-Certification/buttons/logo_top.jpg" alt="PMP Training, PMP Certification" width="917" height="69" border="0" usemap="#MapLogo" />
+        </div></td>
+    </tr>
+  </table>
+  <map name="MapLogo" id="MapLogo">
+    <area shape="rect" coords="12,0,236,67" href="/index.asp" />
+    <area shape="rect" coords="745,3,916,64" href="http://www.pmi.org/Professional-Development/REP-Find-a-Registered-Education-Provider.aspx" target="_blank">
+  </map>
+  <table width="930px" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><table width="930px" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td colspan="2"><div style="width:930px;" class="chromestyle" id="chromemenu">
+                <ul>
+                
+                  <li><a href="/Why-PMP-Certification.asp" rel="dropmenu1"><img src="/PMP-Training/PMP-Certification/back/link_01_why_us_grey.jpg" alt="PMP Training, PMP Certification" name="a" id="a" onMouseOver="MM_swapImage('a','','/PMP-Training/PMP-Certification/back/link_01_why_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()" border="0" ></a></li>
+                  
+                  
+                  <li><a href="/PMP-Courses.asp" rel="dropmenu2"> <img src="/PMP-Training/PMP-Certification/back/link_02_courses_enroll_grey.jpg" alt="PMP Training, PMP Certification" name="b" id="b" onMouseOver="MM_swapImage('b','','/PMP-Training/PMP-Certification/back/link_02_courses_enroll_green.jpg',1)" onMouseOut="MM_swapImgRestore()" border="0"  /></a></li>
+                  
+                  <li><a href="/PMP-Free-Resources.asp" rel="dropmenu3"><img src="/PMP-Training/PMP-Certification/back/link_03_free_resources_grey.jpg" alt="PMP Training, PMP Certification" name="c" id="c" onMouseOver="MM_swapImage('c','','/PMP-Training/PMP-Certification/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()" border="0"></a></li>
+                  <li><a href="/PMP-Methodology.asp" rel="dropmenu4"><img src="/PMP-Training/PMP-Certification/back/link_04_methodology_grey.jpg" alt="PMP Training, PMP Certification" name="d" id="d" onMouseOver="MM_swapImage('d','','/PMP-Training/PMP-Certification/back/link_04_methodology_green.jpg',1)" onMouseOut="MM_swapImgRestore()"  border="0" ></a></li>
+                  
+                  <li><a href="/PMP-AboutUs.asp" rel="dropmenu5"><img src="/PMP-Training/PMP-Certification/back/link_05_about_us_grey.jpg" alt="PMP Training, PMP Certification" name="e" id="e" onMouseOver="MM_swapImage('e','','/PMP-Training/PMP-Certification/back/link_05_about_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()"  border="0" ></a></li>
+                  
+                  <li><a href="/memberLogin.asp" rel="dropmenu6"><img src="/PMP-Training/PMP-Certification/back/link_06_login_grey.jpg" alt="PMP Training, PMP Certification" name="f" onMouseOver="MM_swapImage('f','','/PMP-Training/PMP-Certification/back/link_06_login_green.jpg',1)" onMouseOut="MM_swapImgRestore()" border="0" ></a></li>
+                  
+                </ul>
+              </div>
+              <!--1st drop down menu -->
+              <div style="top: 26px; left: 203px; clip: rect(0pt, auto, 94.8717px, 0pt); visibility: hidden;margin-top:5px;" id="dropmenu1" class="dropmenudiv">
+                
+          
+             
+                <a href="/PMP-Classes/online-Project-Managament-Training.asp" onMouseOver="MM_swapImage('a','','/images/back/link_01_why_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Online - Training Benefits</a> <a href="/pmp-exam-success.asp" onMouseOver="MM_swapImage('a','','/images/back/link_01_why_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Leading Provider</a> <a href="/testfeedback.asp" onMouseOver="MM_swapImage('a','','/images/back/link_01_why_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Online - PMstudy Testimonials</a>
+				
+				  <a href="/PMP-Classes/facebook.asp" onMouseOver="MM_swapImage('a','','/images/back/link_01_why_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Facebook: Discussions</a>
+               
+                <a href="/indexus.asp" onMouseOver="MM_swapImage('a','','/images/back/link_01_why_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">View our US classes / US website</a>
+               
+              </div>
+              
+              <!--2nd drop down menu -->
+              <div style="top: 26px; left: 203px; clip: rect(0pt, auto, 94.8717px, 0pt); visibility: hidden; margin-left:28px; margin-top:5px;" id="dropmenu2" class="dropmenudiv">
+               
+                <a href="/enroll.asp#PMP" onMouseOver="MM_swapImage('b','','/images/back/link_02_courses_enroll_green.jpg',1)" onMouseOut="MM_swapImgRestore()">PMP<sup>®</sup> Online </a>
+				 <a href="/enroll.asp#CAPM" onMouseOver="MM_swapImage('b','','/images/back/link_02_courses_enroll_green.jpg',1)" onMouseOut="MM_swapImgRestore()">CAPM<sup>®</sup> Online</a> 
+				 <a href="/enroll.asp#6Sigma" onMouseOver="MM_swapImage('b','','/images/back/link_02_courses_enroll_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Continuing Education Online</a>
+               
+                <a href="/authorized-training-partner.asp" onMouseOver="MM_swapImage('b','','/images/back/link_02_courses_enroll_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Authorized Training Partner </a>
+               
+              </div>
+              
+              <!--3rd drop down menu -->
+              <div style="top: 26px; left: 203px; clip: rect(0pt, auto, 94.8717px, 0pt); visibility: hidden; margin-left:28px; margin-top:5px;" id="dropmenu3" class="dropmenudiv">
+			  
+			    <a href="/enroll.asp?course=pmp&pplink=simulated-test" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Free Simulated PMP<sup>&reg;</sup>/CAPM<sup>&reg;</sup> Practice Test </a>
+                <a href="/enroll.asp?course=pmp&pplink=sample-video" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Free Videos on PMBOK<sup>&reg;</sup> Guide</a>
+			    <a href="/enroll.asp?course=pmp&pplink=study-material&ppdata=chapter-test" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Free Chapter Test : Framework </a> 
+				<a href="/enroll.asp?course=pmp&pplink=study-material&ppdata=study-guides" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Free Guide, Podcast : Framework </a>
+			 <a href="/enroll.asp?course=pmp&pplink=exam-tips" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Exam Tips</a>
+                 <a href="/PMI/PMI.asp" target="_blank" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Work Experience Hours Calculation Tool</a>  
+				 <a href="/aboutpmpindex.asp" onMouseOver="MM_swapImage('c','','/images/back/link_03_free_resources_green.jpg',1)" onMouseOut="MM_swapImgRestore()">About Project Management, PMI<sup>&reg;</sup>, PMP<sup>&reg;</sup> </a> 
+				
+                 </div>
+              
+              <!--4th drop down menu -->
+              <div style="top: 26px; left: 203px; clip: rect(0pt, auto, 94.8717px, 0pt); visibility: hidden; margin-left:26px; margin-top:5px;" id="dropmenu4" class="dropmenudiv">
+                
+                <a href="/tour.asp" onMouseOver="MM_swapImage('d','','/images/back/link_04_methodology_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Online PMP<sup>®</sup>/CAPM<sup>®</sup> Contact Hours</a> 
+				<a href="/practiceTest1.asp" onMouseOver="MM_swapImage('d','','/images/back/link_04_methodology_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Simulated Exams</a> 
+				<a href="/contedumethod.asp" onMouseOver="MM_swapImage('d','','/images/back/link_04_methodology_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Continuing Education Courses</a> </div>
+              
+              <!--5th drop down menu -->
+              <div style="top: 26px; left: 203px; clip: rect(0pt, auto, 94.8717px, 0pt); visibility: hidden; margin-left:26px; margin-top:5px;" id="dropmenu5" class="dropmenudiv">
+			  
+			   <a href="/aboutus.asp" onMouseOver="MM_swapImage('e','','/images/back/link_05_about_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Who We Are </a> 
+			   <a href="/pmiad.asp" onMouseOver="MM_swapImage('e','','/images/back/link_05_about_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Our PMI Advertisement</a>
+			   <a href="/affiliates.asp" onMouseOver="MM_swapImage('e','','/images/back/link_05_about_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Our Other Courses</a>
+			   <a href="/contactus.asp" onMouseOver="MM_swapImage('e','','/images/back/link_05_about_us_green.jpg',1)" onMouseOut="MM_swapImgRestore()">Contact Us/Feedback</a> <a href="/investors.asp" onmouseover="MM_swapImage('e','','/images/back/link_05_about_us_green.jpg',1)" onmouseout="MM_swapImgRestore()">Investors </a></div>
+
+
+              <script type="text/javascript">
+
+				cssdropdown.startchrome("chromemenu")
+
+			</script></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</div>
+<div style="float: right; height: 111px; width: 30px; position: fixed; top: 30px; right: 0px; z-index: 1001;">
+<img src="/PMP-Training/PMP-Certification/buttons/Social-Media-Icons.png" alt="PMstudy Social Media Icons" width="30" height="156" usemap="#Map" border="0" />
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="3,3,29,30" href="http://facebook.com/pmstudy" target="blank" alt="PMP Training, PMP Certification" />
+  <area shape="rect" coords="4,35,29,61" href="http://twitter.com/pmstudy" target="blank" alt="PMP Training, PMP Certification" />
+  <area shape="rect" coords="2,66,30,92" href="http://www.linkedin.com/company/609586?trk=tyah" target="blank" alt="PMP Training, PMP Certification" />
+  <area shape="rect" coords="1,97,33,123" href="http://www.youtube.com/pmstudychannel" target="blank" alt="PMP Training, PMP Certification" />
+  <area shape="rect" coords="3,126,30,155" href="https://plus.google.com/u/0/107805068889165355210/posts" rel="publisher" target="blank" alt="PMP Training, PMP Certification" />
+  </map>
+</div>
+<!--Other course strip --Start -->
+<!--<div style="width:930px; background-color:#fff; height:28px; margin:auto;">
+<div id="CoursesPanel">
+  <div id="CoursesPanel-Left"> Our Other Courses: </div>
+  <div id="CoursesPanel-Right"> <a class="courses" href="http://www.scrumstudy.com" target="_blank">Scrum/Agile </a><a class="courses"  href="http://www.MyITstudy.com/ITIL" target="_blank">ITIL</a><a class="courses" href="http://www.myitstudy.com/Cisco-Training.asp" target="_blank">Cisco </a><a class="courses" href="http://www.myitstudy.com/microsoftTraining.asp" target="_blank">Microsoft</a><a class="courses" href="http://www.myitstudy.com/CompTIATraining.asp" target="_blank">CompTIA</a><a class="courses" href="http://www.pmstudy.com/affiliates.asp" target="_blank">Others</a> </div>
+</div>
+</div>-->
+<!--Other course strip --End -->
+<!-- Header End -->
+<div style="width:930px;background-color: #fff;">
+<div class="banner-main">
+     <span style="padding: 0px; text-align: left; position: absolute; color: rgb(255, 255, 255); margin-left: 20px; margin-top: 240px; z-index: 200; display: block;">Better than competitors. <a href="/better-than-competitors.asp" style="color:#0CF;" >More</a></span>
+  <div id="banner-navigation">
+    <div class="banner-navi-button banner-selected" onmouseover="toggleAuto(1, 'm')" onmouseout="toggleAuto(1, 'o')" id="b1">A Leading Provider</div>
+    <div class="banner-navi-button" onmouseover="toggleAuto(2, 'm')" onmouseout="toggleAuto(2, 'o')" id="b2">Proven Quality</div>
+    <div class="banner-navi-button" onmouseover="toggleAuto(3, 'm')" onmouseout="toggleAuto(3, 'o')" id="b3">Effective Delivery</div>
+    <div class="banner-navi-button" onmouseover="toggleAuto(4, 'm')" onmouseout="toggleAuto(4, 'o')" id="b4">Great Price</div>
+  </div>
+  <div id="banner-contents">
+    <div class="slide" style="background-image:url(/images/banners/1.jpg)" id="i1" onmouseover="toggleAuto(0, 's')" onmouseout="toggleAuto(1, 'o')">
+      <div style="font-size: 10px; padding-left: 10px; width: 661px; padding-top: 4px; color:#fff; font-family: arial; text-align: center; background-image: url(/images/banners/bg-banner-body.png); background-repeat: repeat;height: 18px;">Project Management Institute (PMI)<sup>&reg;</sup> | Project Management Professional (PMP)<sup>&reg;</sup> | Certified Associate in Project Management (CAPM)<sup>&reg;</sup></div>
+      <!--<div style="font-size: 10px; text-align:left; padding-left: 10px; width: 150%; padding-top: 5px; color:#fff; font-family: arial;">Project Management Institute (PMI)<sup>&reg;</sup>  |   Project Management Professional (PMP)<sup>&reg;</sup>   |  Certified Associate in Project Management (CAPM)<sup>&reg;</sup></div>-->
+      <div id="banner-body" style="margin-top: 5px; height: 225px">
+        <ul id="banner-list">
+          
+          <li>A Leading PMI R.E.P. with students from:</li>
+          
+          <ul>
+            <li>150+ countries </li>
+            <li>3500+ companies <a href="http://www.pmstudy.com/pmp-exam-success.asp" >Ask for reference</a></li>
+            <li>175,000+ students <a href="http://www.pmstudy.com/feedback_class.asp" >Testimonials</a></li>
+          </ul>  
+		   
+          <li>80+ exclusive global faculty for PM - <a href="http://www.pmstudy.com/globalFaculty.asp" >Know more</a></li>
+           
+          <li>Part of VMEdu, Inc.</li>
+          
+          <ul>
+            <li>A leading global training company with offices in 6 countries. <a href="/GlobalOffice.asp" > More </a></li>
+            <li>Funded by Sequoia Capital, PE firm that invested in Google, Apple, Cisco, and more. - <a href="http://www.pmstudy.com/investors.asp" >Read more</a></li>
+            
+          </ul>
+           
+        </ul>
+       
+       
+      </div>
+      <div class="dateAndPlace" style="margin-top:218px;">Phoenix Training September 2012. <a href="http://www.pmstudy.com/PMP-Training-Photos.asp" >More Photos</a></div>
+    </div>
+    <div class="slide" style="background-image:url(/images/banners/2.jpg)" id="i2" onmouseover="toggleAuto(0, 's')" onmouseout="toggleAuto(1, 'o')">
+      <div id="banner-body">
+        <ul id="banner-list">
+         
+          <li>Be ready for PMP exam on Day
+            
+            5
+            
+            - <a href="http://www.pmstudy.com/classroomtour.asp" >More</a></li>
+            
+          <li>98.7% Success Rate
+            
+          </li>
+          
+          <ul>
+           
+            <li>Backed by 100% Moneyback Guarantee - <a href="http://www.pmstudy.com/PMP-Classes/moneyBack.asp" >More</a></li>
+             
+          </ul>
+          
+          <li>Application of concepts through real-life experience - <a href="http://www.pmstudy.com/realLifeExp.asp">More</a>
+          <li>A 94 Customer satisfaction rating by D&B - <a href="http://www.pmstudy.com/Corporate/DunandBradstreet-Report.pdf" >More</a></li>
+           
+          <li>80+ experienced faculty working exclusively for us - <a href="http://www.pmstudy.com/globalFaculty.asp" >More</a></li>
+           
+          <li>Specialized in Project Management training  - <a href="http://www.pmstudy.com/specialized_PMT.asp" >More</a></li>
+          <li>Great feedback from successful students - <a href="http://www.pmstudy.com/feedback_class.asp" >Testimonials</a></li>
+        </ul>
+        
+      </div>
+     
+      <div class="dateAndPlace">Boston class July 2012. <a href="http://www.pmstudy.com/PMP-Training-Photos.asp" >More Photos</a></div>
+      
+    </div>
+    <div class="slide" style="background-image:url(/images/banners/3.jpg)"  id="i3" onmouseover="toggleAuto(0, 's')" onmouseout="toggleAuto(1, 'o')">
+      <div id="banner-body">
+        <ul id="banner-list">
+          <li>Flexibility to learn through:</li>
+          <ul>
+            
+            <li>Classrooms </li>
+            <li>Online only </li>
+            <li>Faculty-led online  (live classes) </li>
+            <li>Blended/Hybrid (instructor-led online) </li>
+            <li>Phone apps </li>
+            
+          </ul>
+          <li>Application of concepts through real-life experience - <a href="http://www.pmstudy.com/realLifeExp.asp">More</a>
+          <li>Customized corporate  trainings - <a href="http://www.pmstudy.com/Corporate/Corporate-Overview.asp" >More</a></li>
+        </ul>
+         
+      </div>
+      <div class="dateAndPlace">Tampa class March 2012. <a href="http://www.pmstudy.com/PMP-Training-Photos.asp" >More Photos</a></div>
+    </div>
+    <div class="slide" style="background-image:url(/images/banners/4.jpg)"  id="i4" onmouseover="toggleAuto(0, 's')" onmouseout="toggleAuto(1, 'o')">
+      <div id="banner-body">
+        <ul id="banner-list">
+          <li>We offer the best Value for Money with all our courses </li>
+          <ul>
+           
+            <li>Free online simulated  practice test - <a href="http://www.pmstudy.com/PMP-Exam-Resources/freeSimulatedTest.asp" >More</a></li>
+            
+			
+            <li>Online materials starting at $25 - <a href="http://www.pmstudy.com/enroll.asp" > More</a></li>
+            
+			
+            <li>Additional corporate discounts available - <a href="http://www.pmstudy.com/contactus.asp" >Contact us</a></li>
+          </ul>
+      
+        </ul>
+      </div>
+      <div class="dateAndPlace">San Francisco class November 2011. <a href="http://www.pmstudy.com/PMP-Training-Photos.asp" >More Photos</a></div>
+    </div>
+  </div>
+  <div id="banner-free">
+    <div id="banner-free-header">Free Resources</div>
+    <div id="banner-free-body">
+      
+      <ul id="banner-free-list">
+        <li>Free 200-question simulated PMP exam - <a href="http://www.pmstudy.com/enroll.asp?course=pmp&pplink=simulated-test">Take test</a></li>
+         <li>Free Videos on PMBOK<sup>&reg;</sup> Guide - <a href="http://www.pmstudy.com/enroll.asp?course=pmp&pplink=sample-video" >View</a></li>
+        <li>Master PMP/CAPM terms with our free mobile app - <a href="http://www.pmstudy.com/enroll.asp?course=pmp&pplink=mobile-applications" >Download</a></li>
+        <li>Work-ex Calculator - <a href="http://www.pmstudy.com/PMI/PMI.asp" target="_blank" >Try now</a></li>
+        <li>Free chapter tests - <a href="http://www.pmstudy.com/enroll.asp?course=pmp&pplink=study-material&ppdata=chapter-test">Take test </a></li>
+        <li>Free guides & podcast - <a href="http://www.pmstudy.com/enroll.asp?course=pmp&pplink=study-material&ppdata=study-guides" >Download</a></li>
+      </ul>
+
+      
+    </div>
+    
+          <div id="PM-Enrolmentbutton-Container">
+           
+        <div class="PM-Enrolmentbutton-Button-Background" style="width:210px; padding-top: 7px; height: 38px; text-align: center;" >
+          <div class="PM-Enrolmentbutton" style="background-position:84% 62%"> <a href="http://www.pmstudy.com/enroll.asp"  class="PM-Enroll-text" style="text-align:center"><b>Enroll For</b>
+            <span class="EM-Classroom"><b>Online</b></span></a> </div>
+        </div>
+        
+      </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+var lastfN=1;
+var autorun=0;
+function updateBanner(a){
+        if(lastfN!=a){
+            var newFeature='b'+a;
+            var oldFeature='b'+lastfN;
+            $('#i'+lastfN).fadeOut(200)
+            $('#i'+a).fadeIn(200)
+            document.getElementById(oldFeature).className="banner-navi-button";
+            document.getElementById(newFeature).className="banner-navi-button banner-selected"
+            lastfN=a;
+        }
+}
+
+function toggleAuto(a, b){
+        if(b=="a"){
+            t=setInterval("featureAutoIni(lastfN)", 8000);
+        }
+        else{
+        if(b=='m'){
+        clearInterval(t);
+        updateBanner(a);
+        }
+        else{
+            if(b=="o"){
+            t=setInterval("featureAutoIni(lastfN)", 8000);
+                }
+                else{
+                        if(b=="s"){
+                            clearInterval(t);
+                            }
+                    }
+            }
+        }
+    if(autorun==0){
+        }
+    }
+
+function featureAutoIni(){
+    var tempfN=lastfN
+    if(tempfN==4){
+    tempfN=0;
+    }
+    updateBanner(tempfN+1);
+    }
+updateBanner(lastfN)
+toggleAuto(2, 'a');
+
+</script>
+
+<style type="text/css">
+
+.HomePageTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size: 9pt;
+	color: #000000;
+	text-align: left;
+	vertical-align: top;
+	margin:0;
+	display:inline;
+}
+
+</style>
+<script type="text/javascript"> 
+isjQueryLoaded=0
+$(document).ready(function(){
+	$('#i1').fadeIn(300)
+	isjQueryLoaded=1;
+});
+function changeSlide(a, b){
+	
+}
+</script>
+
+<!-- Body Starts -->
+<script type="text/JavaScript">
+<!--
+
+function getCountry1() {
+
+    document.forms["myform1"].submit();
+
+}
+
+//-->
+</script>
+
+<div>
+  <table width="930" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    
+    <td height="235" align="left" valign="top" bgcolor="#FFFFFF">
+    
+    <table width="100%" border="0" cellspacing="0" cellpadding="8">
+      <tr>
+        <td width="2%" class="Header">&nbsp;</td>
+        
+           <td width="24%" class="Header"  style="text-align: center;padding-top:10px;" >
+           <img src="/images/PMPonline/Enroll/plus.png" height="24"><br />
+               PMP Online Course
+          
+        </td>
+       
+          
+          <td width="25%" class="Header" style="text-align: center;padding-top:10px;">
+            <img src="/images/PMPonline/Enroll/pro.png"  height="24"><br />
+            CAPM Online Course
+          
+        </td>
+        
+        <td width="24%" class="Header" style="text-align: center;padding-top:10px;"><img src="/images/PMPonline/Enroll/edu.png" height="24"><br />
+            Continuing Education Online
+        </td>
+        
+        <td width="26%" class="Header"><img src="/PMP-Training/PMP-Certification/buttons/news-room.png" alt="PMP Training, PMP Certification" ></td>
+      </tr>
+      <tr>
+        <td width="2%">&nbsp;</td>
+        
+          <td width="24%" rowspan="3">
+             <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2"><table border="0" cellpadding="4" cellspacing="0">
+                  <tr><td>
+                     <br /> <div style="text-align:center;"><a href="/enroll.asp#PMP" style="font-size:16px;font-weight:bold;padding: 12px 32px;border-radius: 5px;color: #fff; background-color: #19a84a;text-decoration: none;margin-top: 20px;">See Plans</a><br /><br /> <a style="font-weight:bold;text-decoration:underline;" href="/enroll.asp#PMP" class="not-visited">Take free Trial</a></div>
+                      <br /><br />
+                      </td>
+                  </tr>
+                  <tr><td><span class="subHeader"><b>Plans starting at </b><span style="font-size:18px;font-weight:bold;">USD </span><span style="font-size:24px;font-weight:bold;">25</span></span><br /><br /></td></tr>
+                  <tr><td><span class="subHeader"><b>Includes: </b></span></td></tr>
+                  <tr>
+                      <td>
+                      <ul>
+                          <li>58 Expert Videos (> 4hrs)</li>
+                          <li>Four 200-Questions, 4-hour Full Simulated Tests</li>
+                          <li>800+ Chapter Test Questions</li>
+                          <li>Downloadable Study Guides</li>
+                          <li>Audio-Visual Podcasts</li>
+                          <li>Terms and Concepts</li>
+                          <li>40 PMI Approved Contact Hours</li>
+                          <li>Mobile Apps</li>
+                          <li>Moneyback Guarantee</li>
+                      </ul>
+                     </td>
+                  </tr>
+                </table>
+                  </td>
+                </tr>
+                 </table>
+            
+        </td>
+        <td width="25%" rowspan="3" background="/PMP-Training/PMP-Certification/back/left_line.jpg">
+             
+             <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2"><table border="0" cellpadding="4" cellspacing="0">
+                  <tr><td>
+                     <br /> <div style="text-align:center;"> <a href="/enroll.asp#CAPM" style="font-size:16px;font-weight:bold;padding: 12px 32px;border-radius: 5px;color: #fff; background-color: #e46225;text-decoration: none;margin-top: 20px;">See Plans</a><br /><br /><a href="/enroll.asp#CAPM" style="font-weight:bold;text-decoration:underline;" class="not-visited">Take free Trial</a></div><br />
+                     <br />
+                      </td>
+                  </tr>
+                  <tr><td><span class="subHeader"><b>Plans starting at </b><span style="font-size:18px;font-weight:bold;">USD </span><span style="font-size:24px;font-weight:bold;">23</span></span><br /><br /></td></tr>
+                  <tr><td><span class="subHeader"><b>Includes: </b></span></td></tr>
+                  <tr><td>
+                      <ul>
+                          <li>53 Expert Videos (> 4hrs)</li>
+                          <li>Four 150-Questions, 3-hour Full Simulated Tests</li>
+                          <li>700+ Chapter Test Questions</li>
+                          <li>Downloadable Study Guides</li>
+                          <li>Audio-Visual Podcasts</li>
+                          <li>Terms and Concepts</li>
+                          <li>30 PMI Approved Contact Hours</li>
+                          <li>Mobile Apps</li>
+                          <li>Moneyback Guarantee</li>
+                      </ul>
+                      </td>
+                  </tr>
+                </table>
+                  </td>
+                </tr>
+                 </table>
+
+            
+            
+        </td>
+        <td width="24%" rowspan="3" background="/PMP-Training/PMP-Certification/back/left_line.jpg" id="imageHover">
+            
+             <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2"><table border="0" cellpadding="4" cellspacing="0">
+                  <tr><td>
+                      <br /> <div style="text-align:center;"><a href="/enroll.asp#6Sigma" style="font-size:16px;font-weight:bold;padding: 12px 32px;border-radius: 5px;color: #fff; background-color: #5db7e7;text-decoration: none;margin-top: 20px;">See Courses</a><br /><br /> <a style="font-weight:bold;text-decoration:underline;" href="/enroll.asp#6Sigma" class="not-visited">Take free Trial</a></div>
+                      <br /><br />
+                    </td>
+                  </tr>
+                  <tr><td><span class="subHeader"><b>Courses starting at </b><span style="font-size:18px;font-weight:bold;">USD </span><span style="font-size:24px;font-weight:bold;">125</span></span><br /><br /></td></tr>
+                  <tr><td><span class="subHeader"><b>Includes Courses on: </b></span></td></tr>
+                  <tr><td>
+                      <ul>
+                          <li>Understanding PMBOK</li>
+                          <li>Scrum</li>
+                          <li>Risk Management</li>
+                          <li>Six Sigma 
+                              <ul><br /><li>Green Belt</li><li>Black Belt</li></ul>
+                          </li>
+                          <li>Human Resources Development</li>
+                          <li>Program Management</li>
+                       </ul>
+                      </td>
+                  </tr>
+                </table>
+                  </td>
+                </tr>
+                 </table>
+          </td>
+        <td width="26%" rowspan="3" background="/PMP-Training/PMP-Certification/back/left_line.jpg">
+        <table border="0" width="100%" cellspacing="0" cellpadding="6">
+              <tr>
+                <td>
+                  <table border="0" width="100%" cellspacing="0" cellpadding="6" class="newsroom">
+                    
+                     <tr>
+                    <td width="20%"><img src="/images/buttons/news_logo/Genentech.jpg" alt="news logo"></td>
+                    
+                      <td>13 Mar 2014
+                      </td></tr>
+                      <tr>
+                      <td colspan="2">Genentech continues its partnership with PMstudy to train its employees for PMP certification.</td>
+                     <!--  <td>
+                      </td>-->
+                    </tr>
+                    <tr>
+                     <td colspan="2"><img src="/images/back/line.jpg" alt="news logo"></td></tr>
+                    
+                     <tr>
+                    <td width="20%"><img src="/images/buttons/news_logo/glidepath.jpg" alt="news logo"></td>
+                    
+                      <td>6 Mar 2014
+                      </td></tr>
+                      <tr>
+                      <td colspan="2">Glidepath choses PMstudy to train its employees for PMP certification.</td>
+                     <!--  <td>
+                      </td>-->
+                    </tr>
+                    <tr>
+                     <td colspan="2"><img src="/images/back/line.jpg" alt="news logo"></td></tr>
+                    
+                  </table>
+                  </span> </td>
+              </tr>
+              <tr>
+                <td style="text-align:right;"><span class="SubHeader"><a href="newsroom.asp">More...</a></span></td>
+              </tr>
+            </table>
+        
+        </td>
+   
+          </table>
+      </tr>
+     </td>
+   </tr>
+  </table>
+ </td>
+</tr>
+</table>
+</div>
+<!-- Body Ends -->
+  <!-- Footer Starts -->
+  
+  <head>
+  <style type="text/css">
+  .star-rating {
+      list-style:none;
+      padding:0px;
+      width: 100px;
+      height: 20px;
+      position: relative;
+      background: url(/images/alt_star.png) top left repeat-x;
+      display:inline-block;
+      float:left;
+      margin:-3px 0 0 0;
+  }
+  .star-rating li {
+      padding:0px;
+      margin:0px;
+      /*\*/
+          float: left;/* */
+      }
+  .star-rating li a {
+      display:block;
+      width:20px;
+      height: 20px;
+      text-decoration: none;
+      text-indent: -9000px;
+      z-index: 20;
+      position: absolute;
+      padding: 0px;
+  }
+  .star-rating li a:hover {
+      background: url(/images/alt_star.png) left bottom;
+      z-index: 2;
+      left: 0px;
+  }
+  .star-rating a:focus,  .star-rating a:active {
+      border:0;
+      -moz-outline-style: none;
+      outline: none;
+  }
+  .star-rating a.one-star {
+      left: 0px;
+  }
+  .star-rating a.one-star:hover {
+      width:20px;
+  }
+  .star-rating a.two-stars {
+      left:20px;
+  }
+  .star-rating a.two-stars:hover {
+      width: 40px;
+  }
+  .star-rating a.three-stars {
+      left: 40px;
+  }
+  .star-rating a.three-stars:hover {
+      width: 60px;
+  }
+  .star-rating a.four-stars {
+      left: 60px;
+  }
+  .star-rating a.four-stars:hover {
+      width: 80px;
+  }
+  .star-rating a.five-stars {
+      left: 80px;
+  }
+  .star-rating a.five-stars:hover {
+      width: 100px;
+  }
+  .star-rating li.current-rating {
+      background: url(/images/alt_star.png) left center;
+      position: absolute;
+      height: 20px;
+      display: block;
+      text-indent: -9000px;
+      z-index: 1;
+	  left:0;
+  }
+  div.rating-result {
+      float:left;
+      margin-left:10px;
+  }
+  #starcontainer {
+      width: 905px;
+      height: 20px;
+      margin-left: 480px;
+      margin-top:10px;
+  }
+  </style>
+  <script type="text/javascript">
+  
+  function vote(amnt){
+   //check for cookie
+   var cookieChecked=checkCookie();
+   if (cookieChecked) {
+       alert ('You have already rated!')
+       return;
+   }
+   else{
+   //make ajax call
+  makeAjaxCall(amnt)
+      // alert('jj')
+    //calculate the starwidth
+    var avg, voted, starWidth;
+    voted=parseInt(document.getElementById('current-rating-result').getAttribute('totalVoted'))+1;
+    avg=document.getElementById('current-rating-result').getAttribute('totalVoted')*document.getElementById('current-rating-result').getAttribute('totalRate');
+    avg=avg+amnt;
+    avg=avg/voted;
+    starWidth=Math.round(avg*20)
+    document.getElementById('current-rating').style.width=starWidth+"px";
+    document.getElementById('current-rating-result').innerHTML='Rating: '+avg.toFixed(1) +' out of 5 ('+voted+' votes).'
+   }
+  }
+  function makeAjaxCall(amnt){
+   var xmlhttp;
+   if (window.XMLHttpRequest){
+     xmlhttp=new XMLHttpRequest();}
+   else{
+     xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+   xmlhttp.onreadystatechange=function(){
+  /*   if (xmlhttp.readyState==4 && xmlhttp.status==200){
+    }*/
+     }
+   xmlhttp.open("GET","ratingprocess.asp?amt="+amnt+"&rate=4237",true);
+   xmlhttp.send();
+  }
+  
+  function getCookie(c_name)
+   {
+   var i,x,y,ARRcookies=document.cookie.split(";");
+   for (i=0;i<ARRcookies.length;i++)
+     {
+     x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+     y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+     x=x.replace(/^\s+|\s+$/g,"");
+     if (x==c_name)
+       {
+       return unescape(y);
+       }
+     }
+   }
+  
+   function setCookie(c_name,value,exdays)
+   {
+   var exdate=new Date();
+   exdate.setDate(exdate.getDate() + exdays);
+   var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+   document.cookie=c_name + "=" + c_value;
+   }
+  
+  function checkCookie()
+   {
+   var rating=getCookie("rating");
+   if (rating!=null && rating!="")
+     {
+     return true;
+     }
+   else
+     {
+     rating='rated';
+     if (rating!=null && rating!="")
+       {
+       setCookie("rating", rating, 365);
+    return false;
+       }
+     }
+  }
+  </script>
+  </head>
+      <body>
+  <div id="starcontainer" align="center" class="hReview-aggregate">
+    <div class='rating-result'><SPAN class=item><SPAN class=fn>PMstudy - PMP Training</SPAN> </SPAN></div>
+    <div class='rating-result' >
+      <ul class='star-rating'">
+        <li class='current-rating' id='current-rating' style="width: 84px"></li>
+        <li><a href="#" onClick="vote(1); return false;" 
+             title='1 star out of 5' class='one-star'>1</a></li>
+        <li><a href="#" onClick="vote(2); return false;" 
+             title='2 star out of 5' class='two-stars'>2</a></li>
+        <li><a href="#" onClick="vote(3); return false;" 
+             title='3 star out of 5' class='three-stars'>3</a></li>
+        <li><a href="#" onClick="vote(4); return false;" 
+             title='4 star out of 5' class='four-stars'>4</a></li>
+        <li><a href="#" onClick="vote(5); return false;" 
+             title='5 star out of 5' class='five-stars'>5</a></li>
+      </ul>
+    </div>
+   
+    <div id='current-rating-result' totalRate=4.2 totalVoted=4237  class='rating-result'> Rating: <SPAN class=rating> <SPAN class=average>
+      4.2
+      </SPAN></SPAN> out of <SPAN class=best> 5</SPAN> <SPAN class=votes> (
+      4237
+      votes)</SPAN>. </div>
+  </div>
+  
+  <!--End of code for star rating -->
+  
+  <!--<div class="hReview-aggregate" align="center" style="width:905px; height:30px; margin-left:14px;" valign="top"><SPAN class=item><SPAN class=fn>PMstudy - PMP Training</SPAN> <IMG class=photo src="/images/buttons/5-star-rating.png" height="15"> </SPAN>Rating: <SPAN class=rating><SPAN class=average>4.9</SPAN> out of <SPAN class=best>5</SPAN> <SPAN class=votes>(2377 votes)</SPAN>. </div>-->
+  
+  <div align="left" valign="top" class="copyright" style="width:940px; height:16px; margin-right:-5px;">&copy; 2010 PMstudy.com. All Rights Reserved. </div>
+  <div align="left" style="width:905px; height:45px; margin-left:14px;" valign="top">
+    <p><font size="1px"><a href="/index.asp">Home</a> | <a href="/aboutus.asp">About Us</a> |
+      
+      <a href="/PMP-Classes/moneyBack.asp">Moneyback Guarantee</a> |
+      
+      <a href="/PMP-Classes/pmp-boot-camp-FAQ.asp">PMP<sup>&reg;</sup> Exam Prep Boot Camp FAQs</a> | <a href="/feedback_class.asp">PMP Exam Prep Boot Camp Testimonials</a> | <a href="/success.asp">Success Rate</a>
+      
+      | <a href="/enroll.asp#PMP">PMP Exam Prep Online</a> | <a href="/pmp-training.asp">PMP Training</a> | <a href="/enroll.asp#CAPM">CAPM<sup>&reg;</sup> Exam Prep Online</a> | <a href="/enroll.asp#6Sigma">Continuing Edu Online</a> | <a href="/enroll.asp?course=pmp&pplink=simulated-test">Free Practice Test</a> | <a href="/enroll.asp?course=pmp&pplink=study-material&ppdata=chapter-test">Free Chapter Test</a> | <a href="/enroll.asp?course=pmp&pplink=study-material&ppdata=study-guides">Free Guide</a> | <a href="/classroomtour.asp">Classroom Methodology</a> | <a href="/tour.asp">PMP/CAPM Exam Prep Education Process</a> | <a href="/contedumethod.asp">Continuing Education Course</a> | <a href="/examtips.asp">PMP/CAPM Exam Tips</a> | <a href="/pmp-certification.asp">PMP Certification</a> | <a href="/instructors.asp">Faculty</a> | <a href="/memberlogin.asp">Login</a> | <a href="/contactus.asp">Contact</a> | <a href="/sitemap.asp">Sitemap</a> | <a href="/Privacy.pdf" target="_blank">Privacy Policy</a> </font></p>
+  </div>
+  <div align="center"><font size="1px"><br />
+    PMI, PMP, CAPM, PMBOK, PM Network and the PMI Registered Education Provider logo are registered marks of the Project Management Institute, Inc.<br />
+    
+    </font> <br />
+  </div>
+  <!-- Chat option for Uk-->
+  
+  </div>
+  <!-- Google Code for Remarketing tag -->
+  <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1026351431;
+  var google_conversion_label = "ZK75CLumwQMQx8Kz6QM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1026351431/?value=0&amp;label=ZK75CLumwQMQx8Kz6QM&amp;guid=ON&amp;script=0"/> </div>
+  </noscript>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-11335447-1");
+  pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-12248522-1");
+  pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
+  
+  <!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"5JOsi1aUS/00av", domain:"pmstudy.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=5JOsi1aUS/00av" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+  </body>
+  </html>
